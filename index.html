@@ -139,6 +139,17 @@ nav button.on{color:var(--accent);background:var(--accent-soft)}
 .say-big{font-family:var(--display);font-size:1.25rem;font-weight:800;line-height:1.2}
 .bubble.happy{border-color:var(--good);background:var(--good-soft)}
 .bubble.sad{border-color:var(--bad);background:var(--bad-soft)}
+/* hikayeler */
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.story p{margin:0 0 .6em;font-size:1.15rem;line-height:1.8;font-weight:600}
+.gw{color:var(--accent);font-weight:800;border-bottom:2px dotted var(--accent);cursor:pointer;border-radius:4px;padding:0 1px}
+.gw.seen{background:var(--sun-soft)}
+.gw.act{background:var(--accent);color:var(--accent-ink)}
+#pop{position:fixed;z-index:45;background:var(--fg);color:var(--bg);padding:8px 14px;border-radius:14px;font-weight:800;font-size:1.05rem;box-shadow:0 8px 24px rgba(0,0,0,.3);max-width:280px;pointer-events:none;animation:up .15s}
+#pop small{display:block;font-weight:600;font-size:.75rem;opacity:.7}
+.dots{display:flex;gap:6px;justify-content:center}
+.dots i{width:9px;height:9px;border-radius:50%;background:var(--line)}
+.dots i.on{background:var(--accent)}
 @keyframes hop{30%{transform:translateY(-18px) scale(1.06,.94)}60%{transform:translateY(0) scale(.95,1.05)}}
 @keyframes breathe{50%{transform:scale(1.03,.97)}}
 @keyframes sway{50%{transform:rotate(-3deg)}}
@@ -155,6 +166,7 @@ nav button.on{color:var(--accent);background:var(--accent-soft)}
 <main id="app"></main>
 <nav id="nav"></nav>
 <div id="toast"></div>
+<div id="pop" hidden></div>
 <canvas id="fx"></canvas>
 
 <script>
@@ -201,6 +213,7 @@ const tName = t => (DATA?.topics||{})[t] || t;
 let STAGES=[];
 function build(){
   ALL_Q=[]; ALL_V=[]; ALL_G=[]; ALL_M=[];
+  DATA.topics = Object.assign({ story:"Hikaye" }, DATA.topics);
   const lessons = [...DATA.lessons].sort((a,b)=>(a.stage||0)-(b.stage||0));
   STAGES = lessons.map((L,i)=>({ id:L.id, n:L.stage||i+1, title:L.title, goal:L.goal||"", L }));
   lessons.forEach(L => {
@@ -349,10 +362,11 @@ const ICONS = {
   play:'<path d="M13 2L4 14h7l-1 8 9-12h-7z"/>',
   book:'<path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 21V5"/>',
   cards:'<rect x="3" y="6" width="13" height="15" rx="2"/><path d="M8 3h11a2 2 0 0 1 2 2v13"/>',
+  story:'<path d="M12 3l1.8 4.2L18 9l-4.2 1.8L12 15l-1.8-4.2L6 9l4.2-1.8z"/><path d="M18.5 14.5l.9 2.1 2.1.9-2.1.9-.9 2.1-.9-2.1-2.1-.9 2.1-.9z"/>',
   alert:'<circle cx="12" cy="12" r="9"/><path d="M12 7v6M12 16.5v.5"/>',
   gear:'<circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/>'
 };
-const TABS = [["home","Ana sayfa"],["play","Pratik"],["book","Gramer"],["cards","Kelime"],["alert","Hatalarım"]];
+const TABS = [["home","Ana sayfa"],["play","Pratik"],["book","Gramer"],["cards","Kelime"],["story","Hikaye"],["alert","Hatalarım"]];
 let tab="home";
 function header(){
   const L = levelOf(S.xp);
@@ -364,7 +378,7 @@ function header(){
 function nav(){ document.getElementById("nav").innerHTML = TABS.map(([k,l]) => `<button class="${tab===k?'on':''}" data-tab="${k}">${SVG(ICONS[k])}${l}</button>`).join(""); }
 document.getElementById("nav").onclick = e => { const b=e.target.closest("button"); if (b){ sfx("tap"); go(b.dataset.tab); } };
 let stageSel=null;
-function go(t, ...a){ tab=t; nav(); scrollTo(0,0); ({home, play:()=>startQuiz(a[0]||"due",a[1]), book:grammar, cards:vocab, alert:errors, settings, match, flash:()=>flash(flashDeck(),0,false), stage:()=>stageView(a[0]||stageSel)})[t](); }
+function go(t, ...a){ hidePop(); tab=t; nav(); scrollTo(0,0); ({home, play:()=>startQuiz(a[0]||"due",a[1]), book:grammar, cards:vocab, alert:errors, settings, match, story:stories, flash:()=>flash(flashDeck(),0,false), stage:()=>stageView(a[0]||stageSel)})[t](); }
 function render(){ header(); nav(); go(tab==="play"||tab==="match"||tab==="flash" ? "home" : tab); }
 
 function roadmap(){
@@ -403,7 +417,7 @@ function home(){
     ${!IS_NATIVE && /iPhone|iPad|iPod/.test(navigator.userAgent) && !navigator.standalone && !S.a2hsHidden ? `<div class="card update"><b>📲 Uygulama gibi kullan</b><div>Safari'nin altındaki <b>Paylaş</b> düğmesine (□↑) dokun, sonra <b>“Ana Ekrana Ekle”</b>yi seç. Barely English ana ekranında Zohre ikonuyla belirir.</div><button class="btn soft" id="a2hs">Tamam</button></div>` : ""}
     <div class="hero"><div class="owlwrap">${owl("idle")}</div><div class="bubble">${esc(greeting())}</div></div>
     <button class="btn wide" id="go" style="font-size:1.15rem;padding:16px">⚡ Tekrara başla${due?` · ${Math.min(due,10)} soru`:""}</button>
-    <div class="row">${weak?`<button class="btn soft" id="goWeak">🎯 Hatalarım (${weak})</button>`:""}<button class="btn soft" id="goMatch">🧩 Eşleştir</button></div>
+    <div class="row">${weak?`<button class="btn soft" id="goWeak">🎯 Hatalarım (${weak})</button>`:""}<button class="btn soft" id="goMatch">🧩 Eşleştir</button>${STORIES().length?`<button class="btn soft" id="goStory">📖 Hikayeler</button>`:""}</div>
     <div class="card goal">${ring(n,20)}<div><h3>Günlük hedef</h3><div class="muted">${n>=20?"Tamamlandı! Yarın görüşürüz.":`Bugün ${20-n} cevap daha.`}</div></div></div>
     ${STAGES.length?roadmap():""}
     ${topics.length?`<div class="card"><h3>Konulara göre başarı</h3>${topics.map(x=>`<div class="topic"><span>${esc(tName(x.t))}</span><div class="track"><i style="width:${x.pct}%;background:${x.pct<60?'var(--bad)':x.pct<80?'var(--sun)':'var(--good)'}"></i></div><b>%${x.pct}</b></div>`).join("")}</div>`:""}
@@ -411,6 +425,7 @@ function home(){
   document.getElementById("go").onclick = () => go("play","due");
   const gw=document.getElementById("goWeak"); if (gw) gw.onclick = () => go("play","weak");
   document.getElementById("goMatch").onclick = () => go("match");
+  const gs=document.getElementById("goStory"); if (gs) gs.onclick = () => go("story");
   const ga=document.getElementById("getApk"); if (ga) ga.onclick = () => installUpdate(ga);
   const ah=document.getElementById("a2hs"); if (ah) ah.onclick = () => { S.a2hsHidden=true; save(); ah.closest(".card").remove(); };
   bindRoad();
@@ -420,7 +435,9 @@ function home(){
 let Q=null;
 function startQuiz(mode, arg){
   let list;
-  if (mode==="due"){
+  if (mode==="story"){
+    list = storyQuiz(arg);
+  } else if (mode==="due"){
     // önce vakti gelen tekrarlar (en zayıflar başta), sonra sıradaki aşamadan yeni sorular
     const rev = reviewItems().sort((a,b)=>weakScore(b)-weakScore(a));
     const revPick = shuffle(rev.slice(0,4)).concat(shuffle(rev.slice(4))).slice(0,7);
@@ -439,7 +456,7 @@ function startQuiz(mode, arg){
   }
   if (!list.length){ $app.innerHTML=`<div class="card">Henüz soru yok. İlk ders notunu ekleyince burası dolacak.</div>`; return; }
   Q = { list, i:0, score:0, combo:0, wrongs:[], mode, arg };
-  ask("teach", mode==="topic"||mode==="stage" ? "Bu konuyu birlikte tekrar edelim!" : mode==="mistakes" ? "Bu hataları bir daha yapmayalım!" : mode==="hardv" ? "Zor kelimelerin üzerine gidiyoruz!" : "Hazırsan başlayalım!");
+  ask("teach", mode==="story" ? "Hikayedeki kelimeleri hatırlıyor musun? Hadi bakalım!" : mode==="topic"||mode==="stage" ? "Bu konuyu birlikte tekrar edelim!" : mode==="mistakes" ? "Bu hataları bir daha yapmayalım!" : mode==="hardv" ? "Zor kelimelerin üzerine gidiyoruz!" : "Hazırsan başlayalım!");
 }
 function ask(mood, line){
   if (Q.i >= Q.list.length) return endQuiz();
@@ -454,7 +471,7 @@ function ask(mood, line){
              : `<input type="text" id="ans" autocomplete="off" autocapitalize="sentences" placeholder="Cevabını yaz"><button class="btn wide" id="chk">Kontrol et</button>`)
     : `<div class="opts">${shuffle(it.options).map(o=>`<button class="opt" data-v="${esc(o)}">${esc(o)}</button>`).join("")}</div>`;
   $app.innerHTML = `${top}<div class="card"><span class="pill" style="align-self:flex-start">${esc(tName(it.topic))}</span><div class="q">${esc(it.q)}</div>${body}<div id="fb"></div></div>`;
-  document.getElementById("quit").onclick = () => go("home");
+  document.getElementById("quit").onclick = () => go(Q.mode==="story" ? "story" : "home");
   if (it.type==="write"){
     const norm = s => s.toLowerCase().replace(/[’']/g,"'").replace(/[.!?,]/g,"").replace(/\s+/g," ").trim();
     const inp = document.getElementById("ans");
@@ -502,15 +519,16 @@ function endQuiz(){
   if (perfect && !S.badges.perfect){ S.badges.perfect=today(); save(); checkBadges(); }
   if (perfect) { confetti(200); sfx("badge"); }
   const uniqWrong = [...new Set(Q.wrongs)];
+  if (Q.mode==="story"){ const s=sState(Q.arg), pct=Math.round(100*Q.score/total); s.best=Math.max(s.best??0,pct); save(); }
   $app.innerHTML = `<div class="card end"><div style="width:120px">${owl(perfect||Q.score/total>=.7?"happy":"sad")}</div>
     <div class="score">${Q.score}/${total}</div>
     <h2>${perfect?"Hatasız tur! Wow, you are improving! 💯":Q.score/total>=.7?"Wow, you are improving!":"Hey, sıkı çalış! Pes etmek yok."}</h2>
     <p class="muted" style="margin:0">${uniqWrong.length?"Yanlış yaptıkların listene eklendi. Doğru bilene kadar yeniden karşına çıkacak.":"Bildiklerin daha seyrek sorulacak."}</p>
     ${uniqWrong.length?`<div style="text-align:left;width:100%;display:flex;flex-direction:column;gap:6px">${uniqWrong.map(q=>`<div class="pill bad" style="white-space:normal">${esc(q.q)} → ${esc(q.answerText ?? (q.options?q.options[q.answer]:q.answer))}</div>`).join("")}</div>`:""}
-    <div class="row" style="width:100%"><button class="btn" id="again">Yeni tur</button><button class="btn soft" id="toHome">Ana sayfa</button></div></div>`;
+    <div class="row" style="width:100%"><button class="btn" id="again">Yeni tur</button><button class="btn soft" id="toHome">${Q.mode==="story"?"Hikayeler":"Ana sayfa"}</button></div></div>`;
   const {mode, arg} = Q;
-  document.getElementById("again").onclick = () => go("play", ["stage","topic","mistakes","hardv","weak"].includes(mode) ? mode : "due", arg);
-  document.getElementById("toHome").onclick = () => go("home");
+  document.getElementById("again").onclick = () => go("play", ["stage","topic","mistakes","hardv","weak","story"].includes(mode) ? mode : "due", arg);
+  document.getElementById("toHome").onclick = () => go(mode==="story" ? "story" : "home");
 }
 
 /* ---------- gramer ---------- */
@@ -558,24 +576,25 @@ function flashDeck(){
   if (deck.length<20) deck = deck.concat(shuffle(ALL_V.filter(v=>!deck.includes(v))).slice(0,20-deck.length));
   return shuffle(deck);
 }
-function match(pool){
+// pool: belirli kelimelerle oyna (zor kelimeler, hikaye). opt: {ordered, back, again}
+function match(pool, opt={}){
   if (ALL_V.length<2){ $app.innerHTML=`<div class="card">Eşleştirme için en az 2 kelime gerekli.</div>`; return; }
   const fromHard = Array.isArray(pool) && pool.length>=2;
   const weakV = fromHard ? [] : hardWords().slice(0,2);
-  const set = fromHard ? shuffle(pool).slice(0,6) : shuffle([...new Set([...weakV, ...shuffle(ALL_V)])].slice(0,6));
+  const set = fromHard ? (opt.ordered ? pool.slice(0,6) : shuffle(pool).slice(0,6)) : shuffle([...new Set([...weakV, ...shuffle(ALL_V)])].slice(0,6));
   let sel=null, left=set.length, misses=0, combo=0; const t0=Date.now();
   const tiles = [...shuffle(set).map(v=>({k:v.en,t:v.en})), ...shuffle(set).map(v=>({k:v.en,t:v.tr}))];
   const lft = tiles.slice(0,set.length), rgt = tiles.slice(set.length);
   $app.innerHTML = `<div class="qtop"><button class="iconbtn" id="quit">${SVG('<path d="M18 6L6 18M6 6l12 12"/>')}</button><h2 style="flex:1">Eşleştir</h2><div class="combo" id="mc"></div></div>
     <div class="grid2">${lft.map((x,i)=>`<button class="tile" data-i="${i}">${esc(x.t)}</button>${`<button class="tile" data-i="${i+set.length}">${esc(rgt[i].t)}</button>`}`).join("")}</div><div id="mend"></div>`;
-  document.getElementById("quit").onclick = () => go("cards");
+  document.getElementById("quit").onclick = () => go(opt.back || "cards");
   $app.querySelectorAll(".tile").forEach(b => b.onclick = () => {
     const x = tiles[+b.dataset.i]; sfx("tap");
     if (!sel){ sel=b; b.classList.add("sel"); return; }
     if (sel===b){ b.classList.remove("sel"); sel=null; return; }
     const y = tiles[+sel.dataset.i];
     if ((+b.dataset.i<set.length) === (+sel.dataset.i<set.length)){ sel.classList.remove("sel"); sel=b; b.classList.add("sel"); return; }
-    const v = ALL_V.find(v=>v.en===y.k);
+    const v = set.find(v=>v.en===y.k);
     if (x.k===y.k){ [b,sel].forEach(e=>e.classList.add("done")); combo++; sfx("ok",combo); buzz(true); grade({id:v.id,topic:"vocab"},true); left--; }
     else { misses++; combo=0; sfx("no"); buzz(false); grade({id:v.id,topic:"vocab"},false); const a=sel; [b,a].forEach(e=>{e.classList.add("bad"); setTimeout(()=>e.classList.remove("bad","sel"),450)}); }
     sel.classList.remove("sel"); sel=null;
@@ -584,7 +603,7 @@ function match(pool){
       const sec = Math.round((Date.now()-t0)/1000);
       if (!misses) confetti(120);
       document.getElementById("mend").innerHTML = `<div class="card end"><div style="width:100px">${owl(misses<2?"happy":"sad")}</div><h2>${misses?misses+" hata, "+sec+" saniye":"Hatasız! "+sec+" saniye ⚡"}</h2><button class="btn wide" id="mm">Yeni tur</button></div>`;
-      document.getElementById("mm").onclick = () => match(fromHard ? hardWords() : undefined);
+      document.getElementById("mm").onclick = () => match(opt.again ? opt.again() : fromHard ? hardWords() : undefined, opt);
     }
   });
 }
@@ -618,6 +637,109 @@ function flashEnd(st){
   const fh=document.getElementById("fh"); if (fh) fh.onclick = () => flash(shuffle(hardWords()).slice(0,20),0,false,{hard:true});
   document.getElementById("fn").onclick = () => flash(flashDeck(),0,false);
   document.getElementById("fb").onclick = () => go("cards");
+}
+
+/* ---------- hikayeler ---------- */
+// Metinde [[english|türkçe]] = yeni kelime. Dokunulan kelimeler S.storyTaps'e kaydedilir ve o hikayenin sınavında öncelikle sorulur.
+const STORIES = () => DATA?.stories || [];
+const GL = /\[\[([^|\]]+)\|([^\]]+)\]\]/g;
+const plain = s => s.replace(GL, "$1");
+function storyWords(st){
+  const m = new Map();
+  st.pages.forEach(p => { for (const x of p.matchAll(GL)) if (!m.has(x[1])) m.set(x[1], x[2]); });
+  return [...m].map(([en,tr]) => ({ en, tr, id:"sw:"+st.id+":"+en, ex:"" }));
+}
+const sState = id => { S.stories = S.stories || {}; return S.stories[id] || (S.stories[id] = { page:0, read:false, best:null }); };
+const taps = id => { S.storyTaps = S.storyTaps || {}; return S.storyTaps[id] || (S.storyTaps[id] = {}); };
+/* tıklanan kelimeler önde, sonra henüz öğrenilmemiş olanlar */
+function storyPool(st){
+  const T = taps(st.id), lv = w => (S.cards[w.id]?.box||0);
+  const W = storyWords(st);
+  return [...shuffle(W.filter(w=>T[w.en])), ...shuffle(W.filter(w=>!T[w.en])).sort((a,b)=>lv(a)-lv(b))];
+}
+function stories(){
+  const L = STORIES();
+  $app.innerHTML = `<div class="hero"><div class="owlwrap">${owl("teach")}</div><div class="bubble"><b>Hikayeler</b><br>Renkli kelimelere dokun, Türkçesini göstereyim. Dokunduğun kelimeler o hikayenin sınavında karşına çıkacak!</div></div>` +
+    (L.length ? L.map(st => {
+      const s = sState(st.id), t = Object.keys(taps(st.id)).length, n = storyWords(st).length;
+      return `<div class="card"><div style="display:flex;gap:12px;align-items:center"><span style="font-size:2.6rem;line-height:1">${esc(st.emoji||"📖")}</span><div style="flex:1;min-width:0"><h2>${esc(st.title)}</h2><div class="muted">${esc(st.titleTr||"")}</div></div></div>
+        <div class="tags">${s.read?`<span class="pill" style="background:var(--good-soft);color:var(--good)">✓ Okundu</span>`:""}<span class="pill">📖 ${st.pages.length} sayfa</span><span class="pill">🔤 ${n} yeni kelime</span>${t?`<span class="pill bad">👆 ${t} kelimeye baktın</span>`:""}${s.best!=null?`<span class="pill">🏆 En iyi %${s.best}</span>`:""}</div>
+        <div class="row"><button class="btn" data-read="${esc(st.id)}">${s.page>0&&!s.read?"📖 Devam et":"📖 Oku"}</button><button class="btn soft" data-quiz="${esc(st.id)}">⚡ Sınav</button><button class="btn soft" data-match="${esc(st.id)}">🧩 Eşleştir</button></div></div>`;
+    }).join("") : `<div class="card muted">Henüz hikaye yok.</div>`);
+  $app.querySelectorAll("[data-read]").forEach(b => b.onclick = () => { sfx("tap"); const s=sState(b.dataset.read); reader(b.dataset.read, s.read ? 0 : s.page); });
+  $app.querySelectorAll("[data-quiz]").forEach(b => b.onclick = () => go("play","story",b.dataset.quiz));
+  $app.querySelectorAll("[data-match]").forEach(b => b.onclick = () => storyMatch(b.dataset.match));
+}
+function storyMatch(id){
+  const st = STORIES().find(x=>x.id===id); if (!st) return go("story");
+  hidePop(); tab="story"; nav(); scrollTo(0,0);
+  match(storyPool(st), { ordered:true, back:"story", again:() => storyPool(st) });
+}
+let curStory = null;
+function reader(id, p){
+  const st = STORIES().find(x=>x.id===id); if (!st) return go("story");
+  hidePop(); tab="story"; nav(); scrollTo(0,0); curStory = id;
+  const s = sState(id), N = st.pages.length; p = Math.max(0, Math.min(p||0, N-1)); s.page = p;
+  const last = p===N-1; if (last && !s.read){ s.read = true; setTimeout(()=>{ confetti(90); sfx("badge"); },300); }
+  save();
+  const T = taps(id);
+  const text = st.pages[p].split(/\n+/).map(par => `<p>${esc(par).replace(GL, (m,en,tr) => `<span class="gw ${T[en]?"seen":""}" data-en="${en}" data-tr="${tr}">${en}</span>`)}</p>`).join("");
+  const seen = storyWords(st).filter(w=>T[w.en]);
+  $app.innerHTML = `<div class="qtop"><button class="iconbtn" id="back" aria-label="Geri">${SVG('<path d="M15 18l-6-6 6-6"/>')}</button><div style="flex:1;min-width:0"><div class="eyebrow">${esc(st.emoji||"📖")} Sayfa ${p+1} / ${N}</div><b>${esc(st.title)}</b></div></div>
+    <div class="dots">${st.pages.map((_,i)=>`<i class="${i<=p?"on":""}"></i>`).join("")}</div>
+    <div class="card story">${text}</div>
+    ${p===0?`<div class="muted" style="text-align:center;font-size:.9rem">👆 Renkli kelimelere dokun, Türkçesi görünsün.</div>`:""}
+    <div class="row">${p>0?`<button class="btn soft" id="prev">← Önceki</button>`:""}${!last?`<button class="btn" id="next">Sonraki →</button>`:""}</div>
+    ${last?`<div class="card end"><div style="width:110px">${owl("happy")}</div><h2>Hikaye bitti! Wow, you are improving!</h2>
+      ${seen.length?`<p class="muted" style="margin:0">Baktığın ${seen.length} kelime sınavda karşına çıkacak:</p><div class="tags" style="justify-content:center">${seen.map(w=>`<span class="pill">${esc(w.en)} = ${esc(w.tr)}</span>`).join("")}</div>`:`<p class="muted" style="margin:0">Sınavda hikayedeki yeni kelimeler ve hikayeyle ilgili sorular var.</p>`}
+      <div class="row" style="width:100%"><button class="btn" id="sq">⚡ Sınava başla</button><button class="btn soft" id="sm">🧩 Eşleştir</button></div>
+      <button class="btn soft wide" id="sl">Hikayelere dön</button></div>`:""}`;
+  document.getElementById("back").onclick = () => go("story");
+  const pv=document.getElementById("prev"); if (pv) pv.onclick = () => { sfx("tap"); reader(id, p-1); };
+  const nx=document.getElementById("next"); if (nx) nx.onclick = () => { sfx("tap"); reader(id, p+1); };
+  if (last){
+    document.getElementById("sq").onclick = () => go("play","story",id);
+    document.getElementById("sm").onclick = () => storyMatch(id);
+    document.getElementById("sl").onclick = () => go("story");
+  }
+}
+/* kelime balonu: kelimeye dokununca Türkçesi, başka yere dokununca kaybolur */
+const $pop = document.getElementById("pop");
+function hidePop(){ $pop.hidden = true; document.querySelectorAll(".gw.act").forEach(e=>e.classList.remove("act")); }
+document.addEventListener("click", e => {
+  const w = e.target.closest(".gw");
+  if (!w || $pop.dataset.en===w.dataset.en && !$pop.hidden){ hidePop(); return; }
+  hidePop(); sfx("tap");
+  const en = w.dataset.en, tr = w.dataset.tr;
+  if (curStory){ taps(curStory)[en] = tr; save(); }
+  $app.querySelectorAll(".gw").forEach(x => { if (x.dataset.en===en) x.classList.add("seen"); });
+  w.classList.add("act");
+  $pop.dataset.en = en; $pop.innerHTML = `${esc(tr)}<small>${esc(en)} · sınava eklendi</small>`; $pop.hidden = false;
+  const r = w.getBoundingClientRect(), pw = $pop.offsetWidth, ph = $pop.offsetHeight;
+  $pop.style.left = Math.max(8, Math.min(r.left + r.width/2 - pw/2, innerWidth - pw - 8)) + "px";
+  $pop.style.top = (r.top - ph - 8 < 8 ? r.bottom + 8 : r.top - ph - 8) + "px";
+});
+addEventListener("scroll", () => { if (!$pop.hidden) hidePop(); }, { passive:true });
+/* hikaye sınavı: tıklanan kelimeler (boşluk doldurma / anlam / ters çeviri) + hikayeye özel sorular, toplam ~10 */
+function storyQuiz(id){
+  const st = STORIES().find(x=>x.id===id); if (!st) return [];
+  const T = taps(id), pool = storyPool(st), W = storyWords(st);
+  const nTap = pool.filter(w=>T[w.en]).length;
+  const nWords = Math.min(pool.length, Math.max(5, Math.min(nTap, 8)));
+  const sentences = st.pages.flatMap(p => p.replace(/([.!?…]["”]?)\s+/g, "$1\n").split("\n"));
+  const others = (w, k) => shuffle(W.filter(x=>x.en!==w.en)).slice(0,3).map(x=>x[k]);
+  const words = pool.slice(0, nWords).map((w, i) => {
+    const sent = sentences.find(x => x.includes("[["+w.en+"|"));
+    const kind = T[w.en] ? (i%3===1 ? "mean" : i%3===2 ? "rev" : "fill") : (i%2 ? "mean" : "fill");
+    if (kind==="fill" && sent){
+      const q = plain(sent.replace("[["+w.en+"|"+w.tr+"]]", "___")).trim();
+      return { id:"sf:"+id+":"+w.en, topic:"story", q:"Boşluğu doldur: "+q, options:[w.en, ...others(w,"en")], answerText:w.en, explain:w.en+" = "+w.tr };
+    }
+    if (kind==="rev") return { id:"sr:"+id+":"+w.en, topic:"story", q:"“"+w.tr+"” hikayede hangi kelimeydi?", options:[w.en, ...others(w,"en")], answerText:w.en, explain:w.en+" = "+w.tr };
+    return { id:w.id, topic:"story", q:"“"+w.en+"” ne demek?", options:[w.tr, ...others(w,"tr")], answerText:w.tr, explain:sent ? plain(sent).trim() : "" };
+  });
+  const own = shuffle((st.questions||[]).map((q,i) => ({ ...q, id:"sq:"+id+":"+i, topic:"story" }))).slice(0, Math.max(2, 10-words.length));
+  return shuffle([...words, ...own]);
 }
 
 /* sık hata alıştırması: en çok yanıldığın hatalar önde; seçmeli + "cümleyi düzelt" yazma soruları */
