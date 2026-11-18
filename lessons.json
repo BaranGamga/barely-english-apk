@@ -1,7 +1,7 @@
 {
-  "version": 6,
-  "latestApk": 7,
-  "latestApkNote": "Barely English: uygulama içi güncelleme, zor kelimeler",
+  "version": 9,
+  "latestApk": 8,
+  "latestApkNote": "Yeni: Hikaye bölümü (3 hikaye, dokununca Türkçe, hikaye sınavları)",
   "lessons": [
     {
       "id": "u01-present-simple",
@@ -275,6 +275,102 @@
           "q": "Çevir: \"Onun (kadın) uzun saçları var.\"",
           "answer": "She has long hair.",
           "explain": "Dış görünüşte have/has + isim kullanılır. hair sayılamaz, 'hairs' denmez."
+        },
+        {
+          "topic": "present-simple",
+          "q": "My sister usually ___ breakfast at seven.",
+          "options": [
+            "have",
+            "has",
+            "is having",
+            "haves"
+          ],
+          "answer": 1,
+          "explain": "she + have → has. usually → rutin, Simple Present."
+        },
+        {
+          "topic": "present-simple",
+          "q": "___ your parents work on Saturdays?",
+          "options": [
+            "Does",
+            "Are",
+            "Do",
+            "Have"
+          ],
+          "answer": 2,
+          "explain": "your parents = they → Do."
+        }
+      ],
+      "translate": [
+        {
+          "tr": "Başım ağrıyor.",
+          "en": "I have a headache.",
+          "distract": [
+            "am",
+            "has"
+          ]
+        },
+        {
+          "tr": "Kardeşimin boğazı ağrıyor.",
+          "en": "My brother has a sore throat.",
+          "distract": [
+            "have",
+            "is"
+          ]
+        },
+        {
+          "tr": "Öksürüğüm var ve burnum akıyor.",
+          "en": "I have a cough and a runny nose.",
+          "distract": [
+            "an",
+            "is"
+          ]
+        },
+        {
+          "tr": "Ailen cumartesileri çalışır mı?",
+          "en": "Do your parents work on Saturdays?",
+          "distract": [
+            "Does",
+            "in"
+          ]
+        },
+        {
+          "tr": "Babam bir bankada çalışmıyor.",
+          "en": "My father doesn't work in a bank.",
+          "distract": [
+            "works",
+            "don't"
+          ],
+          "accept": [
+            "My father does not work in a bank"
+          ]
+        },
+        {
+          "tr": "Su 100 derecede kaynar.",
+          "en": "Water boils at 100 degrees.",
+          "distract": [
+            "boil",
+            "in"
+          ]
+        },
+        {
+          "tr": "Annem her sabah bir hap alır.",
+          "en": "My mother takes a pill every morning.",
+          "distract": [
+            "take",
+            "in"
+          ],
+          "accept": [
+            "Every morning my mother takes a pill"
+          ]
+        },
+        {
+          "tr": "Kızının ateşi var mı?",
+          "en": "Does your daughter have a fever?",
+          "distract": [
+            "has",
+            "Is"
+          ]
         }
       ],
       "mistakes": [
@@ -444,6 +540,16 @@
           "en": "as usual",
           "tr": "her zamanki gibi",
           "ex": "He was late, as usual."
+        },
+        {
+          "en": "set an alarm",
+          "tr": "alarm kurmak",
+          "ex": "I set an alarm for 7 a.m. every day."
+        },
+        {
+          "en": "take a nap",
+          "tr": "kestirmek / şekerleme yapmak",
+          "ex": "I usually take a nap after lunch."
         }
       ],
       "questions": [
@@ -574,6 +680,192 @@
           "q": "Soru kur: how often / you / exercise",
           "answer": "How often do you exercise?",
           "explain": "Soru kelimesi + do + özne + V1."
+        },
+        {
+          "topic": "frequency",
+          "q": "I always ___ an alarm for 7 a.m.",
+          "options": [
+            "set",
+            "put",
+            "make"
+          ],
+          "answer": 0,
+          "explain": "Kalıp: set an alarm = alarm kurmak (set – set – set). \"put an alarm\" ve \"make an alarm\" Türkçeden çeviri."
+        },
+        {
+          "topic": "frequency",
+          "q": "I'm tired. I'm going to take a ___.",
+          "options": [
+            "nap",
+            "sleep",
+            "dream"
+          ],
+          "answer": 0,
+          "explain": "kestirmek = take a nap."
+        },
+        {
+          "topic": "frequency",
+          "q": "\"take a nap\" ne demek?",
+          "options": [
+            "kestirmek / şekerleme yapmak",
+            "uyanmak",
+            "rüya görmek"
+          ],
+          "answer": 0,
+          "explain": "take a nap = gündüz kısa uyumak."
+        },
+        {
+          "topic": "frequency",
+          "q": "My sister ___ to school by bus every day.",
+          "options": [
+            "go",
+            "goes",
+            "is going",
+            "going"
+          ],
+          "answer": 1,
+          "explain": "every day → rutin; she → goes."
+        },
+        {
+          "topic": "frequency",
+          "q": "How often ___ your grandparents?",
+          "options": [
+            "do you visit",
+            "are you visiting",
+            "you visit",
+            "does you visit"
+          ],
+          "answer": 0,
+          "explain": "How often + do + özne + V1?"
+        },
+        {
+          "topic": "frequency",
+          "q": "I ___ drink coffee at night because it keeps me awake.",
+          "options": [
+            "never",
+            "am never",
+            "don't never",
+            "never am"
+          ],
+          "answer": 0,
+          "explain": "Sıklık zarfı asıl fiilden önce: I never drink. am ve don't gerekmez."
+        },
+        {
+          "topic": "frequency",
+          "q": "She is ___ late for school; she arrives on time almost every day.",
+          "options": [
+            "always",
+            "usually",
+            "rarely",
+            "often"
+          ],
+          "answer": 2,
+          "explain": "Neredeyse her gün zamanında → rarely late."
+        },
+        {
+          "topic": "frequency",
+          "q": "I ___ brush my teeth before bed. I do it every night.",
+          "options": [
+            "never",
+            "rarely",
+            "always",
+            "sometimes"
+          ],
+          "answer": 2,
+          "explain": "every night → always."
+        },
+        {
+          "topic": "frequency",
+          "q": "He is ___ late for class; he arrives on time every day.",
+          "options": [
+            "always",
+            "often",
+            "usually",
+            "never"
+          ],
+          "answer": 3,
+          "explain": "Her gün zamanında → never late. be + sıklık zarfı."
+        }
+      ],
+      "translate": [
+        {
+          "tr": "Asla kahvaltıyı atlamam.",
+          "en": "I never skip breakfast.",
+          "distract": [
+            "don't",
+            "am"
+          ]
+        },
+        {
+          "tr": "Genelde 7'de kalkarım.",
+          "en": "I usually get up at 7.",
+          "distract": [
+            "in",
+            "am"
+          ],
+          "accept": [
+            "Usually I get up at 7"
+          ]
+        },
+        {
+          "tr": "Neredeyse hiç dışarı çıkmam.",
+          "en": "I hardly ever go out.",
+          "distract": [
+            "don't",
+            "never"
+          ]
+        },
+        {
+          "tr": "Hafta sonları genelde evde kalırım.",
+          "en": "I usually stay home on weekends.",
+          "distract": [
+            "in",
+            "am"
+          ],
+          "accept": [
+            "On weekends I usually stay home"
+          ]
+        },
+        {
+          "tr": "Öğle yemeğinden sonra genelde kestiririm.",
+          "en": "I usually take a nap after lunch.",
+          "distract": [
+            "make",
+            "do"
+          ],
+          "accept": [
+            "After lunch I usually take a nap"
+          ]
+        },
+        {
+          "tr": "O, derse asla geç kalmaz.",
+          "en": "He is never late for class.",
+          "distract": [
+            "doesn't",
+            "to"
+          ],
+          "accept": [
+            "He's never late for class"
+          ]
+        },
+        {
+          "tr": "Haftada bir kez evden çalışırım.",
+          "en": "I work from home once a week.",
+          "distract": [
+            "in",
+            "one"
+          ],
+          "accept": [
+            "Once a week I work from home"
+          ]
+        },
+        {
+          "tr": "Büyükanne ve büyükbabanı ne sıklıkla ziyaret edersin?",
+          "en": "How often do you visit your grandparents?",
+          "distract": [
+            "are",
+            "does"
+          ]
         }
       ],
       "mistakes": [
@@ -604,10 +896,368 @@
       ]
     },
     {
-      "id": "u03-in-on-at",
+      "id": "u19-present-continuous",
       "stage": 3,
+      "date": "2026-11-18",
+      "title": "Aşama 3 · Present Continuous (şu an olanlar)",
+      "goal": "Bu aşamanın sonunda şu anda olan şeyleri anlatabilecek ve Simple Present ile Present Continuous arasında doğru seçim yapabileceksin.",
+      "grammar": [
+        {
+          "topic": "present-continuous",
+          "title": "am / is / are + V-ing",
+          "summary": "Konuşma anında olan şeyler. I am + V-ing; He/She/It is + V-ing; You/We/They are + V-ing. Olumsuz: am not / isn't / aren't + V-ing. Soru: Am/Is/Are + özne + V-ing? be atlanmaz (I cooking ❌). Yazım: make → making, sit → sitting, lie → lying. İpucu kelimeler: now, right now, at the moment, Look!, Listen!",
+          "examples": [
+            "I'm cooking dinner right now.",
+            "Look! The children are playing in the garden.",
+            "They aren't playing football at the moment."
+          ]
+        },
+        {
+          "topic": "present-continuous",
+          "title": "Simple Present mı, Present Continuous mu?",
+          "summary": "Rutin, alışkanlık ve genel gerçek → Simple Present: I work from home. Water boils at 100°C. Şu an veya bu aralar → Present Continuous: I'm working on a new project these days. Soru farkı: What do you do? = Ne iş yapıyorsun? / What are you doing? = Şu an ne yapıyorsun? Durum fiilleri (like, love, want, know, need, understand) genelde -ing almaz: I want a coffee ✅, I am wanting ❌.",
+          "examples": [
+            "I usually work from home, but today I'm working in a café.",
+            "What do you do? – I'm a designer.",
+            "What are you doing? – I'm watching a video."
+          ]
+        },
+        {
+          "topic": "present-continuous",
+          "title": "Planlanmış yakın gelecek",
+          "summary": "Takvimde belli olan, ayarlanmış planlar için de Present Continuous kullanılır: I'm meeting my friends tonight. We're flying to London next month. Bu kullanımda zaman ifadesi (tonight, tomorrow, next week) mutlaka olur.",
+          "examples": [
+            "I'm meeting my friends tonight.",
+            "We're travelling to London next month."
+          ]
+        }
+      ],
+      "vocab": [
+        {
+          "en": "right now",
+          "tr": "şu anda",
+          "ex": "I'm busy right now."
+        },
+        {
+          "en": "at the moment",
+          "tr": "şu an / şu sıralar",
+          "ex": "She isn't working at the moment."
+        },
+        {
+          "en": "these days",
+          "tr": "bu aralar / bu günlerde",
+          "ex": "I'm reading a lot these days."
+        },
+        {
+          "en": "work on",
+          "tr": "(bir şey) üzerinde çalışmak",
+          "ex": "I'm working on a new character in Blender."
+        },
+        {
+          "en": "knock at the door",
+          "tr": "kapıyı çalmak",
+          "ex": "Listen! Someone is knocking at the door."
+        },
+        {
+          "en": "be on the phone",
+          "tr": "telefonda olmak / telefonla konuşuyor olmak",
+          "ex": "Sorry, I can't talk. I'm on the phone."
+        },
+        {
+          "en": "wait for",
+          "tr": "(birini / bir şeyi) beklemek",
+          "ex": "I'm waiting for the bus."
+        }
+      ],
+      "questions": [
+        {
+          "topic": "present-continuous",
+          "q": "Look! The children ___ in the garden.",
+          "options": [
+            "play",
+            "are playing",
+            "played",
+            "have played"
+          ],
+          "answer": 1,
+          "explain": "Look! → şu an oluyor: are + V-ing."
+        },
+        {
+          "topic": "present-continuous",
+          "q": "I can't talk now. I ___ my homework.",
+          "options": [
+            "do",
+            "am doing",
+            "did",
+            "have done"
+          ],
+          "answer": 1,
+          "explain": "now / I can't talk → am + V-ing."
+        },
+        {
+          "topic": "present-continuous",
+          "q": "Listen! Someone ___ at the door.",
+          "options": [
+            "knocks",
+            "knock",
+            "is knocking",
+            "knocked"
+          ],
+          "answer": 2,
+          "explain": "Listen! → şu an: is + V-ing."
+        },
+        {
+          "topic": "present-continuous",
+          "q": "I can't talk now. I ___ dinner.",
+          "options": [
+            "cook",
+            "am cooking",
+            "cooked",
+            "cooking"
+          ],
+          "answer": 1,
+          "explain": "be + V-ing. Sadece \"cooking\" yetmez, am gerekir."
+        },
+        {
+          "topic": "present-continuous",
+          "q": "They ___ football at the moment.",
+          "options": [
+            "aren't playing",
+            "don't play",
+            "didn't play",
+            "haven't played"
+          ],
+          "answer": 0,
+          "explain": "at the moment → aren't + V-ing."
+        },
+        {
+          "topic": "present-continuous",
+          "q": "I usually work from home, but today I ___ in a café.",
+          "options": [
+            "work",
+            "am working",
+            "worked"
+          ],
+          "answer": 1,
+          "explain": "usually → rutin (work); today → şu an (am working)."
+        },
+        {
+          "topic": "present-continuous",
+          "q": "\"What do you do?\" ne demek?",
+          "options": [
+            "Şu an ne yapıyorsun?",
+            "Ne iş yapıyorsun?",
+            "Dün ne yaptın?"
+          ],
+          "answer": 1,
+          "explain": "What do you do? = meslek sorusu. Şu an için: What are you doing?"
+        },
+        {
+          "topic": "present-continuous",
+          "q": "\"What are you doing?\" sorusuna doğru cevap hangisi?",
+          "options": [
+            "I'm a designer.",
+            "I'm watching a video.",
+            "I watch videos every day."
+          ],
+          "answer": 1,
+          "explain": "Şu an ne yaptığını soruyor → Present Continuous ile cevap."
+        },
+        {
+          "topic": "present-continuous",
+          "q": "I ___ this song. It's great!",
+          "options": [
+            "like",
+            "am liking",
+            "liking"
+          ],
+          "answer": 0,
+          "explain": "like bir durum fiili; -ing almaz."
+        },
+        {
+          "topic": "present-continuous",
+          "q": "___ she working today?",
+          "options": [
+            "Does",
+            "Is",
+            "Do"
+          ],
+          "answer": 1,
+          "explain": "Soru: Is + özne + V-ing?"
+        },
+        {
+          "topic": "present-continuous",
+          "q": "Water ___ at 100°C.",
+          "options": [
+            "boil",
+            "boils",
+            "is boiling",
+            "boiled"
+          ],
+          "answer": 1,
+          "explain": "Genel gerçek → Simple Present (boils)."
+        },
+        {
+          "topic": "present-continuous",
+          "q": "We ___ at 7 tomorrow. It's in my calendar.",
+          "options": [
+            "are meeting",
+            "met",
+            "meeting"
+          ],
+          "answer": 0,
+          "explain": "Planlanmış gelecek → are + V-ing."
+        },
+        {
+          "topic": "present-continuous",
+          "type": "write",
+          "q": "Boşluğu doldur: She ___ (sit) next to the window right now.",
+          "answer": "is sitting",
+          "explain": "right now → is + V-ing. sit → sitting (t ikilenir)."
+        },
+        {
+          "topic": "present-continuous",
+          "type": "write",
+          "q": "Sırala: are / you / What / doing",
+          "answer": "What are you doing?",
+          "explain": "Soru kelimesi + are + özne + V-ing?"
+        },
+        {
+          "topic": "present-continuous",
+          "type": "write",
+          "q": "Çevir: \"Şu anda yemek pişiriyorum.\"",
+          "answer": "I am cooking right now.",
+          "accept": [
+            "I'm cooking right now.",
+            "I'm cooking now.",
+            "I am cooking now.",
+            "Right now I'm cooking.",
+            "Right now I am cooking.",
+            "I'm cooking dinner right now.",
+            "I am cooking dinner right now."
+          ],
+          "explain": "am + V-ing; right now cümle sonunda."
+        }
+      ],
+      "translate": [
+        {
+          "tr": "Ne iş yapıyorsun?",
+          "en": "What do you do?",
+          "distract": [
+            "are",
+            "doing"
+          ]
+        },
+        {
+          "tr": "Şu anda yemek pişiriyorum.",
+          "en": "I'm cooking right now.",
+          "distract": [
+            "cook",
+            "do"
+          ],
+          "accept": [
+            "I am cooking right now",
+            "Right now I'm cooking"
+          ]
+        },
+        {
+          "tr": "Bak! Çocuklar bahçede oynuyor.",
+          "en": "Look! The children are playing in the garden.",
+          "distract": [
+            "play",
+            "is"
+          ]
+        },
+        {
+          "tr": "Şu anda futbol oynamıyorlar.",
+          "en": "They aren't playing football at the moment.",
+          "distract": [
+            "don't",
+            "play"
+          ],
+          "accept": [
+            "They are not playing football at the moment",
+            "At the moment they aren't playing football"
+          ]
+        },
+        {
+          "tr": "Annem şu an telefonda konuşuyor.",
+          "en": "My mother is talking on the phone now.",
+          "distract": [
+            "talks",
+            "at"
+          ],
+          "accept": [
+            "My mother is now talking on the phone"
+          ]
+        },
+        {
+          "tr": "Ne yapıyorsun? Ödevimi yapıyorum.",
+          "en": "What are you doing? I'm doing my homework.",
+          "distract": [
+            "do",
+            "make"
+          ],
+          "accept": [
+            "What are you doing? I am doing my homework"
+          ]
+        },
+        {
+          "tr": "Şu an bir kahve istiyorum.",
+          "en": "I want a coffee right now.",
+          "distract": [
+            "am",
+            "wanting"
+          ],
+          "accept": [
+            "Right now I want a coffee"
+          ]
+        },
+        {
+          "tr": "Bu aralar yeni bir proje üzerinde çalışıyorum.",
+          "en": "I'm working on a new project these days.",
+          "distract": [
+            "work",
+            "at"
+          ],
+          "accept": [
+            "I am working on a new project these days",
+            "These days I'm working on a new project"
+          ]
+        }
+      ],
+      "mistakes": [
+        {
+          "topic": "present-continuous",
+          "wrong": "I cooking dinner now.",
+          "right": "I'm cooking dinner now.",
+          "note": "be (am/is/are) atlanmaz: am + V-ing."
+        },
+        {
+          "topic": "present-continuous",
+          "wrong": "I am work from home every day.",
+          "right": "I work from home every day.",
+          "note": "Rutin → Simple Present. am + V1 diye bir yapı yok."
+        },
+        {
+          "topic": "present-continuous",
+          "wrong": "I am wanting a coffee.",
+          "right": "I want a coffee.",
+          "note": "want, like, know gibi durum fiilleri -ing almaz."
+        },
+        {
+          "topic": "present-continuous",
+          "wrong": "What do you do now? (şu an ne yapıyorsun)",
+          "right": "What are you doing now?",
+          "note": "What do you do? meslek sorar; şu an için What are you doing?"
+        }
+      ]
+    },
+    {
+      "id": "u03-in-on-at",
+      "stage": 4,
       "date": "2026-11-11",
-      "title": "Aşama 3 · In / On / At (zaman ve yer)",
+      "title": "Aşama 4 · In / On / At (zaman ve yer)",
       "goal": "Bu aşamanın sonunda saat, gün, ay, yıl ve yer bildirirken in, on ve at'i doğru seçebileceksin.",
       "grammar": [
         {
@@ -628,6 +1278,16 @@
             "I am at home.",
             "My phone is on the table.",
             "I'm on the bus."
+          ]
+        },
+        {
+          "topic": "prepositions",
+          "title": "at the beginning of / at the end of",
+          "summary": "Bir şeyin başı ve sonu: the + beginning / end + of + the + isim. the başta da sonda da gerekir (beginning of month ❌ → the beginning of the month). Zaman olarak genelde at ile kullanılır: at the beginning of the class, at the end of the month. in the end (of olmadan) = sonunda, en sonunda: In the end, we stayed home. start de olur: the start of the movie.",
+          "examples": [
+            "I missed the beginning of the movie.",
+            "We have a short test at the end of the class.",
+            "I pay my bills at the beginning of the month."
           ]
         }
       ],
@@ -696,6 +1356,21 @@
           "en": "on the train",
           "tr": "trende",
           "ex": "I read books on the train."
+        },
+        {
+          "en": "the beginning of ...",
+          "tr": "...nın başı",
+          "ex": "The beginning of the movie was boring."
+        },
+        {
+          "en": "the end of ...",
+          "tr": "...nın sonu",
+          "ex": "See you at the end of the class."
+        },
+        {
+          "en": "in the end",
+          "tr": "sonunda, en sonunda",
+          "ex": "In the end, we decided to stay home."
         }
       ],
       "questions": [
@@ -829,6 +1504,205 @@
           "q": "Çevir: \"Dersim pazartesi günü.\"",
           "answer": "My lesson is on Monday.",
           "explain": "Günlerle on."
+        },
+        {
+          "topic": "prepositions",
+          "q": "I was late, so I missed ___ beginning of the movie.",
+          "options": [
+            "the",
+            "a",
+            "— (boş)"
+          ],
+          "answer": 0,
+          "explain": "the beginning of the movie: beginning'den önce the gerekir."
+        },
+        {
+          "topic": "prepositions",
+          "q": "I pay the rent ___ the beginning of the month.",
+          "options": [
+            "at",
+            "on",
+            "to"
+          ],
+          "answer": 0,
+          "explain": "Zaman olarak: at the beginning of / at the end of."
+        },
+        {
+          "topic": "prepositions",
+          "q": "The teacher gives homework at the ___ of the class.",
+          "options": [
+            "end",
+            "finish",
+            "last"
+          ],
+          "answer": 0,
+          "explain": "the end of the class = dersin sonu. finish bir fiil, last ise \"son\" sıfatı."
+        },
+        {
+          "topic": "prepositions",
+          "q": "\"Sonunda evde kalmaya karar verdik.\"",
+          "options": [
+            "In the end, we decided to stay home.",
+            "At the end of, we decided to stay home.",
+            "In end, we decided to stay home."
+          ],
+          "answer": 0,
+          "explain": "in the end (of olmadan) = sonunda."
+        },
+        {
+          "topic": "prepositions",
+          "type": "write",
+          "q": "Çevir: \"filmin başı\"",
+          "answer": "the beginning of the movie",
+          "accept": [
+            "The beginning of the movie",
+            "the beginning of the film",
+            "The beginning of the film",
+            "the start of the movie",
+            "the start of the film"
+          ],
+          "explain": "the + beginning + of + the + movie."
+        },
+        {
+          "topic": "prepositions",
+          "type": "write",
+          "q": "Sırala: end / the / of / the / class / at",
+          "answer": "at the end of the class",
+          "accept": [
+            "At the end of the class",
+            "at the end of the class.",
+            "At the end of the class."
+          ],
+          "explain": "at the end of the class = dersin sonunda."
+        },
+        {
+          "topic": "prepositions",
+          "q": "Our English lesson starts ___ 9:30.",
+          "options": [
+            "in",
+            "at",
+            "on",
+            "to"
+          ],
+          "answer": 1,
+          "explain": "Saat → at."
+        },
+        {
+          "topic": "prepositions",
+          "q": "My birthday is ___ November.",
+          "options": [
+            "at",
+            "on",
+            "to",
+            "in"
+          ],
+          "answer": 3,
+          "explain": "Ay → in."
+        },
+        {
+          "topic": "prepositions",
+          "q": "We usually visit our cousins ___ Sundays.",
+          "options": [
+            "on",
+            "in",
+            "at",
+            "from"
+          ],
+          "answer": 0,
+          "explain": "Gün → on."
+        },
+        {
+          "topic": "prepositions",
+          "q": "The meeting starts ___ 9:30 ___ Monday morning.",
+          "options": [
+            "on / at",
+            "at / on",
+            "in / on",
+            "at / in"
+          ],
+          "answer": 1,
+          "explain": "Saat → at; belli bir günün sabahı → on Monday morning."
+        }
+      ],
+      "translate": [
+        {
+          "tr": "Doğum günüm kasımda.",
+          "en": "My birthday is in November.",
+          "distract": [
+            "on",
+            "at"
+          ]
+        },
+        {
+          "tr": "Ders 9:30'da başlıyor.",
+          "en": "The lesson starts at 9:30.",
+          "distract": [
+            "in",
+            "on"
+          ]
+        },
+        {
+          "tr": "Pazar günleri kuzenlerimizi ziyaret ederiz.",
+          "en": "We visit our cousins on Sundays.",
+          "distract": [
+            "in",
+            "at"
+          ],
+          "accept": [
+            "On Sundays we visit our cousins"
+          ]
+        },
+        {
+          "tr": "Trende kitap okurum.",
+          "en": "I read a book on the train.",
+          "distract": [
+            "in",
+            "at"
+          ],
+          "accept": [
+            "On the train I read a book"
+          ]
+        },
+        {
+          "tr": "Gelecekte Japonya'ya gitmek istiyorum.",
+          "en": "I want to go to Japan in the future.",
+          "distract": [
+            "at",
+            "on"
+          ],
+          "accept": [
+            "In the future I want to go to Japan"
+          ]
+        },
+        {
+          "tr": "Filmin sonunda ağladım.",
+          "en": "I cried at the end of the movie.",
+          "distract": [
+            "in",
+            "on"
+          ]
+        },
+        {
+          "tr": "Seni havaalanında bekleyeceğim.",
+          "en": "I'll wait for you at the airport.",
+          "distract": [
+            "on",
+            "to"
+          ],
+          "accept": [
+            "I will wait for you at the airport"
+          ]
+        },
+        {
+          "tr": "Toplantı pazartesi sabahı 9:30'da başlıyor.",
+          "en": "The meeting starts at 9:30 on Monday morning.",
+          "distract": [
+            "in",
+            "to"
+          ],
+          "accept": [
+            "The meeting starts on Monday morning at 9:30"
+          ]
         }
       ],
       "mistakes": [
@@ -866,9 +1740,9 @@
     },
     {
       "id": "u04-pronouns",
-      "stage": 4,
+      "stage": 5,
       "date": "2026-11-11",
-      "title": "Aşama 4 · Zamirler ve sahiplik (he / him / his)",
+      "title": "Aşama 5 · Zamirler ve sahiplik (he / him / his)",
       "goal": "Bu aşamanın sonunda bir kişiyi cümledeki görevine göre doğru kelimeyle (he / him / his / his) gösterebileceksin.",
       "grammar": [
         {
@@ -930,8 +1804,8 @@
         },
         {
           "en": "count on",
-          "tr": "birine güvenmek",
-          "ex": "You can count on her; she is always there."
+          "tr": "güvenmek / bel bağlamak",
+          "ex": "I know I can count on you."
         },
         {
           "en": "talk to",
@@ -1071,6 +1945,78 @@
           "explain": "his hem sıfat hem zamir olabilir; burada isim olmadan kullanılıyor."
         }
       ],
+      "translate": [
+        {
+          "tr": "Bu kimin çantası?",
+          "en": "Whose bag is this?",
+          "distract": [
+            "Who's",
+            "Who"
+          ]
+        },
+        {
+          "tr": "Ona güvenebilirsin.",
+          "en": "You can count on him.",
+          "distract": [
+            "he",
+            "his"
+          ]
+        },
+        {
+          "tr": "Onun masası pencerenin yanında.",
+          "en": "Her desk is next to the window.",
+          "distract": [
+            "She",
+            "Hers"
+          ]
+        },
+        {
+          "tr": "Kardeşimle iyi anlaşırım.",
+          "en": "I get along with my brother.",
+          "distract": [
+            "to",
+            "me"
+          ]
+        },
+        {
+          "tr": "Annemle her gün konuşurum.",
+          "en": "I talk to my mother every day.",
+          "distract": [
+            "me",
+            "mine"
+          ],
+          "accept": [
+            "Every day I talk to my mother"
+          ]
+        },
+        {
+          "tr": "Onu tanıyor musun? Benim iş arkadaşım.",
+          "en": "Do you know him? He's my colleague.",
+          "distract": [
+            "his",
+            "me"
+          ],
+          "accept": [
+            "Do you know him? He is my colleague"
+          ]
+        },
+        {
+          "tr": "Bu kalem senin mi, onun mu?",
+          "en": "Is this pen yours or his?",
+          "distract": [
+            "your",
+            "him"
+          ]
+        },
+        {
+          "tr": "Onun ekranı benimkinden daha büyük.",
+          "en": "His screen is bigger than mine.",
+          "distract": [
+            "my",
+            "him"
+          ]
+        }
+      ],
       "mistakes": [
         {
           "topic": "pronouns",
@@ -1112,9 +2058,9 @@
     },
     {
       "id": "u05-past",
-      "stage": 5,
+      "stage": 6,
       "date": "2026-11-11",
-      "title": "Aşama 5 · Simple Past ve was/were",
+      "title": "Aşama 6 · Simple Past ve was/were",
       "goal": "Bu aşamanın sonunda dün ve geçmişte olanları olumlu, olumsuz ve soru cümleleriyle anlatabilecek, did ile was/were'i ayırt edebileceksin.",
       "grammar": [
         {
@@ -1425,6 +2371,163 @@
             "When I was a child I loved cartoons"
           ],
           "explain": "Ana cümle + when + özne + was + a child."
+        },
+        {
+          "topic": "was-were",
+          "type": "write",
+          "q": "Düzelt: \"When I a child, I was very shy.\"",
+          "answer": "When I was a child, I was very shy.",
+          "accept": [
+            "When I was a child, I was very shy",
+            "When I was a child I was very shy.",
+            "When I was a child I was very shy"
+          ],
+          "explain": "Fiil eksik: When I was a child."
+        },
+        {
+          "topic": "past-simple",
+          "q": "They ___ to the museum last Saturday.",
+          "options": [
+            "go",
+            "have gone",
+            "went",
+            "are going"
+          ],
+          "answer": 2,
+          "explain": "last Saturday → Simple Past."
+        },
+        {
+          "topic": "past-simple",
+          "q": "When ___ you start learning English?",
+          "options": [
+            "have",
+            "did",
+            "were",
+            "was"
+          ],
+          "answer": 1,
+          "explain": "Geçmişte belli bir an → did + özne + V1."
+        },
+        {
+          "topic": "past-simple",
+          "q": "Last night, we ___ a delicious meal.",
+          "options": [
+            "have",
+            "had",
+            "have had",
+            "are having"
+          ],
+          "answer": 1,
+          "explain": "Last night → had."
+        },
+        {
+          "topic": "past-simple",
+          "q": "___ you visit your grandparents last weekend?",
+          "options": [
+            "Do",
+            "Have",
+            "Did",
+            "Were"
+          ],
+          "answer": 2,
+          "explain": "visit asıl fiil + last weekend → Did."
+        },
+        {
+          "topic": "past-simple",
+          "q": "He ___ his phone on the train yesterday.",
+          "options": [
+            "loses",
+            "has lost",
+            "is losing",
+            "lost"
+          ],
+          "answer": 3,
+          "explain": "yesterday → Simple Past (has lost olmaz)."
+        }
+      ],
+      "translate": [
+        {
+          "tr": "Dün akşam lezzetli bir yemek yedik.",
+          "en": "We had a delicious meal last night.",
+          "distract": [
+            "have",
+            "did"
+          ],
+          "accept": [
+            "Last night we had a delicious meal"
+          ]
+        },
+        {
+          "tr": "Geçen cumartesi müzeye gittiler.",
+          "en": "They went to the museum last Saturday.",
+          "distract": [
+            "go",
+            "gone"
+          ],
+          "accept": [
+            "Last Saturday they went to the museum"
+          ]
+        },
+        {
+          "tr": "Geçen hafta sonu dışarı çıkmadım.",
+          "en": "I didn't go out last weekend.",
+          "distract": [
+            "went",
+            "going"
+          ],
+          "accept": [
+            "I did not go out last weekend",
+            "Last weekend I didn't go out"
+          ]
+        },
+        {
+          "tr": "Geçen hafta sonu büyükanneni ziyaret ettin mi?",
+          "en": "Did you visit your grandmother last weekend?",
+          "distract": [
+            "visited",
+            "Were"
+          ]
+        },
+        {
+          "tr": "İngilizce öğrenmeye ne zaman başladın?",
+          "en": "When did you start learning English?",
+          "distract": [
+            "started",
+            "were"
+          ]
+        },
+        {
+          "tr": "Telefonunu dün trende kaybetti.",
+          "en": "He lost his phone on the train yesterday.",
+          "distract": [
+            "loses",
+            "in"
+          ],
+          "accept": [
+            "Yesterday he lost his phone on the train"
+          ]
+        },
+        {
+          "tr": "Çocukken İzmir'de yaşıyordum.",
+          "en": "I lived in Izmir when I was a child.",
+          "distract": [
+            "were",
+            "live"
+          ],
+          "accept": [
+            "When I was a child I lived in Izmir"
+          ]
+        },
+        {
+          "tr": "Anlık bir hevesle saçımı maviye boyadım.",
+          "en": "I dyed my hair blue on a whim.",
+          "distract": [
+            "died",
+            "in"
+          ],
+          "accept": [
+            "On a whim I dyed my hair blue"
+          ]
         }
       ],
       "mistakes": [
@@ -1463,14 +2566,20 @@
           "wrong": "When I child, I lived in a village.",
           "right": "When I was a child, I lived in a village.",
           "note": "'Çocukken' = when I was a child. İngilizce cümlede fiil şart; was atlanmaz."
+        },
+        {
+          "topic": "was-were",
+          "wrong": "When I a child, I was very shy.",
+          "right": "When I was a child, I was very shy.",
+          "note": "\"a\" eklemek yetmez; cümlede fiil yok. -ken = when + özne + was/were."
         }
       ]
     },
     {
       "id": "u15-birth-death",
-      "stage": 6,
+      "stage": 7,
       "date": "2026-11-12",
-      "title": "Aşama 6 · Doğum ve ölüm: be born, die / dead / death",
+      "title": "Aşama 7 · Doğum ve ölüm: be born, die / dead / death",
       "goal": "Bu aşamanın sonunda nerede ve ne zaman doğduğunu anlatabilecek, die / died / dead / death kelimelerini cümlede doğru yerde kullanabileceksin.",
       "grammar": [
         {
@@ -1773,6 +2882,81 @@
           "explain": "be born = doğmak, grow up = büyümek."
         }
       ],
+      "translate": [
+        {
+          "tr": "Nerede doğdun?",
+          "en": "Where were you born?",
+          "distract": [
+            "did",
+            "was"
+          ]
+        },
+        {
+          "tr": "1996'da doğdum.",
+          "en": "I was born in 1996.",
+          "distract": [
+            "am",
+            "on"
+          ]
+        },
+        {
+          "tr": "Büyükbabam geçen yıl öldü.",
+          "en": "My grandfather died last year.",
+          "distract": [
+            "dead",
+            "is"
+          ],
+          "accept": [
+            "Last year my grandfather died"
+          ]
+        },
+        {
+          "tr": "Ankara'da büyüdüm.",
+          "en": "I grew up in Ankara.",
+          "distract": [
+            "grow",
+            "at"
+          ]
+        },
+        {
+          "tr": "Doğum tarihin ne?",
+          "en": "What is your date of birth?",
+          "distract": [
+            "born",
+            "when"
+          ],
+          "accept": [
+            "What's your date of birth"
+          ]
+        },
+        {
+          "tr": "Ablam ikiz doğurdu.",
+          "en": "My sister gave birth to twins.",
+          "distract": [
+            "born",
+            "give"
+          ]
+        },
+        {
+          "tr": "Ünlü ressam hâlâ hayatta mı?",
+          "en": "Is the famous painter still alive?",
+          "distract": [
+            "live",
+            "Does"
+          ]
+        },
+        {
+          "tr": "Büyükannem 2010'da kanserden öldü.",
+          "en": "My grandmother died of cancer in 2010.",
+          "distract": [
+            "dead",
+            "with"
+          ],
+          "accept": [
+            "In 2010 my grandmother died of cancer"
+          ]
+        }
+      ],
       "mistakes": [
         {
           "topic": "birth-death",
@@ -1802,10 +2986,10 @@
     },
     {
       "id": "u06-used-to-regret",
-      "stage": 7,
+      "stage": 8,
       "date": "2026-11-11",
-      "title": "Aşama 7 · Used to ve regret",
-      "goal": "Bu aşamanın sonunda eskiden yapıp artık yapmadığın şeyleri ve pişmanlıklarını anlatabileceksin.",
+      "title": "Aşama 8 · Used to, be used to ve regret",
+      "goal": "Bu aşamanın sonunda eskiden yapıp artık yapmadığın şeyleri, alışkın olduğun şeyleri ve pişmanlıklarını anlatabileceksin.",
       "grammar": [
         {
           "topic": "used-to",
@@ -1815,6 +2999,18 @@
             "I used to play games every night.",
             "I didn't use to exercise.",
             "Did you use to draw a lot?"
+          ]
+        },
+        {
+          "topic": "be-used-to",
+          "title": "used to + V1 mi, be used to + V-ing mi?",
+          "summary": "used to + V1 = eskiden yapardım, artık yapmıyorum: She used to get up late. I used to speak Spanish. be used to + V-ing / isim = alışkın olmak (şimdi): She is used to getting up late. I'm used to speaking Turkish. I'm used to the noise. Buradaki to bir edat, bu yüzden arkasından V-ing gelir (I'm used to speak ❌). be zamana ve kişiye göre değişir: I'm / she's / I'm not / I was used to... Alışma süreci için get used to + V-ing: I'm getting used to working from home.",
+          "examples": [
+            "She used to get up late.",
+            "She is used to getting up late.",
+            "I used to speak Spanish, but I forgot it.",
+            "I'm used to speaking Turkish every day.",
+            "I'm getting used to working from home."
           ]
         },
         {
@@ -1868,6 +3064,26 @@
           "en": "a lot of",
           "tr": "çok (miktarda)",
           "ex": "I used to drink a lot of coffee."
+        },
+        {
+          "en": "be used to + V-ing",
+          "tr": "... -meye alışkın olmak",
+          "ex": "I'm used to getting up early."
+        },
+        {
+          "en": "get used to",
+          "tr": "... -e alışmak",
+          "ex": "I'm getting used to the new job."
+        },
+        {
+          "en": "noisy",
+          "tr": "gürültülü",
+          "ex": "She isn't used to studying in such a noisy place."
+        },
+        {
+          "en": "cartoon",
+          "tr": "çizgi film",
+          "ex": "When I was six, I used to watch cartoons every morning."
         }
       ],
       "questions": [
@@ -1990,6 +3206,247 @@
           "q": "Sırala: used to / coffee / drink / I / a lot of",
           "answer": "I used to drink a lot of coffee",
           "explain": "Özne + used to + V1 + nesne."
+        },
+        {
+          "topic": "used-to",
+          "q": "When I was six, I ___ cartoons every morning.",
+          "options": [
+            "am used to watch",
+            "use to watching",
+            "used to watch",
+            "was used to watch"
+          ],
+          "answer": 2,
+          "explain": "Eskiden yapılan alışkanlık → used to + V1."
+        },
+        {
+          "topic": "used-to",
+          "q": "My father ___ work in a bank, but now he's a teacher.",
+          "options": [
+            "used to",
+            "is used to",
+            "use to",
+            "was used"
+          ],
+          "answer": 0,
+          "explain": "Eskiden, artık değil → used to + V1."
+        },
+        {
+          "topic": "used-to",
+          "q": "When I was six, I ___ play outside every afternoon.",
+          "options": [
+            "use to",
+            "used to",
+            "am used to",
+            "was used"
+          ],
+          "answer": 1,
+          "explain": "Olumlu cümlede used to (-d ile)."
+        },
+        {
+          "topic": "used-to",
+          "q": "My dad ___ have long hair, but now it's short.",
+          "options": [
+            "used to",
+            "is used to",
+            "use to",
+            "was used"
+          ],
+          "answer": 0,
+          "explain": "Eski durum → used to + V1."
+        },
+        {
+          "topic": "be-used-to",
+          "q": "I am used to ___ early because my classes start at eight.",
+          "options": [
+            "wake up",
+            "waking up",
+            "woke up",
+            "wakes up"
+          ],
+          "answer": 1,
+          "explain": "be used to + V-ing."
+        },
+        {
+          "topic": "be-used-to",
+          "q": "She isn't used to ___ in such a noisy place.",
+          "options": [
+            "study",
+            "studied",
+            "studies",
+            "studying"
+          ],
+          "answer": 3,
+          "explain": "be used to + V-ing."
+        },
+        {
+          "topic": "be-used-to",
+          "q": "He ___ working with children because he has been a teacher for ten years.",
+          "options": [
+            "used to",
+            "use to",
+            "is used to",
+            "is using to"
+          ],
+          "answer": 2,
+          "explain": "working (V-ing) + şimdi alışkın → is used to."
+        },
+        {
+          "topic": "be-used-to",
+          "q": "She is used to ___ up early because she starts work at six.",
+          "options": [
+            "get",
+            "gets",
+            "getting",
+            "got"
+          ],
+          "answer": 2,
+          "explain": "be used to + V-ing."
+        },
+        {
+          "topic": "be-used-to",
+          "q": "I'm not used to ___ in such a noisy city.",
+          "options": [
+            "live",
+            "living",
+            "lived",
+            "lives"
+          ],
+          "answer": 1,
+          "explain": "be used to + V-ing."
+        },
+        {
+          "topic": "be-used-to",
+          "q": "\"She is used to getting up late.\" ne demek?",
+          "options": [
+            "Eskiden geç kalkardı.",
+            "Geç kalkmaya alışkın.",
+            "Geç kalkmak zorunda."
+          ],
+          "answer": 1,
+          "explain": "be used to + V-ing = alışkın olmak. \"Eskiden geç kalkardı\" = She used to get up late."
+        },
+        {
+          "topic": "used-to",
+          "q": "\"I used to speak Spanish.\" ne demek?",
+          "options": [
+            "Eskiden İspanyolca konuşurdum (artık konuşmuyorum).",
+            "İspanyolca konuşmaya alışkınım.",
+            "İspanyolca konuşmayı severim."
+          ],
+          "answer": 0,
+          "explain": "used to + V1 = eskiden ...rdım."
+        },
+        {
+          "topic": "be-used-to",
+          "q": "I'm used to ___ Turkish every day.",
+          "options": [
+            "speak",
+            "speaking",
+            "spoke"
+          ],
+          "answer": 1,
+          "explain": "I'm used to + V-ing."
+        },
+        {
+          "topic": "be-used-to",
+          "type": "write",
+          "q": "Boşluğu doldur: I'm getting used to ___ (work) from home.",
+          "answer": "working",
+          "explain": "get used to + V-ing."
+        },
+        {
+          "topic": "be-used-to",
+          "type": "write",
+          "q": "Çevir: \"Erken kalkmaya alışkınım.\"",
+          "answer": "I'm used to getting up early.",
+          "accept": [
+            "I am used to getting up early.",
+            "I'm used to waking up early.",
+            "I am used to waking up early."
+          ],
+          "explain": "be used to + V-ing."
+        }
+      ],
+      "translate": [
+        {
+          "tr": "Eskiden çok kahve içerdim.",
+          "en": "I used to drink a lot of coffee.",
+          "distract": [
+            "drank",
+            "am"
+          ]
+        },
+        {
+          "tr": "Eskiden İspanyolca konuşurdum.",
+          "en": "I used to speak Spanish.",
+          "distract": [
+            "spoke",
+            "use"
+          ]
+        },
+        {
+          "tr": "Eskiden spor yapmazdım.",
+          "en": "I didn't use to exercise.",
+          "distract": [
+            "used",
+            "using"
+          ],
+          "accept": [
+            "I did not use to exercise"
+          ]
+        },
+        {
+          "tr": "Daha önce İngilizce çalışmadığım için pişmanım.",
+          "en": "I regret not studying English earlier.",
+          "distract": [
+            "to",
+            "study"
+          ]
+        },
+        {
+          "tr": "Türkçe konuşmaya alışkınım.",
+          "en": "I'm used to speaking Turkish.",
+          "distract": [
+            "speak",
+            "use"
+          ],
+          "accept": [
+            "I am used to speaking Turkish"
+          ]
+        },
+        {
+          "tr": "O, geç kalkmaya alışkın.",
+          "en": "She is used to getting up late.",
+          "distract": [
+            "get",
+            "was"
+          ],
+          "accept": [
+            "She's used to getting up late"
+          ]
+        },
+        {
+          "tr": "Bu kadar gürültülü bir yerde yaşamaya alışkın değilim.",
+          "en": "I'm not used to living in such a noisy place.",
+          "distract": [
+            "live",
+            "use"
+          ],
+          "accept": [
+            "I am not used to living in such a noisy place"
+          ]
+        },
+        {
+          "tr": "Evden çalışmaya alışıyorum.",
+          "en": "I'm getting used to working from home.",
+          "distract": [
+            "work",
+            "use"
+          ],
+          "accept": [
+            "I am getting used to working from home"
+          ]
         }
       ],
       "mistakes": [
@@ -2016,14 +3473,32 @@
           "wrong": "I regret to waste my time.",
           "right": "I regret wasting my time.",
           "note": "Pişmanlık anlamında regret + V-ing."
+        },
+        {
+          "topic": "be-used-to",
+          "wrong": "I'm used to speak Turkish.",
+          "right": "I'm used to speaking Turkish.",
+          "note": "be used to + V-ing (to burada edat)."
+        },
+        {
+          "topic": "be-used-to",
+          "wrong": "She is used to get up late.",
+          "right": "She is used to getting up late.",
+          "note": "Alışkın olmak: be used to + V-ing."
+        },
+        {
+          "topic": "used-to",
+          "wrong": "I am used to watch cartoons when I was a child.",
+          "right": "I used to watch cartoons when I was a child.",
+          "note": "Eskiden yapılan şey → used to + V1, am yok."
         }
       ]
     },
     {
       "id": "u07-future",
-      "stage": 8,
+      "stage": 9,
       "date": "2026-11-11",
-      "title": "Aşama 8 · Gelecek: will, going to ve First Conditional",
+      "title": "Aşama 9 · Gelecek: will, going to ve First Conditional",
       "goal": "Bu aşamanın sonunda planlarını, anlık kararlarını, tahminlerini ve 'eğer ... olursa' cümlelerini kurabileceksin.",
       "grammar": [
         {
@@ -2054,6 +3529,26 @@
             "If it rains, I will stay home.",
             "If it snows tomorrow, I will wear warm clothes.",
             "What will you do if you can't sleep tonight?"
+          ]
+        },
+        {
+          "topic": "future",
+          "title": "won't, be able to ve make it by 8",
+          "summary": "won't = will not (olumsuz gelecek): I won't know until tomorrow. = Yarına kadar bilemeyeceğim. want (istemek) ile karıştırma: won't \"vonnt\" diye, want \"want\" diye okunur. I want to go. (gitmek istiyorum) / I won't go. (gitmeyeceğim). want'tan sonra to gelir, won't'tan sonra direkt V1. Gelecekte yapabilmek: will be able to (will can ❌): I'll be able to... / I won't be able to... make it = (bir yere / bir şeye) yetişmek, gidebilmek. by + zaman = en geç o saatte: by 8 = en geç 8'de. until = o zamana kadar devam eden bir durum için: I'll wait until 8.",
+          "examples": [
+            "I'm going to the store. I don't think I'll be able to make it to class by 8.",
+            "I won't know the results until Friday.",
+            "I want to come, but I won't have time."
+          ]
+        },
+        {
+          "topic": "future",
+          "title": "will + V1 (will to ❌) ve tahmin: will mi, going to mu?",
+          "summary": "will'den sonra doğrudan V1 gelir, to gelmez: It will rain ✅, It will to rain ❌ (want to ile karıştırma: I want to go / I will go). Fikre dayalı tahmin → will: I think it will rain tomorrow. Gözle görülen kanıt varsa → be going to: Look at those dark clouds! It's going to rain. Önceden verilmiş karar → going to: We've bought the tickets. We're going to visit Rome. Anlık karar ve yardım teklifi → will: Don't worry. I'll help you with your bags.",
+          "examples": [
+            "I think it will rain tomorrow.",
+            "Look at those dark clouds! It's going to rain.",
+            "Don't worry. I'll help you with your bags."
           ]
         }
       ],
@@ -2117,6 +3612,26 @@
           "en": "have nothing to do",
           "tr": "yapacak bir şeyi olmamak",
           "ex": "If I have nothing to do tomorrow, I will go to the beach."
+        },
+        {
+          "en": "won't",
+          "tr": "will not (...meyecek)",
+          "ex": "I won't be late, I promise."
+        },
+        {
+          "en": "make it (to)",
+          "tr": "yetişmek, (bir yere) gidebilmek",
+          "ex": "Sorry, I can't make it to the party tonight."
+        },
+        {
+          "en": "by 8",
+          "tr": "en geç 8'de / 8'e kadar",
+          "ex": "Please send me the file by 8."
+        },
+        {
+          "en": "slippery",
+          "tr": "kaygan",
+          "ex": "Drive slowly. The road is slippery."
         }
       ],
       "questions": [
@@ -2248,6 +3763,278 @@
           "q": "Çevir (If ile başla, will'i kısaltma): \"Eğer yarın yağmur yağarsa evde kalacağım.\"",
           "answer": "If it rains tomorrow, I will stay home.",
           "explain": "If + present (rains), will + V1."
+        },
+        {
+          "topic": "future",
+          "q": "I ___ go to the party. I'm too tired. (gitmeyeceğim)",
+          "options": [
+            "won't",
+            "want",
+            "wan't"
+          ],
+          "answer": 0,
+          "explain": "won't = will not. want = istemek."
+        },
+        {
+          "topic": "future",
+          "q": "I ___ to go to the party, but I can't. (istiyorum)",
+          "options": [
+            "want",
+            "won't"
+          ],
+          "answer": 0,
+          "explain": "want to + V1 = istemek. won't'tan sonra to gelmez."
+        },
+        {
+          "topic": "future",
+          "q": "I don't think I'll ___ make it to class by 8.",
+          "options": [
+            "be able to",
+            "can",
+            "able to"
+          ],
+          "answer": 0,
+          "explain": "will'den sonra can gelmez: will be able to."
+        },
+        {
+          "topic": "future",
+          "q": "Please finish the report ___ Friday. (en geç cuma)",
+          "options": [
+            "by",
+            "until",
+            "in"
+          ],
+          "answer": 0,
+          "explain": "by = en geç. until devam eden durum için: I'll wait until Friday."
+        },
+        {
+          "topic": "future",
+          "q": "Be careful! The road is ___ today.",
+          "options": [
+            "slippery",
+            "sleepy",
+            "slipping"
+          ],
+          "answer": 0,
+          "explain": "slippery = kaygan. sleepy = uykulu."
+        },
+        {
+          "topic": "future",
+          "type": "write",
+          "q": "Çevir (make it ile): \"Derse yetişemeyeceğim.\"",
+          "answer": "I won't make it to class.",
+          "accept": [
+            "I won't make it to class",
+            "I will not make it to class.",
+            "I will not make it to class",
+            "I won't be able to make it to class.",
+            "I won't be able to make it to class",
+            "I can't make it to class.",
+            "I can't make it to class"
+          ],
+          "explain": "make it to class = derse yetişmek."
+        },
+        {
+          "topic": "future",
+          "type": "write",
+          "q": "Sırala: won't / I / know / until / tomorrow",
+          "answer": "I won't know until tomorrow",
+          "accept": [
+            "I won't know until tomorrow.",
+            "I will not know until tomorrow"
+          ],
+          "explain": "won't + V1 (know)."
+        },
+        {
+          "topic": "future",
+          "q": "I think it ___ rain tomorrow.",
+          "options": [
+            "will",
+            "will to",
+            "is",
+            "does"
+          ],
+          "answer": 0,
+          "explain": "will + V1; to yok."
+        },
+        {
+          "topic": "future",
+          "q": "I think people ___ more electric cars in the future.",
+          "options": [
+            "use",
+            "are using",
+            "used",
+            "will use"
+          ],
+          "answer": 3,
+          "explain": "I think + gelecek tahmini → will + V1."
+        },
+        {
+          "topic": "future",
+          "q": "Don't worry. I ___ you with those bags.",
+          "options": [
+            "will help",
+            "helped",
+            "will to help",
+            "have helped"
+          ],
+          "answer": 0,
+          "explain": "Anlık yardım teklifi → will + V1."
+        },
+        {
+          "topic": "future",
+          "q": "Look at those dark clouds! It ___.",
+          "options": [
+            "rains",
+            "is going to rain",
+            "has rained",
+            "rain"
+          ],
+          "answer": 1,
+          "explain": "Kanıt var (bulutlar) → be going to."
+        },
+        {
+          "topic": "future",
+          "q": "Look at those dark clouds! It ___ rain.",
+          "options": [
+            "will to",
+            "is going to",
+            "going",
+            "is going"
+          ],
+          "answer": 1,
+          "explain": "be going to + V1; \"will to\" ve \"is going\" (to yok) yanlış."
+        },
+        {
+          "topic": "future",
+          "q": "We've bought the tickets. We ___ visit Rome next month.",
+          "options": [
+            "are going to",
+            "will to",
+            "went to",
+            "have"
+          ],
+          "answer": 0,
+          "explain": "Önceden verilmiş karar → be going to."
+        },
+        {
+          "topic": "future",
+          "q": "A: Why are you carrying an umbrella? B: Because I ___ walk home, and it might rain.",
+          "options": [
+            "will to",
+            "am going to",
+            "going to",
+            "have"
+          ],
+          "answer": 1,
+          "explain": "Planlanmış karar → am going to (am unutulmaz)."
+        },
+        {
+          "topic": "future",
+          "type": "write",
+          "q": "Çevir (will ile): \"Yarın yağmur yağacak.\"",
+          "answer": "It will rain tomorrow.",
+          "accept": [
+            "It'll rain tomorrow.",
+            "Tomorrow it will rain."
+          ],
+          "explain": "will + V1; to yok."
+        }
+      ],
+      "translate": [
+        {
+          "tr": "Yarın seni arayacağım.",
+          "en": "I will call you tomorrow.",
+          "distract": [
+            "to",
+            "calling"
+          ],
+          "accept": [
+            "I'll call you tomorrow",
+            "Tomorrow I will call you"
+          ]
+        },
+        {
+          "tr": "Bence yarın yağmur yağacak.",
+          "en": "I think it will rain tomorrow.",
+          "distract": [
+            "to",
+            "is"
+          ],
+          "accept": [
+            "I think it'll rain tomorrow"
+          ]
+        },
+        {
+          "tr": "Şu kara bulutlara bak! Yağmur yağacak.",
+          "en": "Look at those dark clouds! It's going to rain.",
+          "distract": [
+            "will",
+            "rains"
+          ],
+          "accept": [
+            "Look at those dark clouds! It is going to rain"
+          ]
+        },
+        {
+          "tr": "Gelecek ay Roma'yı ziyaret edeceğiz.",
+          "en": "We're going to visit Rome next month.",
+          "distract": [
+            "will",
+            "visiting"
+          ],
+          "accept": [
+            "We are going to visit Rome next month",
+            "Next month we're going to visit Rome"
+          ]
+        },
+        {
+          "tr": "Merak etme, çantalarına yardım ederim.",
+          "en": "Don't worry, I'll help you with your bags.",
+          "distract": [
+            "to",
+            "for"
+          ],
+          "accept": [
+            "Don't worry, I will help you with your bags",
+            "Do not worry, I will help you with your bags"
+          ]
+        },
+        {
+          "tr": "Partiye gitmeyeceğim. Çok yorgunum.",
+          "en": "I won't go to the party. I'm too tired.",
+          "distract": [
+            "want",
+            "going"
+          ],
+          "accept": [
+            "I will not go to the party. I am too tired",
+            "I won't go to the party. I am too tired"
+          ]
+        },
+        {
+          "tr": "Yarın yağmur yağarsa evde kalacağım.",
+          "en": "If it rains tomorrow, I will stay home.",
+          "distract": [
+            "rain",
+            "stayed"
+          ],
+          "accept": [
+            "I will stay home if it rains tomorrow",
+            "If it rains tomorrow, I'll stay home"
+          ]
+        },
+        {
+          "tr": "Derse 8'e kadar yetişebileceğimi sanmıyorum.",
+          "en": "I don't think I'll make it to class by 8.",
+          "distract": [
+            "until",
+            "can"
+          ],
+          "accept": [
+            "I do not think I will make it to class by 8",
+            "I don't think I will make it to class by 8"
+          ]
         }
       ],
       "mistakes": [
@@ -2274,14 +4061,20 @@
           "wrong": "If I have $1 million, I will travel around the world.",
           "right": "If I had $1 million, I would travel around the world.",
           "note": "Gerçekçi olmayan hayal için First Conditional uygun değil; If + V2, would + V1 kullanılır (Second Conditional)."
+        },
+        {
+          "topic": "future",
+          "wrong": "It will to rain tomorrow.",
+          "right": "It will rain tomorrow.",
+          "note": "will + V1; to gelmez (want to ile karıştırma)."
         }
       ]
     },
     {
       "id": "u08-abilities",
-      "stage": 9,
+      "stage": 10,
       "date": "2026-11-11",
-      "title": "Aşama 9 · Yetenekler: can, be able to, good at",
+      "title": "Aşama 10 · Yetenekler: can, be able to, good at",
       "goal": "Bu aşamanın sonunda neler yapabildiğini, neyde iyi olduğunu ve gelecekte neyi yapabileceğini anlatabileceksin.",
       "grammar": [
         {
@@ -2571,6 +4364,116 @@
           "q": "Sırala: couldn't / I / the answer / remember",
           "answer": "I couldn't remember the answer",
           "explain": "Özne + couldn't + V1 + nesne."
+        },
+        {
+          "topic": "abilities",
+          "q": "My little brother ___ swim, but he can ride a bike.",
+          "options": [
+            "doesn't can",
+            "isn't can",
+            "don't can",
+            "can't"
+          ],
+          "answer": 3,
+          "explain": "can'in olumsuzu can't; do/be eklenmez."
+        },
+        {
+          "topic": "abilities",
+          "q": "___ you speak two languages?",
+          "options": [
+            "Can",
+            "Do can",
+            "Are can",
+            "Did can"
+          ],
+          "answer": 0,
+          "explain": "Soru: Can + özne + V1?"
+        }
+      ],
+      "translate": [
+        {
+          "tr": "İki dil konuşabilir misin?",
+          "en": "Can you speak two languages?",
+          "distract": [
+            "Are",
+            "to"
+          ]
+        },
+        {
+          "tr": "Çizimde iyiyim.",
+          "en": "I'm good at drawing.",
+          "distract": [
+            "draw",
+            "in"
+          ],
+          "accept": [
+            "I am good at drawing"
+          ]
+        },
+        {
+          "tr": "Blender'da 3D modeller yapabilirim.",
+          "en": "I can create 3D models in Blender.",
+          "distract": [
+            "creating",
+            "to"
+          ]
+        },
+        {
+          "tr": "Dün gece uyuyamadım.",
+          "en": "I couldn't sleep last night.",
+          "distract": [
+            "slept",
+            "didn't"
+          ],
+          "accept": [
+            "I could not sleep last night",
+            "Last night I couldn't sleep"
+          ]
+        },
+        {
+          "tr": "Kardeşim yüzemez ama bisiklet sürebilir.",
+          "en": "My brother can't swim, but he can ride a bike.",
+          "distract": [
+            "doesn't",
+            "riding"
+          ],
+          "accept": [
+            "My brother cannot swim, but he can ride a bike"
+          ]
+        },
+        {
+          "tr": "Henüz pek iyi değilim ama gelişiyorum.",
+          "en": "I'm not very good yet, but I'm improving.",
+          "distract": [
+            "improve",
+            "well"
+          ],
+          "accept": [
+            "I am not very good yet, but I am improving"
+          ]
+        },
+        {
+          "tr": "Çocukken çok iyi çizebiliyordum.",
+          "en": "I could draw very well when I was a child.",
+          "distract": [
+            "can",
+            "drew"
+          ],
+          "accept": [
+            "When I was a child I could draw very well"
+          ]
+        },
+        {
+          "tr": "Gelecek yıl İngilizceyi akıcı konuşabileceğim.",
+          "en": "I will be able to speak English fluently next year.",
+          "distract": [
+            "can",
+            "speaking"
+          ],
+          "accept": [
+            "Next year I will be able to speak English fluently",
+            "I'll be able to speak English fluently next year"
+          ]
         }
       ],
       "mistakes": [
@@ -2614,9 +4517,9 @@
     },
     {
       "id": "u09-feelings",
-      "stage": 10,
+      "stage": 11,
       "date": "2026-11-11",
-      "title": "Aşama 10 · Duygular, -ed/-ing ve korkular",
+      "title": "Aşama 11 · Duygular, -ed/-ing ve korkular",
       "goal": "Bu aşamanın sonunda duygularını ve korkularını doğru sıfat ve edatlarla anlatabileceksin.",
       "grammar": [
         {
@@ -2965,6 +4868,87 @@
           "explain": "Are + you + afraid of + isim?"
         }
       ],
+      "translate": [
+        {
+          "tr": "Örümceklerden korkarım.",
+          "en": "I'm afraid of spiders.",
+          "distract": [
+            "from",
+            "don't"
+          ],
+          "accept": [
+            "I am afraid of spiders"
+          ]
+        },
+        {
+          "tr": "Bu film çok sıkıcı.",
+          "en": "This movie is very boring.",
+          "distract": [
+            "bored",
+            "much"
+          ]
+        },
+        {
+          "tr": "Sanatla ilgileniyorum.",
+          "en": "I'm interested in art.",
+          "distract": [
+            "interesting",
+            "on"
+          ],
+          "accept": [
+            "I am interested in art"
+          ]
+        },
+        {
+          "tr": "Karanlıktan korkmuyorum.",
+          "en": "I'm not afraid of the dark.",
+          "distract": [
+            "don't",
+            "from"
+          ],
+          "accept": [
+            "I am not afraid of the dark"
+          ]
+        },
+        {
+          "tr": "Bu talimatlar çok kafa karıştırıcı.",
+          "en": "These instructions are very confusing.",
+          "distract": [
+            "confused",
+            "is"
+          ]
+        },
+        {
+          "tr": "Seni görmeyi dört gözle bekliyorum.",
+          "en": "I'm looking forward to seeing you.",
+          "distract": [
+            "see",
+            "for"
+          ],
+          "accept": [
+            "I am looking forward to seeing you"
+          ]
+        },
+        {
+          "tr": "Sakin kalmaya ve korkularımla yüzleşmeye çalışıyorum.",
+          "en": "I try to stay calm and face my fears.",
+          "distract": [
+            "staying",
+            "with"
+          ]
+        },
+        {
+          "tr": "Sunumdan önce çok heyecanlıydım (midemde kelebekler vardı).",
+          "en": "I had butterflies in my stomach before the presentation.",
+          "distract": [
+            "have",
+            "on"
+          ],
+          "accept": [
+            "Before the presentation I had butterflies in my stomach"
+          ]
+        }
+      ],
       "mistakes": [
         {
           "topic": "feelings",
@@ -3012,9 +4996,9 @@
     },
     {
       "id": "u10-present-perfect",
-      "stage": 11,
+      "stage": 12,
       "date": "2026-11-11",
-      "title": "Aşama 11 · Present Perfect",
+      "title": "Aşama 12 · Present Perfect",
       "goal": "Bu aşamanın sonunda hayat tecrübelerini anlatabilecek ve Simple Past ile Present Perfect arasında doğru seçim yapabileceksin.",
       "grammar": [
         {
@@ -3045,6 +5029,17 @@
             "I went to Italy in 2025.",
             "I have been to Italy.",
             "I have been to the gym three times this week."
+          ]
+        },
+        {
+          "topic": "present-perfect",
+          "title": "for / since ve already, yet, ever nerede durur?",
+          "summary": "Türkçedeki '...dır / ...den beri' → Present Perfect: I have lived here for five years (5 yıldır burada yaşıyorum; I live here for five years ❌). for + süre (for three years, for a long time). since + başlangıç noktası (since 2020, since Monday, since I was a child). Kelime sırası: already, ever, never, just → have ile V3 arasına: I have already eaten. Have you ever tried it? yet → cümle sonuna, olumsuz ve soruda: I haven't finished yet. Have you finished yet? Belli zaman + 'henüz' birlikte: I cleaned my room yesterday, but I haven't cleaned the kitchen yet.",
+          "examples": [
+            "I have known him for three years.",
+            "She has lived in Ankara since 2020.",
+            "Have you ever been to London?",
+            "I cleaned my room yesterday, but I haven't cleaned the kitchen yet."
           ]
         }
       ],
@@ -3103,6 +5098,21 @@
           "en": "meet someone's family",
           "tr": "birinin ailesiyle tanışmak",
           "ex": "I have met his family before."
+        },
+        {
+          "en": "ever",
+          "tr": "hiç (soruda)",
+          "ex": "Have you ever been to London?"
+        },
+        {
+          "en": "since 2020",
+          "tr": "2020'den beri",
+          "ex": "She has lived in Ankara since 2020."
+        },
+        {
+          "en": "for three years",
+          "tr": "üç yıldır / üç yıl boyunca",
+          "ex": "I have known him for three years."
         }
       ],
       "questions": [
@@ -3236,6 +5246,240 @@
           "q": "\"take\" fiilinin V3 hali nedir?",
           "answer": "taken",
           "explain": "take – took – taken."
+        },
+        {
+          "topic": "present-perfect",
+          "q": "We ___ this film before, so let's choose another one.",
+          "options": [
+            "see",
+            "saw",
+            "are seeing",
+            "have seen"
+          ],
+          "answer": 3,
+          "explain": "before + şimdiye etkisi → have + V3."
+        },
+        {
+          "topic": "present-perfect",
+          "q": "She ___ her keys, so she can't open the door.",
+          "options": [
+            "has lost",
+            "lose",
+            "is losing",
+            "have lost"
+          ],
+          "answer": 0,
+          "explain": "Sonucu şimdi (açamıyor) → has + V3. she ile have değil has."
+        },
+        {
+          "topic": "present-perfect",
+          "q": "I ___ my room yesterday, but I haven't cleaned the kitchen yet.",
+          "options": [
+            "clean",
+            "have cleaned",
+            "cleaned",
+            "am cleaning"
+          ],
+          "answer": 2,
+          "explain": "yesterday → Simple Past."
+        },
+        {
+          "topic": "present-perfect",
+          "q": "I ___ my homework already.",
+          "options": [
+            "finish",
+            "have finish",
+            "am finishing",
+            "have finished"
+          ],
+          "answer": 3,
+          "explain": "already → have + V3."
+        },
+        {
+          "topic": "present-perfect",
+          "q": "She ___ to London three times.",
+          "options": [
+            "has been",
+            "was",
+            "is going",
+            "goes"
+          ],
+          "answer": 0,
+          "explain": "Tecrübe (three times) → has been to."
+        },
+        {
+          "topic": "present-perfect",
+          "q": "We ___ that film yet.",
+          "options": [
+            "didn't see",
+            "haven't seen",
+            "don't see",
+            "aren't seeing"
+          ],
+          "answer": 1,
+          "explain": "yet → haven't + V3."
+        },
+        {
+          "topic": "present-perfect",
+          "q": "I have lived here ___ five years.",
+          "options": [
+            "since",
+            "for",
+            "ago"
+          ],
+          "answer": 1,
+          "explain": "Süre → for."
+        },
+        {
+          "topic": "present-perfect",
+          "q": "She has worked here ___ 2020.",
+          "options": [
+            "for",
+            "since",
+            "from"
+          ],
+          "answer": 1,
+          "explain": "Başlangıç noktası → since."
+        },
+        {
+          "topic": "present-perfect",
+          "q": "I ___ here since 2022.",
+          "options": [
+            "live",
+            "am living",
+            "have lived"
+          ],
+          "answer": 2,
+          "explain": "since → Present Perfect."
+        },
+        {
+          "topic": "present-perfect",
+          "q": "Have you ___ been to London?",
+          "options": [
+            "ever",
+            "yet",
+            "since"
+          ],
+          "answer": 0,
+          "explain": "Tecrübe sorusu: Have you ever + V3?"
+        },
+        {
+          "topic": "present-perfect",
+          "q": "Have you finished ___?",
+          "options": [
+            "yet",
+            "ever",
+            "since"
+          ],
+          "answer": 0,
+          "explain": "Soruda cümle sonunda yet = henüz / artık."
+        },
+        {
+          "topic": "present-perfect",
+          "type": "write",
+          "q": "Sırala: already / I / eaten / have",
+          "answer": "I have already eaten",
+          "accept": [
+            "I have eaten already"
+          ],
+          "explain": "already, have ile V3 arasına girer."
+        },
+        {
+          "topic": "present-perfect",
+          "type": "write",
+          "q": "Çevir (Present Perfect + for): \"Onu üç yıldır tanıyorum.\"",
+          "answer": "I have known him for three years.",
+          "accept": [
+            "I've known him for three years.",
+            "I have known her for three years.",
+            "I've known her for three years."
+          ],
+          "explain": "have + V3 (known) + for + süre."
+        }
+      ],
+      "translate": [
+        {
+          "tr": "Zaten yemek yedim.",
+          "en": "I have already eaten.",
+          "distract": [
+            "ate",
+            "yet"
+          ],
+          "accept": [
+            "I've already eaten",
+            "I have eaten already"
+          ]
+        },
+        {
+          "tr": "Anahtarlarımı kaybettim.",
+          "en": "I have lost my keys.",
+          "distract": [
+            "has",
+            "lose"
+          ],
+          "accept": [
+            "I've lost my keys"
+          ]
+        },
+        {
+          "tr": "Hiç Japonya'ya gittin mi?",
+          "en": "Have you ever been to Japan?",
+          "distract": [
+            "Did",
+            "went"
+          ]
+        },
+        {
+          "tr": "Ödevimi henüz bitirmedim.",
+          "en": "I haven't finished my homework yet.",
+          "distract": [
+            "already",
+            "didn't"
+          ],
+          "accept": [
+            "I have not finished my homework yet"
+          ]
+        },
+        {
+          "tr": "Bu filmi daha önce gördük.",
+          "en": "We have seen this film before.",
+          "distract": [
+            "see",
+            "are"
+          ],
+          "accept": [
+            "We've seen this film before"
+          ]
+        },
+        {
+          "tr": "Ablam Londra'ya üç kez gitti.",
+          "en": "My sister has been to London three times.",
+          "distract": [
+            "have",
+            "was"
+          ]
+        },
+        {
+          "tr": "Onu üç yıldır tanıyorum.",
+          "en": "I have known him for three years.",
+          "distract": [
+            "since",
+            "know"
+          ],
+          "accept": [
+            "I've known him for three years"
+          ]
+        },
+        {
+          "tr": "2020'den beri Ankara'da yaşıyor.",
+          "en": "She has lived in Ankara since 2020.",
+          "distract": [
+            "for",
+            "lives"
+          ],
+          "accept": [
+            "She's lived in Ankara since 2020"
+          ]
         }
       ],
       "mistakes": [
@@ -3262,14 +5506,32 @@
           "wrong": "Did you ever been to Japan?",
           "right": "Have you ever been to Japan?",
           "note": "Tecrübe sorusu Have + V3 ile kurulur."
+        },
+        {
+          "topic": "present-perfect",
+          "wrong": "I live here for five years.",
+          "right": "I have lived here for five years.",
+          "note": "'...dır' → Present Perfect + for."
+        },
+        {
+          "topic": "present-perfect",
+          "wrong": "I have lived here since five years.",
+          "right": "I have lived here for five years.",
+          "note": "Süre → for; since başlangıç noktası ister (since 2020)."
+        },
+        {
+          "topic": "present-perfect",
+          "wrong": "Have you finished yet your homework?",
+          "right": "Have you finished your homework yet?",
+          "note": "yet cümlenin sonuna gelir."
         }
       ]
     },
     {
       "id": "u11-comparison",
-      "stage": 12,
+      "stage": 13,
       "date": "2026-11-11",
-      "title": "Aşama 12 · Karşılaştırma ve kişileri tanımlama",
+      "title": "Aşama 13 · Karşılaştırma ve kişileri tanımlama",
       "goal": "Bu aşamanın sonunda insanları ve şeyleri tanımlayıp karşılaştırabilecek, 'en ...' cümleleri kurabileceksin.",
       "grammar": [
         {
@@ -3606,6 +5868,173 @@
           "q": "Sırala: on / her / count / you / can",
           "answer": "You can count on her",
           "explain": "Özne + can + count on + kişi."
+        },
+        {
+          "topic": "comparison",
+          "q": "This suitcase is ___ than mine.",
+          "options": [
+            "heavy",
+            "heaviest",
+            "heavier",
+            "more heavy"
+          ],
+          "answer": 2,
+          "explain": "heavy → heavier (y → ier)."
+        },
+        {
+          "topic": "comparison",
+          "q": "Your new phone is ___ than your old one.",
+          "options": [
+            "more expensive",
+            "expensiver",
+            "most expensive",
+            "the expensive"
+          ],
+          "answer": 0,
+          "explain": "Uzun sıfat → more + sıfat + than."
+        },
+        {
+          "topic": "comparison",
+          "q": "That was ___ meal I had on my holiday.",
+          "options": [
+            "better",
+            "the best",
+            "best than",
+            "the better"
+          ],
+          "answer": 1,
+          "explain": "Grup içinde en → the best."
+        },
+        {
+          "topic": "comparison",
+          "q": "Who is ___ student in your class?",
+          "options": [
+            "tall",
+            "taller",
+            "more tall",
+            "the tallest"
+          ],
+          "answer": 3,
+          "explain": "in your class → superlative: the tallest."
+        },
+        {
+          "topic": "comparison",
+          "q": "This exercise is ___ than the last one.",
+          "options": [
+            "easy",
+            "easiest",
+            "more easy",
+            "easier"
+          ],
+          "answer": 3,
+          "explain": "easy → easier."
+        },
+        {
+          "topic": "comparison",
+          "q": "That was ___ movie I've ever seen!",
+          "options": [
+            "the funniest",
+            "funnier",
+            "funny",
+            "the funnier"
+          ],
+          "answer": 0,
+          "explain": "the ...-est + I've ever seen."
+        },
+        {
+          "topic": "comparison",
+          "q": "Mount Everest is ___ mountain in the world.",
+          "options": [
+            "higher",
+            "the highest",
+            "high",
+            "most high"
+          ],
+          "answer": 1,
+          "explain": "in the world → the highest."
+        }
+      ],
+      "translate": [
+        {
+          "tr": "Bu bavul benimkinden daha ağır.",
+          "en": "This suitcase is heavier than mine.",
+          "distract": [
+            "more",
+            "my"
+          ]
+        },
+        {
+          "tr": "Uzun boylu ve koyu renk saçları var.",
+          "en": "He is tall and he has dark hair.",
+          "distract": [
+            "have",
+            "hairs"
+          ],
+          "accept": [
+            "He is tall and has dark hair",
+            "He's tall and he has dark hair"
+          ]
+        },
+        {
+          "tr": "Sınıftaki en uzun öğrenci kim?",
+          "en": "Who is the tallest student in the class?",
+          "distract": [
+            "taller",
+            "most"
+          ]
+        },
+        {
+          "tr": "Yeni telefonun eskisinden daha pahalı.",
+          "en": "Your new phone is more expensive than your old one.",
+          "distract": [
+            "expensiver",
+            "then"
+          ]
+        },
+        {
+          "tr": "Telefonum onunki kadar pahalı değil.",
+          "en": "My phone is not as expensive as his.",
+          "distract": [
+            "than",
+            "more"
+          ],
+          "accept": [
+            "My phone isn't as expensive as his"
+          ]
+        },
+        {
+          "tr": "Gördüğüm en komik film buydu.",
+          "en": "That was the funniest movie I've ever seen.",
+          "distract": [
+            "funnier",
+            "saw"
+          ],
+          "accept": [
+            "That was the funniest movie I have ever seen"
+          ]
+        },
+        {
+          "tr": "O çok güvenilir. Ona güvenebilirsin.",
+          "en": "She is very reliable. You can count on her.",
+          "distract": [
+            "hers",
+            "to"
+          ],
+          "accept": [
+            "She's very reliable. You can count on her"
+          ]
+        },
+        {
+          "tr": "Bu yıl başarmaya kararlıyım.",
+          "en": "I'm determined to succeed this year.",
+          "distract": [
+            "succeeding",
+            "success"
+          ],
+          "accept": [
+            "I am determined to succeed this year",
+            "This year I'm determined to succeed"
+          ]
         }
       ],
       "mistakes": [
@@ -3655,9 +6084,9 @@
     },
     {
       "id": "u12-verb-patterns",
-      "stage": 13,
+      "stage": 14,
       "date": "2026-11-11",
-      "title": "Aşama 13 · Fiil kalıpları ve collocation'lar",
+      "title": "Aşama 14 · Fiil kalıpları ve collocation'lar",
       "goal": "Bu aşamanın sonunda fiilleri doğru yapıyla (to + V1, V-ing, edat) kullanabilecek ve Türkçeden kelime kelime çeviri hatalarını önleyebileceksin.",
       "grammar": [
         {
@@ -3937,6 +6366,88 @@
           "explain": "complain to + kişi + about + konu."
         }
       ],
+      "translate": [
+        {
+          "tr": "Bana yardım etmeyi reddetti.",
+          "en": "He refused to help me.",
+          "distract": [
+            "helping",
+            "for"
+          ]
+        },
+        {
+          "tr": "Yeni bir bilgisayar alacak param yok.",
+          "en": "I can't afford a new computer.",
+          "distract": [
+            "to",
+            "pay"
+          ],
+          "accept": [
+            "I cannot afford a new computer"
+          ]
+        },
+        {
+          "tr": "Patronundan şikâyet etmeyi bırak.",
+          "en": "Stop complaining about your boss.",
+          "distract": [
+            "to",
+            "complain"
+          ]
+        },
+        {
+          "tr": "Beklemenin anlamı yok.",
+          "en": "There's no point in waiting.",
+          "distract": [
+            "wait",
+            "to"
+          ],
+          "accept": [
+            "There is no point in waiting"
+          ]
+        },
+        {
+          "tr": "Sonunda işi bitirmeyi başardım.",
+          "en": "I finally managed to finish the work.",
+          "distract": [
+            "finishing",
+            "did"
+          ],
+          "accept": [
+            "Finally I managed to finish the work"
+          ]
+        },
+        {
+          "tr": "Evde kalmayı dışarı çıkmaya tercih ederim.",
+          "en": "I'd rather stay home than go out.",
+          "distract": [
+            "staying",
+            "to"
+          ],
+          "accept": [
+            "I would rather stay home than go out"
+          ]
+        },
+        {
+          "tr": "Bana ilacımı almayı hatırlattı.",
+          "en": "She reminded me to take my medicine.",
+          "distract": [
+            "taking",
+            "for"
+          ]
+        },
+        {
+          "tr": "Yarın izin alacağım.",
+          "en": "I'm going to take a day off tomorrow.",
+          "distract": [
+            "make",
+            "do"
+          ],
+          "accept": [
+            "I am going to take a day off tomorrow",
+            "Tomorrow I'm going to take a day off"
+          ]
+        }
+      ],
       "mistakes": [
         {
           "topic": "verb-patterns",
@@ -3978,9 +6489,9 @@
     },
     {
       "id": "u13-risk",
-      "stage": 14,
+      "stage": 15,
       "date": "2026-11-11",
-      "title": "Aşama 14 · Risk ve fikir belirtme",
+      "title": "Aşama 15 · Risk ve fikir belirtme",
       "goal": "Bu aşamanın sonunda risk alma hakkında konuşup fikrini gerekçeleriyle ifade edebileceksin.",
       "grammar": [
         {
@@ -4227,6 +6738,85 @@
           "explain": "depend on."
         }
       ],
+      "translate": [
+        {
+          "tr": "Risk almayı severim.",
+          "en": "I like taking risks.",
+          "distract": [
+            "making",
+            "do"
+          ]
+        },
+        {
+          "tr": "Duruma göre değişir.",
+          "en": "It depends on the situation.",
+          "distract": [
+            "from",
+            "to"
+          ]
+        },
+        {
+          "tr": "Bence riske değer.",
+          "en": "I think it's worth the risk.",
+          "distract": [
+            "value",
+            "for"
+          ],
+          "accept": [
+            "I think it is worth the risk"
+          ]
+        },
+        {
+          "tr": "Bazen garantici oynamak daha iyidir.",
+          "en": "Sometimes it's better to play it safe.",
+          "distract": [
+            "playing",
+            "more"
+          ],
+          "accept": [
+            "Sometimes it is better to play it safe",
+            "It's sometimes better to play it safe"
+          ]
+        },
+        {
+          "tr": "Hiç büyük bir risk aldın mı?",
+          "en": "Have you ever taken a big risk?",
+          "distract": [
+            "took",
+            "made"
+          ]
+        },
+        {
+          "tr": "Bence risk almak önemlidir.",
+          "en": "In my opinion, taking risks is important.",
+          "distract": [
+            "take",
+            "are"
+          ],
+          "accept": [
+            "Taking risks is important in my opinion"
+          ]
+        },
+        {
+          "tr": "O riski almadığım için pişmanım.",
+          "en": "I regret not taking the risk.",
+          "distract": [
+            "to",
+            "take"
+          ]
+        },
+        {
+          "tr": "Sonunda risk işe yaradı.",
+          "en": "In the end, the risk paid off.",
+          "distract": [
+            "payed",
+            "at"
+          ],
+          "accept": [
+            "The risk paid off in the end"
+          ]
+        }
+      ],
       "mistakes": [
         {
           "topic": "risk",
@@ -4256,9 +6846,9 @@
     },
     {
       "id": "u14-stress",
-      "stage": 15,
+      "stage": 16,
       "date": "2026-11-11",
-      "title": "Aşama 15 · Stres, başa çıkma ve zihin",
+      "title": "Aşama 16 · Stres, başa çıkma ve zihin",
       "goal": "Bu aşamanın sonunda stresini, zor dönemlerini ve zihninin durumunu doğal ifadelerle anlatabileceksin.",
       "grammar": [
         {
@@ -4527,6 +7117,85 @@
           "explain": "reduce = azaltmak."
         }
       ],
+      "translate": [
+        {
+          "tr": "Gerçekten çok stresliyim.",
+          "en": "I'm really stressed out.",
+          "distract": [
+            "stressful",
+            "stressing"
+          ],
+          "accept": [
+            "I am really stressed out"
+          ]
+        },
+        {
+          "tr": "Baş ağrısı çekiyor.",
+          "en": "She suffers from headaches.",
+          "distract": [
+            "suffer",
+            "of"
+          ]
+        },
+        {
+          "tr": "Baskı altında daha iyi çalışırım.",
+          "en": "I work better under pressure.",
+          "distract": [
+            "in",
+            "good"
+          ],
+          "accept": [
+            "Under pressure I work better"
+          ]
+        },
+        {
+          "tr": "Stresle nasıl başa çıkıyorsun?",
+          "en": "How do you cope with stress?",
+          "distract": [
+            "are",
+            "to"
+          ]
+        },
+        {
+          "tr": "Aklım bir anda boşaldı.",
+          "en": "My mind went blank.",
+          "distract": [
+            "head",
+            "gone"
+          ]
+        },
+        {
+          "tr": "Ne rahatlama! Sınavı geçtim.",
+          "en": "What a relief! I passed the exam.",
+          "distract": [
+            "relax",
+            "How"
+          ]
+        },
+        {
+          "tr": "Merak etme, sadece geçici bir dönem.",
+          "en": "Don't worry, it's just a phase.",
+          "distract": [
+            "phases",
+            "worried"
+          ],
+          "accept": [
+            "Do not worry, it is just a phase",
+            "Don't worry, it is just a phase"
+          ]
+        },
+        {
+          "tr": "Stresi azaltmak için yürüyüşe çıkarım.",
+          "en": "I go for a walk to reduce stress.",
+          "distract": [
+            "reducing",
+            "make"
+          ],
+          "accept": [
+            "To reduce stress I go for a walk"
+          ]
+        }
+      ],
       "mistakes": [
         {
           "topic": "stress",
@@ -4553,12 +7222,1459 @@
           "note": "Ayrılınan ülke için emigrate from; gidilen ülke için immigrate to."
         }
       ]
+    },
+    {
+      "id": "u16-conversation-starters",
+      "stage": 17,
+      "date": "2026-11-16",
+      "title": "Aşama 17 · Sohbet başlatma ve tanışma",
+      "goal": "Bu aşamanın sonunda iş arkadaşlarınla, arkadaşlarınla ve yeni tanıştığın insanlarla doğal sorularla sohbet başlatıp sürdürebileceksin.",
+      "grammar": [
+        {
+          "topic": "small-talk",
+          "title": "Yeni biriyle tanışırken (5 soru)",
+          "summary": "1) What do you do? = Ne iş yapıyorsun? (What are you doing? = Şu an ne yapıyorsun? farklı!) Cevap: I'm a 3D artist. / I work from home. 2) Where are you from? / Where did you grow up? 3) How do you know + kişi? = ...yı nereden tanıyorsun? (I work with her. / We went to school together.) 4) Have you been here before? = Buraya daha önce geldin mi? (Present Perfect: have + been) 5) What do you do for fun? = Boş zamanlarında ne yaparsın? İpucu: soruyu sorup cevabı dinle, sonra kısa bir takip sorusu sor.",
+          "examples": [
+            "What do you do? — I'm a character designer. I work from home.",
+            "How do you know Sarah? — We work together.",
+            "Have you been here before? — No, it's my first time."
+          ]
+        },
+        {
+          "topic": "small-talk",
+          "title": "Tanıdıklarla gündelik sohbet (5 soru)",
+          "summary": "6) How's your day going? = Günün nasıl geçiyor? (Cevap kısa olur: Pretty good, thanks. How about you?) 7) How have you been? = Görüşmeyeli nasılsın? (uzun süre görmediğin biri için) 8) Any plans for the weekend? = Hafta sonu için planın var mı? (konuşmada \"Do you have\" düşer) 9) Did you do anything fun this weekend? = Hafta sonu eğlenceli bir şey yaptın mı? (geçmiş: did + V1) 10) Have you seen any good movies lately? = Son zamanlarda iyi bir film izledin mi? Dikkat: \"How are you?\" bir selamlaşmadır; uzun sağlık bilgisi beklenmez.",
+          "examples": [
+            "Hey! How's your day going? — Not bad, a little busy. You?",
+            "Any plans for the weekend? — Not really. Maybe a movie.",
+            "Did you do anything fun this weekend?"
+          ]
+        },
+        {
+          "topic": "small-talk",
+          "title": "Sohbeti sürdürmek: takip ifadeleri",
+          "summary": "Oh really? = Öyle mi? / How come? = Neden? Nasıl oldu? (How come + normal cümle sırası: How come you're tired? — How come are you tired ❌) / That sounds fun! / That sounds interesting! (sound + sıfat = kulağa ... geliyor; -ing sıfat: interesting, interested değil) / What about you? / How about you? = Ya sen? / What's that like? = Nasıl bir şey? / Nice to meet you. (ilk kez tanışınca) — Nice to see you (again). (tanıdığın birini görünce).",
+          "examples": [
+            "I work from home. — Oh really? What's that like?",
+            "I'm learning to sculpt. — That sounds fun! How come you started?",
+            "I love sci-fi movies. What about you?"
+          ]
+        },
+        {
+          "topic": "word-choice",
+          "title": "Tanımak, tanışmak, tartışmak",
+          "summary": "know = tanımak, bilmek (durum): I know her. / meet – met – met = tanışmak (ilk kez) ve buluşmak: We met in 2020. / get to know = zamanla tanımak, yakından tanımak: I'd like to get to know you better. (I want to know you better ❌ kulağa tuhaf gelir) / recognize = görünce tanımak, çıkarmak: I didn't recognize you! (I didn't know you ❌) / argue (with someone about something) = tartışmak, atışmak (gergin) / discuss + konu = bir konuyu konuşmak, görüşmek (discuss about ❌).",
+          "examples": [
+            "We met at a friend's party.",
+            "Sorry, I didn't recognize you with your new haircut!",
+            "I argued with my brother about money."
+          ]
+        }
+      ],
+      "vocab": [
+        {
+          "en": "How's your day going?",
+          "tr": "Günün nasıl geçiyor?",
+          "ex": "Hi, Tom! How's your day going?"
+        },
+        {
+          "en": "How have you been?",
+          "tr": "Görüşmeyeli nasılsın?",
+          "ex": "Long time no see! How have you been?"
+        },
+        {
+          "en": "What do you do?",
+          "tr": "Ne iş yapıyorsun?",
+          "ex": "What do you do? — I'm a 3D artist."
+        },
+        {
+          "en": "How do you know ...?",
+          "tr": "...yı nereden tanıyorsun?",
+          "ex": "How do you know Emma?"
+        },
+        {
+          "en": "Have you been here before?",
+          "tr": "Buraya daha önce geldin mi?",
+          "ex": "Nice place! Have you been here before?"
+        },
+        {
+          "en": "Any plans for the weekend?",
+          "tr": "Hafta sonu için planın var mı?",
+          "ex": "It's Friday! Any plans for the weekend?"
+        },
+        {
+          "en": "What do you do for fun?",
+          "tr": "Boş zamanlarında ne yaparsın?",
+          "ex": "What do you do for fun? — I draw and play games."
+        },
+        {
+          "en": "lately",
+          "tr": "son zamanlarda",
+          "ex": "Have you seen any good movies lately?"
+        },
+        {
+          "en": "How come?",
+          "tr": "Neden? Nasıl oldu?",
+          "ex": "I can't come tonight. — Oh, how come?"
+        },
+        {
+          "en": "That sounds fun!",
+          "tr": "Kulağa eğlenceli geliyor!",
+          "ex": "We're going camping. — That sounds fun!"
+        },
+        {
+          "en": "What about you?",
+          "tr": "Ya sen?",
+          "ex": "I love coffee. What about you?"
+        },
+        {
+          "en": "Nice to meet you.",
+          "tr": "Tanıştığıma memnun oldum.",
+          "ex": "I'm Baran. — Nice to meet you, Baran."
+        },
+        {
+          "en": "small talk",
+          "tr": "havadan sudan sohbet",
+          "ex": "I'm not very good at small talk."
+        },
+        {
+          "en": "coworker",
+          "tr": "iş arkadaşı",
+          "ex": "I had lunch with my coworkers."
+        },
+        {
+          "en": "meet – met – met",
+          "tr": "tanışmak; buluşmak",
+          "ex": "We met at university."
+        },
+        {
+          "en": "get to know",
+          "tr": "(zamanla) tanımak",
+          "ex": "I'd like to get to know my neighbors."
+        },
+        {
+          "en": "recognize",
+          "tr": "(görünce) tanımak",
+          "ex": "I didn't recognize you at first."
+        },
+        {
+          "en": "argue",
+          "tr": "tartışmak, atışmak",
+          "ex": "They often argue about politics."
+        },
+        {
+          "en": "discuss",
+          "tr": "(bir konuyu) görüşmek, konuşmak",
+          "ex": "We discussed the new project."
+        }
+      ],
+      "questions": [
+        {
+          "topic": "small-talk",
+          "q": "\"Ne iş yapıyorsun?\"",
+          "options": [
+            "What are you doing?",
+            "What do you do?",
+            "What is your do?"
+          ],
+          "answer": 1,
+          "explain": "What do you do? = Ne iş yapıyorsun? What are you doing? = Şu an ne yapıyorsun?"
+        },
+        {
+          "topic": "small-talk",
+          "q": "A: How's your day going? B: ___",
+          "options": [
+            "Pretty good, thanks. How about you?",
+            "I go to work every day.",
+            "Yes, I have."
+          ],
+          "answer": 0,
+          "explain": "Kısa ve olumlu cevap ver, sonra soruyu geri sor."
+        },
+        {
+          "topic": "small-talk",
+          "q": "Have you ___ here before?",
+          "options": [
+            "been",
+            "be",
+            "was"
+          ],
+          "answer": 0,
+          "explain": "Present Perfect: have + V3 (been)."
+        },
+        {
+          "topic": "small-talk",
+          "q": "Any plans ___ the weekend?",
+          "options": [
+            "for",
+            "in",
+            "to"
+          ],
+          "answer": 0,
+          "explain": "plans for the weekend."
+        },
+        {
+          "topic": "small-talk",
+          "q": "A: I'm learning to sculpt. B: Oh really? That sounds ___!",
+          "options": [
+            "interesting",
+            "interested",
+            "interest"
+          ],
+          "answer": 0,
+          "explain": "sound + sıfat. Bir şeyin özelliği -ing: interesting."
+        },
+        {
+          "topic": "small-talk",
+          "q": "How come ___?",
+          "options": [
+            "you're tired",
+            "are you tired",
+            "do you tired"
+          ],
+          "answer": 0,
+          "explain": "How come'dan sonra normal cümle sırası gelir: How come you're tired?"
+        },
+        {
+          "topic": "small-talk",
+          "q": "\"Sarah'yı nereden tanıyorsun?\"",
+          "options": [
+            "How do you know Sarah?",
+            "How do you meet Sarah?",
+            "How are you know Sarah?"
+          ],
+          "answer": 0,
+          "explain": "Kalıp: How do you know + kişi? know bir fiil, are gerekmez."
+        },
+        {
+          "topic": "small-talk",
+          "q": "A: I just moved here. B: ___",
+          "options": [
+            "Oh really? How do you like it so far?",
+            "Oh really? What do you like it?",
+            "Nice to see you again."
+          ],
+          "answer": 0,
+          "explain": "How do you like it (so far)? = (Şimdiye kadar) nasıl buldun?"
+        },
+        {
+          "topic": "small-talk",
+          "q": "(İlk kez tanışıyorsun) \"Tanıştığıma memnun oldum.\"",
+          "options": [
+            "Nice to meet you.",
+            "Nice to see you again."
+          ],
+          "answer": 0,
+          "explain": "İlk kez: meet. Tanıdık biri: see you again."
+        },
+        {
+          "topic": "word-choice",
+          "q": "We ___ at a party in 2020.",
+          "options": [
+            "met",
+            "knew",
+            "recognized"
+          ],
+          "answer": 0,
+          "explain": "tanışmak = meet (met)."
+        },
+        {
+          "topic": "word-choice",
+          "q": "I'd like to ___ you better.",
+          "options": [
+            "get to know",
+            "know",
+            "meet"
+          ],
+          "answer": 0,
+          "explain": "Zamanla tanımak = get to know."
+        },
+        {
+          "topic": "word-choice",
+          "q": "You look so different! I didn't ___ you.",
+          "options": [
+            "recognize",
+            "know",
+            "meet"
+          ],
+          "answer": 0,
+          "explain": "Görünce tanımak / çıkarmak = recognize."
+        },
+        {
+          "topic": "word-choice",
+          "q": "I ___ with my brother about money yesterday. We were both angry.",
+          "options": [
+            "argued",
+            "discussed",
+            "met"
+          ],
+          "answer": 0,
+          "explain": "Gergin tartışma = argue with someone."
+        },
+        {
+          "topic": "word-choice",
+          "q": "We ___ the new project in the meeting.",
+          "options": [
+            "discussed",
+            "discussed about"
+          ],
+          "answer": 0,
+          "explain": "discuss + konu (about yok)."
+        },
+        {
+          "topic": "small-talk",
+          "type": "write",
+          "q": "Çevir (Any ile başla): \"Hafta sonu için planın var mı?\"",
+          "answer": "Any plans for the weekend?",
+          "accept": [
+            "Any plans for the weekend",
+            "Any plans for this weekend?",
+            "Any plans for this weekend"
+          ],
+          "explain": "Konuşma dilinde \"Do you have\" düşer."
+        },
+        {
+          "topic": "small-talk",
+          "type": "write",
+          "q": "Sırala: you / do / do / what / for fun",
+          "answer": "What do you do for fun",
+          "accept": [
+            "What do you do for fun?"
+          ],
+          "explain": "Soru: What + do + you + do..."
+        },
+        {
+          "topic": "small-talk",
+          "type": "write",
+          "q": "Çevir: \"Buraya daha önce geldin mi?\"",
+          "answer": "Have you been here before?",
+          "accept": [
+            "Have you been here before",
+            "Have you ever been here before?",
+            "Have you ever been here before"
+          ],
+          "explain": "Present Perfect: Have you been...?"
+        },
+        {
+          "topic": "small-talk",
+          "type": "write",
+          "q": "Sırala: going / your / is / how / day",
+          "answer": "How is your day going",
+          "accept": [
+            "How is your day going?",
+            "How's your day going",
+            "How's your day going?"
+          ],
+          "explain": "How's = How is."
+        },
+        {
+          "topic": "word-choice",
+          "type": "write",
+          "q": "Boşluğu doldur (tanışmak, geçmiş): I ___ my best friend at university.",
+          "answer": "met",
+          "accept": [
+            "Met"
+          ],
+          "explain": "meet – met – met."
+        }
+      ],
+      "translate": [
+        {
+          "tr": "Tanıştığımıza memnun oldum.",
+          "en": "Nice to meet you.",
+          "distract": [
+            "meeting",
+            "with"
+          ]
+        },
+        {
+          "tr": "Günün nasıl geçiyor?",
+          "en": "How's your day going?",
+          "distract": [
+            "Where",
+            "goes"
+          ],
+          "accept": [
+            "How is your day going"
+          ]
+        },
+        {
+          "tr": "Daha önce burada bulundun mu?",
+          "en": "Have you been here before?",
+          "distract": [
+            "Did",
+            "went"
+          ]
+        },
+        {
+          "tr": "Eğlenmek için ne yaparsın?",
+          "en": "What do you do for fun?",
+          "distract": [
+            "make",
+            "are"
+          ]
+        },
+        {
+          "tr": "Onu nereden tanıyorsun?",
+          "en": "How do you know him?",
+          "distract": [
+            "does",
+            "knows"
+          ]
+        },
+        {
+          "tr": "Hafta sonu için planın var mı?",
+          "en": "Do you have any plans for the weekend?",
+          "distract": [
+            "Are",
+            "to"
+          ]
+        },
+        {
+          "tr": "Son zamanlarda nasılsın?",
+          "en": "How have you been lately?",
+          "distract": [
+            "are",
+            "was"
+          ]
+        },
+        {
+          "tr": "Seni daha iyi tanımak istiyorum.",
+          "en": "I want to get to know you better.",
+          "distract": [
+            "learn",
+            "meet"
+          ]
+        }
+      ],
+      "mistakes": [
+        {
+          "topic": "small-talk",
+          "wrong": "What are you doing? (= Ne iş yapıyorsun?)",
+          "right": "What do you do?",
+          "note": "Meslek sorusu Simple Present ile sorulur."
+        },
+        {
+          "topic": "small-talk",
+          "wrong": "How come are you tired?",
+          "right": "How come you're tired?",
+          "note": "How come + normal cümle sırası."
+        },
+        {
+          "topic": "word-choice",
+          "wrong": "I want to know you better.",
+          "right": "I'd like to get to know you better.",
+          "note": "Zamanla tanımak = get to know."
+        },
+        {
+          "topic": "word-choice",
+          "wrong": "Sorry, I didn't know you. You look different!",
+          "right": "Sorry, I didn't recognize you. You look different!",
+          "note": "Görünce tanımak = recognize."
+        },
+        {
+          "topic": "word-choice",
+          "wrong": "We discussed about the price.",
+          "right": "We discussed the price.",
+          "note": "discuss + konu, about yok."
+        },
+        {
+          "topic": "word-choice",
+          "wrong": "I argued to my brother.",
+          "right": "I argued with my brother.",
+          "note": "argue with + kişi, about + konu."
+        }
+      ]
+    },
+    {
+      "id": "u17-opinions",
+      "stage": 18,
+      "date": "2026-11-16",
+      "title": "Aşama 18 · Fikrini söylemek: katılmak ve katılmamak",
+      "goal": "Bu aşamanın sonunda fikrini doğal kalıplarla söyleyebilecek, birine kibarca katılabilecek ya da saygılı bir şekilde katılmadığını ifade edebileceksin.",
+      "grammar": [
+        {
+          "topic": "opinions",
+          "title": "Fikrini söylemek (6 kalıp)",
+          "summary": "1) I think (that) ... = Bence / Sanırım 2) In my opinion, ... = Bence (biraz daha resmi) 3) I feel like ... = Bana öyle geliyor ki (konuşma dili) 4) If you ask me, ... = Bana sorarsan (ask to me ❌) 5) As far as I'm concerned, ... = Bana kalırsa (kesin fikir) 6) Personally, ... = Şahsen. Kural: fikir için I think, I'm thinking ❌ (I'm thinking = şu an kafamda düşünüyorum: I'm thinking about my weekend.) Olumsuz fikirde olumsuzluk think'e gelir: I don't think it's a good idea. Dikkat: I feel like + V-ing = canım ... istiyor (I feel like eating pizza).",
+          "examples": [
+            "I think it's a great idea.",
+            "If you ask me, this movie is too long.",
+            "I feel like people work too much these days."
+          ]
+        },
+        {
+          "topic": "opinions",
+          "title": "Katılmak ve kibarca katılmamak (6 kalıp)",
+          "summary": "Katılmak: 7) I totally agree. = Kesinlikle katılıyorum. 8) You're right. = Haklısın. 9) That's a good point. = İyi bir noktaya değindin. Kibarca katılmamak: 10) I see what you mean, but ... = Ne demek istediğini anlıyorum ama... 11) I'm not so sure about that. = Bundan pek emin değilim. 12) I see it differently. = Ben farklı görüyorum. Kısa cevap: I don't think so. Kural: agree bir FİİLDİR: I agree / I don't agree / Do you agree? (I am agree ❌, Are you agree ❌). agree with + kişi/fikir. Zıttı: disagree.",
+          "examples": [
+            "I totally agree with you.",
+            "I see what you mean, but I think it's too expensive.",
+            "Do you agree? — I'm not so sure about that."
+          ]
+        },
+        {
+          "topic": "seem",
+          "title": "seem: ... görünüyor, ... gibi",
+          "summary": "seem + sıfat = (bana) ... görünüyor: It seems nice. You seem tired. seem bir fiil, o yüzden is eklenmez (It is seem ❌, You are seem ❌); he/she/it ile -s alır: She seems happy. Olumsuz ve soru do/does ile: He doesn't seem happy. Does she seem OK? (isn't seem ❌) seem like + isim / cümle: It seems like a good idea. Geçmiş: seemed. Benzerleri: look + sıfat (gözle: You look tired.), sound + sıfat (kulakla: That sounds fun.).",
+          "examples": [
+            "It seems nice.",
+            "You seem tired. Are you OK?",
+            "He doesn't seem happy today."
+          ]
+        }
+      ],
+      "vocab": [
+        {
+          "en": "I think ...",
+          "tr": "Bence / Sanırım ...",
+          "ex": "I think it's a good idea."
+        },
+        {
+          "en": "I feel like ...",
+          "tr": "Bana öyle geliyor ki ...",
+          "ex": "I feel like this city is getting more expensive."
+        },
+        {
+          "en": "If you ask me, ...",
+          "tr": "Bana sorarsan ...",
+          "ex": "If you ask me, the first movie was better."
+        },
+        {
+          "en": "As far as I'm concerned, ...",
+          "tr": "Bana kalırsa ...",
+          "ex": "As far as I'm concerned, health is more important than money."
+        },
+        {
+          "en": "Personally, ...",
+          "tr": "Şahsen ...",
+          "ex": "Personally, I prefer working from home."
+        },
+        {
+          "en": "I totally agree.",
+          "tr": "Kesinlikle katılıyorum.",
+          "ex": "I totally agree. It's too expensive."
+        },
+        {
+          "en": "You're right.",
+          "tr": "Haklısın.",
+          "ex": "You're right. We should leave early."
+        },
+        {
+          "en": "That's a good point.",
+          "tr": "İyi bir noktaya değindin.",
+          "ex": "That's a good point. I didn't think about that."
+        },
+        {
+          "en": "I see what you mean, but ...",
+          "tr": "Ne demek istediğini anlıyorum ama ...",
+          "ex": "I see what you mean, but I don't have time."
+        },
+        {
+          "en": "I'm not so sure about that.",
+          "tr": "Bundan pek emin değilim.",
+          "ex": "Is it really cheaper? I'm not so sure about that."
+        },
+        {
+          "en": "I see it differently.",
+          "tr": "Ben farklı görüyorum.",
+          "ex": "I understand your idea, but I see it differently."
+        },
+        {
+          "en": "I don't think so.",
+          "tr": "Sanmıyorum.",
+          "ex": "Will it rain today? — I don't think so."
+        },
+        {
+          "en": "agree with",
+          "tr": "...ile aynı fikirde olmak, katılmak",
+          "ex": "I agree with you."
+        },
+        {
+          "en": "disagree",
+          "tr": "katılmamak",
+          "ex": "I disagree with this idea."
+        },
+        {
+          "en": "seem",
+          "tr": "görünmek, gibi gelmek",
+          "ex": "You seem tired."
+        },
+        {
+          "en": "It seems like ...",
+          "tr": "... gibi görünüyor",
+          "ex": "It seems like a good plan."
+        },
+        {
+          "en": "You look tired.",
+          "tr": "Yorgun görünüyorsun.",
+          "ex": "You look tired. Did you sleep well?"
+        }
+      ],
+      "questions": [
+        {
+          "topic": "opinions",
+          "q": "___ it's a great idea.",
+          "options": [
+            "I think",
+            "I'm thinking",
+            "I am think"
+          ],
+          "answer": 0,
+          "explain": "Fikir için I think. I'm thinking = şu an düşünüyorum."
+        },
+        {
+          "topic": "opinions",
+          "q": "\"Sana katılıyorum.\"",
+          "options": [
+            "I agree with you.",
+            "I am agree with you.",
+            "I agree to you."
+          ],
+          "answer": 0,
+          "explain": "agree bir fiil: I agree with you. (I am agree ❌)"
+        },
+        {
+          "topic": "opinions",
+          "q": "___ you agree with me?",
+          "options": [
+            "Do",
+            "Are",
+            "Is"
+          ],
+          "answer": 0,
+          "explain": "agree fiil olduğu için soru do ile: Do you agree?"
+        },
+        {
+          "topic": "opinions",
+          "q": "\"Bunun iyi bir fikir olduğunu düşünmüyorum.\"",
+          "options": [
+            "I don't think it's a good idea.",
+            "I don't think it isn't a good idea.",
+            "I am not think it's a good idea."
+          ],
+          "answer": 0,
+          "explain": "Olumsuzluk think'e gelir, sonraki cümle olumlu kalır."
+        },
+        {
+          "topic": "opinions",
+          "q": "A: Working from home is always better. B: Hmm, I'm not so ___ about that.",
+          "options": [
+            "sure",
+            "agree",
+            "right"
+          ],
+          "answer": 0,
+          "explain": "I'm not so sure about that = kibarca katılmamak."
+        },
+        {
+          "topic": "opinions",
+          "q": "I see what you ___, but I think it's too expensive.",
+          "options": [
+            "mean",
+            "say",
+            "think"
+          ],
+          "answer": 0,
+          "explain": "Kalıp: I see what you mean, but ..."
+        },
+        {
+          "topic": "opinions",
+          "q": "If you ask ___, this movie is boring.",
+          "options": [
+            "me",
+            "I",
+            "to me"
+          ],
+          "answer": 0,
+          "explain": "ask + nesne zamiri: ask me (ask to me ❌, ask I ❌)."
+        },
+        {
+          "topic": "opinions",
+          "q": "As far as I'm ___, it's the best option.",
+          "options": [
+            "concerned",
+            "concerning",
+            "concern"
+          ],
+          "answer": 0,
+          "explain": "Kalıp: As far as I'm concerned = bana kalırsa."
+        },
+        {
+          "topic": "opinions",
+          "q": "A: We should leave early to avoid traffic. B: ___",
+          "options": [
+            "That's a good point.",
+            "I see it differently.",
+            "I don't think so."
+          ],
+          "answer": 0,
+          "explain": "Katılmak: That's a good point."
+        },
+        {
+          "topic": "opinions",
+          "q": "I feel like ___ pizza tonight. (canım pizza istiyor)",
+          "options": [
+            "eating",
+            "eat",
+            "to eat"
+          ],
+          "answer": 0,
+          "explain": "I feel like + V-ing = canım ... istiyor. (like burada edat.)"
+        },
+        {
+          "topic": "opinions",
+          "q": "I ___ with you. I see it differently.",
+          "options": [
+            "disagree",
+            "am disagree",
+            "don't agree to"
+          ],
+          "answer": 0,
+          "explain": "disagree de fiildir: I disagree (am ❌)."
+        },
+        {
+          "topic": "opinions",
+          "type": "write",
+          "q": "Çevir: \"Kesinlikle katılıyorum.\"",
+          "answer": "I totally agree.",
+          "accept": [
+            "I totally agree",
+            "I completely agree.",
+            "I completely agree",
+            "I totally agree with you.",
+            "I totally agree with you"
+          ],
+          "explain": "agree fiil: I totally agree."
+        },
+        {
+          "topic": "opinions",
+          "type": "write",
+          "q": "Sırala: point / a / that's / good",
+          "answer": "That's a good point",
+          "accept": [
+            "That's a good point.",
+            "That is a good point",
+            "That is a good point."
+          ],
+          "explain": "That's a good point = İyi bir noktaya değindin."
+        },
+        {
+          "topic": "opinions",
+          "type": "write",
+          "q": "Çevir (Personally ile başla): \"Şahsen, bence evden çalışmak daha iyi.\"",
+          "answer": "Personally, I think working from home is better.",
+          "accept": [
+            "Personally, I think working from home is better",
+            "Personally I think working from home is better.",
+            "Personally I think working from home is better",
+            "Personally, I think that working from home is better.",
+            "Personally, I think that working from home is better"
+          ],
+          "explain": "Personally, I think + cümle."
+        },
+        {
+          "topic": "opinions",
+          "type": "write",
+          "q": "Boşluğu doldur: I agree ___ you.",
+          "answer": "with",
+          "accept": [
+            "With"
+          ],
+          "explain": "agree with + kişi."
+        },
+        {
+          "topic": "seem",
+          "q": "You ___ tired. Are you OK?",
+          "options": [
+            "seem",
+            "are seem",
+            "seems"
+          ],
+          "answer": 0,
+          "explain": "seem bir fiil: You seem (are yok, you ile -s yok)."
+        },
+        {
+          "topic": "seem",
+          "q": "It ___ nice.",
+          "options": [
+            "seems",
+            "is seem",
+            "seem"
+          ],
+          "answer": 0,
+          "explain": "it ile -s: It seems nice."
+        },
+        {
+          "topic": "seem",
+          "q": "He ___ seem happy today.",
+          "options": [
+            "doesn't",
+            "isn't",
+            "don't"
+          ],
+          "answer": 0,
+          "explain": "seem fiil olduğu için olumsuz does ile: doesn't seem."
+        },
+        {
+          "topic": "seem",
+          "q": "It seems ___ a good idea.",
+          "options": [
+            "like",
+            "as",
+            "to"
+          ],
+          "answer": 0,
+          "explain": "seem like + isim."
+        },
+        {
+          "topic": "seem",
+          "q": "The new teacher ___ very kind.",
+          "options": [
+            "seems",
+            "seem",
+            "is seems"
+          ],
+          "answer": 0,
+          "explain": "he/she ile -s: seems."
+        },
+        {
+          "topic": "seem",
+          "type": "write",
+          "q": "Çevir (seem ile): \"Yorgun görünüyorsun.\"",
+          "answer": "You seem tired.",
+          "accept": [
+            "You seem tired",
+            "You look tired.",
+            "You look tired"
+          ],
+          "explain": "seem + sıfat. look tired da doğru."
+        }
+      ],
+      "translate": [
+        {
+          "tr": "Bana katılıyor musun?",
+          "en": "Do you agree with me?",
+          "distract": [
+            "Are",
+            "to"
+          ]
+        },
+        {
+          "tr": "Sana tamamen katılıyorum.",
+          "en": "I totally agree with you.",
+          "distract": [
+            "am",
+            "to"
+          ]
+        },
+        {
+          "tr": "Bugün yorgun görünüyorsun.",
+          "en": "You look tired today.",
+          "distract": [
+            "tiring",
+            "like"
+          ],
+          "accept": [
+            "Today you look tired"
+          ]
+        },
+        {
+          "tr": "Yeni öğretmen iyi biri gibi görünüyor.",
+          "en": "The new teacher seems nice.",
+          "distract": [
+            "seem",
+            "are"
+          ]
+        },
+        {
+          "tr": "Bu iyi bir fikir gibi görünüyor.",
+          "en": "It seems like a good idea.",
+          "distract": [
+            "is",
+            "seem"
+          ]
+        },
+        {
+          "tr": "Bundan pek emin değilim.",
+          "en": "I'm not so sure about that.",
+          "distract": [
+            "from",
+            "of"
+          ],
+          "accept": [
+            "I am not so sure about that"
+          ]
+        },
+        {
+          "tr": "Bence evden çalışmak daha iyi.",
+          "en": "I think working from home is better.",
+          "distract": [
+            "work",
+            "more"
+          ]
+        },
+        {
+          "tr": "Ne demek istediğini anlıyorum ama katılmıyorum.",
+          "en": "I see what you mean, but I disagree.",
+          "distract": [
+            "am",
+            "meaning"
+          ],
+          "accept": [
+            "I see what you mean, but I don't agree"
+          ]
+        }
+      ],
+      "mistakes": [
+        {
+          "topic": "opinions",
+          "wrong": "Are you agree with me?",
+          "right": "Do you agree with me?",
+          "note": "agree fiildir; soru do ile. (1. aşamadaki \"I am agree\" hatasıyla aynı kök.)"
+        },
+        {
+          "topic": "opinions",
+          "wrong": "I am not agree.",
+          "right": "I don't agree.",
+          "note": "Olumsuz: I don't agree ya da I disagree."
+        },
+        {
+          "topic": "opinions",
+          "wrong": "I'm thinking it's a good idea.",
+          "right": "I think it's a good idea.",
+          "note": "Fikir için Simple Present: I think."
+        },
+        {
+          "topic": "opinions",
+          "wrong": "If you ask to me, it is boring.",
+          "right": "If you ask me, it is boring.",
+          "note": "ask + kişi (to yok)."
+        },
+        {
+          "topic": "seem",
+          "wrong": "It is seem nice.",
+          "right": "It seems nice.",
+          "note": "seem fiil; is eklenmez, -s alır."
+        },
+        {
+          "topic": "seem",
+          "wrong": "You are seem tired.",
+          "right": "You seem tired.",
+          "note": "seem + sıfat, be yok."
+        },
+        {
+          "topic": "seem",
+          "wrong": "She isn't seem happy.",
+          "right": "She doesn't seem happy.",
+          "note": "Olumsuz does ile."
+        }
+      ]
+    },
+    {
+      "id": "u18-friends",
+      "stage": 19,
+      "date": "2026-11-18",
+      "title": "Aşama 19 · Arkadaşlık",
+      "goal": "Bu aşamanın sonunda arkadaşlarını, onlarla neler yaptığını ve onlara neden güvendiğini anlatabileceksin.",
+      "grammar": [
+        {
+          "topic": "friends",
+          "title": "Arkadaşlık collocation'ları",
+          "summary": "Bunları parça parça değil, bütün olarak öğren: make friends / make a friend (arkadaş edinmek; do friends ❌), keep in touch (with) (iletişimi koparmamak), spend time together (birlikte vakit geçirmek), have a lot in common (çok ortak noktası olmak), be a good friend (iyi bir arkadaş olmak), give support (destek olmak), share an interest (aynı şeyle ilgilenmek). Dikkat: 'Çok ortak noktamız var' → We have a lot in common (We have many common ❌).",
+          "examples": [
+            "It's not easy to make friends in a new city.",
+            "We have a lot in common, like music and travel.",
+            "I try to keep in touch with my old friends."
+          ]
+        },
+        {
+          "topic": "friends",
+          "title": "Arkadaşını anlatma kalıpları",
+          "summary": "I get on well with + kişi (iyi anlaşmak; 4. aşamadaki get along with ile aynı anlam). It's nice to have a friend who + fiil: who'dan sonra 3. tekil -s gelir (a friend who listens). We usually hang out + yer/zaman (at the park, on weekends). If I need help, I can always count on + kişi.",
+          "examples": [
+            "I get on well with my classmates.",
+            "It's nice to have a friend who always listens.",
+            "We usually hang out at the park on weekends.",
+            "If I need help, I can always count on my best friend."
+          ]
+        },
+        {
+          "topic": "friends",
+          "title": "Günlük dil (slang)",
+          "summary": "buddy (arkadaş, kanka; daha çok erkekler için), mate (arkadaş; İngiliz İngilizcesinde yaygın), bestie (en yakın arkadaş), hang out (with) (takılmak, birlikte vakit geçirmek), chill (rahatlamak, takılmak). Bunlar arkadaşlar arasında kullanılır; iş e-postasına veya resmi konuşmaya uygun değildir. chill ≠ cold: We just chilled at home = Evde takılıp dinlendik.",
+          "examples": [
+            "He's my buddy from school.",
+            "Let's hang out this weekend.",
+            "We just chilled at home."
+          ]
+        },
+        {
+          "topic": "count-on",
+          "title": "count on, rely on, depend on, trust",
+          "summary": "count on + kişi/şey = güvenmek, bel bağlamak. You can count on me (bana güvenebilirsin). I'm counting on you (sana güveniyorum, beni yarı yolda bırakma). Don't count on him (ona bel bağlama). I'm counting on your help. Benzerleri: rely on, depend on (bunlar da on alır). trust ise edat almaz: I trust you ✅, I trust on you ❌, I trust to you ❌. on bir edat olduğu için arkasından zamir gelirse nesne hali gelir: count on him / her / them.",
+          "examples": [
+            "You can count on me.",
+            "I know I can count on you.",
+            "I'm counting on your help.",
+            "Don't count on him.",
+            "You can always count on your friends."
+          ]
+        }
+      ],
+      "vocab": [
+        {
+          "en": "make friends",
+          "tr": "arkadaş edinmek",
+          "ex": "It's not easy to make friends in a new city."
+        },
+        {
+          "en": "keep in touch",
+          "tr": "iletişimi sürdürmek / görüşmeye devam etmek",
+          "ex": "Let's keep in touch!"
+        },
+        {
+          "en": "lose touch",
+          "tr": "bağlantıyı kaybetmek",
+          "ex": "We lost touch after school."
+        },
+        {
+          "en": "spend time together",
+          "tr": "birlikte vakit geçirmek",
+          "ex": "We spend a lot of time together."
+        },
+        {
+          "en": "have a lot in common",
+          "tr": "çok ortak noktası olmak",
+          "ex": "We have a lot in common, like music and travel."
+        },
+        {
+          "en": "be a good friend",
+          "tr": "iyi bir arkadaş olmak",
+          "ex": "She is kind and reliable. She is a good friend."
+        },
+        {
+          "en": "give support",
+          "tr": "destek olmak",
+          "ex": "Good friends give support in difficult times."
+        },
+        {
+          "en": "share an interest",
+          "tr": "aynı şeyle ilgilenmek / ortak ilgi alanı olmak",
+          "ex": "We share an interest in 3D art."
+        },
+        {
+          "en": "get on well with",
+          "tr": "... ile iyi anlaşmak",
+          "ex": "I get on well with my classmates."
+        },
+        {
+          "en": "It's nice to have a friend who ...",
+          "tr": "... bir arkadaşın olması güzel",
+          "ex": "It's nice to have a friend who always listens."
+        },
+        {
+          "en": "buddy",
+          "tr": "arkadaş / kanka (günlük dil)",
+          "ex": "He's my buddy from school."
+        },
+        {
+          "en": "mate",
+          "tr": "arkadaş (İngiliz İngilizcesi, günlük dil)",
+          "ex": "I went to the cinema with my mates."
+        },
+        {
+          "en": "bestie",
+          "tr": "en yakın arkadaş (günlük dil)",
+          "ex": "My bestie knows all my secrets."
+        },
+        {
+          "en": "hang out",
+          "tr": "takılmak / birlikte vakit geçirmek",
+          "ex": "We usually hang out at the park on weekends."
+        },
+        {
+          "en": "chill",
+          "tr": "rahatlamak / takılmak (günlük dil)",
+          "ex": "We just chilled at home."
+        },
+        {
+          "en": "best friend",
+          "tr": "en iyi arkadaş",
+          "ex": "What do you like most about your best friend?"
+        },
+        {
+          "en": "rely on",
+          "tr": "... -e güvenmek / dayanmak",
+          "ex": "You can rely on her."
+        },
+        {
+          "en": "depend on",
+          "tr": "... -e bağlı olmak / güvenmek",
+          "ex": "Children depend on their parents."
+        },
+        {
+          "en": "trust",
+          "tr": "güvenmek (edat almaz)",
+          "ex": "I trust you."
+        }
+      ],
+      "questions": [
+        {
+          "topic": "friends",
+          "q": "I ___ well with my classmates.",
+          "options": [
+            "get on",
+            "get in",
+            "have"
+          ],
+          "answer": 0,
+          "explain": "get on well with = iyi anlaşmak."
+        },
+        {
+          "topic": "friends",
+          "q": "We have a lot ___ common.",
+          "options": [
+            "in",
+            "on",
+            "at"
+          ],
+          "answer": 0,
+          "explain": "have a lot in common."
+        },
+        {
+          "topic": "friends",
+          "q": "It's nice to have a friend who always ___.",
+          "options": [
+            "listen",
+            "listens",
+            "listening"
+          ],
+          "answer": 1,
+          "explain": "a friend (tekil) who + fiil-s: listens."
+        },
+        {
+          "topic": "friends",
+          "q": "We usually ___ out at the park on weekends.",
+          "options": [
+            "hang",
+            "spend",
+            "make"
+          ],
+          "answer": 0,
+          "explain": "hang out = takılmak."
+        },
+        {
+          "topic": "count-on",
+          "q": "If I need help, I can always count ___ my best friend.",
+          "options": [
+            "to",
+            "on",
+            "at"
+          ],
+          "answer": 1,
+          "explain": "count on + kişi."
+        },
+        {
+          "topic": "friends",
+          "q": "It's not easy to ___ friends in a new city.",
+          "options": [
+            "do",
+            "make",
+            "take"
+          ],
+          "answer": 1,
+          "explain": "arkadaş edinmek = make friends."
+        },
+        {
+          "topic": "friends",
+          "q": "Let's keep in ___!",
+          "options": [
+            "touch",
+            "hand",
+            "time"
+          ],
+          "answer": 0,
+          "explain": "keep in touch = iletişimi koparmamak."
+        },
+        {
+          "topic": "friends",
+          "q": "\"bestie\" ne demek?",
+          "options": [
+            "çok yakın arkadaş",
+            "iş arkadaşı",
+            "komşu"
+          ],
+          "answer": 0,
+          "explain": "bestie = en yakın arkadaş (günlük dil)."
+        },
+        {
+          "topic": "friends",
+          "q": "\"We just chilled at home.\" ne demek?",
+          "options": [
+            "Evde üşüdük.",
+            "Evde takılıp dinlendik.",
+            "Evi temizledik."
+          ],
+          "answer": 1,
+          "explain": "chill (günlük dil) = rahatlamak, takılmak."
+        },
+        {
+          "topic": "friends",
+          "q": "Good friends ___ support in difficult times.",
+          "options": [
+            "give",
+            "make",
+            "do"
+          ],
+          "answer": 0,
+          "explain": "give support = destek olmak."
+        },
+        {
+          "topic": "friends",
+          "q": "We both love drawing. We ___ an interest in art.",
+          "options": [
+            "share",
+            "divide",
+            "give"
+          ],
+          "answer": 0,
+          "explain": "share an interest."
+        },
+        {
+          "topic": "friends",
+          "q": "I don't talk to my old classmates now. We didn't ___ in touch.",
+          "options": [
+            "keep",
+            "make",
+            "take"
+          ],
+          "answer": 0,
+          "explain": "keep in touch."
+        },
+        {
+          "topic": "friends",
+          "q": "\"How do you usually spend time with your friends?\" sorusuna en uygun cevap:",
+          "options": [
+            "We usually hang out at a café on weekends.",
+            "I spend 20 lira.",
+            "I have three friends."
+          ],
+          "answer": 0,
+          "explain": "spend time = vakit geçirmek; cevapta ne yaptığını ve nerede/ne zaman olduğunu söyle."
+        },
+        {
+          "topic": "count-on",
+          "q": "I ___ you. (Sana güveniyorum.)",
+          "options": [
+            "trust",
+            "trust on",
+            "trust to"
+          ],
+          "answer": 0,
+          "explain": "trust edat almaz."
+        },
+        {
+          "topic": "count-on",
+          "q": "Don't count on ___. He's always late.",
+          "options": [
+            "he",
+            "him",
+            "his"
+          ],
+          "answer": 1,
+          "explain": "Edattan (on) sonra nesne zamiri: him."
+        },
+        {
+          "topic": "count-on",
+          "q": "I'm counting on your ___.",
+          "options": [
+            "help",
+            "helps",
+            "to help"
+          ],
+          "answer": 0,
+          "explain": "count on + isim: your help."
+        },
+        {
+          "topic": "count-on",
+          "q": "\"You can always count on your friends.\" ne demek?",
+          "options": [
+            "Arkadaşlarını her zaman sayabilirsin.",
+            "Arkadaşlarına her zaman güvenebilirsin.",
+            "Arkadaşlarını her zaman arayabilirsin."
+          ],
+          "answer": 1,
+          "explain": "count on = güvenmek, bel bağlamak (count = saymak ile karıştırma)."
+        },
+        {
+          "topic": "count-on",
+          "q": "You can rely ___ her. She's very reliable.",
+          "options": [
+            "on",
+            "to",
+            "at"
+          ],
+          "answer": 0,
+          "explain": "rely on, depend on, count on: hepsi on alır."
+        },
+        {
+          "topic": "count-on",
+          "q": "Hangisi yanlış?",
+          "options": [
+            "I trust you.",
+            "You can count on me.",
+            "I trust on you."
+          ],
+          "answer": 2,
+          "explain": "trust edat almaz: I trust you."
+        },
+        {
+          "topic": "count-on",
+          "type": "write",
+          "q": "Çevir: \"Bana güvenebilirsin.\"",
+          "answer": "You can count on me.",
+          "accept": [
+            "You can rely on me.",
+            "You can trust me.",
+            "You can depend on me."
+          ],
+          "explain": "can + V1 (to yok) + count on + me."
+        },
+        {
+          "topic": "friends",
+          "type": "write",
+          "q": "Sırala: lot / in / We / have / a / common",
+          "answer": "We have a lot in common",
+          "explain": "have a lot in common kalıbı."
+        },
+        {
+          "topic": "friends",
+          "type": "write",
+          "q": "Boşluğu doldur: How do you usually ___ time with your friends? (vakit geçirmek)",
+          "answer": "spend",
+          "explain": "spend time = vakit geçirmek."
+        }
+      ],
+      "translate": [
+        {
+          "tr": "Bana güvenebilirsin.",
+          "en": "You can count on me.",
+          "distract": [
+            "to",
+            "at"
+          ]
+        },
+        {
+          "tr": "Çok ortak noktamız var.",
+          "en": "We have a lot in common.",
+          "distract": [
+            "many",
+            "on"
+          ]
+        },
+        {
+          "tr": "Sınıf arkadaşlarımla iyi anlaşırım.",
+          "en": "I get on well with my classmates.",
+          "distract": [
+            "to",
+            "good"
+          ]
+        },
+        {
+          "tr": "Hafta sonları genelde parkta takılırız.",
+          "en": "We usually hang out at the park on weekends.",
+          "distract": [
+            "hanging",
+            "to"
+          ],
+          "accept": [
+            "On weekends we usually hang out at the park"
+          ]
+        },
+        {
+          "tr": "Ona bel bağlama. Hep geç kalır.",
+          "en": "Don't count on him. He's always late.",
+          "distract": [
+            "his",
+            "to"
+          ],
+          "accept": [
+            "Do not count on him. He is always late",
+            "Don't count on him. He is always late"
+          ]
+        },
+        {
+          "tr": "Yeni bir şehirde arkadaş edinmek kolay değil.",
+          "en": "It isn't easy to make friends in a new city.",
+          "distract": [
+            "do",
+            "making"
+          ],
+          "accept": [
+            "It's not easy to make friends in a new city",
+            "It is not easy to make friends in a new city"
+          ]
+        },
+        {
+          "tr": "Her zaman dinleyen bir arkadaşın olması güzel.",
+          "en": "It's nice to have a friend who always listens.",
+          "distract": [
+            "listen",
+            "which"
+          ],
+          "accept": [
+            "It is nice to have a friend who always listens"
+          ]
+        },
+        {
+          "tr": "Eski arkadaşlarımla iletişimi koparmamaya çalışıyorum.",
+          "en": "I try to keep in touch with my old friends.",
+          "distract": [
+            "make",
+            "from"
+          ]
+        }
+      ],
+      "mistakes": [
+        {
+          "topic": "count-on",
+          "wrong": "I trust on you.",
+          "right": "I trust you.",
+          "note": "trust edat almaz. count on / rely on / depend on ise on alır."
+        },
+        {
+          "topic": "friends",
+          "wrong": "We have many common.",
+          "right": "We have a lot in common.",
+          "note": "Kalıp bütün olarak: have a lot in common."
+        },
+        {
+          "topic": "friends",
+          "wrong": "I want to do new friends.",
+          "right": "I want to make new friends.",
+          "note": "arkadaş edinmek = make friends."
+        },
+        {
+          "topic": "friends",
+          "wrong": "It's nice to have a friend who always listen.",
+          "right": "It's nice to have a friend who always listens.",
+          "note": "a friend tekil → who listens (-s)."
+        },
+        {
+          "topic": "friends",
+          "wrong": "I get well with my classmates.",
+          "right": "I get on well with my classmates.",
+          "note": "on unutulmaz: get on well with."
+        }
+      ]
     }
   ],
   "topics": {
     "story": "Hikaye",
     "present-simple": "Simple Present",
     "have-has": "Have / Has",
+    "present-continuous": "Present Continuous",
     "frequency": "Rutin ve sıklık zarfları",
     "prepositions": "In / On / At",
     "pronouns": "Zamirler ve sahiplik",
@@ -4566,6 +8682,7 @@
     "was-were": "Was / Were",
     "birth-death": "Doğum ve ölüm",
     "used-to": "Used to",
+    "be-used-to": "Be used to (alışkın olmak)",
     "regret": "Regret",
     "future": "Will / Going to",
     "first-conditional": "First Conditional",
@@ -4581,6 +8698,10 @@
     "opinions": "Fikir belirtme",
     "stress": "Stres ve başa çıkma",
     "word-choice": "Karışan kelimeler",
+    "small-talk": "Sohbet başlatma",
+    "seem": "Seem (görünmek)",
+    "friends": "Arkadaşlık",
+    "count-on": "Count on / rely on / trust",
     "vocab": "Kelime",
     "mistakes": "Sık hatalar"
   },
@@ -4832,6 +8953,102 @@
           "q": "Sırala: Nilo / went / on / a / journey",
           "answer": "Nilo went on a journey",
           "explain": "go on a journey = yolculuğa çıkmak (geçmiş: went)."
+        }
+      ]
+    },
+    {
+      "id": "s04-stranger-lumi",
+      "emoji": "🌫️",
+      "title": "Lumi, the Stranger in the Blue House",
+      "titleTr": "Doğduğu evde yabancı gibi hisseden Lumi",
+      "pages": [
+        "Lumi was born in a small blue house at the end of a quiet street. But from the beginning, Lumi felt like a [[stranger|yabancı]]. Nobody in the house could see it. The family talked, ate and laughed, and Lumi only watched from the [[stairs|merdivenler]]. “Do I [[belong|ait olmak]] here?” it thought. “I'm not sure.”",
+        "As Lumi [[grew up|büyüdü]], it started to collect feelings. Every morning, it [[picked up|topladı]] little ones from the floor: the [[excitement|heyecan]] of the boy before school, the [[worry|endişe]] of the mother at the window. Lumi kept them in an old jar. At night, it opened the jar and felt them [[one by one|teker teker]].",
+        "But the feelings were not quiet. They always wanted to go somewhere. So Lumi [[followed|takip etti]] them. Excitement took it to the garden, where the boy was [[planting|dikiyordu]] his first tree. Worry took it to a dark room, where the grandfather couldn't sleep. Lumi sat next to him until the morning. “I can't fix it,” Lumi thought, “but I can stay.”",
+        "Day by day, something changed. Lumi's hands were not [[see-through|şeffaf]] anymore. They were soft and grey, like morning [[fog|sis]]. One evening, the little boy looked at the stairs and smiled. “Hi! You seem new here.” Lumi [[blushed|kızardı]]. “I'm the oldest one here,” it thought. Every feeling it [[carried|taşıdı]] made it a little more real. Now Lumi knew: you don't find a home. You slowly [[become part of|bir yerin parçası olmak]] it."
+      ],
+      "questions": [
+        {
+          "type": "mc",
+          "q": "Where was Lumi born?",
+          "options": [
+            "In a small blue house",
+            "In an old lighthouse",
+            "In a hospital"
+          ],
+          "answer": 0,
+          "explain": "Lumi was born in a small blue house at the end of a quiet street."
+        },
+        {
+          "type": "mc",
+          "q": "What did Lumi keep in the old jar?",
+          "options": [
+            "Feelings",
+            "Toys",
+            "Letters"
+          ],
+          "answer": 0,
+          "explain": "It collected feelings and kept them in an old jar."
+        },
+        {
+          "type": "mc",
+          "q": "Where did Worry take Lumi?",
+          "options": [
+            "To a dark room with the grandfather",
+            "To the garden",
+            "To the boy's school"
+          ],
+          "answer": 0,
+          "explain": "Worry took it to a dark room, where the grandfather couldn't sleep."
+        },
+        {
+          "type": "mc",
+          "q": "Who saw Lumi first?",
+          "options": [
+            "The little boy",
+            "The mother",
+            "The grandfather"
+          ],
+          "answer": 0,
+          "explain": "The little boy looked at the stairs and smiled."
+        },
+        {
+          "type": "mc",
+          "q": "Doğru mu yanlış mı? “At the beginning, the family could see Lumi.”",
+          "options": [
+            "Doğru",
+            "Yanlış"
+          ],
+          "answer": 1,
+          "explain": "Yanlış. “Nobody in the house could see it.”"
+        },
+        {
+          "type": "mc",
+          "q": "The grandfather couldn't ___.",
+          "options": [
+            "sleep",
+            "slept",
+            "sleeping"
+          ],
+          "answer": 0,
+          "explain": "could / couldn't + V1: couldn't sleep. (I couldn't slept ❌)"
+        },
+        {
+          "type": "mc",
+          "q": "At the end, Lumi ___ a stranger anymore.",
+          "options": [
+            "wasn't",
+            "didn't",
+            "doesn't"
+          ],
+          "answer": 0,
+          "explain": "stranger bir isim, yani be: wasn't a stranger. (didn't ❌)"
+        },
+        {
+          "type": "write",
+          "q": "Sırala: Lumi / followed / the / feelings",
+          "answer": "Lumi followed the feelings",
+          "explain": "follow = takip etmek (geçmiş: followed)."
         }
       ]
     }

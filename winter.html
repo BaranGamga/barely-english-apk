@@ -1,0 +1,1214 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,viewport-fit=cover">
+<title>Barely English · Winter Smells Cold</title>
+<script>try{localStorage.setItem("be-edition","winter")}catch(e){}</script>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/icon-180.png">
+<link rel="icon" type="image/png" href="icons/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Barely English">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#1c0b30">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Nunito:wght@400;600;800&display=swap">
+<style>
+/* Layout: phone-first single column, sticky level header, bottom tab bar, Zohre the duck reacts in quiz */
+:root{
+  --bg:#f5effd; --surface:#ffffff; --fg:#2a1145; --muted:#6e5a8a; --line:#e4d8f5;
+  --accent:#7b2fd0; --accent-ink:#ffffff; --accent-soft:#ece0fb;
+  --sun:#ffc928; --sun-soft:#fff3c4; --good:#14a35f; --good-soft:#d8f6e6; --bad:#ef5644; --bad-soft:#ffe1dc;
+  --owl:#8a6a4f; --owl-belly:#f3dcc0;
+  --display:"Baloo 2","Trebuchet MS",system-ui,sans-serif; --body:"Nunito",system-ui,sans-serif;
+  --top:env(safe-area-inset-top,0px); --bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#1c0b30; --surface:#2a1446; --fg:#f6efff; --muted:#b9a6d6; --line:#3e2463;
+  --accent:#b47cff; --accent-ink:#1c0b30; --accent-soft:#3f2266;
+  --sun:#ffcf5c; --sun-soft:#3d3214; --good:#39d98a; --good-soft:#123d29; --bad:#ff7a69; --bad-soft:#4a1f1a;
+  --owl:#b08c6c; --owl-belly:#e8cfae; color-scheme:dark}}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;min-height:100%}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.5;user-select:none;-webkit-user-select:none}
+h1,h2,h3{font-family:var(--display);margin:0;line-height:1.15}
+h1{font-size:1.9rem} h2{font-size:1.35rem} h3{font-size:1.1rem}
+.muted{color:var(--muted)}
+header{position:sticky;top:0;z-index:5;background:var(--bg);padding:calc(10px + var(--top)) 16px 10px;display:flex;align-items:center;gap:12px}
+.lvl{width:44px;height:44px;border-radius:50%;background:var(--sun);color:#3a2a00;display:grid;place-items:center;font-family:var(--display);font-weight:800;font-size:1.2rem;flex:none}
+.xpbox{flex:1;min-width:0}
+.xpbox small{display:flex;justify-content:space-between;font-weight:800;font-size:.78rem;color:var(--muted)}
+.xpbar{height:10px;border-radius:10px;background:var(--line);overflow:hidden}
+.xpbar i{display:block;height:100%;background:var(--sun);border-radius:10px;transition:width .6s cubic-bezier(.2,1.4,.4,1)}
+.chip{display:flex;align-items:center;gap:4px;font-weight:800;background:var(--surface);border:1px solid var(--line);border-radius:99px;padding:4px 10px;flex:none}
+.iconbtn{background:none;border:0;color:var(--muted);padding:6px;flex:none}
+.iconbtn svg{width:24px;height:24px}
+main{max-width:560px;margin:0 auto;padding:4px 16px calc(96px + var(--bottom));display:flex;flex-direction:column;gap:14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:16px;display:flex;flex-direction:column;gap:10px}
+.eyebrow{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:800}
+button{font:inherit;cursor:pointer;border:0;border-radius:14px;padding:13px 16px;font-weight:800;color:inherit;transition:transform .08s}
+button:active{transform:scale(.96)}
+button:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.btn{background:var(--accent);color:var(--accent-ink);box-shadow:0 4px 0 color-mix(in srgb,var(--accent) 60%,#000)}
+.btn:active{box-shadow:0 1px 0 color-mix(in srgb,var(--accent) 60%,#000);transform:translateY(3px)}
+.btn.soft{background:var(--accent-soft);color:var(--fg);box-shadow:none}
+.btn.wide{width:100%}
+.row{display:flex;gap:10px;flex-wrap:wrap}
+.row>*{flex:1}
+.hero{display:flex;gap:14px;align-items:center}
+.hero .owlwrap{width:120px;flex:none}
+.bubble{position:relative;background:var(--surface);border:2px solid var(--line);border-radius:16px;padding:10px 12px;font-weight:700}
+.card.goal{flex-direction:row;align-items:center;gap:14px}
+.ring{width:64px;height:64px;flex:none}
+.pill{display:inline-block;font-size:.75rem;font-weight:800;padding:3px 10px;border-radius:99px;background:var(--accent-soft)}
+.pill.bad{background:var(--bad-soft);color:var(--bad)}
+.badges{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.badge{text-align:center;font-size:.7rem;font-weight:700;color:var(--muted);display:flex;flex-direction:column;align-items:center;gap:2px}
+.badge b{font-size:1.7rem;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:var(--sun-soft)}
+.badge.locked b{filter:grayscale(1);opacity:.35;background:var(--line)}
+.built{min-height:52px;border:2px dashed var(--line);border-radius:14px;padding:10px;display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.built .pill{font-size:1rem;padding:5px 12px}
+.wordbank{display:flex;flex-wrap:wrap;gap:8px}
+.word{background:var(--surface);border:2px solid var(--line);border-bottom-width:4px;padding:9px 14px;font-weight:800}
+.word:disabled{opacity:.25}
+.card.update{border:2px solid var(--sun);background:var(--sun-soft)}
+.road{display:flex;flex-direction:column;gap:8px}
+.stage-row{display:flex;align-items:center;gap:12px;text-align:left;background:var(--bg);border:2px solid var(--line);padding:10px 12px;width:100%}
+.stage-row .dot{width:36px;height:36px;border-radius:50%;flex:none;display:grid;place-items:center;font-family:var(--display);font-weight:800;background:var(--line);color:var(--muted)}
+.stage-row .st-body{flex:1;min-width:0;display:flex;flex-direction:column;gap:3px}
+.stage-row small{color:var(--muted);font-weight:700}
+.stage-row .track{height:6px}
+.stage-row .track i{background:var(--accent)}
+.stage-row.done .dot{background:var(--good);color:#fff}
+.stage-row.done .track i{background:var(--good)}
+.stage-row.now{border-color:var(--accent);background:var(--accent-soft)}
+.stage-row.now .dot{background:var(--sun);color:#3a2a00}
+.stage-row.next{opacity:.75}
+.topic{display:flex;align-items:center;gap:8px;font-size:.92rem}
+.topic span{width:110px;flex:none}
+.track{flex:1;height:10px;border-radius:10px;background:var(--line);overflow:hidden}
+.track i{display:block;height:100%;border-radius:10px}
+/* quiz */
+.qtop{display:flex;align-items:center;gap:10px}
+.qtop .track{height:14px}
+.qtop .track i{background:var(--accent);transition:width .4s}
+.combo{font-family:var(--display);font-weight:800;color:var(--bad);min-width:52px;text-align:right}
+.stage{display:flex;align-items:flex-end;gap:10px}
+.stage .owlwrap{width:104px;flex:none}
+.stage .bubble{flex:1}
+.q{font-size:1.3rem;font-weight:800;line-height:1.35}
+.opts{display:flex;flex-direction:column;gap:10px}
+.opt{text-align:left;background:var(--surface);border:2px solid var(--line);border-bottom-width:4px;font-weight:700;font-size:1.05rem}
+.opt.ok{border-color:var(--good);background:var(--good-soft);animation:pop .35s}
+.opt.no{border-color:var(--bad);background:var(--bad-soft);animation:shake .4s}
+.opt:disabled{cursor:default}
+.fb{border-radius:16px;padding:14px;display:flex;flex-direction:column;gap:8px;animation:up .25s}
+.fb.ok{background:var(--good-soft)} .fb.no{background:var(--bad-soft)}
+.fb b.t{font-family:var(--display);font-size:1.25rem}
+.fb.ok b.t{color:var(--good)} .fb.no b.t{color:var(--bad)}
+input[type=text]{font:inherit;font-size:1.05rem;width:100%;padding:13px;border-radius:14px;border:2px solid var(--line);background:var(--surface);color:var(--fg);user-select:text}
+input[type=text]:focus{outline:none;border-color:var(--accent)}
+.ex{border-left:4px solid var(--sun);padding-left:10px;font-style:italic}
+.wrong{color:var(--bad);text-decoration:line-through;font-weight:700}
+.right{color:var(--good);font-weight:800}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.tile{background:var(--surface);border:2px solid var(--line);border-bottom-width:4px;min-height:64px;font-weight:800}
+.tile.sel{border-color:var(--accent);background:var(--accent-soft)}
+.tile.done{animation:vanish .4s forwards;pointer-events:none}
+.tile.bad{border-color:var(--bad);background:var(--bad-soft);animation:shake .4s}
+.flash{min-height:220px;justify-content:center;align-items:center;text-align:center;perspective:800px}
+.flash .big{font-family:var(--display);font-size:2.1rem;font-weight:800}
+.end{align-items:center;text-align:center}
+.end .score{font-family:var(--display);font-size:3rem;font-weight:800;line-height:1}
+.toggle{display:flex;justify-content:space-between;align-items:center;font-weight:700}
+.toggle input{width:22px;height:22px;accent-color:var(--accent)}
+.floatxp{position:fixed;z-index:30;font-family:var(--display);font-weight:800;font-size:1.5rem;color:var(--sun);text-shadow:0 2px 0 rgba(0,0,0,.25);pointer-events:none;animation:floatup 1s forwards}
+#toast{position:fixed;left:16px;right:16px;top:calc(12px + var(--top));z-index:40;display:flex;justify-content:center;pointer-events:none}
+#toast div{background:var(--fg);color:var(--bg);border-radius:16px;padding:12px 16px;font-weight:800;box-shadow:0 8px 24px rgba(0,0,0,.25);animation:up .3s}
+nav{position:fixed;left:0;right:0;bottom:0;z-index:5;background:var(--surface);border-top:1px solid var(--line);display:flex;padding:6px 8px calc(6px + var(--bottom))}
+nav button{background:none;color:var(--muted);padding:6px 2px;font-size:.7rem;display:flex;flex-direction:column;align-items:center;gap:2px;flex:1;border-radius:12px}
+nav button svg{width:26px;height:26px}
+nav button.on{color:var(--accent);background:var(--accent-soft)}
+#fx{position:fixed;inset:0;pointer-events:none;z-index:50}
+/* Zohre moods */
+.owl{display:block;width:100%;height:auto;transform-origin:50% 100%;filter:drop-shadow(0 6px 10px rgba(40,10,70,.25))}
+.owl.idle{animation:breathe 3s ease-in-out infinite}
+.owl.teach{animation:sway 2.6s ease-in-out infinite}
+.owl.happy{animation:hop .7s}
+.owl.sad{animation:shake .5s}
+.say-big{font-family:var(--display);font-size:1.25rem;font-weight:800;line-height:1.2}
+.bubble.happy{border-color:var(--good);background:var(--good-soft)}
+.bubble.sad{border-color:var(--bad);background:var(--bad-soft)}
+/* hikayeler */
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.story p{margin:0 0 .6em;font-size:1.15rem;line-height:1.8;font-weight:600}
+.gw{color:var(--accent);font-weight:800;border-bottom:2px dotted var(--accent);cursor:pointer;border-radius:4px;padding:0 1px}
+.gw.seen{background:var(--sun-soft)}
+.gw.act{background:var(--accent);color:var(--accent-ink)}
+#pop{position:fixed;z-index:45;background:var(--fg);color:var(--bg);padding:8px 14px;border-radius:14px;font-weight:800;font-size:1.05rem;box-shadow:0 8px 24px rgba(0,0,0,.3);max-width:280px;pointer-events:none;animation:up .15s}
+#pop small{display:block;font-weight:600;font-size:.75rem;opacity:.7}
+.dots{display:flex;gap:6px;justify-content:center}
+.dots i{width:9px;height:9px;border-radius:50%;background:var(--line)}
+.dots i.on{background:var(--accent)}
+/* ===== Winter Smells Cold: temalar ===== */
+:root{--ember:#ff7a2f;--ember-soft:#ffe6d6;--snow:#eaf4ff}
+@media (prefers-color-scheme:dark){:root{--ember:#ff9a57;--ember-soft:#4a2414;--snow:#1e2a44}}
+body.th-dragon{background:radial-gradient(1200px 500px at 110% -10%,color-mix(in srgb,var(--ember) 18%,transparent),transparent 60%),radial-gradient(900px 500px at -20% 110%,color-mix(in srgb,var(--accent) 16%,transparent),transparent 60%) fixed,var(--bg)}
+body.th-winter{background:radial-gradient(1000px 500px at 50% -20%,color-mix(in srgb,var(--snow) 70%,transparent),transparent 60%) fixed,var(--bg)}
+body.th-dragon header,body.th-winter header{background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px)}
+.banner{border-radius:20px;padding:14px 16px;display:flex;gap:12px;align-items:center;color:#fff;background:linear-gradient(120deg,#5b0a9e,#9b2fd0 55%,var(--ember));box-shadow:0 6px 18px rgba(91,10,158,.3)}
+.th-winter .banner{background:linear-gradient(120deg,#3b2a8a,#5b7fd6 60%,#9fd3ff)}
+.banner .big{font-size:2.4rem;line-height:1}
+.banner small{opacity:.9;font-weight:700}
+.coin{display:inline-flex;align-items:center;gap:4px;font-weight:800}
+.chip.coins{background:var(--sun-soft);border-color:var(--sun);color:var(--fg)}
+.xpbox small{gap:8px}
+.xpbox small span{white-space:nowrap}
+/* görevler */
+.quest{display:flex;align-items:center;gap:10px}
+.quest .qi{font-size:1.5rem;width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:var(--accent-soft);flex:none}
+.quest .qb{flex:1;min-width:0;display:flex;flex-direction:column;gap:4px}
+.quest .track{height:8px}.quest .track i{background:var(--sun)}
+.quest.done .qi{background:var(--good-soft)}
+.quest button{padding:8px 12px;font-size:.85rem}
+/* pratik modları */
+.modes{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.mode{background:var(--surface);border:2px solid var(--line);border-bottom-width:5px;border-radius:20px;padding:14px 12px;text-align:left;display:flex;flex-direction:column;gap:4px;min-height:130px}
+.mode .mi{font-size:2rem;line-height:1}
+.mode b{font-family:var(--display);font-size:1.1rem}
+.mode small{color:var(--muted);font-weight:700;line-height:1.3}
+.mode.sel{border-color:var(--accent);background:var(--accent-soft)}
+.diff{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.diff button{background:var(--surface);border:2px solid var(--line);border-bottom-width:4px;display:flex;flex-direction:column;align-items:center;gap:2px;padding:10px 4px}
+.diff button span{font-size:1.6rem;line-height:1}
+.diff button small{color:var(--muted);font-size:.72rem}
+.diff button.sel{border-color:var(--ember);background:var(--ember-soft)}
+/* ejderha savaşı */
+.arena{display:flex;align-items:flex-end;gap:8px}
+.arena .owlwrap{width:84px;flex:none}
+.arena .bubble{flex:1;font-size:.95rem}
+.foe{width:96px;flex:none;display:flex;flex-direction:column;align-items:center;gap:4px}
+.foe .dr{font-size:3.6rem;line-height:1;filter:drop-shadow(0 6px 8px rgba(0,0,0,.25));transform:scaleX(-1)}
+.foe.s1 .dr{font-size:2.8rem}.foe.s3 .dr{font-size:4.4rem}
+.foe .hp{width:100%;height:10px;border-radius:10px;background:var(--line);overflow:hidden}
+.foe .hp i{display:block;height:100%;background:linear-gradient(90deg,var(--bad),var(--ember));transition:width .4s}
+.foe small{font-weight:800;font-size:.72rem;color:var(--muted)}
+.foe.hit .dr{animation:hit .45s}
+.foe.fire .dr{animation:roar .6s}
+.hearts{font-size:1.05rem;letter-spacing:1px;white-space:nowrap}
+.boom{position:fixed;z-index:31;font-size:2.4rem;pointer-events:none;animation:boom .7s forwards}
+@keyframes hit{20%{transform:scaleX(-1) translateX(10px) rotate(8deg);filter:brightness(2)}60%{transform:scaleX(-1) translateX(-4px)}}
+@keyframes roar{30%{transform:scaleX(-1) scale(1.18)}}
+@keyframes boom{0%{transform:scale(.4);opacity:0}30%{transform:scale(1.3);opacity:1}100%{transform:scale(1) translateY(-30px);opacity:0}}
+.chest{font-size:4rem;line-height:1;animation:hop .8s 2}
+/* Zohre'nin dünyası */
+.room{position:relative;height:330px;border-radius:24px;overflow:hidden;border:2px solid var(--line);background:var(--wall,#f3e6ff)}
+.room .floor{position:absolute;left:0;right:0;bottom:0;height:34%;background:var(--floor,#e0c39a)}
+.room .slot{position:absolute;line-height:1;text-align:center}
+.room .s-window{left:6%;top:7%;width:30%;height:28%;border-radius:12px;border:5px solid #fff8;background:var(--sky,#bfe3ff);display:grid;place-items:center;font-size:1.8rem}
+.room .s-wall{left:42%;top:8%;font-size:2rem}
+.room .s-shelf{right:5%;top:10%;min-width:28%;white-space:nowrap;padding:6px 4px 4px;border-bottom:6px solid #8a5a35;font-size:1.25rem;letter-spacing:-2px}
+.room .s-lamp{left:5%;bottom:30%;font-size:2.2rem}
+.room .s-plant{right:5%;bottom:30%;font-size:2.4rem}
+.room .s-rug{left:22%;right:22%;bottom:6%;height:14%;border-radius:50%;background:var(--rug,transparent)}
+.room .s-toy{left:10%;bottom:6%;font-size:2rem}
+.room .s-pet{right:12%;bottom:8%;font-size:2.4rem;animation:breathe 2.4s ease-in-out infinite}
+.room .zoh{position:absolute;left:50%;bottom:8%;width:150px;transform:translateX(-50%)}
+.worn{position:relative;container-type:inline-size}
+.worn .acc{position:absolute;line-height:1;pointer-events:none;text-align:center}
+.worn .a-head{left:58%;top:-2%;font-size:22cqw;transform:translateX(-50%) rotate(-10deg)}
+.worn .a-eyes{left:50%;top:24%;font-size:44cqw;transform:translateX(-50%)}
+.worn .a-neck{left:50%;top:50%;font-size:30cqw;transform:translateX(-50%)}
+.worn .a-side{right:-14%;bottom:-2%;font-size:28cqw}
+.shop{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.item{background:var(--surface);border:2px solid var(--line);border-bottom-width:4px;border-radius:16px;padding:10px 6px;display:flex;flex-direction:column;align-items:center;gap:3px;text-align:center}
+.item .ie{font-size:2rem;line-height:1.1;min-height:2.2rem}
+.item b{font-size:.8rem;line-height:1.2}
+.item small{font-size:.72rem;color:var(--muted);font-weight:800}
+.item.own{border-color:var(--good)}
+.item.on{background:var(--good-soft)}
+.item.lock{opacity:.6}
+.cats{display:flex;gap:6px;overflow-x:auto;padding-bottom:2px}
+.cats button{flex:none;padding:8px 12px;background:var(--surface);border:2px solid var(--line);font-size:.85rem}
+.cats button.on{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+@keyframes hop{30%{transform:translateY(-18px) scale(1.06,.94)}60%{transform:translateY(0) scale(.95,1.05)}}
+@keyframes breathe{50%{transform:scale(1.03,.97)}}
+@keyframes sway{50%{transform:rotate(-3deg)}}
+@keyframes shake{20%{transform:translateX(-8px)}40%{transform:translateX(7px)}60%{transform:translateX(-5px)}80%{transform:translateX(3px)}}
+@keyframes pop{50%{transform:scale(1.04)}}
+@keyframes up{from{opacity:0;transform:translateY(8px)}}
+@keyframes vanish{40%{transform:scale(1.08)}100%{transform:scale(.6);opacity:0}}
+@keyframes floatup{to{transform:translateY(-60px);opacity:0}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header id="hdr"></header>
+<main id="app"></main>
+<nav id="nav"></nav>
+<div id="toast"></div>
+<div id="pop" hidden></div>
+<canvas id="fx"></canvas>
+
+<script>
+/* ===== AYAR: GitHub deposu kurulunca Claude burayı doldurur ===== */
+const APP_BUILD = 0; // GitHub derlemesi bunu sürüm numarasıyla değiştirir
+const IS_NATIVE = !!window.Capacitor?.isNativePlatform?.(); // Android uygulaması mı, web sürümü mü
+const APK_URL = "https://github.com/BaranGamga/barely-english-apk/releases/latest/download/BarelyEnglish.apk";
+/* Uygulama içi güncelleme: APK'yı indirir, Android kurulum ekranını açar */
+async function installUpdate(btn){
+  const P = window.Capacitor?.Plugins, FS = P?.Filesystem, FO = P?.FileOpener;
+  if (!FS || !FO){ window.open(APK_URL, "_blank"); return; }
+  btn.disabled = true; btn.textContent = "İndiriliyor… %0";
+  let h = null;
+  try { h = await FS.addListener("progress", e => { if (e.contentLength) btn.textContent = "İndiriliyor… %" + Math.round(100*e.bytes/e.contentLength); }); } catch(e){}
+  try {
+    await FS.downloadFile({ url: APK_URL + "?t=" + Date.now(), path: "BarelyEnglish.apk", directory: "CACHE", progress: true, recursive: true });
+    const { uri } = await FS.getUri({ path: "BarelyEnglish.apk", directory: "CACHE" });
+    btn.textContent = "Kurulum açılıyor…";
+    await FO.openFile({ path: uri, mimeType: "application/vnd.android.package-archive" });
+    btn.textContent = "📲 Açılan ekranda “Yükle”ye dokun"; btn.disabled = false;
+  } catch(e){
+    btn.disabled = false; btn.textContent = "🔄 Tekrar dene";
+    toast("Güncelleme indirilemedi. İnternet bağlantını kontrol et.");
+  } finally { try { h?.remove?.(); } catch(e){} }
+}
+const LESSONS_URL ="https://gist.githubusercontent.com/BaranGamga/0d36e6c6c1dde1397dd79727ac60934d/raw/lessons.json";
+
+/* ---------- kayıt ---------- */
+const KEY = "ders-defterim-v1";
+const fresh = () => ({ cards:{}, topicStats:{}, streak:0, lastDay:null, xp:0, best:0, badges:{}, daily:{d:null,n:0},
+  settings:{ sound:true, vib:true, remind:true, hour:20, theme:"auto" } });
+let S = fresh();
+try { const r = localStorage.getItem(KEY); if (r){ const o = JSON.parse(r); S = Object.assign(fresh(), o); S.settings = Object.assign(fresh().settings, o.settings||{}); } } catch(e){}
+const save = () => { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch(e){} };
+const today = () => { const d = new Date(); return d.getFullYear()+"-"+(d.getMonth()+1)+"-"+d.getDate(); };
+const yesterday = () => { const d = new Date(Date.now()-864e5); return d.getFullYear()+"-"+(d.getMonth()+1)+"-"+d.getDate(); };
+
+/* ---------- içerik ---------- */
+let DATA = null;
+try { const c = localStorage.getItem(KEY+"-lessons"); if (c) DATA = JSON.parse(c); } catch(e){}
+let ALL_Q=[], ALL_V=[], ALL_G=[], ALL_M=[];
+function shuffle(a){ a=[...a]; for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]} return a }
+const tName = t => (DATA?.topics||{})[t] || t;
+let STAGES=[];
+function build(){
+  ALL_Q=[]; ALL_V=[]; ALL_G=[]; ALL_M=[];
+  DATA.topics = Object.assign({ story:"Hikaye", translate:"Çeviri", cloze:"Boşluk doldurma" }, DATA.topics);
+  const lessons = [...DATA.lessons].sort((a,b)=>(a.stage||0)-(b.stage||0));
+  STAGES = lessons.map((L,i)=>({ id:L.id, n:L.stage||i+1, title:L.title, goal:L.goal||"", L }));
+  lessons.forEach(L => {
+    const sid = L.id;
+    (L.grammar||[]).forEach(g => ALL_G.push({...g, lesson:L.title, date:L.date, sid}));
+    (L.vocab||[]).forEach(v => { if (!ALL_V.some(x=>x.en===v.en)) ALL_V.push({...v, id:"vq:"+v.en, sid}); });
+    (L.questions||[]).forEach((q,i) => ALL_Q.push({...q, id:"q:"+L.id+":"+i, sid}));
+    (L.mistakes||[]).forEach(m => { ALL_M.push({...m, date:L.date, sid}); ALL_Q.push({ id:"m:"+m.wrong, topic:m.topic, q:"Hangisi doğru?", options:[m.right, m.wrong], answerText:m.right, explain:m.note, sid }); });
+  });
+  ALL_V.forEach(v => {
+    const same = ALL_V.filter(x=>x!==v && x.sid===v.sid && x.tr!==v.tr), rest = ALL_V.filter(x=>x!==v && x.sid!==v.sid && x.tr!==v.tr);
+    const wrong = [...shuffle(same), ...shuffle(rest)].slice(0,3).map(x=>x.tr);
+    ALL_Q.push({ id:v.id, topic:"vocab", q:"“"+v.en+"” ne demek?", options:[v.tr, ...wrong], answerText:v.tr, explain:v.ex, sid:v.sid });
+  });
+}
+/* aşama ilerlemesi: aşamadaki soruların kaçı en az 2 kez üst üste bilindi */
+const stageItems = sid => ALL_Q.filter(q=>q.sid===sid);
+function mastery(sid){ const it=stageItems(sid); if(!it.length) return 1; return it.filter(q=>(S.cards[q.id]?.box||0)>=2).length/it.length; }
+function currentStageIdx(){ const i = STAGES.findIndex(s=>mastery(s.id)<0.7); return i<0 ? STAGES.length-1 : i; }
+async function loadLessons(initial){
+  if (initial){
+    try { const b = await (await fetch("lessons.json")).json(); if (!DATA || b.version > (DATA.version||0)) DATA = b; } catch(e){}
+    if (!DATA) DATA = {version:0, lessons:[], topics:{}};
+    build(); render();
+  }
+  if (!LESSONS_URL) return;
+  try {
+    const r = await fetch(LESSONS_URL+"?t="+Date.now(), {cache:"no-store"});
+    const nd = await r.json();
+    if (nd.version > (DATA.version||0)){
+      const added = nd.lessons.length - DATA.lessons.length;
+      DATA = nd; try { localStorage.setItem(KEY+"-lessons", JSON.stringify(nd)); } catch(e){}
+      build(); if (!["play","match","flash"].includes(tab)) render();
+      toast(added>0 ? "📬 Yeni ders eklendi: "+nd.lessons[nd.lessons.length-1].title : "📬 Ders içerikleri güncellendi");
+      confetti(60);
+    }
+  } catch(e){ /* çevrimdışı: kayıtlı içerikle devam */ }
+}
+
+/* ---------- seviye, rozet, tekrar ---------- */
+const levelOf = xp => { let l=1, need=100, acc=0; while (xp >= acc+need){ acc+=need; l++; need=Math.round(need*1.25); } return {l, cur:xp-acc, need}; };
+const BADGES = [
+  ["first","🐣","İlk adım", () => Object.keys(S.cards).length>0],
+  ["streak3","🔥","3 gün seri", () => S.streak>=3],
+  ["streak7","🏆","7 gün seri", () => S.streak>=7],
+  ["combo10","⚡","10'lu kombo", () => S.best>=10],
+  ["xp500","⭐","500 puan", () => S.xp>=500],
+  ["words20","📚","20 kelime", () => ALL_V.filter(v=>(S.cards[v.id]?.box||0)>=3).length>=20],
+  ["perfect","💯","Hatasız tur", () => !!S.badges.perfect],
+  ["fixer","🛠️","5 hatayı yendi", () => Object.values(S.cards).filter(c=>c.wrong>0&&c.box>=3).length>=5]
+];
+function checkBadges(){
+  BADGES.forEach(([id,ic,name,test]) => { if (!S.badges[id] && test()){ S.badges[id]=today(); save(); setTimeout(()=>{ toast(ic+" Yeni rozet: "+name); confetti(120); sfx("badge"); },500); } });
+}
+const card = id => S.cards[id] || (S.cards[id] = { box:0, due:0, wrong:0, right:0 });
+const INTERVALS = [0,1,3,7,16,35];
+function grade(item, ok){
+  const c = card(item.id), ts = S.topicStats[item.topic] || (S.topicStats[item.topic] = {r:0,w:0});
+  const before = levelOf(S.xp).l;
+  if (ok){ c.right++; ts.r++; c.box=Math.min(c.box+1,5); S.xp+=10; W().coins++; qev("correct"); if (String(item.id).startsWith("tr:")) qev("translate"); } else { c.wrong++; ts.w++; c.box=0; }
+  if (String(item.id).startsWith("vq:")) trackHard(item.id.slice(3), ok);
+  c.due = Date.now() + INTERVALS[c.box]*864e5 - 36e5;
+  const d = today();
+  if (S.lastDay!==d){ S.streak = S.lastDay===yesterday() ? S.streak+1 : 1; S.lastDay=d; }
+  if (S.daily.d!==d) S.daily={d,n:0};
+  S.daily.n++;
+  save(); header();
+  if (levelOf(S.xp).l > before){ setTimeout(()=>{ toast("🎉 Seviye "+levelOf(S.xp).l+"!"); confetti(150); sfx("badge"); },300); }
+  checkBadges();
+}
+/* tekrar: görülmüş ve vakti gelmiş sorular + açık aşamalardaki (şu anki aşamaya kadar) yeni sorular */
+const reviewItems = () => ALL_Q.filter(q => { const c=S.cards[q.id]; return c && c.due<=Date.now(); });
+function newItems(){
+  const open = new Set(STAGES.slice(0, currentStageIdx()+1).map(s=>s.id));
+  return ALL_Q.filter(q => !S.cards[q.id] && (open.has(q.sid) || !q.sid));
+}
+const dueItems = () => [...reviewItems(), ...newItems()];
+const weakScore = q => { const c=S.cards[q.id]; return c ? c.wrong*2 - c.right - c.box : -99; };
+const weakItems = () => ALL_Q.filter(q => (S.cards[q.id]?.wrong||0)>0 && S.cards[q.id].box<4).sort((a,b)=>weakScore(b)-weakScore(a));
+
+/* ---------- ses, titreşim, efekt ---------- */
+let AC=null;
+function tone(f, t0, dur, type="sine", vol=.18){
+  const o=AC.createOscillator(), g=AC.createGain(); o.type=type; o.frequency.setValueAtTime(f, AC.currentTime+t0);
+  g.gain.setValueAtTime(0, AC.currentTime+t0); g.gain.linearRampToValueAtTime(vol, AC.currentTime+t0+.01); g.gain.exponentialRampToValueAtTime(.001, AC.currentTime+t0+dur);
+  o.connect(g).connect(AC.destination); o.start(AC.currentTime+t0); o.stop(AC.currentTime+t0+dur+.05);
+}
+function sfx(kind, combo=0){
+  if (!S.settings.sound) return;
+  try { AC = AC || new (window.AudioContext||window.webkitAudioContext)(); if (AC.state==="suspended") AC.resume(); } catch(e){ return; }
+  const up = Math.min(combo,8)*40;
+  if (kind==="ok"){ tone(660+up,0,.12,"triangle"); tone(990+up,.09,.2,"triangle"); }
+  else if (kind==="no"){ tone(220,0,.18,"square",.08); tone(165,.14,.28,"square",.08); }
+  else if (kind==="badge"){ [523,659,784,1047].forEach((f,i)=>tone(f,i*.1,.25,"triangle")); }
+  else if (kind==="tap"){ tone(880,0,.04,"sine",.06); }
+}
+function buzz(ok){
+  if (!S.settings.vib) return;
+  const H = window.Capacitor?.Plugins?.Haptics;
+  try { if (H) H.notification({type: ok?"SUCCESS":"ERROR"}); else navigator.vibrate?.(ok?25:[70,50,90]); } catch(e){}
+}
+const fx = document.getElementById("fx"), ctx = fx.getContext("2d"); let parts=[], raf=null;
+function confetti(n=80){
+  if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  fx.width=innerWidth*devicePixelRatio; fx.height=innerHeight*devicePixelRatio;
+  const cols=["#ffc928","#7b2fd0","#ff5fa2","#b47cff","#4cc3ff","#ff9de2"];
+  for(let i=0;i<n;i++) parts.push({x:fx.width/2,y:fx.height*.35,vx:(Math.random()-.5)*22*devicePixelRatio,vy:(-Math.random()*18-6)*devicePixelRatio,r:Math.random()*6+4,c:cols[i%cols.length],a:Math.random()*6,life:0});
+  if (!raf) loop();
+}
+function loop(){
+  ctx.clearRect(0,0,fx.width,fx.height);
+  parts.forEach(p=>{ p.life++; p.vy+=.6*devicePixelRatio; p.vx*=.98; p.x+=p.vx; p.y+=p.vy; p.a+=.2;
+    ctx.save(); ctx.translate(p.x,p.y); ctx.rotate(p.a); ctx.fillStyle=p.c; ctx.fillRect(-p.r,-p.r/2,p.r*2*devicePixelRatio/1.5,p.r*devicePixelRatio/1.5); ctx.restore(); });
+  parts = parts.filter(p=>p.y<fx.height+40 && p.life<200);
+  raf = parts.length ? requestAnimationFrame(loop) : (ctx.clearRect(0,0,fx.width,fx.height), null);
+}
+function floatXP(el, txt="+10"){
+  const r = el.getBoundingClientRect(), f = document.createElement("div");
+  f.className="floatxp"; f.textContent=txt; f.style.left=(r.right-70)+"px"; f.style.top=(r.top)+"px";
+  document.body.appendChild(f); setTimeout(()=>f.remove(),1000);
+}
+let toastT;
+function toast(msg){ const t=document.getElementById("toast"); t.innerHTML=`<div>${esc(msg)}</div>`; clearTimeout(toastT); toastT=setTimeout(()=>t.innerHTML="",2600); }
+
+/* ---------- Zohre ---------- */
+const ZOHRE = { idle:"img/zohre-hosgeldin.png", teach:"img/zohre-ders.png", sad:"img/zohre-sikicalis.png", happy:"img/zohre-tebrik.png" };
+function owl(mood="idle", dress){
+  const img = `<img class="owl ${mood}" src="${ZOHRE[mood]||ZOHRE.idle}" alt="Zohre">`;
+  if (mood!=="idle" && !dress) return img;
+  const eq = W().eq, a = (slot, cls) => { const it = ITEMS.find(x=>x.id===eq[slot]); return it ? `<span class="acc ${cls}">${it.e}</span>` : ""; };
+  return `<div class="worn">${img}${a("head","a-head")}${a("eyes","a-eyes")}${a("neck","a-neck")}${mood==="idle" && dress!=="room"?a("pet","a-side"):""}</div>`;
+}
+const PRAISE = ["Wow, you are improving!","Wow, you are improving! 🌟","Wow, you are improving! 🚀"];
+const COMFORT = ["Hey, sıkı çalış! Bunu sana yine soracağım.","Hey, sıkı çalış! ✏️","Hey! Bunu not al, yine karşına çıkacak.","Hey, sıkı çalış! Doğrusunu iyi oku."];
+const pick = a => a[Math.floor(Math.random()*a.length)];
+function greeting(){
+  const h = new Date().getHours(), due = dueItems().length, gone = S.lastDay && S.lastDay!==today() && S.lastDay!==yesterday();
+  if (!S.lastDay) return "Merhaba, ben Zohre! Hoş geldin, hadi başlayalım!";
+  if (gone) return "Seni özledim! Serin sıfırlandı ama hemen yeniden başlayabiliriz.";
+  if (S.daily.d===today() && S.daily.n>=20) return "Bugünkü hedefini tamamladın, çok iyisin! 🌟";
+  if (due===0) return "Şu an tekrar bekleyen soru yok. İstersen kelime oyunu oynayalım!";
+  return (h<12?"Günaydın, hoş geldin! ":h<18?"Hoş geldin! ":"İyi akşamlar, hoş geldin! ")+due+" soru seni bekliyor. Hadi başlayalım!";
+}
+
+/* ---------- arayüz ---------- */
+const $app = document.getElementById("app");
+const esc = s => String(s??"").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const SVG = p => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">${p}</svg>`;
+const ICONS = {
+  home:'<path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/>',
+  play:'<path d="M13 2L4 14h7l-1 8 9-12h-7z"/>',
+  book:'<path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 21V5"/>',
+  cards:'<rect x="3" y="6" width="13" height="15" rx="2"/><path d="M8 3h11a2 2 0 0 1 2 2v13"/>',
+  story:'<path d="M12 3l1.8 4.2L18 9l-4.2 1.8L12 15l-1.8-4.2L6 9l4.2-1.8z"/><path d="M18.5 14.5l.9 2.1 2.1.9-2.1.9-.9 2.1-.9-2.1-2.1-.9 2.1-.9z"/>',
+  world:'<path d="M4 20V10l8-6 8 6v10"/><path d="M9 20v-5h6v5"/><path d="M2 20h20"/>',
+  alert:'<circle cx="12" cy="12" r="9"/><path d="M12 7v6M12 16.5v.5"/>',
+  gear:'<circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/>'
+};
+const TABS = [["home","Ana sayfa"],["play","Pratik"],["book","Gramer"],["cards","Kelime"],["story","Hikaye"],["world","Dünyam"]];
+let tab="home";
+function header(){
+  const L = levelOf(S.xp);
+  document.getElementById("hdr").innerHTML = `<div class="lvl">${L.l}</div>
+    <div class="xpbox"><small><span>Seviye ${L.l}</span><span>${L.cur}/${L.need}</span></small><div class="xpbar"><i style="width:${100*L.cur/L.need}%"></i></div></div>
+    <div class="chip">🔥 ${S.streak}</div><div class="chip coins" id="coins">🪙 ${W().coins}</div><button class="iconbtn" id="gear" aria-label="Ayarlar">${SVG(ICONS.gear)}</button>`;
+  document.getElementById("gear").onclick = () => { tab="settings"; render(); };
+}
+function nav(){ const cur = tab==="battle"?"play":tab; document.getElementById("nav").innerHTML = TABS.map(([k,l]) => `<button class="${cur===k?'on':''}" data-tab="${k}">${SVG(ICONS[k])}${l}</button>`).join(""); }
+document.getElementById("nav").onclick = e => { const b=e.target.closest("button"); if (b){ sfx("tap"); go(b.dataset.tab); } };
+let stageSel=null;
+function go(t, ...a){ hidePop(); tab=t; nav(); scrollTo(0,0); ({home, play:()=>a[0]?startQuiz(a[0],a[1],a[2]):practice(), world, battle:()=>startBattle(a[0],a[1]), book:grammar, cards:vocab, alert:errors, settings, match, story:stories, flash:()=>flash(flashDeck(),0,false), stage:()=>stageView(a[0]||stageSel)})[t](); }
+function render(){ applyTheme(); header(); nav(); go(["play","match","flash","battle"].includes(tab) ? "home" : tab); }
+
+function roadmap(){
+  const cur = currentStageIdx();
+  return `<div class="card"><h3>Yol haritası</h3><div class="road">${STAGES.map((s,i)=>{ const m=Math.round(100*mastery(s.id)); const st = m>=70?"done":i===cur?"now":i<cur?"done":"next";
+    return `<button class="stage-row ${st}" data-sid="${esc(s.id)}"><span class="dot">${m>=70?"✓":s.n}</span><span class="st-body"><b>${esc(s.title)}</b>${i===cur?`<small>Şu an buradasın · %${m}</small>`:`<small>%${m}</small>`}<span class="track"><i style="width:${m}%"></i></span></span></button>`; }).join("")}</div></div>`;
+}
+function bindRoad(){ $app.querySelectorAll("[data-sid]").forEach(b => b.onclick = () => { sfx("tap"); stageSel=b.dataset.sid; go("stage", b.dataset.sid); }); }
+function stageView(sid){
+  const s = STAGES.find(x=>x.id===sid) || STAGES[currentStageIdx()]; if (!s){ go("home"); return; }
+  stageSel = s.id; tab="stage"; nav();
+  const m = Math.round(100*mastery(s.id)), L = s.L;
+  $app.innerHTML = `<div class="qtop"><button class="iconbtn" id="back" aria-label="Geri">${SVG('<path d="M15 18l-6-6 6-6"/>')}</button><div class="eyebrow" style="flex:1">Aşama ${s.n} / ${STAGES.length}</div></div>
+    <div class="hero"><div class="owlwrap">${owl("teach")}</div><div class="bubble"><b>${esc(s.title)}</b>${s.goal?`<br>${esc(s.goal)}`:""}</div></div>
+    <div class="card"><div class="topic"><span>İlerleme</span><div class="track"><i style="width:${m}%;background:var(--accent)"></i></div><b>%${m}</b></div>
+      <button class="btn wide" id="study">⚡ Bu aşamayı çalış (${stageItems(s.id).length} soru)</button></div>
+    ${(L.grammar||[]).map(g=>`<div class="card"><div class="eyebrow">Konu anlatımı</div><h2>${esc(g.title)}</h2><p style="margin:0">${esc(g.summary)}</p>${(g.examples||[]).map(e=>`<div class="ex">${esc(e)}</div>`).join("")}</div>`).join("")}
+    ${(L.vocab||[]).length?`<div class="card"><h3>Kelimeler ve kalıplar</h3>${L.vocab.map(v=>`<div><b>${esc(v.en)}</b> ${(S.cards["vq:"+v.en]?.box||0)>=3?"✅":""} — ${esc(v.tr)}<div class="muted" style="font-size:.9rem">${esc(v.ex)}</div></div>`).join("")}</div>`:""}
+    ${(L.mistakes||[]).length?`<div class="card"><h3>Dikkat: sık yapılan hatalar</h3>${L.mistakes.map(x=>`<div><div class="wrong">${esc(x.wrong)}</div><div class="right">✓ ${esc(x.right)}</div><div class="muted" style="font-size:.9rem">${esc(x.note)}</div></div>`).join("")}</div>`:""}
+    <button class="btn wide" id="study2">⚡ Bu aşamayı çalış</button>`;
+  document.getElementById("back").onclick = () => go("home");
+  document.getElementById("study").onclick = document.getElementById("study2").onclick = () => go("play","stage",s.id);
+}
+
+function ring(n, goal){
+  const p=Math.min(1,n/goal), C=2*Math.PI*26;
+  return `<svg class="ring" viewBox="0 0 64 64"><circle cx="32" cy="32" r="26" stroke="var(--line)" stroke-width="8" fill="none"/>
+    <circle cx="32" cy="32" r="26" stroke="var(--sun)" stroke-width="8" fill="none" stroke-linecap="round" stroke-dasharray="${C}" stroke-dashoffset="${C*(1-p)}" transform="rotate(-90 32 32)"/>
+    <text x="32" y="37" text-anchor="middle" font-family="Baloo 2,sans-serif" font-weight="800" font-size="15" fill="var(--fg)">${Math.min(n,goal)}</text></svg>`;
+}
+function home(){
+  const due = dueItems().length, weak = weakItems().length, n = S.daily.d===today()?S.daily.n:0;
+  const topics = Object.entries(S.topicStats).map(([t,s])=>({t,pct:Math.round(100*s.r/(s.r+s.w))})).sort((a,b)=>a.pct-b.pct);
+  $app.innerHTML = `
+    ${APP_BUILD>0 && (DATA.latestApk||0)>APP_BUILD ? `<div class="card update"><b>🎁 Uygulamanın yeni sürümü çıktı!</b><div class="muted">Sürüm 1.${DATA.latestApk}${DATA.latestApkNote?` · ${esc(DATA.latestApkNote)}`:""}</div><button class="btn" id="getApk">⬇️ Güncellemeyi al</button><small class="muted">Uygulama yeni sürümü indirir, sen sadece “Yükle”ye dokunursun. İlerlemen silinmez.</small></div>` : ""}
+    ${!IS_NATIVE && /iPhone|iPad|iPod/.test(navigator.userAgent) && !navigator.standalone && !S.a2hsHidden ? `<div class="card update"><b>📲 Uygulama gibi kullan</b><div>Safari'nin altındaki <b>Paylaş</b> düğmesine (□↑) dokun, sonra <b>“Ana Ekrana Ekle”</b>yi seç. Barely English ana ekranında Zohre ikonuyla belirir.</div><button class="btn soft" id="a2hs">Tamam</button></div>` : ""}
+    ${themeBanner()}
+    <div class="hero"><div class="owlwrap">${owl("idle")}</div><div class="bubble">${esc(greeting())}</div></div>
+    <button class="btn wide" id="go" style="font-size:1.15rem;padding:16px">⚡ Tekrara başla${due?` · ${Math.min(due,10)} soru`:""}</button>
+    <div class="row"><button class="btn soft" id="goBattle">${themeOf().foe} ${themeOf().foeName} savaşı</button>${STORIES().length?`<button class="btn soft" id="goStory">📖 Hikayeler</button>`:""}</div>
+    <div class="row">${weak?`<button class="btn soft" id="goWeak">🎯 Hatalarım (${weak})</button>`:""}<button class="btn soft" id="goMatch">🧩 Eşleştir</button></div>
+    ${questsCard(true)}
+    <div class="card goal">${ring(n,20)}<div><h3>Günlük hedef</h3><div class="muted">${n>=20?"Tamamlandı! Yarın görüşürüz.":`Bugün ${20-n} cevap daha.`}</div></div></div>
+    ${STAGES.length?roadmap():""}
+    ${topics.length?`<div class="card"><h3>Konulara göre başarı</h3>${topics.map(x=>`<div class="topic"><span>${esc(tName(x.t))}</span><div class="track"><i style="width:${x.pct}%;background:${x.pct<60?'var(--bad)':x.pct<80?'var(--sun)':'var(--good)'}"></i></div><b>%${x.pct}</b></div>`).join("")}</div>`:""}
+    <div class="card"><h3>Rozetler</h3><div class="badges">${BADGES.map(([id,ic,name])=>`<div class="badge ${S.badges[id]?'':'locked'}"><b>${ic}</b>${esc(name)}</div>`).join("")}</div></div>`;
+  document.getElementById("go").onclick = () => go("play","due");
+  const gw=document.getElementById("goWeak"); if (gw) gw.onclick = () => go("play","weak");
+  document.getElementById("goMatch").onclick = () => go("match");
+  const gs=document.getElementById("goStory"); if (gs) gs.onclick = () => go("story");
+  document.getElementById("goBattle").onclick = () => go("play");
+  bindQuests();
+  const ga=document.getElementById("getApk"); if (ga) ga.onclick = () => installUpdate(ga);
+  const ah=document.getElementById("a2hs"); if (ah) ah.onclick = () => { S.a2hsHidden=true; save(); ah.closest(".card").remove(); };
+  bindRoad();
+}
+
+/* ---------- quiz ---------- */
+let Q=null;
+function startQuiz(mode, arg){
+  let list;
+  if (mode==="story"){
+    list = storyQuiz(arg);
+  } else if (mode==="due"){
+    // önce vakti gelen tekrarlar (en zayıflar başta), sonra sıradaki aşamadan yeni sorular
+    const rev = reviewItems().sort((a,b)=>weakScore(b)-weakScore(a));
+    const revPick = shuffle(rev.slice(0,4)).concat(shuffle(rev.slice(4))).slice(0,7);
+    const order = Object.fromEntries(STAGES.map((s,i)=>[s.id,i]));
+    const fresh = newItems().sort((a,b)=>(order[a.sid]??0)-(order[b.sid]??0));
+    list = [...revPick, ...fresh.slice(0, 10-revPick.length)];
+    if (list.length<10) list = list.concat(shuffle(ALL_Q.filter(q=>!list.includes(q) && S.cards[q.id])).slice(0,10-list.length));
+    list = shuffle(list);
+  } else {
+    let pool = mode==="weak" ? weakItems() : mode==="topic" ? ALL_Q.filter(q=>q.topic===arg) : mode==="stage" ? stageItems(arg)
+      : mode==="hardv" ? hardWords().map(v=>ALL_Q.find(q=>q.id===v.id)).filter(Boolean)
+      : mode==="mistakes" ? mistakeDrill() : ALL_Q;
+    if (!pool.length) pool = ALL_Q;
+    const weakFirst = mode==="weak"||mode==="hardv"||mode==="mistakes" ? [] : weakItems().filter(q=>pool.includes(q)).slice(0,3);
+    list = shuffle([...new Set([...weakFirst, ...shuffle(pool)])].slice(0,10));
+  }
+  if (!list.length){ $app.innerHTML=`<div class="card">Henüz soru yok. İlk ders notunu ekleyince burası dolacak.</div>`; return; }
+  Q = { list, i:0, score:0, combo:0, wrongs:[], mode, arg };
+  ask("teach", mode==="story" ? "Hikayedeki kelimeleri hatırlıyor musun? Hadi bakalım!" : mode==="topic"||mode==="stage" ? "Bu konuyu birlikte tekrar edelim!" : mode==="mistakes" ? "Bu hataları bir daha yapmayalım!" : mode==="hardv" ? "Zor kelimelerin üzerine gidiyoruz!" : "Hazırsan başlayalım!");
+}
+function ask(mood, line){
+  const B = Q.battle;
+  if (B && (B.hp<=0 || B.hearts<=0)) return endBattle();
+  if (Q.i >= Q.list.length) return B ? endBattle() : endQuiz();
+  const it = Q.list[Q.i];
+  const correct = it.answerText ?? (it.options ? it.options[it.answer] : it.answer);
+  const top = B
+    ? `<div class="qtop"><button class="iconbtn" id="quit" aria-label="Çık">${SVG('<path d="M18 6L6 18M6 6l12 12"/>')}</button><div class="hearts" id="hearts">${heartsHTML()}</div><div style="flex:1"></div><div class="combo" id="combo">${Q.combo>=2?"🔥"+Q.combo:""}</div></div>
+       <div class="arena"><div class="owlwrap" id="owl">${owl(mood)}</div><div class="bubble" id="say">${esc(line)}</div>${foeHTML()}</div>`
+    : `<div class="qtop"><button class="iconbtn" id="quit" aria-label="Çık">${SVG('<path d="M18 6L6 18M6 6l12 12"/>')}</button><div class="track"><i style="width:${100*Q.i/Q.list.length}%"></i></div><div class="combo" id="combo">${Q.combo>=2?"🔥"+Q.combo:""}</div></div>
+    <div class="stage"><div class="owlwrap" id="owl">${owl(mood)}</div><div class="bubble" id="say">${esc(line)}</div></div>`;
+  const om = it.type==="write" && /^Sırala:\s*(.+)$/i.exec(it.q);
+  const words = it.tiles ? shuffle(it.tiles) : om ? shuffle(om[1].split("/").map(w=>w.trim()).filter(Boolean)) : null;
+  const body = it.type==="write"
+    ? (words ? `<div class="built" id="built"><span class="muted">Kelimelere sırayla dokun</span></div><div class="wordbank">${words.map((w,k)=>`<button class="word" data-k="${k}">${esc(w)}</button>`).join("")}</div><div class="row"><button class="btn soft" id="clr">Temizle</button><button class="btn" id="chk">Kontrol et</button></div><input type="hidden" id="ans">`
+             : `<input type="text" id="ans" autocomplete="off" autocapitalize="sentences" placeholder="Cevabını yaz"><button class="btn wide" id="chk">Kontrol et</button>`)
+    : `<div class="opts">${shuffle(it.options).map(o=>`<button class="opt" data-v="${esc(o)}">${esc(o)}</button>`).join("")}</div>`;
+  $app.innerHTML = `${top}<div class="card"><span class="pill" style="align-self:flex-start">${esc(tName(it.topic))}</span><div class="q">${esc(it.q)}</div>${body}<div id="fb"></div></div>`;
+  document.getElementById("quit").onclick = () => go(Q.mode==="story" ? "story" : B ? "play" : "home");
+  if (it.type==="write"){
+    const norm = s => s.toLowerCase().replace(/[’']/g,"'").replace(/[.!?,]/g,"").replace(/\s+/g," ").trim();
+    const inp = document.getElementById("ans");
+    const accepted = [correct, ...(it.accept||[])].map(norm);
+    if (words){
+      const built = document.getElementById("built"), picked = [];
+      const show = () => { built.innerHTML = picked.length ? picked.map(k=>`<span class="pill">${esc(words[k])}</span>`).join(" ") : `<span class="muted">Kelimelere sırayla dokun</span>`; inp.value = picked.map(k=>words[k]).join(" "); };
+      $app.querySelectorAll(".word").forEach(b => b.onclick = () => { if (b.disabled) return; sfx("tap"); picked.push(+b.dataset.k); b.disabled = true; show(); });
+      document.getElementById("clr").onclick = () => { picked.length = 0; $app.querySelectorAll(".word").forEach(b=>b.disabled=false); show(); };
+    }
+    const chk = () => { if (!inp.value.trim()) return; inp.disabled=true; $app.querySelectorAll(".word,#clr").forEach(b=>b.disabled=true); document.getElementById("chk").remove(); answer(it, accepted.includes(norm(inp.value)), correct, words ? document.getElementById("built") : inp); };
+    document.getElementById("chk").onclick = chk; inp.onkeydown = e => { if (e.key==="Enter") chk(); };
+    return;
+  }
+  $app.querySelectorAll(".opt").forEach(b => b.onclick = () => {
+    const ok = b.dataset.v === correct;
+    $app.querySelectorAll(".opt").forEach(x => { x.disabled=true; if (x.dataset.v===correct) x.classList.add("ok"); });
+    if (!ok) b.classList.add("no");
+    answer(it, ok, correct, b);
+  });
+}
+function answer(it, ok, correct, el){
+  grade(it, ok);
+  document.getElementById("owl").innerHTML = owl(ok?"happy":"sad");
+  const say = document.getElementById("say"); say.className = "bubble say-big "+(ok?"happy":"sad");
+  if (ok){
+    Q.score++; Q.combo++; S.best=Math.max(S.best,Q.combo); save();
+    sfx("ok", Q.combo); buzz(true); floatXP(el);
+    say.textContent = Q.combo>=3 ? `${pick(PRAISE)} 🔥${Q.combo}` : pick(PRAISE);
+    if ([3,5,10,15].includes(Q.combo)) confetti(40+Q.combo*6);
+  } else {
+    if (Q.combo>=3) toast("💔 "+Q.combo+"'lu kombo bozuldu");
+    Q.combo=0; Q.wrongs.push(it);
+    sfx("no"); buzz(false);
+    say.textContent = pick(COMFORT);
+    if (!Q.list.slice(Q.i+1).includes(it) && Q.list.length<14) Q.list.push(it); // aynı turda bir kez daha
+  }
+  document.getElementById("combo").textContent = Q.combo>=2 ? "🔥"+Q.combo : "";
+  const B = Q.battle; let over = false;
+  if (B){
+    const foe = document.querySelector(".foe");
+    if (ok){ const dmg = Q.combo>=5 ? 2 : 1; B.hp = Math.max(0, B.hp-dmg); B.coins += Q.combo>=3 ? 2 : 1; foe.classList.add("hit"); boom(foe, dmg>1?"💥💥":"💥"); if (dmg>1) toast("🔥 Kritik vuruş! Seri 5+ = çift hasar");
+      document.getElementById("say").textContent = B.hp<=0 ? "Ejderhayı yendin! 🏆" : Q.combo>=3 ? `${pick(PRAISE)} 🔥${Q.combo}` : pick(PRAISE); }
+    else { B.hearts--; foe.classList.add("fire"); boom(document.getElementById("owl"), "🔥");
+      document.getElementById("say").textContent = B.hearts<=0 ? "Ejderha bu sefer kazandı… Tekrar deneyelim!" : pick(COMFORT); }
+    foe.querySelector(".hp i").style.width = (100*B.hp/B.max)+"%"; foe.querySelector("small").textContent = B.hp+" / "+B.max;
+    document.getElementById("hearts").innerHTML = heartsHTML();
+    over = B.hp<=0 || B.hearts<=0;
+  }
+  document.getElementById("fb").innerHTML = `<div class="fb ${ok?'ok':'no'}"><b class="t">${ok?(B?"Doğru! 💥 +🪙":"Doğru! +10"):"Doğrusu: "+esc(correct)}</b>${it.explain?`<div>${esc(it.explain)}</div>`:""}<button class="btn wide" id="next">${over?"Sonucu gör 🏁":"Devam"}</button></div>`;
+  const n=document.getElementById("next"); n.scrollIntoView({behavior:"smooth",block:"nearest"});
+  n.onclick = () => { Q.i++; sfx("tap"); ask("teach", Q.combo>=2?"Devam, seri sürüyor! 🔥":"Sıradaki soru…"); };
+}
+function endQuiz(){
+  const total = Q.list.length, perfect = Q.score===total;
+  if (perfect && !S.badges.perfect){ S.badges.perfect=today(); save(); checkBadges(); }
+  if (perfect) { confetti(200); sfx("badge"); }
+  const uniqWrong = [...new Set(Q.wrongs)];
+  if (Q.mode==="story"){ const s=sState(Q.arg), pct=Math.round(100*Q.score/total); s.best=Math.max(s.best??0,pct); save(); qev("storyquiz"); }
+  if (perfect) qev("perfect");
+  qev("round");
+  $app.innerHTML = `<div class="card end"><div style="width:120px">${owl(perfect||Q.score/total>=.7?"happy":"sad")}</div>
+    <div class="score">${Q.score}/${total}</div>
+    <h2>${perfect?"Hatasız tur! Wow, you are improving! 💯":Q.score/total>=.7?"Wow, you are improving!":"Hey, sıkı çalış! Pes etmek yok."}</h2>
+    <p class="muted" style="margin:0">${uniqWrong.length?"Yanlış yaptıkların listene eklendi. Doğru bilene kadar yeniden karşına çıkacak.":"Bildiklerin daha seyrek sorulacak."}</p>
+    ${uniqWrong.length?`<div style="text-align:left;width:100%;display:flex;flex-direction:column;gap:6px">${uniqWrong.map(q=>`<div class="pill bad" style="white-space:normal">${esc(q.q)} → ${esc(q.answerText ?? (q.options?q.options[q.answer]:q.answer))}</div>`).join("")}</div>`:""}
+    <div class="row" style="width:100%"><button class="btn" id="again">Yeni tur</button><button class="btn soft" id="toHome">${Q.mode==="story"?"Hikayeler":"Ana sayfa"}</button></div></div>`;
+  const {mode, arg} = Q;
+  document.getElementById("again").onclick = () => go("play", ["stage","topic","mistakes","hardv","weak","story"].includes(mode) ? mode : "due", arg);
+  document.getElementById("toHome").onclick = () => go(mode==="story" ? "story" : "home");
+}
+
+/* =====================================================================
+   Winter Smells Cold: temalar, altın, görevler, eşyalar, pratik modları, ejderha savaşı, Zohre'nin dünyası
+   ===================================================================== */
+function W(){
+  S.w = S.w || {}; const w = S.w;
+  w.coins ??= 0; w.owned ??= { "home-cozy":1 }; w.eq ??= { home:"home-cozy" };
+  w.q ??= { d:null, p:{}, got:{} }; w.wk ??= { id:null, p:{} }; w.n ??= {};
+  return w;
+}
+/* temalar: haftanın teması gist'teki "theme" alanından gelir (yoksa ejderha); ayarlardan elle seçilebilir */
+const THEMES = {
+  dragon: { name:"Ejderha Haftası", icon:"🐉", foe:"🐉", foeName:"Ejderha", tagline:"Ejderhaları doğru cevaplarla yen, altınları topla!",
+            weekly:{ id:"dragon-1", ev:"dragon", n:5, text:"5 ejderha yen", item:"pet-dragon" } },
+  winter: { name:"Kış Haftası", icon:"❄️", foe:"☃️", foeName:"Kar Canavarı", tagline:"Kış kokuyor! Kar canavarlarını eriterek ilerle.",
+            weekly:{ id:"winter-1", ev:"dragon", n:5, text:"5 kar canavarı yen", item:"pet-penguin" } },
+  classic:{ name:"Klasik", icon:"💜", foe:"👾", foeName:"Canavar", tagline:"Mor ve sarı, sade ve tanıdık.", weekly:null }
+};
+const themeKey = () => { const s = S.settings.theme; return s && s!=="auto" && THEMES[s] ? s : (THEMES[DATA?.theme] ? DATA.theme : "dragon"); };
+const themeOf = () => THEMES[themeKey()];
+function applyTheme(){ document.body.className = "th-"+themeKey(); }
+function themeBanner(){
+  const t = themeOf(), wq = t.weekly, w = W();
+  const p = wq ? Math.min(w.wk.id===wq.id ? (w.wk.p[wq.ev]||0) : 0, wq.n) : 0, it = wq && ITEMS.find(i=>i.id===wq.item);
+  return `<div class="banner"><span class="big">${t.icon}</span><div style="flex:1;min-width:0"><b>${t.name}</b><br><small>${t.tagline}</small>
+    ${wq ? (w.owned[wq.item] ? `<br><small>✅ Haftalık ödül alındı: ${it.e} ${it.n}</small>` : `<div class="track" style="height:8px;margin-top:6px;background:#fff4"><i style="width:${100*p/wq.n}%;background:var(--sun)"></i></div><small>Haftalık görev: ${wq.text} (${p}/${wq.n}) → ${it.e} ${it.n}</small>`) : ""}</div></div>`;
+}
+/* günlük görevler: her gün 3 görev (biri hep savaş) */
+const QUESTS = [
+  { id:"dr1", ev:"dragon", n:1, t:"1 ejderha yen", e:"🐉", r:30 },
+  { id:"c15", ev:"correct", n:15, t:"15 doğru cevap ver", e:"✅", r:20 },
+  { id:"c30", ev:"correct", n:30, t:"30 doğru cevap ver", e:"🎯", r:35 },
+  { id:"tr5", ev:"translate", n:5, t:"5 cümle çevir", e:"🇬🇧", r:25 },
+  { id:"st1", ev:"story", n:1, t:"Bir hikaye bitir", e:"📖", r:25 },
+  { id:"fl1", ev:"flash", n:1, t:"Kelime kartı turunu bitir", e:"🃏", r:20 },
+  { id:"ma1", ev:"match", n:1, t:"1 eşleştirme oyunu bitir", e:"🧩", r:20 },
+  { id:"rd2", ev:"round", n:2, t:"2 tur bitir (quiz ya da savaş)", e:"⚡", r:20 },
+  { id:"pf1", ev:"perfect", n:1, t:"Hatasız bir tur yap", e:"💯", r:40 }
+];
+function todaysQuests(){
+  let h = 7; for (const c of today()) h = (h*31 + c.charCodeAt(0)) >>> 0;
+  const pool = QUESTS.slice(1), out = [QUESTS[0]];
+  while (out.length<3){ h = (h*1103515245 + 12345) >>> 0; out.push(pool.splice(h % pool.length, 1)[0]); }
+  return out;
+}
+function qev(type, n=1){
+  const w = W(), d = today();
+  if (w.q.d!==d) w.q = { d, p:{}, got:{} };
+  w.q.p[type] = (w.q.p[type]||0) + n;
+  w.n[type] = (w.n[type]||0) + n;
+  const wq = themeOf().weekly;
+  if (wq){
+    if (w.wk.id!==wq.id) w.wk = { id:wq.id, p:{} };
+    w.wk.p[type] = (w.wk.p[type]||0) + n;
+    if (!w.owned[wq.item] && (w.wk.p[wq.ev]||0) >= wq.n) giveItem(wq.item, "🏆 Haftalık görev tamam!");
+  }
+  todaysQuests().forEach(q => { w.q.ready ??= {}; if (!w.q.got[q.id] && !w.q.ready[q.id] && (w.q.p[q.ev]||0) >= q.n){ w.q.ready[q.id] = 1; setTimeout(()=>toast("✅ Görev tamam: "+q.t+" · ödülünü al!"), 900); } });
+  save(); checkUnlocks();
+}
+function questsCard(mini){
+  const w = W(); if (w.q.d!==today()) w.q = { d:today(), p:{}, got:{} };
+  return `<div class="card"><div style="display:flex;justify-content:space-between;align-items:center"><h3>📜 Günün görevleri</h3><span class="coin">🪙 ${w.coins}</span></div>
+    ${todaysQuests().map(q => { const p = Math.min(w.q.p[q.ev]||0, q.n), got = w.q.got[q.id];
+      return `<div class="quest ${got?"done":""}"><span class="qi">${got?"✔️":q.e}</span><div class="qb"><b style="font-size:.92rem">${esc(q.t)}</b><div class="track"><i style="width:${100*p/q.n}%"></i></div></div>
+        ${got ? `<small class="muted">Alındı</small>` : p>=q.n ? `<button class="btn" data-claim="${q.id}">🪙 ${q.r} al</button>` : `<small class="muted" style="text-align:right">${p}/${q.n}<br>🪙${q.r}</small>`}</div>`; }).join("")}
+    ${mini ? `<button class="btn soft" id="toWorld">🏠 Zohre'nin dünyası · eşyalar</button>` : ""}</div>`;
+}
+function bindQuests(){
+  $app.querySelectorAll("[data-claim]").forEach(b => b.onclick = () => {
+    const q = QUESTS.find(x=>x.id===b.dataset.claim), w = W(); if (w.q.got[q.id]) return;
+    w.q.got[q.id] = 1; w.coins += q.r; save(); sfx("badge"); confetti(80); toast("🪙 +"+q.r+" altın kazandın!"); header(); go(tab);
+  });
+  const tw = document.getElementById("toWorld"); if (tw) tw.onclick = () => go("world");
+}
+/* eşyalar: altınla alınanlar (price) ve başarıyla açılanlar (unlock) */
+const CATS = [["home","🏠 Ev"],["books","📚 Kitaplık"],["clothes","🧣 Kıyafet"],["glasses","👓 Gözlük"],["toys","🧸 Oyuncak"],["pets","🐾 Dostlar"]];
+const ITEMS = [
+  { id:"home-cozy", cat:"home", slot:"home", e:"🏠", n:"Sıcak oda", price:0, style:{ wall:"#f3e6ff", floor:"#e0c39a", sky:"#bfe3ff", rug:"#c9a2f2" } },
+  { id:"home-snow", cat:"home", slot:"home", e:"🏔️", n:"Karlı kulübe", price:250, style:{ wall:"#e3efff", floor:"#c4d3e6", sky:"#f4f9ff", rug:"#8fb4ea" } },
+  { id:"home-castle", cat:"home", slot:"home", e:"🏰", n:"Ejderha kalesi", price:400, style:{ wall:"#4a2b63", floor:"#5a3d2a", sky:"#ff9a57", rug:"#b8323a" } },
+  { id:"win-snow", cat:"home", slot:"window", e:"❄️", n:"Kar manzarası", price:60 },
+  { id:"win-moon", cat:"home", slot:"window", e:"🌙", n:"Ay ışığı", price:60 },
+  { id:"win-volcano", cat:"home", slot:"window", e:"🌋", n:"Ejderha dağı", unlock:{ k:"n", ev:"dragon", n:3 }, hint:"3 ejderha yen" },
+  { id:"wall-map", cat:"home", slot:"wall", e:"🗺️", n:"Dünya haritası", price:50 },
+  { id:"wall-clock", cat:"home", slot:"wall", e:"🕰️", n:"Eski saat", price:40 },
+  { id:"wall-diploma", cat:"home", slot:"wall", e:"📜", n:"İlk diploma", unlock:{ k:"stage", n:1 }, hint:"Bir aşamayı bitir" },
+  { id:"lamp-candle", cat:"home", slot:"lamp", e:"🕯️", n:"Mum", price:30 },
+  { id:"lamp-lantern", cat:"home", slot:"lamp", e:"🏮", n:"Fener", price:70 },
+  { id:"plant-pot", cat:"home", slot:"plant", e:"🪴", n:"Saksı çiçeği", price:40 },
+  { id:"plant-cactus", cat:"home", slot:"plant", e:"🌵", n:"Kaktüs", price:40 },
+  { id:"plant-tree", cat:"home", slot:"plant", e:"🎄", n:"Kış ağacı", price:110 },
+  { id:"shelf-small", cat:"books", slot:"shelf", e:"📕📗", n:"Küçük raf", price:40 },
+  { id:"shelf-mid", cat:"books", slot:"shelf", e:"📕📗📘📙", n:"Kitaplık", price:120 },
+  { id:"shelf-big", cat:"books", slot:"shelf", e:"📚📕📗📘📙", n:"Bilge kitaplığı", unlock:{ k:"words", n:50 }, hint:"50 kelime öğren" },
+  { id:"shelf-story", cat:"books", slot:"shelf", e:"📖✨📖", n:"Hikaye rafı", unlock:{ k:"n", ev:"story", n:3 }, hint:"3 hikaye bitir" },
+  { id:"neck-scarf", cat:"clothes", slot:"neck", e:"🧣", n:"Kış atkısı", price:70 },
+  { id:"neck-bow", cat:"clothes", slot:"neck", e:"🎀", n:"Kurdele", price:50 },
+  { id:"head-snow", cat:"clothes", slot:"head", e:"❄️", n:"Kar tanesi", price:60 },
+  { id:"head-star", cat:"clothes", slot:"head", e:"⭐", n:"Yıldız", price:80 },
+  { id:"head-crown", cat:"clothes", slot:"head", e:"👑", n:"Taç", unlock:{ k:"level", n:5 }, hint:"Seviye 5 ol" },
+  { id:"eyes-sun", cat:"glasses", slot:"eyes", e:"🕶️", n:"Güneş gözlüğü", price:90 },
+  { id:"eyes-ski", cat:"glasses", slot:"eyes", e:"🥽", n:"Kar gözlüğü", price:110 },
+  { id:"toy-ball", cat:"toys", slot:"toy", e:"⚽", n:"Top", price:40 },
+  { id:"toy-dice", cat:"toys", slot:"toy", e:"🎲", n:"Zar", price:40 },
+  { id:"toy-teddy", cat:"toys", slot:"toy", e:"🧸", n:"Oyuncak ayı", price:50 },
+  { id:"toy-kite", cat:"toys", slot:"toy", e:"🪁", n:"Uçurtma", price:60 },
+  { id:"toy-puzzle", cat:"toys", slot:"toy", e:"🧩", n:"Yapboz", unlock:{ k:"n", ev:"match", n:5 }, hint:"5 eşleştirme bitir" },
+  { id:"pet-cat", cat:"pets", slot:"pet", e:"🐈", n:"Kedi", price:150 },
+  { id:"pet-penguin", cat:"pets", slot:"pet", e:"🐧", n:"Penguen", price:180 },
+  { id:"pet-dragon", cat:"pets", slot:"pet", e:"🐉", n:"Bebek ejderha", unlock:{ k:"weekly" }, hint:"Ejderha Haftası görevi" },
+  { id:"pet-egg", cat:"pets", slot:"pet", e:"🥚", n:"Ejderha yumurtası", unlock:{ k:"n", ev:"dragonHard", n:1 }, hint:"Zor ejderhayı yen" }
+];
+function giveItem(id, msg){
+  const w = W(), it = ITEMS.find(i=>i.id===id); if (!it || w.owned[id]) return;
+  w.owned[id] = 1; if (!w.eq[it.slot]) w.eq[it.slot] = id; save();
+  setTimeout(()=>{ toast((msg?msg+" ":"")+"🎁 Yeni eşya: "+it.e+" "+it.n); confetti(140); sfx("badge"); }, 1200);
+}
+function checkUnlocks(){
+  if (!DATA || !STAGES.length) return;
+  const w = W();
+  ITEMS.forEach(i => {
+    const u = i.unlock; if (!u || w.owned[i.id]) return;
+    const ok = u.k==="n" ? (w.n[u.ev]||0) >= u.n
+      : u.k==="stage" ? STAGES.filter(s=>mastery(s.id)>=0.7).length >= u.n
+      : u.k==="words" ? ALL_V.filter(v=>(S.cards[v.id]?.box||0)>=3).length >= u.n
+      : u.k==="level" ? levelOf(S.xp).l >= u.n : false;
+    if (ok) giveItem(i.id);
+  });
+}
+let shopCat = "home", pendingBuy = null;
+function world(){
+  const w = W(); checkUnlocks();
+  const st = (ITEMS.find(i=>i.id===w.eq.home) || ITEMS[0]).style, sl = s => ITEMS.find(i=>i.id===w.eq[s]);
+  const owned = ITEMS.filter(i=>w.owned[i.id]).length;
+  $app.innerHTML = `<div style="display:flex;justify-content:space-between;align-items:flex-end;gap:10px"><div><h1>Zohre'nin Dünyası</h1><div class="muted">${owned}/${ITEMS.length} eşya toplandı</div></div><div class="chip coins">🪙 ${w.coins}</div></div>
+    <div class="room" style="--wall:${st.wall};--floor:${st.floor};--sky:${st.sky};--rug:${st.rug}">
+      <div class="floor"></div>
+      <div class="slot s-window">${sl("window")?.e || ""}</div>
+      ${sl("wall") ? `<div class="slot s-wall">${sl("wall").e}</div>` : ""}
+      ${sl("shelf") ? `<div class="slot s-shelf">${sl("shelf").e}</div>` : ""}
+      <div class="slot s-rug"></div>
+      ${["lamp","plant","toy","pet"].map(s => sl(s) ? `<div class="slot s-${s}">${sl(s).e}</div>` : "").join("")}
+      <div class="zoh">${owl("idle", "room")}</div>
+    </div>
+    ${questsCard(false)}
+    <div class="card"><h3>🛍️ Eşyalar</h3>
+      <div class="cats">${CATS.map(([k,l]) => `<button class="${shopCat===k?"on":""}" data-cat="${k}">${l}</button>`).join("")}</div>
+      <div class="shop">${ITEMS.filter(i=>i.cat===shopCat).map(itemHTML).join("")}</div>
+      <small class="muted">Altın; her doğru cevaptan, ejderha savaşlarından ve görevlerden gelir. 🔒 eşyalar başarılarla açılır. Kullandığın eşyaya tekrar dokunursan çıkarırsın.</small></div>`;
+  bindQuests();
+  $app.querySelectorAll("[data-cat]").forEach(b => b.onclick = () => { sfx("tap"); shopCat = b.dataset.cat; pendingBuy = null; world(); });
+  $app.querySelectorAll("[data-item]").forEach(b => b.onclick = () => useItem(b.dataset.item));
+}
+function itemHTML(i){
+  const w = W(), own = w.owned[i.id], on = w.eq[i.slot]===i.id;
+  const sub = on ? "✓ Kullanılıyor" : own ? "Kullan" : i.price!=null ? (pendingBuy===i.id ? "Onayla: 🪙 "+i.price : "🪙 "+i.price) : "🔒 "+i.hint;
+  return `<button class="item ${own?"own":""} ${on?"on":""} ${!own && i.price==null?"lock":""}" data-item="${i.id}"><span class="ie">${i.e}</span><b>${esc(i.n)}</b><small>${esc(sub)}</small></button>`;
+}
+function useItem(id){
+  const w = W(), i = ITEMS.find(x=>x.id===id);
+  if (w.owned[id]){ sfx("tap"); if (w.eq[i.slot]===id && i.slot!=="home") delete w.eq[i.slot]; else w.eq[i.slot] = id; save(); return world(); }
+  if (i.price==null){ toast("🔒 "+i.hint+" → bu eşya açılır"); return; }
+  if (w.coins < i.price){ toast("🪙 "+(i.price-w.coins)+" altın daha lazım. Ejderha savaşı iyi kazandırır!"); sfx("no"); return; }
+  if (pendingBuy!==id){ pendingBuy = id; sfx("tap"); world(); toast("Satın almak için tekrar dokun"); return; }
+  pendingBuy = null; w.coins -= i.price; w.owned[id] = 1; w.eq[i.slot] = id; save(); header();
+  sfx("badge"); confetti(100); toast(i.e+" "+i.n+" senin! Zohre çok sevindi 🐥"); world();
+}
+
+/* ---------- pratik: modlar + zorluk + ejderha savaşı ---------- */
+const MODES = [
+  ["translate","🇹🇷→🇬🇧","Çeviri","Türkçe cümleyi kelime kartlarıyla İngilizce kur"],
+  ["cloze","✍️","Boşluk doldur","Cümledeki boşluğa doğru kelimeyi yerleştir"],
+  ["grammar","📐","Gramer","Kurallar, doğru cümleyi seçme, cümle düzeltme"],
+  ["mix","🎲","Karışık","Hepsinden biraz: çeviri, boşluk, gramer, kelime"]
+];
+const DIFFS = [[1,"🥚","Kolay","8 soru · 5 can"],[2,"🐲","Orta","10 soru · 4 can"],[3,"🐉","Zor","12 soru · 3 can"]];
+const BCFG = { 1:{ hp:8, hearts:5 }, 2:{ hp:10, hearts:4 }, 3:{ hp:12, hearts:3 } };
+let PM = null;
+function practice(){
+  PM = PM || S.pm || { mode:"mix", diff:2 };
+  const t = themeOf(), w = W(), weak = weakItems().length;
+  $app.innerHTML = `<div class="arena"><div class="owlwrap">${owl("teach")}</div><div class="bubble"><b>${t.foeName} savaşı</b><br>Mod ve zorluk seç. Doğru cevap = vuruş, yanlış = bir can. 5'li seri çift hasar!</div><div class="foe s${PM.diff}"><span class="dr">${t.foe}</span><small>${w.n.dragon||0} kez yenildi</small></div></div>
+    <div class="modes">${MODES.map(([k,i,n,d]) => `<button class="mode ${PM.mode===k?"sel":""}" data-mode="${k}"><span class="mi">${i}</span><b>${n}</b><small>${d}</small><small>${modeCount(k)} soru</small></button>`).join("")}</div>
+    <div class="diff">${DIFFS.map(([k,i,n,d]) => `<button class="${PM.diff===k?"sel":""}" data-diff="${k}"><span>${i}</span><b>${n}</b><small>${d}</small></button>`).join("")}</div>
+    <button class="btn wide" id="fight" style="font-size:1.15rem;padding:16px">⚔️ Savaşa başla</button>
+    <div class="card"><h3>Diğer çalışmalar</h3>
+      <div class="row"><button class="btn soft" id="pDue">⚡ Günlük tekrar</button><button class="btn soft" id="pErr">🎯 Hatalarım${weak?` (${weak})`:""}</button></div>
+      <div class="row"><button class="btn soft" id="pMis">✏️ Sık hatalar</button><button class="btn soft" id="pGr">📘 Konu özetleri</button></div></div>`;
+  $app.querySelectorAll("[data-mode]").forEach(b => b.onclick = () => { sfx("tap"); PM.mode = b.dataset.mode; S.pm = PM; save(); practice(); });
+  $app.querySelectorAll("[data-diff]").forEach(b => b.onclick = () => { sfx("tap"); PM.diff = +b.dataset.diff; S.pm = PM; save(); practice(); });
+  document.getElementById("fight").onclick = () => startBattle(PM.mode, PM.diff);
+  document.getElementById("pDue").onclick = () => go("play","due");
+  document.getElementById("pErr").onclick = () => go("alert");
+  document.getElementById("pMis").onclick = () => go("play","mistakes");
+  document.getElementById("pGr").onclick = () => go("book");
+}
+const modeCount = k => battlePool(k, 3).length;
+/* zorluk: müfredat sırası zorluk sırasıdır. Kolay = ilk %40 aşama, Orta = ilk %75, Zor = hepsi (sonraki aşamalar ağırlıklı) */
+function stageSet(diff){ const n = STAGES.length, max = diff===1 ? Math.ceil(n*.4) : diff===2 ? Math.ceil(n*.75) : n; return new Set(STAGES.slice(0, max).map(s=>s.id)); }
+const tokens = s => s.replace(/[.!?,]/g, "").split(/\s+/).filter(Boolean);
+function translateItems(diff){
+  const out = [];
+  DATA.lessons.forEach(L => (L.translate||[]).forEach((t, i, arr) => {
+    if (diff===1 && i >= Math.ceil(arr.length*.6)) return;
+    const extra = diff===1 ? [] : diff===2 ? (t.distract||[]).slice(0,1) : (t.distract||[]);
+    out.push({ id:"tr:"+L.id+":"+i, type:"write", topic:"translate", sid:L.id, q:"🇹🇷 “"+t.tr+"”", tiles:[...tokens(t.en), ...extra], answer:t.en, accept:t.accept||[], explain:"✓ "+t.en });
+  }));
+  return out;
+}
+const reEsc = s => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+function clozeItems(diff){
+  const out = ALL_Q.filter(q => /_{3}/.test(q.q) && !String(q.id).startsWith("vq:"));
+  ALL_V.forEach(v => {
+    if (!v.ex) return;
+    const re = new RegExp("\\b"+reEsc(v.en)+"\\b", "i"); if (!re.test(v.ex)) return;
+    const same = ALL_V.filter(x=>x.sid===v.sid && x.en!==v.en), rest = ALL_V.filter(x=>x.sid!==v.sid && x.en!==v.en);
+    const q = "Boşluğu doldur: "+v.ex.replace(re, "___");
+    if (diff===3 && v.en.split(" ").length<=2) out.push({ id:"cz:"+v.en, type:"write", topic:"cloze", sid:v.sid, q:q+" ("+v.tr+")", answer:v.en, explain:v.en+" = "+v.tr });
+    else out.push({ id:"cz:"+v.en, topic:"cloze", sid:v.sid, q, options:[v.en, ...[...shuffle(same), ...shuffle(rest)].slice(0,3).map(x=>x.en)], answerText:v.en, explain:v.en+" = "+v.tr });
+  });
+  return out;
+}
+function grammarItems(diff){
+  let out = ALL_Q.filter(q => q.topic!=="vocab" && !String(q.id).startsWith("vq:") && (diff>1 || q.type!=="write"));
+  if (diff===3) out = out.concat(ALL_M.map(m => ({ id:"m:"+m.wrong, topic:m.topic||"mistakes", type:"write", q:"Cümleyi düzelt: “"+m.wrong+"”", answer:m.right, explain:m.note, sid:m.sid })));
+  return out;
+}
+function battlePool(mode, diff){
+  if (!DATA) return [];
+  const set = stageSet(diff), inSet = q => !q.sid || set.has(q.sid);
+  const by = { translate:translateItems, cloze:clozeItems, grammar:grammarItems };
+  if (mode!=="mix") return by[mode](diff).filter(inSet);
+  return [...translateItems(diff), ...clozeItems(diff), ...grammarItems(diff), ...ALL_Q.filter(q=>String(q.id).startsWith("vq:"))].filter(inSet);
+}
+/* seçim: önce zayıflar (en çok 3), sonra yeni/vakti gelenler; konular karışsın diye aşamalara göre sırayla dağıtılır */
+function spread(list){
+  const g = {}; list.forEach(q => (g[q.sid||"x"] ||= []).push(q));
+  const keys = shuffle(Object.keys(g)), out = [];
+  while (out.length < list.length) keys.forEach(k => { const x = g[k].shift(); if (x) out.push(x); });
+  return out;
+}
+function pickBattle(pool, n, diff){
+  if (diff===3){ const order = Object.fromEntries(STAGES.map((s,i)=>[s.id,i])), half = STAGES.length/2; pool = [...pool].sort(() => Math.random()-.5).sort((a,b) => ((order[b.sid]??0)>=half) - ((order[a.sid]??0)>=half)); }
+  const weak = shuffle(pool.filter(q => (S.cards[q.id]?.wrong||0)>0 && S.cards[q.id].box<3)).slice(0,3);
+  const fresh = pool.filter(q => !S.cards[q.id] || S.cards[q.id].due<=Date.now());
+  const head = diff===3 ? pool.slice(0, Math.ceil(pool.length*.6)) : pool;
+  return [...new Set([...weak, ...spread(shuffle(fresh.filter(q=>head.includes(q)))), ...spread(shuffle(pool))])].slice(0, n+5);
+}
+function startBattle(mode, diff){
+  tab = "play"; nav(); scrollTo(0,0);
+  const cfg = BCFG[diff], list = pickBattle(battlePool(mode, diff), cfg.hp, diff);
+  if (list.length < 4){ $app.innerHTML = `<div class="card">Bu modda henüz yeterli soru yok. Başka bir mod ya da zorluk seç.</div><button class="btn wide" id="bk">Geri</button>`; document.getElementById("bk").onclick = () => go("play"); return; }
+  const hp = Math.min(cfg.hp, list.length);
+  Q = { list, i:0, score:0, combo:0, wrongs:[], mode:"battle", arg:mode, battle:{ hp, max:hp, hearts:cfg.hearts, maxHearts:cfg.hearts, diff, kind:mode, coins:0 } };
+  const t = themeOf();
+  ask("teach", `${t.foeName} geldi! Her doğru cevap bir vuruş. Hazır mısın?`);
+}
+const heartsHTML = () => "❤️".repeat(Math.max(0,Q.battle.hearts)) + "🤍".repeat(Q.battle.maxHearts - Math.max(0,Q.battle.hearts));
+const foeHTML = () => { const B = Q.battle; return `<div class="foe s${B.diff}"><span class="dr">${themeOf().foe}</span><div class="hp"><i style="width:${100*B.hp/B.max}%"></i></div><small>${B.hp} / ${B.max}</small></div>`; };
+function boom(el, txt){
+  if (!el) return; const r = el.getBoundingClientRect(), b = document.createElement("div");
+  b.className = "boom"; b.textContent = txt; b.style.left = (r.left + r.width/2 - 24)+"px"; b.style.top = (r.top + r.height/3)+"px";
+  document.body.appendChild(b); setTimeout(()=>b.remove(), 700);
+}
+function endBattle(){
+  const B = Q.battle, win = B.hp<=0, t = themeOf();
+  const bonus = win ? [0,10,20,35][B.diff] + B.hearts*3 : 0, extra = Math.max(0, B.coins - Q.score);
+  W().coins += bonus + extra;
+  if (win){ qev("dragon"); if (B.diff===3) qev("dragonHard"); if (B.hearts===B.maxHearts) qev("perfect"); confetti(220); sfx("badge"); }
+  qev("round"); save(); header();
+  const earned = B.coins + bonus, uniqWrong = [...new Set(Q.wrongs)];
+  $app.innerHTML = `<div class="card end">
+    ${win ? `<div class="chest">🧰</div><h2>${t.foeName}yı yendin! 🏆</h2>` : `<div style="font-size:4rem;line-height:1">${t.foe}</div><h2>${B.hearts<=0 ? t.foeName+" bu sefer kazandı" : t.foeName+" kaçtı!"}</h2>`}
+    <div style="width:110px">${owl(win?"happy":"sad")}</div>
+    <div class="tags" style="justify-content:center"><span class="pill">✅ ${Q.score} doğru</span><span class="pill">❤️ ${Math.max(0,B.hearts)} can kaldı</span><span class="pill" style="background:var(--sun-soft)">🪙 +${earned} altın</span>${win&&bonus?`<span class="pill">🏆 Zafer bonusu +${bonus}</span>`:""}</div>
+    <p class="muted" style="margin:0">${win ? "Wow, you are improving! Altınlarınla Zohre'nin dünyasına eşya alabilirsin." : "Hey, sıkı çalış! Yanlışların tekrar listene eklendi."}</p>
+    ${uniqWrong.length ? `<div style="text-align:left;width:100%;display:flex;flex-direction:column;gap:6px">${uniqWrong.map(q=>`<div class="pill bad" style="white-space:normal">${esc(q.q)} → ${esc(q.answerText ?? (q.options?q.options[q.answer]:q.answer))}</div>`).join("")}</div>` : ""}
+    <div class="row" style="width:100%"><button class="btn" id="again">⚔️ Tekrar savaş</button>${win && B.diff<3 ? `<button class="btn soft" id="harder">🔥 Zorluğu artır</button>` : ""}</div>
+    <div class="row" style="width:100%"><button class="btn soft" id="toWorld2">🏠 Dünyam</button><button class="btn soft" id="toMenu">Pratik menüsü</button></div></div>`;
+  const { kind, diff } = B;
+  document.getElementById("again").onclick = () => startBattle(kind, diff);
+  const h = document.getElementById("harder"); if (h) h.onclick = () => { PM = { mode:kind, diff:diff+1 }; S.pm = PM; save(); startBattle(kind, diff+1); };
+  document.getElementById("toWorld2").onclick = () => go("world");
+  document.getElementById("toMenu").onclick = () => go("play");
+}
+
+/* ---------- gramer ---------- */
+function grammar(){
+  $app.innerHTML = `<div class="hero"><div class="owlwrap">${owl("teach")}</div><div class="bubble"><b>Gramer özetleri</b><br>Bugün ne tekrar edelim? Bir konu seç, sonra birlikte çalışalım.</div></div>` + (ALL_G.length ? ALL_G.map((g,i)=>`${i===0||ALL_G[i-1].sid!==g.sid?`<h2 style="margin-top:6px">${esc(g.lesson)}</h2>`:""}<div class="card"><h2>${esc(g.title)}</h2><p style="margin:0">${esc(g.summary)}</p>
+    ${(g.examples||[]).map(e=>`<div class="ex">${esc(e)}</div>`).join("")}<button class="btn soft" data-t="${esc(g.topic)}">⚡ Bu konuyu çalış</button></div>`).join("") : `<div class="card muted">Henüz gramer notu yok.</div>`);
+  $app.querySelectorAll("[data-t]").forEach(b => b.onclick = () => go("play","topic",b.dataset.t));
+}
+
+/* ---------- zor kelimeler ---------- */
+// Bilinemeyen kelimeler buraya kaydedilir; üst üste 3 kez bilinince listeden çıkar.
+const HARD_OUT = 3;
+function trackHard(en, ok){
+  S.hard = S.hard || {};
+  const h = S.hard[en];
+  if (!ok){ S.hard[en] = { n:(h?.n||0)+1, streak:0, d:today() }; return; }
+  if (h){ h.streak++; if (h.streak>=HARD_OUT){ delete S.hard[en]; setTimeout(()=>toast("🎉 “"+en+"” zor kelimelerinden çıktı!"),400); } }
+}
+const hardWords = () => ALL_V.filter(v=>S.hard?.[v.en]).sort((a,b)=>S.hard[b.en].n-S.hard[a.en].n);
+
+/* ---------- kelime ---------- */
+function vocab(){
+  const learned = v => (S.cards[v.id]?.box||0)>=3, hard = hardWords();
+  $app.innerHTML = `<h1>Kelimeler</h1><div class="muted">${ALL_V.filter(learned).length}/${ALL_V.length} kelime öğrenildi</div>
+    <div class="row"><button class="btn" id="f">🃏 Kartlar (20)</button><button class="btn soft" id="m">🧩 Eşleştir</button></div>
+    <div class="card hardcard"><h2>📌 Zor Kelimelerim <span class="pill bad">${hard.length}</span></h2>
+      ${hard.length ? `<p class="muted" style="margin:0">Bilemediğin kelimeler burada. Üst üste ${HARD_OUT} kez bilince listeden çıkar.</p>
+        <div class="row"><button class="btn" id="hf">🃏 Kartlar</button><button class="btn soft" id="hq">⚡ Quiz</button>${hard.length>=2?`<button class="btn soft" id="hm">🧩 Eşleştir</button>`:""}</div>
+        ${hard.map(v=>`<div style="display:flex;gap:8px;align-items:center"><span style="flex:1;min-width:0"><b>${esc(v.en)}</b> — ${esc(v.tr)}</span><span class="pill bad">${S.hard[v.en].n}×</span><span class="pill">${S.hard[v.en].streak}/${HARD_OUT}</span></div>`).join("")}`
+      : `<p class="muted" style="margin:0">Henüz zor kelimen yok. Kartlarda “Bilemedim” dediğin ya da yanlış yaptığın kelimeler buraya kaydedilir.</p>`}</div>
+    <div class="card"><h3>Tüm kelimeler</h3>${[...ALL_V].reverse().map(v=>`<div><b>${esc(v.en)}</b> ${learned(v)?"✅":S.hard?.[v.en]?"📌":""} — ${esc(v.tr)}<div class="muted" style="font-size:.9rem">${esc(v.ex)}</div></div>`).join("")}</div>`;
+  document.getElementById("m").onclick = () => go("match");
+  document.getElementById("f").onclick = () => go("flash");
+  const hf=document.getElementById("hf"); if (hf) hf.onclick = () => { tab="flash"; nav(); flash(shuffle(hard).slice(0,20),0,false,{hard:true}); };
+  const hq=document.getElementById("hq"); if (hq) hq.onclick = () => go("play","hardv");
+  const hm=document.getElementById("hm"); if (hm) hm.onclick = () => { tab="match"; nav(); match(hard); };
+}
+/* 20 kelimelik kart turu: önce zor kelimeler, sonra sıradaki aşamaların yeni/vakti gelen kelimeleri */
+function flashDeck(){
+  const order = Object.fromEntries(STAGES.map((s,i)=>[s.id,i])), cur = currentStageIdx();
+  const hard = shuffle(hardWords()).slice(0,8);
+  const due = ALL_V.filter(v=>!hard.includes(v) && (S.cards[v.id]?.due||0)<=Date.now() && (order[v.sid]??0)<=cur+1)
+    .sort((a,b)=>((S.cards[a.id]?1:0)-(S.cards[b.id]?1:0)) || ((order[a.sid]??0)-(order[b.sid]??0)));
+  let deck = [...hard, ...due].slice(0,20);
+  if (deck.length<20) deck = deck.concat(shuffle(ALL_V.filter(v=>!deck.includes(v))).slice(0,20-deck.length));
+  return shuffle(deck);
+}
+// pool: belirli kelimelerle oyna (zor kelimeler, hikaye). opt: {ordered, back, again}
+function match(pool, opt={}){
+  if (ALL_V.length<2){ $app.innerHTML=`<div class="card">Eşleştirme için en az 2 kelime gerekli.</div>`; return; }
+  const fromHard = Array.isArray(pool) && pool.length>=2;
+  const weakV = fromHard ? [] : hardWords().slice(0,2);
+  const set = fromHard ? (opt.ordered ? pool.slice(0,6) : shuffle(pool).slice(0,6)) : shuffle([...new Set([...weakV, ...shuffle(ALL_V)])].slice(0,6));
+  let sel=null, left=set.length, misses=0, combo=0; const t0=Date.now();
+  const tiles = [...shuffle(set).map(v=>({k:v.en,t:v.en})), ...shuffle(set).map(v=>({k:v.en,t:v.tr}))];
+  const lft = tiles.slice(0,set.length), rgt = tiles.slice(set.length);
+  $app.innerHTML = `<div class="qtop"><button class="iconbtn" id="quit">${SVG('<path d="M18 6L6 18M6 6l12 12"/>')}</button><h2 style="flex:1">Eşleştir</h2><div class="combo" id="mc"></div></div>
+    <div class="grid2">${lft.map((x,i)=>`<button class="tile" data-i="${i}">${esc(x.t)}</button>${`<button class="tile" data-i="${i+set.length}">${esc(rgt[i].t)}</button>`}`).join("")}</div><div id="mend"></div>`;
+  document.getElementById("quit").onclick = () => go(opt.back || "cards");
+  $app.querySelectorAll(".tile").forEach(b => b.onclick = () => {
+    const x = tiles[+b.dataset.i]; sfx("tap");
+    if (!sel){ sel=b; b.classList.add("sel"); return; }
+    if (sel===b){ b.classList.remove("sel"); sel=null; return; }
+    const y = tiles[+sel.dataset.i];
+    if ((+b.dataset.i<set.length) === (+sel.dataset.i<set.length)){ sel.classList.remove("sel"); sel=b; b.classList.add("sel"); return; }
+    const v = set.find(v=>v.en===y.k);
+    if (x.k===y.k){ [b,sel].forEach(e=>e.classList.add("done")); combo++; sfx("ok",combo); buzz(true); grade({id:v.id,topic:"vocab"},true); left--; }
+    else { misses++; combo=0; sfx("no"); buzz(false); grade({id:v.id,topic:"vocab"},false); const a=sel; [b,a].forEach(e=>{e.classList.add("bad"); setTimeout(()=>e.classList.remove("bad","sel"),450)}); }
+    sel.classList.remove("sel"); sel=null;
+    document.getElementById("mc").textContent = combo>=2?"🔥"+combo:"";
+    if (!left){
+      qev("match");
+      const sec = Math.round((Date.now()-t0)/1000);
+      if (!misses) confetti(120);
+      document.getElementById("mend").innerHTML = `<div class="card end"><div style="width:100px">${owl(misses<2?"happy":"sad")}</div><h2>${misses?misses+" hata, "+sec+" saniye":"Hatasız! "+sec+" saniye ⚡"}</h2><button class="btn wide" id="mm">Yeni tur</button></div>`;
+      document.getElementById("mm").onclick = () => match(opt.again ? opt.again() : fromHard ? hardWords() : undefined, opt);
+    }
+  });
+}
+function flash(list, i, back, st){
+  st = st || { known:[], missed:[], total:list.length, hard:false };
+  st.known = st.known || []; st.missed = st.missed || []; st.total = st.total || list.length;
+  if (!list.length){ go("cards"); return; }
+  if (i>=list.length) return flashEnd(st);
+  const v = list[i];
+  $app.innerHTML = `<div class="qtop"><button class="iconbtn" id="quit">${SVG('<path d="M18 6L6 18M6 6l12 12"/>')}</button><div class="track"><i style="width:${100*i/list.length}%;background:var(--accent)"></i></div><span>${i+1}/${list.length}</span></div>
+    <div class="card flash" id="fc">${back?`<div class="big">${esc(v.tr)}</div><div class="ex">${esc(v.ex)}</div>`:`<div class="big">${esc(v.en)}</div><div class="muted">Anlamını düşün, sonra dokun</div>`}</div>
+    ${back?`<div class="row"><button class="btn soft" id="no">😕 Bilemedim</button><button class="btn" id="yes">😎 Bildim</button></div>`:""}`;
+  document.getElementById("quit").onclick = () => go("cards");
+  document.getElementById("fc").onclick = () => { sfx("tap"); flash(list,i,!back,st); };
+  if (back){
+    const first = !st.known.includes(v) && !st.missed.includes(v);
+    document.getElementById("yes").onclick = () => { if (first) st.known.push(v); grade({id:v.id,topic:"vocab"},true); sfx("ok"); buzz(true); flash(list,i+1,false,st); };
+    document.getElementById("no").onclick = () => { if (!st.missed.includes(v)){ st.missed.push(v); st.known = st.known.filter(x=>x!==v); } grade({id:v.id,topic:"vocab"},false); sfx("no"); buzz(false); list.push(v); flash(list,i+1,false,st); };
+  }
+}
+function flashEnd(st){
+  qev("flash");
+  const k = st.known.length, m = st.missed.length, good = m <= Math.round(st.total*0.25);
+  if (!m) { confetti(150); sfx("badge"); }
+  $app.innerHTML = `<div class="card end"><div style="width:120px">${owl(good?"happy":"sad")}</div>
+    <div class="score">${k}/${st.total}</div>
+    <h2>${!m?"Hepsini bildin! Wow, you are improving! 💯":good?"Wow, you are improving!":"Hey, sıkı çalış!"}</h2>
+    ${m?`<p class="muted" style="margin:0">Bilemediğin ${m} kelime 📌 Zor Kelimelerim listene kaydedildi.</p>
+      <div style="width:100%;display:flex;flex-direction:column;gap:6px;text-align:left">${st.missed.map(v=>`<div class="pill bad" style="white-space:normal"><b>${esc(v.en)}</b> — ${esc(v.tr)}</div>`).join("")}</div>`:""}
+    <div class="row" style="width:100%">${m?`<button class="btn" id="fh">📌 Zor kelimeleri çalış</button>`:""}<button class="btn ${m?"soft":""}" id="fn">🃏 Yeni 20 kelime</button></div>
+    <button class="btn soft wide" id="fb">Kelimelere dön</button></div>`;
+  const fh=document.getElementById("fh"); if (fh) fh.onclick = () => flash(shuffle(hardWords()).slice(0,20),0,false,{hard:true});
+  document.getElementById("fn").onclick = () => flash(flashDeck(),0,false);
+  document.getElementById("fb").onclick = () => go("cards");
+}
+
+/* ---------- hikayeler ---------- */
+// Metinde [[english|türkçe]] = yeni kelime. Dokunulan kelimeler S.storyTaps'e kaydedilir ve o hikayenin sınavında öncelikle sorulur.
+const STORIES = () => DATA?.stories || [];
+const GL = /\[\[([^|\]]+)\|([^\]]+)\]\]/g;
+const plain = s => s.replace(GL, "$1");
+function storyWords(st){
+  const m = new Map();
+  st.pages.forEach(p => { for (const x of p.matchAll(GL)) if (!m.has(x[1])) m.set(x[1], x[2]); });
+  return [...m].map(([en,tr]) => ({ en, tr, id:"sw:"+st.id+":"+en, ex:"" }));
+}
+const sState = id => { S.stories = S.stories || {}; return S.stories[id] || (S.stories[id] = { page:0, read:false, best:null }); };
+const taps = id => { S.storyTaps = S.storyTaps || {}; return S.storyTaps[id] || (S.storyTaps[id] = {}); };
+/* tıklanan kelimeler önde, sonra henüz öğrenilmemiş olanlar */
+function storyPool(st){
+  const T = taps(st.id), lv = w => (S.cards[w.id]?.box||0);
+  const W = storyWords(st);
+  return [...shuffle(W.filter(w=>T[w.en])), ...shuffle(W.filter(w=>!T[w.en])).sort((a,b)=>lv(a)-lv(b))];
+}
+function stories(){
+  const L = STORIES();
+  $app.innerHTML = `<div class="hero"><div class="owlwrap">${owl("teach")}</div><div class="bubble"><b>Hikayeler</b><br>Renkli kelimelere dokun, Türkçesini göstereyim. Dokunduğun kelimeler o hikayenin sınavında karşına çıkacak!</div></div>` +
+    (L.length ? L.map(st => {
+      const s = sState(st.id), t = Object.keys(taps(st.id)).length, n = storyWords(st).length;
+      return `<div class="card"><div style="display:flex;gap:12px;align-items:center"><span style="font-size:2.6rem;line-height:1">${esc(st.emoji||"📖")}</span><div style="flex:1;min-width:0"><h2>${esc(st.title)}</h2><div class="muted">${esc(st.titleTr||"")}</div></div></div>
+        <div class="tags">${s.read?`<span class="pill" style="background:var(--good-soft);color:var(--good)">✓ Okundu</span>`:""}<span class="pill">📖 ${st.pages.length} sayfa</span><span class="pill">🔤 ${n} yeni kelime</span>${t?`<span class="pill bad">👆 ${t} kelimeye baktın</span>`:""}${s.best!=null?`<span class="pill">🏆 En iyi %${s.best}</span>`:""}</div>
+        <div class="row"><button class="btn" data-read="${esc(st.id)}">${s.page>0&&!s.read?"📖 Devam et":"📖 Oku"}</button><button class="btn soft" data-quiz="${esc(st.id)}">⚡ Sınav</button><button class="btn soft" data-match="${esc(st.id)}">🧩 Eşleştir</button></div></div>`;
+    }).join("") : `<div class="card muted">Henüz hikaye yok.</div>`);
+  $app.querySelectorAll("[data-read]").forEach(b => b.onclick = () => { sfx("tap"); const s=sState(b.dataset.read); reader(b.dataset.read, s.read ? 0 : s.page); });
+  $app.querySelectorAll("[data-quiz]").forEach(b => b.onclick = () => go("play","story",b.dataset.quiz));
+  $app.querySelectorAll("[data-match]").forEach(b => b.onclick = () => storyMatch(b.dataset.match));
+}
+function storyMatch(id){
+  const st = STORIES().find(x=>x.id===id); if (!st) return go("story");
+  hidePop(); tab="story"; nav(); scrollTo(0,0);
+  match(storyPool(st), { ordered:true, back:"story", again:() => storyPool(st) });
+}
+let curStory = null;
+function reader(id, p){
+  const st = STORIES().find(x=>x.id===id); if (!st) return go("story");
+  hidePop(); tab="story"; nav(); scrollTo(0,0); curStory = id;
+  const s = sState(id), N = st.pages.length; p = Math.max(0, Math.min(p||0, N-1)); s.page = p;
+  const last = p===N-1; if (last) qev("story");
+  if (last && !s.read){ s.read = true; setTimeout(()=>{ confetti(90); sfx("badge"); },300); }
+  save();
+  const T = taps(id);
+  const text = st.pages[p].split(/\n+/).map(par => `<p>${esc(par).replace(GL, (m,en,tr) => `<span class="gw ${T[en]?"seen":""}" data-en="${en}" data-tr="${tr}">${en}</span>`)}</p>`).join("");
+  const seen = storyWords(st).filter(w=>T[w.en]);
+  $app.innerHTML = `<div class="qtop"><button class="iconbtn" id="back" aria-label="Geri">${SVG('<path d="M15 18l-6-6 6-6"/>')}</button><div style="flex:1;min-width:0"><div class="eyebrow">${esc(st.emoji||"📖")} Sayfa ${p+1} / ${N}</div><b>${esc(st.title)}</b></div></div>
+    <div class="dots">${st.pages.map((_,i)=>`<i class="${i<=p?"on":""}"></i>`).join("")}</div>
+    <div class="card story">${text}</div>
+    ${p===0?`<div class="muted" style="text-align:center;font-size:.9rem">👆 Renkli kelimelere dokun, Türkçesi görünsün.</div>`:""}
+    <div class="row">${p>0?`<button class="btn soft" id="prev">← Önceki</button>`:""}${!last?`<button class="btn" id="next">Sonraki →</button>`:""}</div>
+    ${last?`<div class="card end"><div style="width:110px">${owl("happy")}</div><h2>Hikaye bitti! Wow, you are improving!</h2>
+      ${seen.length?`<p class="muted" style="margin:0">Baktığın ${seen.length} kelime sınavda karşına çıkacak:</p><div class="tags" style="justify-content:center">${seen.map(w=>`<span class="pill">${esc(w.en)} = ${esc(w.tr)}</span>`).join("")}</div>`:`<p class="muted" style="margin:0">Sınavda hikayedeki yeni kelimeler ve hikayeyle ilgili sorular var.</p>`}
+      <div class="row" style="width:100%"><button class="btn" id="sq">⚡ Sınava başla</button><button class="btn soft" id="sm">🧩 Eşleştir</button></div>
+      <button class="btn soft wide" id="sl">Hikayelere dön</button></div>`:""}`;
+  document.getElementById("back").onclick = () => go("story");
+  const pv=document.getElementById("prev"); if (pv) pv.onclick = () => { sfx("tap"); reader(id, p-1); };
+  const nx=document.getElementById("next"); if (nx) nx.onclick = () => { sfx("tap"); reader(id, p+1); };
+  if (last){
+    document.getElementById("sq").onclick = () => go("play","story",id);
+    document.getElementById("sm").onclick = () => storyMatch(id);
+    document.getElementById("sl").onclick = () => go("story");
+  }
+}
+/* kelime balonu: kelimeye dokununca Türkçesi, başka yere dokununca kaybolur */
+const $pop = document.getElementById("pop");
+function hidePop(){ $pop.hidden = true; document.querySelectorAll(".gw.act").forEach(e=>e.classList.remove("act")); }
+document.addEventListener("click", e => {
+  const w = e.target.closest(".gw");
+  if (!w || $pop.dataset.en===w.dataset.en && !$pop.hidden){ hidePop(); return; }
+  hidePop(); sfx("tap");
+  const en = w.dataset.en, tr = w.dataset.tr;
+  if (curStory){ taps(curStory)[en] = tr; save(); }
+  $app.querySelectorAll(".gw").forEach(x => { if (x.dataset.en===en) x.classList.add("seen"); });
+  w.classList.add("act");
+  $pop.dataset.en = en; $pop.innerHTML = `${esc(tr)}<small>${esc(en)} · sınava eklendi</small>`; $pop.hidden = false;
+  const r = w.getBoundingClientRect(), pw = $pop.offsetWidth, ph = $pop.offsetHeight;
+  $pop.style.left = Math.max(8, Math.min(r.left + r.width/2 - pw/2, innerWidth - pw - 8)) + "px";
+  $pop.style.top = (r.top - ph - 8 < 8 ? r.bottom + 8 : r.top - ph - 8) + "px";
+});
+addEventListener("scroll", () => { if (!$pop.hidden) hidePop(); }, { passive:true });
+/* hikaye sınavı: tıklanan kelimeler (boşluk doldurma / anlam / ters çeviri) + hikayeye özel sorular, toplam ~10 */
+function storyQuiz(id){
+  const st = STORIES().find(x=>x.id===id); if (!st) return [];
+  const T = taps(id), pool = storyPool(st), W = storyWords(st);
+  const nTap = pool.filter(w=>T[w.en]).length;
+  const nWords = Math.min(pool.length, Math.max(5, Math.min(nTap, 8)));
+  const sentences = st.pages.flatMap(p => p.replace(/([.!?…]["”]?)\s+/g, "$1\n").split("\n"));
+  const others = (w, k) => shuffle(W.filter(x=>x.en!==w.en)).slice(0,3).map(x=>x[k]);
+  const words = pool.slice(0, nWords).map((w, i) => {
+    const sent = sentences.find(x => x.includes("[["+w.en+"|"));
+    const kind = T[w.en] ? (i%3===1 ? "mean" : i%3===2 ? "rev" : "fill") : (i%2 ? "mean" : "fill");
+    if (kind==="fill" && sent){
+      const q = plain(sent.replace("[["+w.en+"|"+w.tr+"]]", "___")).trim();
+      return { id:"sf:"+id+":"+w.en, topic:"story", q:"Boşluğu doldur: "+q, options:[w.en, ...others(w,"en")], answerText:w.en, explain:w.en+" = "+w.tr };
+    }
+    if (kind==="rev") return { id:"sr:"+id+":"+w.en, topic:"story", q:"“"+w.tr+"” hikayede hangi kelimeydi?", options:[w.en, ...others(w,"en")], answerText:w.en, explain:w.en+" = "+w.tr };
+    return { id:w.id, topic:"story", q:"“"+w.en+"” ne demek?", options:[w.tr, ...others(w,"tr")], answerText:w.tr, explain:sent ? plain(sent).trim() : "" };
+  });
+  const own = shuffle((st.questions||[]).map((q,i) => ({ ...q, id:"sq:"+id+":"+i, topic:"story" }))).slice(0, Math.max(2, 10-words.length));
+  return shuffle([...words, ...own]);
+}
+
+/* sık hata alıştırması: en çok yanıldığın hatalar önde; seçmeli + "cümleyi düzelt" yazma soruları */
+function mistakeDrill(){
+  const sc = m => { const c=S.cards["m:"+m.wrong]; return c ? c.wrong*2 - c.box : 0.5; };
+  const ms = shuffle(ALL_M).sort((a,b)=>sc(b)-sc(a)).slice(0,10);
+  return ms.map((m,i) => i%2===0
+    ? ALL_Q.find(q=>q.id==="m:"+m.wrong)
+    : { id:"m:"+m.wrong, topic:m.topic||"mistakes", type:"write", q:"Cümleyi düzelt: “"+m.wrong+"”", answer:m.right, explain:m.note, sid:m.sid }
+  ).filter(Boolean);
+}
+
+/* ---------- hatalar ---------- */
+function errors(){
+  const weak = weakItems().slice(0,10), hard = hardWords();
+  $app.innerHTML = `<h1>Hatalarım</h1>
+    <div class="card"><div class="hero"><div class="owlwrap" style="width:84px">${owl("sad")}</div><div><h2>Sık hata alıştırması</h2><div class="muted">Derste düzeltilen ${ALL_M.length} hatadan 10 soru. En çok yanıldıkların önce gelir, yarısında cümleyi kendin düzeltirsin.</div></div></div>
+      <button class="btn wide" id="md">✏️ Hatalar üzerine çalış</button>
+      ${hard.length?`<button class="btn soft wide" id="hw">📌 Zor kelimelerim (${hard.length})</button>`:""}</div>
+    <div class="card"><h2>Uygulamada en çok yanıldıkların</h2>${weak.length?weak.map(q=>`<div style="display:flex;gap:8px;align-items:center"><span style="flex:1;min-width:0">${esc(q.topic==="vocab"||q.q==="Hangisi doğru?"?(q.answerText):q.q)}</span><span class="pill bad">${S.cards[q.id].wrong}×</span></div>`).join("")+`<button class="btn wide" id="w">🎯 Bunları şimdi çalış</button>`:`<p class="muted" style="margin:0">Henüz yanlışın yok. Pratik yaptıkça burası dolacak.</p>`}</div>
+    <div class="card"><h2>Derste düzeltilen hatalar</h2>${ALL_M.length?[...ALL_M].reverse().map(m=>`<div><div class="wrong">${esc(m.wrong)}</div><div class="right">✓ ${esc(m.right)}</div><div class="muted" style="font-size:.9rem">${esc(m.note)}</div></div>`).join("<hr style='border:0;border-top:1px solid var(--line);margin:0;width:100%'>"):`<p class="muted" style="margin:0">Henüz kayıtlı hata yok.</p>`}</div>`;
+  const w=document.getElementById("w"); if (w) w.onclick = () => go("play","weak");
+  document.getElementById("md").onclick = () => go("play","mistakes");
+  const hw=document.getElementById("hw"); if (hw) hw.onclick = () => go("cards");
+}
+
+/* ---------- ayarlar ---------- */
+function settings(){
+  const st=S.settings;
+  $app.innerHTML = `<h1>Ayarlar</h1>
+    <div class="card">
+      <label class="toggle">Sesler<input type="checkbox" id="s_sound" ${st.sound?"checked":""}></label>
+      ${IS_NATIVE || navigator.vibrate ? `<label class="toggle">Titreşim<input type="checkbox" id="s_vib" ${st.vib?"checked":""}></label>` : ""}
+      ${IS_NATIVE ? `<label class="toggle">Günlük hatırlatma<input type="checkbox" id="s_rem" ${st.remind?"checked":""}></label>
+      <label class="toggle">Hatırlatma saati<select id="s_hour" style="font:inherit;padding:6px;border-radius:10px">${[8,9,12,13,18,19,20,21,22].map(h=>`<option value="${h}" ${h===st.hour?"selected":""}>${h}:00</option>`).join("")}</select></label>` : ""}
+    </div>
+    <div class="card"><b>❄️ Winter Smells Cold</b><div class="muted">Bu sürümde ejderha savaşları, günlük görevler ve Zohre'nin dünyası var. İstediğin zaman eski sürüme dönebilirsin; ilerlemen ikisinde de ortak.</div>
+      <label class="toggle">Tema<select id="s_theme" style="font:inherit;padding:6px;border-radius:10px">${[["auto","Haftanın teması ("+(THEMES[DATA?.theme]||THEMES.dragon).name+")"],["dragon","🐉 Ejderha"],["winter","❄️ Kış"],["classic","💜 Klasik"]].map(([k,l])=>`<option value="${k}" ${(st.theme||"auto")===k?"selected":""}>${l}</option>`).join("")}</select></label>
+      <button class="btn soft" id="toBeg">↩️ Barely English Beginning'e dön</button></div>
+    <div class="card"><b>Barely English · Winter Smells Cold</b><div class="muted">${IS_NATIVE ? `Uygulama sürümü 1.${APP_BUILD}` : "Web sürümü · her açılışta kendiliğinden güncellenir"} · İçerik sürümü ${DATA.version} · ${DATA.lessons.length} aşama · ${ALL_V.length} kelime · ${ALL_Q.length} soru</div>
+      <button class="btn soft" id="refresh">📬 Yeni ders ve güncelleme var mı bak</button>
+      ${APP_BUILD>0 && (DATA.latestApk||0)>APP_BUILD ? `<button class="btn" id="getApk2">⬇️ Güncellemeyi al (1.${DATA.latestApk})</button>` : ""}</div>
+    <details class="card"><summary style="font-weight:800;cursor:pointer">İlerlemeyi sıfırla</summary><p class="muted">Puan, seri, rozet ve tekrar geçmişin silinir. Ders içerikleri kalır.</p><button class="btn soft" id="rs" style="color:var(--bad)">Evet, sıfırla</button></details>`;
+  const bind=(id,k,f=x=>x.checked)=>{ const el=document.getElementById(id); if (el) el.onchange=e=>{ st[k]=f(e.target); save(); if (k==="remind"||k==="hour") scheduleReminder(true); }; };
+  bind("s_sound","sound"); bind("s_vib","vib"); bind("s_rem","remind"); bind("s_hour","hour",x=>+x.value);
+  document.getElementById("s_theme").onchange = e => { st.theme = e.target.value; save(); applyTheme(); toast("Tema: "+themeOf().name); };
+  document.getElementById("toBeg").onclick = () => { S.winterHidden = true; save(); try { localStorage.setItem("be-edition","beginning"); } catch(e){} location.replace("index.html"); };
+  document.getElementById("refresh").onclick = async () => { const v=DATA.version; await loadLessons(); if (DATA.version===v) toast(LESSONS_URL?"Şimdilik yeni ders ya da güncelleme yok.":"Bağlantı henüz ayarlanmadı."); };
+  const g2=document.getElementById("getApk2"); if (g2) g2.onclick = () => installUpdate(g2);
+  document.getElementById("rs").onclick = () => { const keep=S.settings; S=fresh(); S.settings=keep; save(); toast("İlerleme sıfırlandı"); tab="home"; render(); };
+}
+
+/* ---------- bildirim & geri tuşu ---------- */
+async function scheduleReminder(ask){
+  const LN = window.Capacitor?.Plugins?.LocalNotifications; if (!LN) return;
+  try {
+    await LN.cancel({notifications:[{id:1}]});
+    if (!S.settings.remind) return;
+    let p = await LN.checkPermissions();
+    if (p.display!=="granted" && ask) p = await LN.requestPermissions();
+    if (p.display!=="granted") return;
+    await LN.schedule({notifications:[{ id:1, title:"Zohre seni bekliyor 🐥", body:"Bugünkü İngilizce tekrarını yapalım mı? Serini koru! 🔥", schedule:{ on:{hour:S.settings.hour, minute:0}, allowWhileIdle:true } }]});
+  } catch(e){}
+}
+try { window.Capacitor?.Plugins?.App?.addListener("backButton", () => { if (tab==="home") window.Capacitor.Plugins.App.exitApp(); else go("home"); }); } catch(e){}
+document.addEventListener("visibilitychange", () => { if (!document.hidden && DATA) loadLessons(); });
+
+loadLessons(true).then(() => scheduleReminder(true));
+// Web sürümü (iPhone "Ana Ekrana Ekle"): çevrimdışı çalışma için service worker
+if (!IS_NATIVE && "serviceWorker" in navigator && location.protocol === "https:") { navigator.serviceWorker.register("sw.js").catch(()=>{}); }
+</script>
+</body>
+</html>
