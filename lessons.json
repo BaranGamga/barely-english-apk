@@ -1,7 +1,7 @@
 {
-  "version": 9,
-  "latestApk": 8,
-  "latestApkNote": "Yeni: Hikaye bölümü (3 hikaye, dokununca Türkçe, hikaye sınavları)",
+  "version": 11,
+  "latestApk": 9,
+  "latestApkNote": "Winter Smells Cold: ejderha savaşı, görevler, Zohre'nin dünyası",
   "lessons": [
     {
       "id": "u01-present-simple",
@@ -9052,5 +9052,6 @@
         }
       ]
     }
-  ]
+  ],
+  "theme": "ice"
 }
