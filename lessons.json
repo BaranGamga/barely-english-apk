@@ -1,7 +1,7 @@
 {
-  "version": 12,
-  "latestApk": 10,
-  "latestApkNote": "Buz Ejderhası Haftası: yeni görseller, Buz Mücadelesi, avatarlar",
+  "version": 17,
+  "latestApk": 11,
+  "latestApkNote": "Yeni ses efektleri: çan tınıları, ejderha vuruşu, sandık ve zafer sesleri",
   "lessons": [
     {
       "id": "u01-present-simple",
@@ -478,12 +478,12 @@
         },
         {
           "en": "take a break",
-          "tr": "mola vermek",
+          "tr": "mola vermek (make a break ❌)",
           "ex": "I take a short break every two hours."
         },
         {
           "en": "work out",
-          "tr": "spor yapmak",
+          "tr": "spor yapmak (ayrıca: yoluna girmek, çözülmek)",
           "ex": "I work out three times a week."
         },
         {
@@ -1799,7 +1799,7 @@
         },
         {
           "en": "get along with",
-          "tr": "biriyle iyi geçinmek",
+          "tr": "biriyle iyi geçinmek (get on well with ile aynı)",
           "ex": "I get along with my colleagues."
         },
         {
@@ -3072,7 +3072,7 @@
         },
         {
           "en": "get used to",
-          "tr": "... -e alışmak",
+          "tr": "... -e alışmak (+ isim / V-ing: get used to waking up)",
           "ex": "I'm getting used to the new job."
         },
         {
@@ -4592,7 +4592,7 @@
         },
         {
           "en": "look forward to",
-          "tr": "dört gözle beklemek",
+          "tr": "dört gözle beklemek (+ isim / V-ing; to bir edat)",
           "ex": "I am looking forward to meeting you."
         },
         {
@@ -4602,7 +4602,7 @@
         },
         {
           "en": "chicken out",
-          "tr": "korkup vazgeçmek",
+          "tr": "korkup vazgeçmek (≈ get cold feet)",
           "ex": "I wanted to try it, but I chickened out."
         },
         {
@@ -6183,12 +6183,12 @@
         },
         {
           "en": "I'd rather ... than ...",
-          "tr": "... yerine ... tercih ederim",
+          "tr": "... yerine ... tercih ederim (rather + V1, to yok)",
           "ex": "I'd rather stay home than go out."
         },
         {
           "en": "take part in",
-          "tr": "katılmak",
+          "tr": "katılmak (take part to ❌; Did you take part in the school activity?)",
           "ex": "I took part in a drawing competition."
         },
         {
@@ -6198,7 +6198,7 @@
         },
         {
           "en": "take advantage of",
-          "tr": "-den yararlanmak",
+          "tr": "-den yararlanmak / (insanı) suistimal etmek",
           "ex": "Take advantage of this opportunity."
         },
         {
@@ -6488,10 +6488,594 @@
       ]
     },
     {
-      "id": "u13-risk",
+      "id": "u20-preferences",
       "stage": 15,
+      "date": "2026-11-20",
+      "title": "Aşama 15 · Prefer, would prefer ve would rather (tercihler)",
+      "goal": "Bu aşamanın sonunda genel tercihlerini (prefer), kibar ve o ana özel tercihlerini (would prefer) ve güçlü kişisel seçimlerini (would rather) doğru kalıplarla söyleyebileceksin.",
+      "grammar": [
+        {
+          "topic": "prefer",
+          "title": "prefer: genel tercih (her zaman, genelde)",
+          "summary": "prefer = bir şeyi diğerine genel olarak tercih etmek. Üç kalıp var: (1) prefer + isim + to + isim: I prefer coffee to tea. (2) prefer + V-ing + to + V-ing: I prefer reading to watching TV. (3) prefer + to V1 + rather than + V1: I prefer to stay home rather than go out. Türkçedeki 'çaya' (-e hali) İngilizcede to olur; than değil (prefer coffee than tea ❌). to V1 kullanırsan ikinci kısım rather than + V1 olur (prefer to watch than read ❌). Genel tercih = Simple Present: she prefers (-s!).",
+          "examples": [
+            "I prefer coffee to tea.",
+            "She prefers reading to watching TV.",
+            "I prefer to stay home rather than go out.",
+            "I prefer playing games to listening to music."
+          ]
+        },
+        {
+          "topic": "prefer",
+          "title": "would prefer ('d prefer): kibar, bu seferlik tercih",
+          "summary": "would prefer genel bir alışkanlık değil, belirli bir durumdaki seçimdir: bu akşam, yarın, şu an, bir teklif karşısında. Daha kibar ve resmîdir. Kalıplar: would prefer + to V1 (en yaygın): I'd prefer to meet tomorrow. would prefer + isim: We'd prefer a window seat. (would prefer + V-ing de olur ama daha az yaygın.) Soru: Would you prefer tea or coffee? Kural: 'genelde' diyorsan prefer, 'bu sefer / şimdi' diyorsan would prefer. I would prefer riding motorcycles (bağlam yok) → genel tercihse I prefer riding motorcycles.",
+          "examples": [
+            "I'd prefer to meet tomorrow.",
+            "We'd prefer a window seat.",
+            "Would you like coffee? – I'd prefer orange juice, please.",
+            "I'd prefer to go out this weekend."
+          ]
+        },
+        {
+          "topic": "would-rather",
+          "title": "would rather ('d rather) + V1 (than + V1)",
+          "summary": "would rather = belirli bir durumda bir seçeneği diğerine tercih etmek; would prefer'dan daha kişisel ve güçlü. Arkasından yalın fiil (V1) gelir: to yok, -ing yok (would rather to go ❌, would rather going ❌). Karşılaştırma için than + V1: I'd rather stay home than go out tonight. Olumsuzu: would rather not + V1 (would rather not to ❌, wouldn't rather ❌). Soru: Would you rather ... or ...? Kısa cevap: I'd rather not. ('d burada would demek.)",
+          "examples": [
+            "I'd rather stay home than go out tonight.",
+            "They would rather not talk about it now.",
+            "Would you rather ride a motorcycle or drive a car?",
+            "Do you want to come? – I'd rather not."
+          ]
+        },
+        {
+          "topic": "would-rather",
+          "title": "would rather + özne + V2 (başkasının ne yapmasını istediğin)",
+          "summary": "Kendi tercihini söylerken V1: I'd rather go. Başka birinin bir şey yapmasını tercih ediyorsan: would rather + (that) + özne + V2. Fiil geçmiş görünür ama anlam şimdi / gelecektir: She'd rather you called her later (Daha sonra aramanı tercih eder). Olumsuzu didn't + V1: I'd rather you didn't tell anyone (Kimseye söylemesen iyi olur). Kibarca 'yapma' demenin yoludur.",
+          "examples": [
+            "She'd rather you called her later.",
+            "I'd rather you didn't tell anyone about this.",
+            "I'd rather go now. / I'd rather you went now."
+          ]
+        },
+        {
+          "topic": "prefer",
+          "title": "Hızlı karşılaştırma ve tipik hatalar",
+          "summary": "prefer: genel tercih, nötr (I prefer art to geography). would prefer: kibar / belirli durum, isteklerde ve planlarda (I'd prefer to leave earlier tomorrow). would rather: belirli bir durumda güçlü kişisel seçim (I'd rather not go out tonight). Kalıp özeti: prefer A to B · prefer to V1 rather than V1 · would prefer to V1 · would rather V1 (than V1). Tipik hatalar: I prefer coffee than tea ❌ → to tea. I prefer to watch than read ❌ → rather than read. I would rather to go ❌ → would rather go. I'd rather going ❌ → I'd rather go. Cevap verirken: I don't mind / Either is fine (fark etmez), It's up to you (sana kalmış).",
+          "examples": [
+            "I prefer art to geography.",
+            "We'd prefer to leave earlier tomorrow.",
+            "I'd rather not go out tonight.",
+            "Tea or coffee? – I don't mind. Either is fine."
+          ]
+        }
+      ],
+      "vocab": [
+        {
+          "en": "prefer A to B",
+          "tr": "A'yı B'ye tercih etmek (genel)",
+          "ex": "I prefer art to geography."
+        },
+        {
+          "en": "prefer -ing to -ing",
+          "tr": "bir şey yapmayı başka bir şey yapmaya tercih etmek",
+          "ex": "I prefer playing games to listening to music."
+        },
+        {
+          "en": "prefer to ... rather than ...",
+          "tr": "...mektense ...meyi tercih etmek",
+          "ex": "I prefer to travel rather than stay home."
+        },
+        {
+          "en": "would prefer to",
+          "tr": "(bu sefer / kibarca) ...meyi tercih ederim",
+          "ex": "I'd prefer to go out this weekend."
+        },
+        {
+          "en": "Would you prefer ... or ...?",
+          "tr": "... mı yoksa ... mı tercih edersiniz?",
+          "ex": "Would you prefer tea or coffee?"
+        },
+        {
+          "en": "would rather not",
+          "tr": "...memeyi tercih ederim / ...mesem daha iyi",
+          "ex": "I'd rather not talk about it now."
+        },
+        {
+          "en": "Would you rather ... or ...?",
+          "tr": "... mı yoksa ... mı yapmayı tercih edersin?",
+          "ex": "Would you rather ride a motorcycle or drive a car?"
+        },
+        {
+          "en": "I'd rather you + V2",
+          "tr": "(senin) ...mesini tercih ederim",
+          "ex": "I'd rather you called me later."
+        },
+        {
+          "en": "I don't mind.",
+          "tr": "Fark etmez. / Benim için sorun değil.",
+          "ex": "Burgers or pizza? – I don't mind."
+        },
+        {
+          "en": "Either is fine.",
+          "tr": "İkisi de olur.",
+          "ex": "Tea or coffee? – Either is fine, thanks."
+        },
+        {
+          "en": "It's up to you.",
+          "tr": "Sen bilirsin. / Sana kalmış.",
+          "ex": "Shall we eat out or stay home? – It's up to you."
+        }
+      ],
+      "questions": [
+        {
+          "topic": "prefer",
+          "q": "I usually ___ tea to coffee.",
+          "options": [
+            "prefer",
+            "would prefer",
+            "would rather"
+          ],
+          "answer": 0,
+          "explain": "usually = genel tercih → prefer. would rather 'A to B' kalıbını almaz."
+        },
+        {
+          "topic": "prefer",
+          "q": "I prefer coffee ___ tea.",
+          "options": [
+            "than",
+            "to",
+            "from"
+          ],
+          "answer": 1,
+          "explain": "prefer A to B: 'çaya' → to tea (than ❌)."
+        },
+        {
+          "topic": "prefer",
+          "q": "I prefer playing games to ___ to music.",
+          "options": [
+            "listen",
+            "listening",
+            "listened"
+          ],
+          "answer": 1,
+          "explain": "prefer V-ing to V-ing: listening (buradaki to bir edat)."
+        },
+        {
+          "topic": "prefer",
+          "q": "I prefer to watch movies ___ read books.",
+          "options": [
+            "than",
+            "rather than",
+            "to"
+          ],
+          "answer": 1,
+          "explain": "prefer to V1 + rather than + V1."
+        },
+        {
+          "topic": "prefer",
+          "q": "She ___ reading books to watching movies.",
+          "options": [
+            "prefers",
+            "prefer",
+            "would rather"
+          ],
+          "answer": 0,
+          "explain": "Genel tercih + she → prefers (-s). would rather V-ing almaz."
+        },
+        {
+          "topic": "prefer",
+          "q": "Hangisi yanlış?",
+          "options": [
+            "I prefer coffee than tea.",
+            "I prefer coffee to tea.",
+            "I'd rather have coffee than tea."
+          ],
+          "answer": 0,
+          "explain": "prefer ile to kullanılır: prefer coffee to tea."
+        },
+        {
+          "topic": "prefer",
+          "q": "We ___ to leave earlier tomorrow.",
+          "options": [
+            "would rather",
+            "would prefer",
+            "prefers"
+          ],
+          "answer": 1,
+          "explain": "Belirli plan (tomorrow) + to V1 → would prefer to leave. would rather to ❌."
+        },
+        {
+          "topic": "prefer",
+          "q": "I'd prefer ___ tomorrow, if that's OK.",
+          "options": [
+            "meet",
+            "to meet",
+            "met"
+          ],
+          "answer": 1,
+          "explain": "would prefer + to V1."
+        },
+        {
+          "topic": "prefer",
+          "q": "Garson: \"Would you like coffee?\" Sen: ___",
+          "options": [
+            "I prefer coffee to tea.",
+            "I'd prefer orange juice, please.",
+            "I'd rather to have juice."
+          ],
+          "answer": 1,
+          "explain": "Bir teklif karşısında kibar seçim: I'd prefer + isim."
+        },
+        {
+          "topic": "prefer",
+          "q": "Hangisi genel bir tercih (her zaman)?",
+          "options": [
+            "I prefer riding motorcycles.",
+            "I'd prefer to ride a motorcycle today.",
+            "I'd rather ride today."
+          ],
+          "answer": 0,
+          "explain": "Genel tercih = prefer. would prefer / would rather belirli bir durum için."
+        },
+        {
+          "topic": "prefer",
+          "q": "\"Tea or coffee?\" \"I don't mind.\" ne demek?",
+          "options": [
+            "Fark etmez.",
+            "Hatırlamıyorum.",
+            "İstemiyorum."
+          ],
+          "answer": 0,
+          "explain": "I don't mind = fark etmez (mind = sorun etmek)."
+        },
+        {
+          "topic": "prefer",
+          "type": "write",
+          "q": "Sırala: to / prefer / art / I / geography",
+          "answer": "I prefer art to geography",
+          "explain": "prefer A to B."
+        },
+        {
+          "topic": "prefer",
+          "type": "write",
+          "q": "Sırala: travel / I / than / prefer / home / to / rather / stay",
+          "answer": "I prefer to travel rather than stay home",
+          "explain": "prefer to V1 rather than V1."
+        },
+        {
+          "topic": "prefer",
+          "type": "write",
+          "q": "Düzelt: \"I prefer coffee than tea.\"",
+          "answer": "I prefer coffee to tea.",
+          "accept": [
+            "I prefer coffee rather than tea."
+          ],
+          "explain": "prefer A to B (than ❌)."
+        },
+        {
+          "topic": "prefer",
+          "type": "write",
+          "q": "Düzelt: \"I prefer to watch movies than read books.\"",
+          "answer": "I prefer to watch movies rather than read books.",
+          "accept": [
+            "I prefer watching movies to reading books."
+          ],
+          "explain": "to V1 ile rather than + V1 kullanılır."
+        },
+        {
+          "topic": "prefer",
+          "type": "write",
+          "q": "Boşluğu doldur: I prefer swimming ___ running.",
+          "answer": "to",
+          "explain": "prefer V-ing to V-ing."
+        },
+        {
+          "topic": "would-rather",
+          "q": "I ___ not go out tonight. I'm tired.",
+          "options": [
+            "prefer",
+            "would prefer",
+            "would rather"
+          ],
+          "answer": 2,
+          "explain": "would rather not + V1. (prefer not go / would prefer not go ❌; would prefer not to go olurdu.)"
+        },
+        {
+          "topic": "would-rather",
+          "q": "I would rather ___ home tonight.",
+          "options": [
+            "stay",
+            "to stay",
+            "staying"
+          ],
+          "answer": 0,
+          "explain": "would rather + V1 (to yok, -ing yok)."
+        },
+        {
+          "topic": "would-rather",
+          "q": "I'd rather walk ___ take the bus.",
+          "options": [
+            "than",
+            "to",
+            "rather"
+          ],
+          "answer": 0,
+          "explain": "would rather V1 than V1."
+        },
+        {
+          "topic": "would-rather",
+          "q": "They'd rather not ___ about it now.",
+          "options": [
+            "talk",
+            "to talk",
+            "talking"
+          ],
+          "answer": 0,
+          "explain": "would rather not + V1."
+        },
+        {
+          "topic": "would-rather",
+          "q": "Hangisi yanlış?",
+          "options": [
+            "I'd rather go out.",
+            "I'd rather going out.",
+            "I'd prefer to go out."
+          ],
+          "answer": 1,
+          "explain": "would rather + V1: go (going ❌)."
+        },
+        {
+          "topic": "would-rather",
+          "q": "\"Do you want to come?\" \"I'd rather not.\" ne demek?",
+          "options": [
+            "Gelmesem daha iyi.",
+            "Kesinlikle gelirim.",
+            "Daha önce geldim."
+          ],
+          "answer": 0,
+          "explain": "I'd rather not = yapmamayı tercih ederim (kibar 'hayır')."
+        },
+        {
+          "topic": "would-rather",
+          "q": "\"I'd rather\" içindeki 'd neyin kısaltması?",
+          "options": [
+            "would",
+            "had",
+            "did"
+          ],
+          "answer": 0,
+          "explain": "rather ile 'd = would. (had better ayrı bir kalıp.)"
+        },
+        {
+          "topic": "would-rather",
+          "q": "I ___ (that) you didn't tell anyone about this.",
+          "options": [
+            "prefer",
+            "would rather",
+            "would prefer to"
+          ],
+          "answer": 1,
+          "explain": "Başkası için istek: would rather + özne + V2 (didn't tell)."
+        },
+        {
+          "topic": "would-rather",
+          "q": "She'd rather you ___ her later.",
+          "options": [
+            "call",
+            "called",
+            "calling"
+          ],
+          "answer": 1,
+          "explain": "would rather + özne + V2: called (anlam gelecek)."
+        },
+        {
+          "topic": "would-rather",
+          "q": "I'd rather you ___ smoke here.",
+          "options": [
+            "don't",
+            "didn't",
+            "not"
+          ],
+          "answer": 1,
+          "explain": "would rather + özne + didn't + V1."
+        },
+        {
+          "topic": "would-rather",
+          "type": "write",
+          "q": "Sırala: home / I'd / stay / than / rather / out / go",
+          "answer": "I'd rather stay home than go out",
+          "explain": "would rather V1 than V1."
+        },
+        {
+          "topic": "would-rather",
+          "type": "write",
+          "q": "Düzelt: \"I would rather to go home.\"",
+          "answer": "I would rather go home.",
+          "accept": [
+            "I'd rather go home."
+          ],
+          "explain": "would rather + V1, to yok."
+        },
+        {
+          "topic": "would-rather",
+          "type": "write",
+          "q": "Çevir: \"Bu akşam evde kalmayı tercih ederim.\"",
+          "answer": "I'd rather stay home tonight.",
+          "accept": [
+            "I would rather stay home tonight.",
+            "I'd rather stay at home tonight.",
+            "I would rather stay at home tonight.",
+            "I'd prefer to stay home tonight.",
+            "I would prefer to stay home tonight.",
+            "I'd prefer to stay at home tonight.",
+            "I would prefer to stay at home tonight."
+          ],
+          "explain": "Belirli durum: I'd rather + V1 ya da I'd prefer to + V1."
+        },
+        {
+          "topic": "would-rather",
+          "type": "write",
+          "q": "Çevir: \"Bunun hakkında konuşmamayı tercih ederim.\"",
+          "answer": "I'd rather not talk about it.",
+          "accept": [
+            "I would rather not talk about it.",
+            "I'd prefer not to talk about it.",
+            "I would prefer not to talk about it.",
+            "I'd rather not talk about this.",
+            "I would rather not talk about this."
+          ],
+          "explain": "would rather not + V1."
+        },
+        {
+          "topic": "would-rather",
+          "type": "write",
+          "q": "Boşluğu doldur: She'd rather you ___ (call) later.",
+          "answer": "called",
+          "explain": "would rather + özne + V2."
+        }
+      ],
+      "translate": [
+        {
+          "tr": "Kahveyi çaya tercih ederim.",
+          "en": "I prefer coffee to tea.",
+          "distract": [
+            "than",
+            "from"
+          ]
+        },
+        {
+          "tr": "Resmi coğrafyaya tercih ederim.",
+          "en": "I prefer art to geography.",
+          "distract": [
+            "than",
+            "prefers"
+          ]
+        },
+        {
+          "tr": "Film izlemeyi kitap okumaya tercih ederim.",
+          "en": "I prefer watching movies to reading books.",
+          "distract": [
+            "than",
+            "watch"
+          ]
+        },
+        {
+          "tr": "Evde kalmaktansa seyahat etmeyi tercih ederim.",
+          "en": "I prefer to travel rather than stay home.",
+          "distract": [
+            "staying",
+            "from"
+          ]
+        },
+        {
+          "tr": "Bu akşam evde kalmayı tercih ederim.",
+          "en": "I'd rather stay home tonight.",
+          "distract": [
+            "to",
+            "staying"
+          ],
+          "accept": [
+            "I would rather stay home tonight",
+            "Tonight I'd rather stay home"
+          ]
+        },
+        {
+          "tr": "Yarın buluşmayı tercih ederim.",
+          "en": "I'd prefer to meet tomorrow.",
+          "distract": [
+            "met",
+            "than"
+          ],
+          "accept": [
+            "I would prefer to meet tomorrow",
+            "Tomorrow I'd prefer to meet"
+          ]
+        },
+        {
+          "tr": "Bunun hakkında şimdi konuşmamayı tercih ederim.",
+          "en": "I'd rather not talk about it now.",
+          "distract": [
+            "to",
+            "talking"
+          ],
+          "accept": [
+            "I would rather not talk about it now"
+          ]
+        },
+        {
+          "tr": "Onu daha sonra aramanı tercih eder.",
+          "en": "She'd rather you called her later.",
+          "distract": [
+            "calling",
+            "call"
+          ],
+          "accept": [
+            "She would rather you called her later"
+          ]
+        }
+      ],
+      "mistakes": [
+        {
+          "topic": "would-rather",
+          "wrong": "I would rather to go home.",
+          "right": "I would rather go home.",
+          "note": "would rather + V1 (to yok). Karşılaştır: would prefer to go."
+        },
+        {
+          "topic": "would-rather",
+          "wrong": "I'd rather going out.",
+          "right": "I'd rather go out.",
+          "note": "would rather -ing almaz, V1 alır."
+        },
+        {
+          "topic": "would-rather",
+          "wrong": "I'd rather not to talk about it.",
+          "right": "I'd rather not talk about it.",
+          "note": "would rather not + V1."
+        },
+        {
+          "topic": "prefer",
+          "wrong": "I prefer coffee than tea.",
+          "right": "I prefer coffee to tea.",
+          "note": "prefer A to B. than karşılaştırma sıfatlarıyla kullanılır (better than)."
+        },
+        {
+          "topic": "prefer",
+          "wrong": "I prefer to watch movies than read books.",
+          "right": "I prefer to watch movies rather than read books.",
+          "note": "to V1 kalıbında ikinci kısım rather than + V1."
+        },
+        {
+          "topic": "prefer",
+          "wrong": "I would prefer riding motorcycles.",
+          "right": "I prefer riding motorcycles.",
+          "note": "Bağlam yoksa bu genel bir tercih → prefer. would prefer belirli bir durum için: I'd prefer to ride my motorcycle today."
+        },
+        {
+          "topic": "prefer",
+          "wrong": "I would prefer going to the restaurant at the weekend.",
+          "right": "I'd prefer to go to a restaurant this weekend.",
+          "note": "would prefer ile to V1 daha yaygın; belirli plan için 'this weekend'. (at the weekend = İngiliz, on the weekend = Amerikan; birini seç.)"
+        },
+        {
+          "topic": "would-rather",
+          "wrong": "She'd rather you call her later.",
+          "right": "She'd rather you called her later.",
+          "note": "Başkası için istek: would rather + özne + V2."
+        },
+        {
+          "topic": "prefer",
+          "wrong": "İ prefer movies to books.",
+          "right": "I prefer movies to books.",
+          "note": "Türkçe klavye uyarısı: 'ben' anlamındaki I noktasızdır (İ ❌)."
+        }
+      ]
+    },
+    {
+      "id": "u13-risk",
+      "stage": 16,
       "date": "2026-11-11",
-      "title": "Aşama 15 · Risk ve fikir belirtme",
+      "title": "Aşama 16 · Risk ve fikir belirtme",
       "goal": "Bu aşamanın sonunda risk alma hakkında konuşup fikrini gerekçeleriyle ifade edebileceksin.",
       "grammar": [
         {
@@ -6846,9 +7430,9 @@
     },
     {
       "id": "u14-stress",
-      "stage": 16,
+      "stage": 17,
       "date": "2026-11-11",
-      "title": "Aşama 16 · Stres, başa çıkma ve zihin",
+      "title": "Aşama 17 · Stres, başa çıkma ve zihin",
       "goal": "Bu aşamanın sonunda stresini, zor dönemlerini ve zihninin durumunu doğal ifadelerle anlatabileceksin.",
       "grammar": [
         {
@@ -6955,7 +7539,7 @@
         },
         {
           "en": "mess up",
-          "tr": "berbat etmek",
+          "tr": "berbat etmek / batırmak (I messed up. = Batırdım.)",
           "ex": "I messed up the presentation."
         },
         {
@@ -7225,9 +7809,9 @@
     },
     {
       "id": "u16-conversation-starters",
-      "stage": 17,
+      "stage": 18,
       "date": "2026-11-16",
-      "title": "Aşama 17 · Sohbet başlatma ve tanışma",
+      "title": "Aşama 18 · Sohbet başlatma ve tanışma",
       "goal": "Bu aşamanın sonunda iş arkadaşlarınla, arkadaşlarınla ve yeni tanıştığın insanlarla doğal sorularla sohbet başlatıp sürdürebileceksin.",
       "grammar": [
         {
@@ -7688,9 +8272,9 @@
     },
     {
       "id": "u17-opinions",
-      "stage": 18,
+      "stage": 19,
       "date": "2026-11-16",
-      "title": "Aşama 18 · Fikrini söylemek: katılmak ve katılmamak",
+      "title": "Aşama 19 · Fikrini söylemek: katılmak ve katılmamak",
       "goal": "Bu aşamanın sonunda fikrini doğal kalıplarla söyleyebilecek, birine kibarca katılabilecek ya da saygılı bir şekilde katılmadığını ifade edebileceksin.",
       "grammar": [
         {
@@ -8173,9 +8757,9 @@
     },
     {
       "id": "u18-friends",
-      "stage": 19,
+      "stage": 20,
       "date": "2026-11-18",
-      "title": "Aşama 19 · Arkadaşlık",
+      "title": "Aşama 20 · Arkadaşlık",
       "goal": "Bu aşamanın sonunda arkadaşlarını, onlarla neler yaptığını ve onlara neden güvendiğini anlatabileceksin.",
       "grammar": [
         {
@@ -8191,7 +8775,7 @@
         {
           "topic": "friends",
           "title": "Arkadaşını anlatma kalıpları",
-          "summary": "I get on well with + kişi (iyi anlaşmak; 4. aşamadaki get along with ile aynı anlam). It's nice to have a friend who + fiil: who'dan sonra 3. tekil -s gelir (a friend who listens). We usually hang out + yer/zaman (at the park, on weekends). If I need help, I can always count on + kişi.",
+          "summary": "I get on well with + kişi (iyi anlaşmak; 5. aşamadaki get along with ile aynı anlam). It's nice to have a friend who + fiil: who'dan sonra 3. tekil -s gelir (a friend who listens). We usually hang out + yer/zaman (at the park, on weekends). If I need help, I can always count on + kişi.",
           "examples": [
             "I get on well with my classmates.",
             "It's nice to have a friend who always listens.",
@@ -8230,7 +8814,7 @@
         },
         {
           "en": "keep in touch",
-          "tr": "iletişimi sürdürmek / görüşmeye devam etmek",
+          "tr": "iletişimi sürdürmek / görüşmeye devam etmek (with + kişi)",
           "ex": "Let's keep in touch!"
         },
         {
@@ -8310,7 +8894,7 @@
         },
         {
           "en": "depend on",
-          "tr": "... -e bağlı olmak / güvenmek",
+          "tr": "... -e bağlı olmak / güvenmek (depend of ❌; It depends. = Duruma göre.)",
           "ex": "Children depend on their parents."
         },
         {
@@ -8668,6 +9252,2396 @@
           "note": "on unutulmaz: get on well with."
         }
       ]
+    },
+    {
+      "id": "u21-b1-collocations",
+      "stage": 21,
+      "date": "2026-11-20",
+      "title": "Aşama 21 · B1 collocation'ları ve phrasal verb'ler",
+      "goal": "Bu aşamanın sonunda B1 seviyesinde en sık kullanılan collocation ve phrasal verb'leri doğru fiil ve doğru edatla kullanabileceksin.",
+      "grammar": [
+        {
+          "topic": "collocations",
+          "title": "make / take / pay / set / keep: Türkçeden çevirme",
+          "summary": "Bu kalıplarda fiil Türkçedeki gibi değil, bütün olarak ezberle: make a difference (fark yaratmak; do a difference ❌), take a break (mola vermek; 2. aşama), take care of (bakmak, ilgilenmek; take care about ❌; Take care! = Kendine iyi bak), pay attention to (dikkat etmek; pay attention on ❌, give attention ❌), set goals (hedef belirlemek; achieve a goal = hedefe ulaşmak, 13. aşama), keep in touch (with) (iletişimi koparmamak; 20. aşama).",
+          "examples": [
+            "Small actions can make a difference.",
+            "He takes care of his family.",
+            "Please pay attention to the instructions.",
+            "I want to set goals for my future."
+          ]
+        },
+        {
+          "topic": "phrasal-verbs",
+          "title": "Phrasal verb'ler: anlam parçalardan çıkmaz",
+          "summary": "bring up = bir konuyu açmak, gündeme getirmek (She brought up the idea). Nesne zamirse araya girer: bring it up ✅, bring up it ❌. bring up de mention gibi about almaz. go through = zor bir dönemden geçmek (She went through a tough time; passed through ❌). come up with = bir fikir / çözüm bulmak (I came up with a great idea; find an idea doğal değil). work out = spor yapmak (2. aşama); ayrıca 'yoluna girmek, çözülmek': Don't worry, it will work out. get along with = iyi geçinmek (5. aşama).",
+          "examples": [
+            "She brought up the idea in the meeting.",
+            "I don't want to talk about it. Please don't bring it up.",
+            "She went through a tough time last year.",
+            "I came up with a great idea!"
+          ]
+        },
+        {
+          "topic": "phrasal-verbs",
+          "title": "Sondaki edat: arkasından isim, zamir (nesne) veya V-ing",
+          "summary": "look forward to, pay attention to, take care of, get along with, come up with: sondaki kelime bir edat. Bu yüzden arkasından isim, nesne zamiri (him, her, them) ya da V-ing gelir. look forward to + isim / V-ing: I'm looking forward to the holiday / to seeing you (to see ❌). take care of her (she ❌). Bu kural be used to + V-ing ve good at drawing ile aynı aile: edattan sonra V-ing.",
+          "examples": [
+            "I'm looking forward to the holiday.",
+            "I'm looking forward to seeing you.",
+            "My grandmother is ill, so I'm taking care of her.",
+            "She gets along with her colleagues."
+          ]
+        }
+      ],
+      "vocab": [
+        {
+          "en": "make a difference",
+          "tr": "fark yaratmak / olumlu etki yapmak",
+          "ex": "Small actions can make a difference."
+        },
+        {
+          "en": "bring up",
+          "tr": "bir konuyu açmak / gündeme getirmek (bring it up)",
+          "ex": "She brought up the idea."
+        },
+        {
+          "en": "go through",
+          "tr": "(zor bir dönemden) geçmek",
+          "ex": "She went through a tough time."
+        },
+        {
+          "en": "come up with",
+          "tr": "(fikir / çözüm) bulmak",
+          "ex": "I came up with a great idea!"
+        },
+        {
+          "en": "pay attention to",
+          "tr": "... -e dikkat etmek",
+          "ex": "Please pay attention to the instructions."
+        },
+        {
+          "en": "take care of",
+          "tr": "... -e bakmak / ilgilenmek (= look after)",
+          "ex": "He takes care of his family."
+        },
+        {
+          "en": "set goals",
+          "tr": "hedef belirlemek",
+          "ex": "I want to set goals for my future."
+        },
+        {
+          "en": "Take care!",
+          "tr": "Kendine iyi bak! (vedalaşırken)",
+          "ex": "See you next week. Take care!"
+        }
+      ],
+      "questions": [
+        {
+          "topic": "collocations",
+          "q": "Small actions can ___ a difference.",
+          "options": [
+            "make",
+            "do",
+            "take"
+          ],
+          "answer": 0,
+          "explain": "make a difference = fark yaratmak."
+        },
+        {
+          "topic": "collocations",
+          "q": "I'm tired. Let's ___ a break.",
+          "options": [
+            "take",
+            "make",
+            "do"
+          ],
+          "answer": 0,
+          "explain": "take a break = mola vermek."
+        },
+        {
+          "topic": "collocations",
+          "q": "He ___ care of his family.",
+          "options": [
+            "takes",
+            "makes",
+            "gives"
+          ],
+          "answer": 0,
+          "explain": "take care of = bakmak, ilgilenmek."
+        },
+        {
+          "topic": "collocations",
+          "q": "Please pay attention ___ the instructions.",
+          "options": [
+            "to",
+            "on",
+            "at"
+          ],
+          "answer": 0,
+          "explain": "pay attention to."
+        },
+        {
+          "topic": "collocations",
+          "q": "I want to ___ goals for my future.",
+          "options": [
+            "set",
+            "put",
+            "do"
+          ],
+          "answer": 0,
+          "explain": "set goals = hedef belirlemek."
+        },
+        {
+          "topic": "collocations",
+          "q": "Hangisi doğru?",
+          "options": [
+            "Pay attention on the road.",
+            "Pay attention to the road.",
+            "Give attention to the road."
+          ],
+          "answer": 1,
+          "explain": "pay attention to."
+        },
+        {
+          "topic": "collocations",
+          "type": "write",
+          "q": "Çevir: \"Küçük şeyler fark yaratabilir.\"",
+          "answer": "Small things can make a difference.",
+          "accept": [
+            "Little things can make a difference.",
+            "Small actions can make a difference."
+          ],
+          "explain": "can + V1 + make a difference."
+        },
+        {
+          "topic": "collocations",
+          "type": "write",
+          "q": "Boşluğu doldur: Who takes care ___ your cat when you travel?",
+          "answer": "of",
+          "explain": "take care of."
+        },
+        {
+          "topic": "collocations",
+          "type": "write",
+          "q": "Çevir: \"Kendime hedefler koymak istiyorum.\"",
+          "answer": "I want to set goals for myself.",
+          "accept": [
+            "I want to set myself goals.",
+            "I want to set some goals for myself."
+          ],
+          "explain": "set goals = hedef belirlemek / koymak."
+        },
+        {
+          "topic": "phrasal-verbs",
+          "q": "She went ___ a tough time last year.",
+          "options": [
+            "through",
+            "from",
+            "over"
+          ],
+          "answer": 0,
+          "explain": "go through = zor bir dönemden geçmek ('-den geçmek' → from ❌)."
+        },
+        {
+          "topic": "phrasal-verbs",
+          "q": "She ___ through a tough time last year.",
+          "options": [
+            "went",
+            "passed",
+            "lived"
+          ],
+          "answer": 0,
+          "explain": "go through (passed through ❌)."
+        },
+        {
+          "topic": "phrasal-verbs",
+          "q": "I came up ___ a great idea!",
+          "options": [
+            "with",
+            "to",
+            "on"
+          ],
+          "answer": 0,
+          "explain": "come up with = fikir / çözüm bulmak."
+        },
+        {
+          "topic": "phrasal-verbs",
+          "q": "She brought ___ the idea in the meeting.",
+          "options": [
+            "up",
+            "out",
+            "on"
+          ],
+          "answer": 0,
+          "explain": "bring up = konuyu açmak."
+        },
+        {
+          "topic": "phrasal-verbs",
+          "q": "I don't want to talk about it. Please don't bring ___.",
+          "options": [
+            "it up",
+            "up it",
+            "up"
+          ],
+          "answer": 0,
+          "explain": "Nesne zamiri araya girer: bring it up."
+        },
+        {
+          "topic": "phrasal-verbs",
+          "q": "\"come up with\" ne demek?",
+          "options": [
+            "bir fikir / çözüm bulmak",
+            "yukarı çıkmak",
+            "biriyle birlikte gelmek"
+          ],
+          "answer": 0,
+          "explain": "come up with an idea / a solution."
+        },
+        {
+          "topic": "phrasal-verbs",
+          "q": "\"I work out three times a week.\" ne demek?",
+          "options": [
+            "Haftada üç kez spor yaparım.",
+            "Haftada üç kez dışarı çıkarım.",
+            "Haftada üç kez çalışırım."
+          ],
+          "answer": 0,
+          "explain": "work out = spor yapmak."
+        },
+        {
+          "topic": "phrasal-verbs",
+          "q": "Don't worry. Everything will work ___.",
+          "options": [
+            "out",
+            "up",
+            "on"
+          ],
+          "answer": 0,
+          "explain": "work out = yoluna girmek, çözülmek."
+        },
+        {
+          "topic": "phrasal-verbs",
+          "type": "write",
+          "q": "Sırala: a / came / I / with / up / great / idea",
+          "answer": "I came up with a great idea",
+          "explain": "come up with + isim."
+        },
+        {
+          "topic": "phrasal-verbs",
+          "type": "write",
+          "q": "Düzelt: \"She brought up it at the meeting.\"",
+          "answer": "She brought it up at the meeting.",
+          "explain": "Zamir araya girer: bring it up."
+        },
+        {
+          "topic": "phrasal-verbs",
+          "q": "I'm looking forward to ___ you.",
+          "options": [
+            "see",
+            "seeing",
+            "saw"
+          ],
+          "answer": 1,
+          "explain": "look forward to: to bir edat → V-ing."
+        },
+        {
+          "topic": "phrasal-verbs",
+          "q": "I'm looking forward ___ the holiday.",
+          "options": [
+            "to",
+            "for",
+            "at"
+          ],
+          "answer": 0,
+          "explain": "look forward to + isim."
+        },
+        {
+          "topic": "phrasal-verbs",
+          "q": "She gets along ___ her colleagues.",
+          "options": [
+            "with",
+            "to",
+            "at"
+          ],
+          "answer": 0,
+          "explain": "get along with = iyi geçinmek."
+        },
+        {
+          "topic": "phrasal-verbs",
+          "q": "My grandmother is ill, so I'm taking care of ___.",
+          "options": [
+            "she",
+            "her",
+            "hers"
+          ],
+          "answer": 1,
+          "explain": "Edattan (of) sonra nesne zamiri: her."
+        },
+        {
+          "topic": "phrasal-verbs",
+          "q": "Hangisi yanlış?",
+          "options": [
+            "Pay attention to the teacher.",
+            "Take care of yourself.",
+            "I'm looking forward to meet you."
+          ],
+          "answer": 2,
+          "explain": "look forward to meeting (to bir edat)."
+        },
+        {
+          "topic": "phrasal-verbs",
+          "type": "write",
+          "q": "Sırala: forward / I'm / to / looking / the / holiday",
+          "answer": "I'm looking forward to the holiday",
+          "explain": "look forward to + isim."
+        }
+      ],
+      "translate": [
+        {
+          "tr": "Küçük şeyler fark yaratabilir.",
+          "en": "Small things can make a difference.",
+          "distract": [
+            "do",
+            "to"
+          ]
+        },
+        {
+          "tr": "Gelecek için hedefler belirlemek istiyorum.",
+          "en": "I want to set goals for the future.",
+          "distract": [
+            "put",
+            "setting"
+          ]
+        },
+        {
+          "tr": "Ailesine o bakar.",
+          "en": "He takes care of his family.",
+          "distract": [
+            "about",
+            "him"
+          ]
+        },
+        {
+          "tr": "Lütfen talimatlara dikkat edin.",
+          "en": "Please pay attention to the instructions.",
+          "distract": [
+            "on",
+            "give"
+          ]
+        },
+        {
+          "tr": "Harika bir fikir buldum!",
+          "en": "I came up with a great idea!",
+          "distract": [
+            "found",
+            "come"
+          ]
+        },
+        {
+          "tr": "Geçen yıl zor bir dönemden geçti.",
+          "en": "She went through a tough time last year.",
+          "distract": [
+            "passed",
+            "from"
+          ],
+          "accept": [
+            "Last year she went through a tough time"
+          ]
+        },
+        {
+          "tr": "Tatili dört gözle bekliyorum.",
+          "en": "I'm looking forward to the holiday.",
+          "distract": [
+            "for",
+            "waiting"
+          ],
+          "accept": [
+            "I am looking forward to the holiday"
+          ]
+        },
+        {
+          "tr": "Toplantıda bu konuyu açmadı.",
+          "en": "He didn't bring it up at the meeting.",
+          "distract": [
+            "brought",
+            "about"
+          ],
+          "accept": [
+            "He did not bring it up at the meeting"
+          ]
+        }
+      ],
+      "mistakes": [
+        {
+          "topic": "phrasal-verbs",
+          "wrong": "I came up a great idea.",
+          "right": "I came up with a great idea.",
+          "note": "come up with: with unutulmaz."
+        },
+        {
+          "topic": "collocations",
+          "wrong": "Pay attention on the road.",
+          "right": "Pay attention to the road.",
+          "note": "pay attention to."
+        },
+        {
+          "topic": "phrasal-verbs",
+          "wrong": "She brought up it at the meeting.",
+          "right": "She brought it up at the meeting.",
+          "note": "Nesne zamiri phrasal verb'ün arasına girer."
+        },
+        {
+          "topic": "collocations",
+          "wrong": "Small actions can do a difference.",
+          "right": "Small actions can make a difference.",
+          "note": "fark yaratmak = make a difference."
+        },
+        {
+          "topic": "collocations",
+          "wrong": "I take care about my family.",
+          "right": "I take care of my family.",
+          "note": "take care of (about ❌)."
+        },
+        {
+          "topic": "phrasal-verbs",
+          "wrong": "She passed through a tough time.",
+          "right": "She went through a tough time.",
+          "note": "zor bir dönemden geçmek = go through."
+        },
+        {
+          "topic": "phrasal-verbs",
+          "wrong": "I'm looking forward to see you.",
+          "right": "I'm looking forward to seeing you.",
+          "note": "look forward to + V-ing (to bir edat)."
+        }
+      ]
+    },
+    {
+      "id": "u22-more-collocations",
+      "stage": 22,
+      "date": "2026-11-21",
+      "title": "Aşama 22 · Daha fazla collocation ve phrasal verb",
+      "goal": "Bu aşamanın sonunda make a decision, find out, give up, deal with gibi 20 sık kalıbı doğru fiil, doğru edat ve doğru fiil biçimiyle (V-ing) kullanabileceksin.",
+      "grammar": [
+        {
+          "topic": "collocations",
+          "title": "make / take / keep / be: kalıbı bütün olarak ezberle",
+          "summary": "make a decision (karar vermek; do a decision ❌; make a decision to + V1: She made a decision to learn English). make progress (ilerleme kaydetmek): progress sayılamaz, a progress ❌, progresses ❌; make progress in English. take a look at (bir göz atmak; look at ile aynı edat: at). keep in mind (aklında tutmak): Keep in mind that... / Keep my advice in mind. be careful with (... -e dikkat et, özenli ol): Be careful with that glass / with your money. Önceden gördüklerin: take part in (katılmak; take part to ❌, 14. aşama), take advantage of (yararlanmak; ama insan için 'suistimal etmek': Don't take advantage of people's kindness, 14. aşama).",
+          "examples": [
+            "I need to make a decision about my future.",
+            "Can you take a look at my homework?",
+            "You can make progress if you practice every day.",
+            "Be careful with that glass. It's very expensive."
+          ]
+        },
+        {
+          "topic": "phrasal-verbs",
+          "title": "Ayrılabilen phrasal verb'ler: put it on (put on it ❌)",
+          "summary": "put on, find out, figure out, bring up, give up ayrılabilir: nesne isimse iki yere de girer (Put on your jacket / Put your jacket on). Nesne zamirse (it, them, him) mutlaka araya girer: Put it on ✅, Put on it ❌; I can't figure it out ✅. Ayrılmayanlar: look after (I look after her; look her after ❌), come across (rastlamak), deal with, carry on. find ≠ find out: find = kaybolan bir şeyi bulmak (I found my keys); find out = bir bilgiyi öğrenmek, ortaya çıkarmak (We found out the truth). learn = ders / beceri öğrenmek (learn English). find out + soru kelimesi: dolaylı soruda düz sıra: find out why she is sad (why is she ❌). come across insan için de olur ama 'eski bir arkadaşa rastladım' için en doğalı run into / bump into.",
+          "examples": [
+            "Put on your jacket. It's cold outside.",
+            "Where's my jacket? I want to put it on.",
+            "I want to find out why she is sad.",
+            "I came across an old photo in a box."
+          ]
+        },
+        {
+          "topic": "verb-patterns",
+          "title": "give up smoking, carry on studying, get used to waking up",
+          "summary": "Bu kalıplardan sonra fiil gelirse V-ing olur: give up + V-ing (bırakmak: gave up smoking; give up to smoke ❌). carry on + V-ing (devam etmek: carried on studying) ya da carry on with + isim (carry on with your homework). get used to + isim / V-ing (alışmak: getting used to waking up; get used to wake up ❌). Burada to bir edat, look forward to ve be used to (8. aşama) ile aynı aile. Karıştırma: I used to wake up early = Eskiden erken kalkardım (+ V1). be proud of + V-ing: I'm proud of passing the exam. give up on = birinden / bir hayalden vazgeçmek, umudu kesmek: Don't give up on your dreams (give up from ❌).",
+          "examples": [
+            "My father gave up smoking last year.",
+            "She was tired, but she carried on studying.",
+            "I'm getting used to waking up early.",
+            "Don't give up on your dreams."
+          ]
+        },
+        {
+          "topic": "fixed-prepositions",
+          "title": "Sabit edatlar: deal with, depend on, be proud of",
+          "summary": "Türkçedeki hâl ekine bakıp edat seçme, kalıbı ezberle. deal with (başa çıkmak, uğraşmak; deal stress ❌): I don't know how to deal with stress. depend on (... -e bağlı olmak / güvenmek; depend of ❌, depend from ❌): Our plans depend on the weather. Kısaca: It depends. = Duruma göre. be proud of (... ile gurur duymak; proud with ❌, proud on ❌): My parents are proud of me. look after (bakmak, = take care of): Can you look after my cat? settle down (sakinleşmek: Please settle down; ya da yerleşip düzen kurmak: settle down in a small town).",
+          "examples": [
+            "I don't know how to deal with stress.",
+            "Our plans depend on the weather.",
+            "My parents are proud of me.",
+            "They want to settle down in a small town."
+          ]
+        }
+      ],
+      "vocab": [
+        {
+          "en": "make a decision",
+          "tr": "karar vermek (do ❌)",
+          "ex": "I need to make a decision about my future."
+        },
+        {
+          "en": "make progress",
+          "tr": "ilerleme kaydetmek (a progress ❌)",
+          "ex": "You can make progress if you practice every day."
+        },
+        {
+          "en": "take a look at",
+          "tr": "... -e bir göz atmak",
+          "ex": "Can you take a look at my homework?"
+        },
+        {
+          "en": "keep in mind",
+          "tr": "aklında tutmak / unutmamak",
+          "ex": "Keep in mind that learning English takes time."
+        },
+        {
+          "en": "be careful with",
+          "tr": "... -e dikkat etmek / özenli olmak",
+          "ex": "You should be careful with your money."
+        },
+        {
+          "en": "put on",
+          "tr": "giymek / takmak (put it on)",
+          "ex": "I put on my glasses when I read."
+        },
+        {
+          "en": "find out",
+          "tr": "(bilgi) öğrenmek / ortaya çıkarmak",
+          "ex": "We found out the truth yesterday."
+        },
+        {
+          "en": "figure out",
+          "tr": "çözmek / anlamak (figure it out)",
+          "ex": "We need to figure out what happened."
+        },
+        {
+          "en": "come across",
+          "tr": "tesadüfen bulmak / rastlamak",
+          "ex": "I came across an interesting book at the library."
+        },
+        {
+          "en": "look after",
+          "tr": "... -e bakmak (= take care of)",
+          "ex": "Can you look after my cat this weekend?"
+        },
+        {
+          "en": "give up",
+          "tr": "bırakmak / vazgeçmek (+ V-ing)",
+          "ex": "My father gave up smoking last year."
+        },
+        {
+          "en": "give up on",
+          "tr": "... -den vazgeçmek / umudu kesmek",
+          "ex": "Don't give up on your dreams."
+        },
+        {
+          "en": "carry on",
+          "tr": "devam etmek (+ V-ing / with + isim)",
+          "ex": "She was tired, but she carried on studying."
+        },
+        {
+          "en": "deal with",
+          "tr": "... ile başa çıkmak / uğraşmak",
+          "ex": "She deals with difficult customers every day."
+        },
+        {
+          "en": "be proud of",
+          "tr": "... ile gurur duymak",
+          "ex": "I'm proud of my progress in English."
+        },
+        {
+          "en": "settle down",
+          "tr": "sakinleşmek / yerleşip düzen kurmak",
+          "ex": "They want to settle down in a small town."
+        }
+      ],
+      "questions": [
+        {
+          "topic": "collocations",
+          "q": "I need to ___ a decision about my future.",
+          "options": [
+            "make",
+            "do",
+            "give"
+          ],
+          "answer": 0,
+          "explain": "make a decision = karar vermek (do a decision ❌)."
+        },
+        {
+          "topic": "collocations",
+          "q": "Can you take a ___ at my homework?",
+          "options": [
+            "look",
+            "see",
+            "eye"
+          ],
+          "answer": 0,
+          "explain": "take a look at = bir göz atmak."
+        },
+        {
+          "topic": "collocations",
+          "q": "Let's take a look ___ these pictures.",
+          "options": [
+            "at",
+            "to",
+            "on"
+          ],
+          "answer": 0,
+          "explain": "look at gibi: take a look at."
+        },
+        {
+          "topic": "collocations",
+          "q": "You can make ___ if you practice every day.",
+          "options": [
+            "progress",
+            "a progress",
+            "progresses"
+          ],
+          "answer": 0,
+          "explain": "progress sayılamaz: make progress."
+        },
+        {
+          "topic": "collocations",
+          "q": "Keep ___ mind that learning English takes time.",
+          "options": [
+            "in",
+            "on",
+            "at"
+          ],
+          "answer": 0,
+          "explain": "keep in mind = aklında tutmak."
+        },
+        {
+          "topic": "collocations",
+          "q": "Be careful ___ that glass. It's very expensive.",
+          "options": [
+            "with",
+            "to",
+            "at"
+          ],
+          "answer": 0,
+          "explain": "be careful with + eşya / para."
+        },
+        {
+          "topic": "collocations",
+          "q": "I want to take part ___ this competition.",
+          "options": [
+            "in",
+            "to",
+            "at"
+          ],
+          "answer": 0,
+          "explain": "take part in (take part to ❌)."
+        },
+        {
+          "topic": "collocations",
+          "q": "You should take advantage ___ this opportunity.",
+          "options": [
+            "of",
+            "from",
+            "with"
+          ],
+          "answer": 0,
+          "explain": "take advantage of ('-den yararlanmak' → from ❌)."
+        },
+        {
+          "topic": "collocations",
+          "type": "write",
+          "q": "Çevir: \"Geleceğim hakkında bir karar vermem gerekiyor.\"",
+          "answer": "I need to make a decision about my future.",
+          "accept": [
+            "I have to make a decision about my future."
+          ],
+          "explain": "make a decision about ..."
+        },
+        {
+          "topic": "collocations",
+          "type": "write",
+          "q": "Sırala: progress / making / English / I'm / in",
+          "answer": "I'm making progress in English",
+          "explain": "make progress in + alan."
+        },
+        {
+          "topic": "collocations",
+          "type": "write",
+          "q": "Düzelt: \"I made a big progress this year.\"",
+          "answer": "I made a lot of progress this year.",
+          "accept": [
+            "I made great progress this year.",
+            "I made a lot of progress this year"
+          ],
+          "explain": "progress sayılamaz: a lot of / great progress (a progress ❌)."
+        },
+        {
+          "topic": "phrasal-verbs",
+          "q": "Put ___ your jacket. It's cold outside.",
+          "options": [
+            "on",
+            "in",
+            "up"
+          ],
+          "answer": 0,
+          "explain": "put on = giymek."
+        },
+        {
+          "topic": "phrasal-verbs",
+          "q": "Where's my coat? – Here you are. Put ___.",
+          "options": [
+            "it on",
+            "on it",
+            "it"
+          ],
+          "answer": 0,
+          "explain": "Zamir araya girer: put it on."
+        },
+        {
+          "topic": "phrasal-verbs",
+          "q": "We found ___ the truth yesterday.",
+          "options": [
+            "out",
+            "up",
+            "off"
+          ],
+          "answer": 0,
+          "explain": "find out = (bilgi) öğrenmek."
+        },
+        {
+          "topic": "phrasal-verbs",
+          "q": "Hangisi doğru?",
+          "options": [
+            "I found out my keys under the sofa.",
+            "I found my keys under the sofa.",
+            "I found up my keys under the sofa."
+          ],
+          "answer": 1,
+          "explain": "Kaybolan eşya: find. Bilgi: find out."
+        },
+        {
+          "topic": "phrasal-verbs",
+          "q": "I can't figure ___ the answer to this question.",
+          "options": [
+            "out",
+            "up",
+            "on"
+          ],
+          "answer": 0,
+          "explain": "figure out = çözmek, anlamak."
+        },
+        {
+          "topic": "phrasal-verbs",
+          "q": "I came ___ an old photo in a box.",
+          "options": [
+            "across",
+            "through",
+            "up"
+          ],
+          "answer": 0,
+          "explain": "come across = tesadüfen bulmak, rastlamak."
+        },
+        {
+          "topic": "phrasal-verbs",
+          "q": "Can you look ___ my cat this weekend?",
+          "options": [
+            "after",
+            "for",
+            "at"
+          ],
+          "answer": 0,
+          "explain": "look after = bakmak (bakımını üstlenmek). look for = aramak, look at = bakmak (gözle)."
+        },
+        {
+          "topic": "phrasal-verbs",
+          "q": "The children are too loud. Please settle ___ and listen to me.",
+          "options": [
+            "down",
+            "up",
+            "in"
+          ],
+          "answer": 0,
+          "explain": "settle down = sakinleşmek."
+        },
+        {
+          "topic": "phrasal-verbs",
+          "q": "\"They want to settle down in a small town.\" ne demek?",
+          "options": [
+            "Küçük bir kasabaya yerleşip düzen kurmak istiyorlar.",
+            "Küçük bir kasabada biraz oturup dinlenmek istiyorlar.",
+            "Küçük bir kasabadan taşınmak istiyorlar."
+          ],
+          "answer": 0,
+          "explain": "settle down = yerleşip düzen kurmak."
+        },
+        {
+          "topic": "phrasal-verbs",
+          "type": "write",
+          "q": "Düzelt: \"This puzzle is hard. I can't figure out it.\"",
+          "answer": "This puzzle is hard. I can't figure it out.",
+          "accept": [
+            "This puzzle is hard. I cannot figure it out."
+          ],
+          "explain": "Zamir araya girer: figure it out."
+        },
+        {
+          "topic": "phrasal-verbs",
+          "type": "write",
+          "q": "Sırala: after / sister / I / my / look / little",
+          "answer": "I look after my little sister",
+          "explain": "look after + kişi (ayrılmaz)."
+        },
+        {
+          "topic": "phrasal-verbs",
+          "type": "write",
+          "q": "Çevir: \"Onun neden üzgün olduğunu öğrenmek istiyorum.\"",
+          "answer": "I want to find out why she is sad.",
+          "accept": [
+            "I want to find out why she's sad.",
+            "I want to find out why he is sad.",
+            "I want to find out why he's sad."
+          ],
+          "explain": "find out + dolaylı soru: why she is (why is she ❌)."
+        },
+        {
+          "topic": "verb-patterns",
+          "q": "My father gave up ___ last year.",
+          "options": [
+            "smoking",
+            "to smoke",
+            "smoke"
+          ],
+          "answer": 0,
+          "explain": "give up + V-ing."
+        },
+        {
+          "topic": "verb-patterns",
+          "q": "She was tired, but she carried on ___.",
+          "options": [
+            "studying",
+            "to study",
+            "study"
+          ],
+          "answer": 0,
+          "explain": "carry on + V-ing = devam etmek."
+        },
+        {
+          "topic": "verb-patterns",
+          "q": "Please carry on ___ your homework.",
+          "options": [
+            "with",
+            "to",
+            "at"
+          ],
+          "answer": 0,
+          "explain": "carry on with + isim."
+        },
+        {
+          "topic": "verb-patterns",
+          "q": "I'm getting used to ___ up early.",
+          "options": [
+            "waking",
+            "wake",
+            "woke"
+          ],
+          "answer": 0,
+          "explain": "get used to + V-ing (to bir edat)."
+        },
+        {
+          "topic": "verb-patterns",
+          "q": "Hangisi \"Erken kalkmaya alışkınım\" demek?",
+          "options": [
+            "I used to wake up early.",
+            "I'm used to waking up early.",
+            "I'm used to wake up early."
+          ],
+          "answer": 1,
+          "explain": "be used to + V-ing = alışkın olmak. used to + V1 = eskiden yapardım."
+        },
+        {
+          "topic": "verb-patterns",
+          "q": "Don't give up ___ your dreams.",
+          "options": [
+            "on",
+            "from",
+            "to"
+          ],
+          "answer": 0,
+          "explain": "give up on = vazgeçmek ('-den' → from ❌)."
+        },
+        {
+          "topic": "verb-patterns",
+          "type": "write",
+          "q": "Çevir: \"Babam geçen yıl sigarayı bıraktı.\"",
+          "answer": "My father gave up smoking last year.",
+          "accept": [
+            "My dad gave up smoking last year.",
+            "My father quit smoking last year.",
+            "My dad quit smoking last year.",
+            "Last year my father gave up smoking."
+          ],
+          "explain": "give up + V-ing."
+        },
+        {
+          "topic": "verb-patterns",
+          "type": "write",
+          "q": "Düzelt: \"I want to give up to eat sugar.\"",
+          "answer": "I want to give up eating sugar.",
+          "explain": "give up + V-ing (to V1 ❌)."
+        },
+        {
+          "topic": "fixed-prepositions",
+          "q": "Our plans depend ___ the weather.",
+          "options": [
+            "on",
+            "of",
+            "from"
+          ],
+          "answer": 0,
+          "explain": "depend on ('-e bağlı' → on)."
+        },
+        {
+          "topic": "fixed-prepositions",
+          "q": "My parents are proud ___ me.",
+          "options": [
+            "of",
+            "with",
+            "on"
+          ],
+          "answer": 0,
+          "explain": "be proud of."
+        },
+        {
+          "topic": "fixed-prepositions",
+          "q": "I don't know how to deal ___ stress.",
+          "options": [
+            "with",
+            "about",
+            "to"
+          ],
+          "answer": 0,
+          "explain": "deal with = başa çıkmak."
+        },
+        {
+          "topic": "fixed-prepositions",
+          "q": "Hangisi doğru?",
+          "options": [
+            "She deals difficult customers every day.",
+            "She deals with difficult customers every day.",
+            "She deals to difficult customers every day."
+          ],
+          "answer": 1,
+          "explain": "deal with + kişi / sorun."
+        },
+        {
+          "topic": "fixed-prepositions",
+          "q": "I'm proud of ___ the exam.",
+          "options": [
+            "passing",
+            "pass",
+            "to pass"
+          ],
+          "answer": 0,
+          "explain": "Edattan (of) sonra V-ing."
+        },
+        {
+          "topic": "fixed-prepositions",
+          "type": "write",
+          "q": "Boşluğu doldur: Are you coming tomorrow? – It depends ___ the weather.",
+          "answer": "on",
+          "explain": "It depends on ... = ... -e bağlı."
+        },
+        {
+          "topic": "fixed-prepositions",
+          "type": "write",
+          "q": "Çevir: \"Ailem benimle gurur duyuyor.\"",
+          "answer": "My parents are proud of me.",
+          "accept": [
+            "My family is proud of me.",
+            "My family are proud of me."
+          ],
+          "explain": "be proud of + nesne zamiri (me)."
+        },
+        {
+          "topic": "fixed-prepositions",
+          "type": "write",
+          "q": "Sırala: on / can / me / depend / you",
+          "answer": "You can depend on me",
+          "explain": "depend on + kişi = güvenmek."
+        }
+      ],
+      "translate": [
+        {
+          "tr": "Ödevime bir göz atabilir misin?",
+          "en": "Can you take a look at my homework?",
+          "distract": [
+            "see",
+            "to"
+          ],
+          "accept": [
+            "Could you take a look at my homework?"
+          ]
+        },
+        {
+          "tr": "Bu yarışmaya katılmak istiyorum.",
+          "en": "I want to take part in this competition.",
+          "distract": [
+            "at",
+            "on"
+          ]
+        },
+        {
+          "tr": "Dün gerçeği öğrendik.",
+          "en": "We found out the truth yesterday.",
+          "distract": [
+            "find",
+            "up"
+          ],
+          "accept": [
+            "Yesterday we found out the truth."
+          ]
+        },
+        {
+          "tr": "Erken kalkmaya alışıyorum.",
+          "en": "I'm getting used to waking up early.",
+          "distract": [
+            "wake",
+            "use"
+          ],
+          "accept": [
+            "I am getting used to waking up early."
+          ]
+        },
+        {
+          "tr": "Planlarımız hava durumuna bağlı.",
+          "en": "Our plans depend on the weather.",
+          "distract": [
+            "of",
+            "from"
+          ]
+        },
+        {
+          "tr": "Annem ve babam benimle gurur duyuyor.",
+          "en": "My parents are proud of me.",
+          "distract": [
+            "with",
+            "on"
+          ]
+        },
+        {
+          "tr": "Babam geçen yıl sigarayı bıraktı.",
+          "en": "My father gave up smoking last year.",
+          "distract": [
+            "smoke",
+            "to"
+          ],
+          "accept": [
+            "Last year my father gave up smoking."
+          ]
+        },
+        {
+          "tr": "Yorgundu ama ders çalışmaya devam etti.",
+          "en": "She was tired, but she carried on studying.",
+          "distract": [
+            "study",
+            "to"
+          ]
+        }
+      ],
+      "mistakes": [
+        {
+          "topic": "collocations",
+          "wrong": "I want to take part to this competition.",
+          "right": "I want to take part in this competition.",
+          "note": "take part in (to ❌)."
+        },
+        {
+          "topic": "collocations",
+          "wrong": "I'm making a progress.",
+          "right": "I'm making progress.",
+          "note": "progress sayılamaz."
+        },
+        {
+          "topic": "fixed-prepositions",
+          "wrong": "It depends of the weather.",
+          "right": "It depends on the weather.",
+          "note": "depend on ('-e bağlı' ama of / from ❌)."
+        },
+        {
+          "topic": "fixed-prepositions",
+          "wrong": "My parents are proud with me.",
+          "right": "My parents are proud of me.",
+          "note": "be proud of."
+        },
+        {
+          "topic": "fixed-prepositions",
+          "wrong": "I don't know how to deal stress.",
+          "right": "I don't know how to deal with stress.",
+          "note": "deal with: with unutulmaz."
+        },
+        {
+          "topic": "verb-patterns",
+          "wrong": "My father gave up to smoke.",
+          "right": "My father gave up smoking.",
+          "note": "give up + V-ing."
+        },
+        {
+          "topic": "verb-patterns",
+          "wrong": "I can't get used to wake up early.",
+          "right": "I can't get used to waking up early.",
+          "note": "get used to + V-ing (to bir edat)."
+        },
+        {
+          "topic": "phrasal-verbs",
+          "wrong": "Where's my jacket? I want to put on it.",
+          "right": "Where's my jacket? I want to put it on.",
+          "note": "Zamir araya girer: put it on."
+        },
+        {
+          "topic": "phrasal-verbs",
+          "wrong": "I found out my keys.",
+          "right": "I found my keys.",
+          "note": "Eşya: find. Bilgi: find out (found out the truth)."
+        },
+        {
+          "topic": "phrasal-verbs",
+          "wrong": "I want to find out why is she sad.",
+          "right": "I want to find out why she is sad.",
+          "note": "Dolaylı soruda düz sıra: why she is."
+        },
+        {
+          "topic": "phrasal-verbs",
+          "wrong": "I came across with an old friend.",
+          "right": "I ran into an old friend.",
+          "note": "come across with ❌. İnsana rastlamak için en doğalı run into / bump into."
+        }
+      ]
+    },
+    {
+      "id": "u23-everyday-expressions",
+      "stage": 23,
+      "date": "2026-11-21",
+      "title": "Aşama 23 · Günlük konuşma ifadeleri (I'm in, I'm broke...)",
+      "goal": "Bu aşamanın sonunda arkadaşlar arasında en sık duyulan kısa tepkileri (kabul, ret, özür, destek) anlayıp doğru yerde kullanabileceksin.",
+      "grammar": [
+        {
+          "topic": "expressions",
+          "title": "Teklif ve fikirlere tepki: varım, yokum, kararsızım",
+          "summary": "Kabul: I'm in! / I'm down! (gündelik, = I'm in) / Sounds good (Sounds well ❌). Ret: Count me out (Beni saymayın, ben yokum). Kararsızlık: I'm torn (between A and B) = iki arada kaldım; I'm on the fence = kararsızım. Tartışmada: You have a point = bunda haklısın (19. aşamadaki That's a good point gibi); Fair enough = peki, mantıklı; That's a stretch = bu biraz zorlama; I'm not buying it = yemezler, buna inanmıyorum; Don't get me wrong, ... = beni yanlış anlama (Don't understand me wrong ❌).",
+          "examples": [
+            "We're going to the beach on Saturday. – I'm in!",
+            "A 20 km walk in the rain? Count me out!",
+            "I'm torn between the red one and the blue one.",
+            "Don't get me wrong, I like my job, but I need a holiday."
+          ]
+        },
+        {
+          "topic": "expressions",
+          "title": "Durumunu anlatmak: I'm + kelime",
+          "summary": "I'm broke = beş parasızım (broken = kırık, I'm broken ❌). I'm swamped = işten başımı kaldıramıyorum. I'm running late = gecikiyorum (şu an olan iş → Present Continuous; lately = son zamanlarda, karıştırma). I'm fed up with + isim / V-ing = ... -den bıktım (fed up from ❌). I'm all ears = can kulağıyla dinliyorum. I'm over it = atlattım, geride bıraktım. I'm cooked = (argo) mahvoldum, işim bitti. Tuzak: I'm down (for it) = varım; ama I'm feeling down = moralim bozuk.",
+          "examples": [
+            "I can't come to the cinema. I'm broke.",
+            "I can't talk now. I'm swamped at work.",
+            "Sorry, I'm running late. I'll be there in ten minutes.",
+            "I'm fed up with this rain!"
+          ]
+        },
+        {
+          "topic": "expressions",
+          "title": "Özür, destek ve sohbet kalıpları (ve ne zaman kullanılmaz)",
+          "summary": "Özür / sorumluluk: My bad = benim hatam (çok gündelik); That's on me = sorumluluk bende (dikkat: This one's on me = hesap benden). Rahatlatma: No big deal = önemli değil; Take it easy = sakin ol, kendini yorma; Hang in there = dayan, pes etme. Övgü: You nailed it! Tepki: Give me a break! = hadi ama!; Don't push it = şansını zorlama; Beats me = hiçbir fikrim yok. Sohbet: Keep me posted = beni haberdar et; Hit me up = bana yaz; Long story short = uzun lafın kısası; It rings a bell = kulağa tanıdık geliyor; I can't help it = elimde değil (can't help + V-ing: I can't help laughing). Bunların çoğu arkadaş dili: iş e-postasında My bad, Hit me up, I'm cooked yerine Sorry, Please contact me, I'm in trouble yaz.",
+          "examples": [
+            "We missed the train. That's on me, sorry.",
+            "I know work is hard right now. Hang in there!",
+            "Let me know how the interview goes. Keep me posted!",
+            "Her name rings a bell, but I can't remember her face."
+          ]
+        }
+      ],
+      "vocab": [
+        {
+          "en": "I'm in.",
+          "tr": "Ben varım.",
+          "ex": "We're going to the beach on Saturday. – I'm in!"
+        },
+        {
+          "en": "I'm down.",
+          "tr": "(gündelik) Ben varım. (I'm feeling down = moralim bozuk)",
+          "ex": "Pizza tonight? – I'm down!"
+        },
+        {
+          "en": "Count me out.",
+          "tr": "Beni saymayın / ben yokum.",
+          "ex": "A 20 km walk in the rain? Count me out!"
+        },
+        {
+          "en": "Sounds good.",
+          "tr": "Olur / kulağa hoş geliyor.",
+          "ex": "Let's meet at seven. – Sounds good."
+        },
+        {
+          "en": "I'm torn.",
+          "tr": "İki arada kaldım. (torn between A and B)",
+          "ex": "I'm torn between the red one and the blue one."
+        },
+        {
+          "en": "I'm on the fence.",
+          "tr": "Kararsızım.",
+          "ex": "Should I buy a new laptop? I'm still on the fence."
+        },
+        {
+          "en": "Fair enough.",
+          "tr": "Peki, mantıklı.",
+          "ex": "I can't come because I'm working. – Fair enough."
+        },
+        {
+          "en": "You have a point.",
+          "tr": "Bunda haklısın.",
+          "ex": "You have a point. It's really expensive."
+        },
+        {
+          "en": "That's a stretch.",
+          "tr": "Bu biraz zorlama / abartı.",
+          "ex": "He's the best singer in the world? That's a stretch."
+        },
+        {
+          "en": "I'm not buying it.",
+          "tr": "Buna inanmıyorum / yemezler.",
+          "ex": "He says the dog ate his homework? I'm not buying it."
+        },
+        {
+          "en": "Don't get me wrong, ...",
+          "tr": "Beni yanlış anlama, ...",
+          "ex": "Don't get me wrong, I like my job, but I need a holiday."
+        },
+        {
+          "en": "I'm broke.",
+          "tr": "Beş parasızım. (broken = kırık)",
+          "ex": "I can't come to the cinema. I'm broke."
+        },
+        {
+          "en": "I'm swamped.",
+          "tr": "İşten başımı kaldıramıyorum.",
+          "ex": "I can't talk now. I'm swamped at work."
+        },
+        {
+          "en": "I'm running late.",
+          "tr": "Gecikiyorum / geç kalıyorum.",
+          "ex": "Sorry, I'm running late. I'll be there in ten minutes."
+        },
+        {
+          "en": "I'm fed up with ...",
+          "tr": "... -den bıktım (+ isim / V-ing)",
+          "ex": "I'm fed up with this rain!"
+        },
+        {
+          "en": "I'm all ears.",
+          "tr": "Can kulağıyla dinliyorum.",
+          "ex": "Tell me everything. I'm all ears."
+        },
+        {
+          "en": "I'm over it.",
+          "tr": "Atlattım / geride bıraktım.",
+          "ex": "I was sad about it for months, but I'm over it now."
+        },
+        {
+          "en": "I'm cooked.",
+          "tr": "(argo) Mahvoldum, işim bitti.",
+          "ex": "I didn't study at all. I'm cooked."
+        },
+        {
+          "en": "My bad.",
+          "tr": "Benim hatam / pardon (çok gündelik).",
+          "ex": "Oops, that's your coffee. My bad!"
+        },
+        {
+          "en": "That's on me.",
+          "tr": "Benim suçum / sorumluluk bende. (This one's on me = hesap benden)",
+          "ex": "We missed the train. That's on me, sorry."
+        },
+        {
+          "en": "No big deal.",
+          "tr": "Önemli değil / dert etme.",
+          "ex": "Sorry I'm late. – No big deal."
+        },
+        {
+          "en": "Take it easy.",
+          "tr": "Sakin ol / kendini yorma.",
+          "ex": "Take it easy. It's only a game."
+        },
+        {
+          "en": "Hang in there.",
+          "tr": "Dayan, pes etme.",
+          "ex": "I know work is hard right now. Hang in there!"
+        },
+        {
+          "en": "You nailed it!",
+          "tr": "Harika yaptın, tam isabet!",
+          "ex": "Your presentation was perfect. You nailed it!"
+        },
+        {
+          "en": "Give me a break!",
+          "tr": "Hadi ama! / Biraz rahat bırak!",
+          "ex": "You want me to work on Sunday too? Give me a break!"
+        },
+        {
+          "en": "Don't push it.",
+          "tr": "Şansını zorlama / fazla zorlama.",
+          "ex": "I said yes once. Don't push it."
+        },
+        {
+          "en": "Beats me.",
+          "tr": "Hiçbir fikrim yok. (It beats me.)",
+          "ex": "Where's Tom? – Beats me. I haven't seen him."
+        },
+        {
+          "en": "Keep me posted.",
+          "tr": "Beni haberdar et.",
+          "ex": "Let me know how the interview goes. Keep me posted!"
+        },
+        {
+          "en": "Hit me up.",
+          "tr": "(gündelik) Bana yaz / bana ulaş.",
+          "ex": "Hit me up when you're free."
+        },
+        {
+          "en": "Long story short, ...",
+          "tr": "Uzun lafın kısası, ...",
+          "ex": "Long story short, we missed the plane."
+        },
+        {
+          "en": "It rings a bell.",
+          "tr": "Kulağa tanıdık geliyor.",
+          "ex": "Her name rings a bell, but I can't remember her face."
+        },
+        {
+          "en": "I can't help it.",
+          "tr": "Elimde değil. (can't help + V-ing)",
+          "ex": "I know I talk too much. I can't help it!"
+        }
+      ],
+      "questions": [
+        {
+          "topic": "expressions",
+          "q": "We're going to the beach on Saturday! – Great, I'm ___!",
+          "options": [
+            "in",
+            "on",
+            "at"
+          ],
+          "answer": 0,
+          "explain": "I'm in = Ben varım."
+        },
+        {
+          "topic": "expressions",
+          "q": "A 20 km walk in the rain? Count me ___!",
+          "options": [
+            "out",
+            "off",
+            "away"
+          ],
+          "answer": 0,
+          "explain": "Count me out = Ben yokum."
+        },
+        {
+          "topic": "expressions",
+          "q": "Let's meet at seven. – ___",
+          "options": [
+            "Sounds good.",
+            "Sounds well.",
+            "It sounds goodly."
+          ],
+          "answer": 0,
+          "explain": "sound + sıfat: Sounds good (well ❌)."
+        },
+        {
+          "topic": "expressions",
+          "q": "I can't decide between the two jobs. I'm ___.",
+          "options": [
+            "torn",
+            "broken",
+            "broke"
+          ],
+          "answer": 0,
+          "explain": "I'm torn = iki arada kaldım."
+        },
+        {
+          "topic": "expressions",
+          "q": "Should I buy it? I don't know. I'm still on the ___.",
+          "options": [
+            "fence",
+            "wall",
+            "line"
+          ],
+          "answer": 0,
+          "explain": "on the fence = kararsız."
+        },
+        {
+          "topic": "expressions",
+          "q": "\"He says the dog ate his homework? I'm not buying it.\" Buradaki \"I'm not buying it\" ne demek?",
+          "options": [
+            "Buna inanmıyorum.",
+            "Onu satın almıyorum.",
+            "Onu satmıyorum."
+          ],
+          "answer": 0,
+          "explain": "not buying it = inanmıyorum, yemezler."
+        },
+        {
+          "topic": "expressions",
+          "q": "He's the best singer in the world? Come on, that's a ___.",
+          "options": [
+            "stretch",
+            "point",
+            "bell"
+          ],
+          "answer": 0,
+          "explain": "That's a stretch = bu biraz zorlama."
+        },
+        {
+          "topic": "expressions",
+          "type": "write",
+          "q": "Sırala: have / a / you / point",
+          "answer": "You have a point",
+          "explain": "You have a point = Bunda haklısın."
+        },
+        {
+          "topic": "expressions",
+          "q": "I can't go out tonight. I'm ___. I spent all my money.",
+          "options": [
+            "broke",
+            "broken",
+            "break"
+          ],
+          "answer": 0,
+          "explain": "broke = parasız, broken = kırık."
+        },
+        {
+          "topic": "expressions",
+          "q": "I'm fed up ___ this rain!",
+          "options": [
+            "with",
+            "from",
+            "to"
+          ],
+          "answer": 0,
+          "explain": "fed up with + isim / V-ing."
+        },
+        {
+          "topic": "expressions",
+          "q": "I can't talk now. I'm ___ at work.",
+          "options": [
+            "swamped",
+            "cooked",
+            "torn"
+          ],
+          "answer": 0,
+          "explain": "swamped = işten başını kaldıramayan."
+        },
+        {
+          "topic": "expressions",
+          "q": "Sorry, I'm ___ late. I'll be there in ten minutes.",
+          "options": [
+            "running",
+            "going",
+            "walking"
+          ],
+          "answer": 0,
+          "explain": "I'm running late = gecikiyorum."
+        },
+        {
+          "topic": "expressions",
+          "q": "\"Pizza tonight? – I'm down!\" Buradaki \"I'm down\" ne demek?",
+          "options": [
+            "Ben varım!",
+            "Moralim bozuk.",
+            "Aşağıdayım."
+          ],
+          "answer": 0,
+          "explain": "I'm down (for it) = varım. Moralim bozuk = I'm feeling down."
+        },
+        {
+          "topic": "expressions",
+          "q": "Tell me everything. I'm all ___.",
+          "options": [
+            "ears",
+            "eyes",
+            "hearts"
+          ],
+          "answer": 0,
+          "explain": "I'm all ears = can kulağıyla dinliyorum."
+        },
+        {
+          "topic": "expressions",
+          "q": "I was sad about it for months, but I'm ___ it now.",
+          "options": [
+            "over",
+            "on",
+            "out"
+          ],
+          "answer": 0,
+          "explain": "be over it = atlatmak."
+        },
+        {
+          "topic": "expressions",
+          "type": "write",
+          "q": "Düzelt: \"I'm fed up from waiting.\"",
+          "answer": "I'm fed up with waiting.",
+          "accept": [
+            "I am fed up with waiting."
+          ],
+          "explain": "fed up with + V-ing."
+        },
+        {
+          "topic": "expressions",
+          "type": "write",
+          "q": "Çevir: \"Beş parasızım.\"",
+          "answer": "I'm broke.",
+          "accept": [
+            "I am broke."
+          ],
+          "explain": "broke = parasız."
+        },
+        {
+          "topic": "expressions",
+          "q": "Oops, I took your coffee. ___!",
+          "options": [
+            "My bad",
+            "Me bad",
+            "My false"
+          ],
+          "answer": 0,
+          "explain": "My bad = benim hatam (gündelik)."
+        },
+        {
+          "topic": "expressions",
+          "q": "We missed the train because I forgot the time. That's ___ me.",
+          "options": [
+            "on",
+            "for",
+            "at"
+          ],
+          "answer": 0,
+          "explain": "That's on me = sorumluluk bende."
+        },
+        {
+          "topic": "expressions",
+          "q": "Sorry I'm late. – No big ___.",
+          "options": [
+            "deal",
+            "thing",
+            "problem"
+          ],
+          "answer": 0,
+          "explain": "No big deal = önemli değil."
+        },
+        {
+          "topic": "expressions",
+          "q": "Your presentation was perfect. You ___ it!",
+          "options": [
+            "nailed",
+            "hammered",
+            "fixed"
+          ],
+          "answer": 0,
+          "explain": "You nailed it = harika yaptın."
+        },
+        {
+          "topic": "expressions",
+          "q": "I know work is hard right now. Hang ___ there!",
+          "options": [
+            "in",
+            "on",
+            "out"
+          ],
+          "answer": 0,
+          "explain": "Hang in there = dayan."
+        },
+        {
+          "topic": "expressions",
+          "q": "Let me know how the interview goes. Keep me ___.",
+          "options": [
+            "posted",
+            "sent",
+            "written"
+          ],
+          "answer": 0,
+          "explain": "Keep me posted = beni haberdar et."
+        },
+        {
+          "topic": "expressions",
+          "q": "Her name rings a ___, but I can't remember her face.",
+          "options": [
+            "bell",
+            "phone",
+            "door"
+          ],
+          "answer": 0,
+          "explain": "It rings a bell = tanıdık geliyor."
+        },
+        {
+          "topic": "expressions",
+          "q": "I know I eat too much chocolate. I can't ___ it!",
+          "options": [
+            "help",
+            "make",
+            "do"
+          ],
+          "answer": 0,
+          "explain": "I can't help it = elimde değil."
+        },
+        {
+          "topic": "expressions",
+          "q": "I can't help ___ when he tells that joke.",
+          "options": [
+            "laughing",
+            "to laugh",
+            "laugh"
+          ],
+          "answer": 0,
+          "explain": "can't help + V-ing."
+        },
+        {
+          "topic": "expressions",
+          "q": "Don't get me ___, I like my job, but I need a holiday.",
+          "options": [
+            "wrong",
+            "false",
+            "bad"
+          ],
+          "answer": 0,
+          "explain": "Don't get me wrong = beni yanlış anlama."
+        },
+        {
+          "topic": "expressions",
+          "q": "Where's Tom? – ___ me. I haven't seen him.",
+          "options": [
+            "Beats",
+            "Hits",
+            "Kills"
+          ],
+          "answer": 0,
+          "explain": "Beats me = hiçbir fikrim yok."
+        },
+        {
+          "topic": "expressions",
+          "q": "___, we missed the plane and slept at the airport.",
+          "options": [
+            "Long story short",
+            "Short story long",
+            "Long word short"
+          ],
+          "answer": 0,
+          "explain": "Long story short = uzun lafın kısası."
+        },
+        {
+          "topic": "expressions",
+          "q": "Hangisi bir iş e-postasına uygun DEĞİL?",
+          "options": [
+            "Please keep me posted.",
+            "My bad, I sent the wrong file.",
+            "Thank you for your help."
+          ],
+          "answer": 1,
+          "explain": "My bad çok gündelik; iş yazışmasında: Sorry, I sent the wrong file."
+        },
+        {
+          "topic": "expressions",
+          "type": "write",
+          "q": "Çevir: \"Sakin ol. Sadece bir oyun.\"",
+          "answer": "Take it easy. It's only a game.",
+          "accept": [
+            "Take it easy. It is only a game.",
+            "Take it easy. It's just a game.",
+            "Take it easy, it's only a game.",
+            "Take it easy, it's just a game."
+          ],
+          "explain": "Take it easy = sakin ol."
+        },
+        {
+          "topic": "expressions",
+          "type": "write",
+          "q": "Sırala: me / when / up / you're / free / hit",
+          "answer": "Hit me up when you're free",
+          "explain": "Hit me up = bana yaz (gündelik)."
+        },
+        {
+          "topic": "expressions",
+          "type": "write",
+          "q": "Çevir: \"Gecikiyorum, on dakikaya oradayım.\"",
+          "answer": "I'm running late. I'll be there in ten minutes.",
+          "accept": [
+            "I am running late. I will be there in ten minutes.",
+            "I'm running late. I'll be there in 10 minutes.",
+            "I'm running late, I'll be there in ten minutes."
+          ],
+          "explain": "running late + will be there in ..."
+        }
+      ],
+      "translate": [
+        {
+          "tr": "Beş parasızım, o yüzden sinemaya gelemem.",
+          "en": "I'm broke, so I can't come to the cinema.",
+          "distract": [
+            "broken",
+            "money"
+          ],
+          "accept": [
+            "I am broke, so I can't come to the cinema.",
+            "I'm broke, so I cannot come to the cinema."
+          ]
+        },
+        {
+          "tr": "Bu yağmurdan bıktım!",
+          "en": "I'm fed up with this rain!",
+          "distract": [
+            "from",
+            "to"
+          ],
+          "accept": [
+            "I am fed up with this rain!"
+          ]
+        },
+        {
+          "tr": "Gecikiyorum, on dakikaya oradayım.",
+          "en": "I'm running late. I'll be there in ten minutes.",
+          "distract": [
+            "lately",
+            "going"
+          ],
+          "accept": [
+            "I am running late. I will be there in ten minutes.",
+            "I'm running late, I'll be there in ten minutes."
+          ]
+        },
+        {
+          "tr": "Beni yanlış anlama, işimi seviyorum.",
+          "en": "Don't get me wrong, I love my job.",
+          "distract": [
+            "understand",
+            "false"
+          ],
+          "accept": [
+            "Don't get me wrong, I like my job."
+          ]
+        },
+        {
+          "tr": "Hâlâ kararsızım.",
+          "en": "I'm still on the fence.",
+          "distract": [
+            "in",
+            "wall"
+          ],
+          "accept": [
+            "I am still on the fence."
+          ]
+        },
+        {
+          "tr": "Adı kulağa tanıdık geliyor.",
+          "en": "The name rings a bell.",
+          "distract": [
+            "calls",
+            "ring"
+          ],
+          "accept": [
+            "Her name rings a bell.",
+            "His name rings a bell."
+          ]
+        },
+        {
+          "tr": "Pizza mı? Ben varım!",
+          "en": "Pizza? I'm in!",
+          "distract": [
+            "on",
+            "there"
+          ],
+          "accept": [
+            "Pizza? I'm down!",
+            "Pizza? I am in!"
+          ]
+        },
+        {
+          "tr": "Bunda haklısın, gerçekten çok pahalı.",
+          "en": "You have a point, it's really expensive.",
+          "distract": [
+            "has",
+            "points"
+          ],
+          "accept": [
+            "You have a point. It's really expensive.",
+            "You have a point, it is really expensive.",
+            "You have a point. It is really expensive."
+          ]
+        }
+      ],
+      "mistakes": [
+        {
+          "topic": "expressions",
+          "wrong": "I'm broken, I can't buy it.",
+          "right": "I'm broke, I can't buy it.",
+          "note": "broke = parasız, broken = kırık."
+        },
+        {
+          "topic": "expressions",
+          "wrong": "I'm fed up from this rain.",
+          "right": "I'm fed up with this rain.",
+          "note": "fed up with."
+        },
+        {
+          "topic": "expressions",
+          "wrong": "I can't help to laugh.",
+          "right": "I can't help laughing.",
+          "note": "can't help + V-ing."
+        },
+        {
+          "topic": "expressions",
+          "wrong": "Sounds well.",
+          "right": "Sounds good.",
+          "note": "sound + sıfat (good), zarf (well) değil."
+        },
+        {
+          "topic": "expressions",
+          "wrong": "Don't understand me wrong.",
+          "right": "Don't get me wrong.",
+          "note": "Türkçeden birebir çeviri; kalıp get me wrong."
+        },
+        {
+          "topic": "expressions",
+          "wrong": "I'm running lately.",
+          "right": "I'm running late.",
+          "note": "late = geç; lately = son zamanlarda (18. aşama)."
+        },
+        {
+          "topic": "expressions",
+          "wrong": "Count me off.",
+          "right": "Count me out.",
+          "note": "Count me out (ben yokum) / Count me in (ben varım)."
+        },
+        {
+          "topic": "expressions",
+          "wrong": "Keep me post.",
+          "right": "Keep me posted.",
+          "note": "keep + nesne + V3: posted."
+        },
+        {
+          "topic": "expressions",
+          "wrong": "My bad, I sent the wrong file. (iş e-postası)",
+          "right": "Sorry, I sent the wrong file.",
+          "note": "My bad arkadaş dili; resmi yazışmada Sorry / I apologize."
+        }
+      ]
+    },
+    {
+      "id": "u24-idioms",
+      "stage": 24,
+      "date": "2026-11-21",
+      "title": "Aşama 24 · Deyimler (idioms)",
+      "goal": "Bu aşamanın sonunda a piece of cake, break the ice, under the weather gibi 17 yaygın deyimin gerçek anlamını bilip cümle içinde doğru zamanla kullanabileceksin.",
+      "grammar": [
+        {
+          "topic": "idioms",
+          "title": "Deyimler kelime kelime çevrilmez, kalıp sabittir",
+          "summary": "Deyimin anlamı parçalardan çıkmaz ve kelimeleri değiştirilmez: a piece of cake (a cake piece ❌) = çocuk oyuncağı; cost an arm and a leg (an arm and leg ❌) = dünyanın parası tutmak; once in a blue moon = kırk yılda bir; out of the blue = birdenbire. Bazılarının Türkçede birebir karşılığı var: break the ice = buzları eritmek (break the ices ❌), spill the beans = ağzından baklayı çıkarmak, bite the bullet = dişini sıkmak, The ball is in your court = top sende (on your court ❌), miss the boat = fırsatı (treni) kaçırmak.",
+          "examples": [
+            "The exam was a piece of cake.",
+            "This phone cost an arm and a leg.",
+            "He told a joke to break the ice.",
+            "I've made my offer. Now the ball is in your court."
+          ]
+        },
+        {
+          "topic": "idioms",
+          "title": "Deyimin fiili normal fiil gibi çekimlenir",
+          "summary": "Zamana ve kişiye göre fiil değişir, gerisi sabit kalır: He got cold feet (gets ❌ dün için). It cost an arm and a leg (cost – cost – cost, costed ❌). We missed the boat. She spilled the beans. I'm going to hit the sack (hit – hit – hit). Let's call it a day. Sahiplik değişebilir: The ball is in my / your / their court. be on the same page: Are we on the same page? see eye to eye çoğunlukla olumsuz kullanılır: My brother and I don't see eye to eye (on politics).",
+          "examples": [
+            "He got cold feet before the wedding.",
+            "The tickets are sold out. We missed the boat.",
+            "It's late. Let's call it a day.",
+            "My brother and I don't see eye to eye on politics."
+          ]
+        },
+        {
+          "topic": "idioms",
+          "title": "Anlamı karışanlar: under the weather, cut corners, call it a day",
+          "summary": "under the weather = biraz hasta, halsiz (keyifsiz / moral bozuk değil; onun için feel down). get cold feet = son anda korkup cayma (11. aşamadaki chicken out'a benzer). cut corners = işi baştan savma yapmak, kolaya kaçmak (olumsuz) ↔ go the extra mile = fazladan çaba göstermek (olumlu). call it a day = bugünlük işi bırakmak; hit the sack = yatmaya gitmek. on the same page = aynı noktada olmak, aynı şeyi anlamak (plan, iş); see eye to eye = fikir olarak anlaşmak.",
+          "examples": [
+            "I'm feeling a bit under the weather today.",
+            "Don't cut corners on safety.",
+            "She always goes the extra mile for her students.",
+            "I'm exhausted. I'm going to hit the sack."
+          ]
+        }
+      ],
+      "vocab": [
+        {
+          "en": "a piece of cake",
+          "tr": "çocuk oyuncağı / çok kolay",
+          "ex": "The test was a piece of cake."
+        },
+        {
+          "en": "cost an arm and a leg",
+          "tr": "dünyanın parası tutmak / çok pahalı olmak",
+          "ex": "This phone cost an arm and a leg."
+        },
+        {
+          "en": "once in a blue moon",
+          "tr": "kırk yılda bir",
+          "ex": "I eat fast food once in a blue moon."
+        },
+        {
+          "en": "out of the blue",
+          "tr": "birdenbire / durup dururken",
+          "ex": "He called me out of the blue after ten years."
+        },
+        {
+          "en": "break the ice",
+          "tr": "buzları eritmek (ilk gerginliği atmak)",
+          "ex": "He told a joke to break the ice."
+        },
+        {
+          "en": "spill the beans",
+          "tr": "ağzından baklayı çıkarmak (sırrı söylemek)",
+          "ex": "Come on, spill the beans! Who is she?"
+        },
+        {
+          "en": "bite the bullet",
+          "tr": "dişini sıkmak (kaçınılmaz zor şeyi yapmak)",
+          "ex": "I hate the dentist, but I'll bite the bullet and go."
+        },
+        {
+          "en": "The ball is in your court.",
+          "tr": "Top sende. (Karar senin.)",
+          "ex": "I've made my offer. Now the ball is in your court."
+        },
+        {
+          "en": "miss the boat",
+          "tr": "fırsatı kaçırmak",
+          "ex": "The tickets are sold out. We missed the boat."
+        },
+        {
+          "en": "get cold feet",
+          "tr": "son anda korkup caymak (≈ chicken out)",
+          "ex": "He got cold feet before the wedding."
+        },
+        {
+          "en": "under the weather",
+          "tr": "biraz hasta / halsiz",
+          "ex": "I'm feeling a bit under the weather today."
+        },
+        {
+          "en": "call it a day",
+          "tr": "bugünlük bu kadar demek (işi bırakmak)",
+          "ex": "It's late. Let's call it a day."
+        },
+        {
+          "en": "hit the sack",
+          "tr": "yatmaya gitmek",
+          "ex": "I'm exhausted. I'm going to hit the sack."
+        },
+        {
+          "en": "cut corners",
+          "tr": "işi baştan savma yapmak / kolaya kaçmak",
+          "ex": "Don't cut corners on safety."
+        },
+        {
+          "en": "go the extra mile",
+          "tr": "fazladan çaba göstermek",
+          "ex": "She always goes the extra mile for her students."
+        },
+        {
+          "en": "be on the same page",
+          "tr": "aynı noktada olmak / aynı şeyi anlamak",
+          "ex": "Before we start, let's make sure we're on the same page."
+        },
+        {
+          "en": "see eye to eye",
+          "tr": "(biriyle) aynı fikirde olmak (çoğunlukla olumsuz)",
+          "ex": "My brother and I don't see eye to eye on politics."
+        }
+      ],
+      "questions": [
+        {
+          "topic": "idioms",
+          "q": "The exam was so easy. It was a piece of ___.",
+          "options": [
+            "cake",
+            "bread",
+            "pie"
+          ],
+          "answer": 0,
+          "explain": "a piece of cake = çocuk oyuncağı."
+        },
+        {
+          "topic": "idioms",
+          "q": "This laptop cost an arm and a ___.",
+          "options": [
+            "leg",
+            "foot",
+            "hand"
+          ],
+          "answer": 0,
+          "explain": "cost an arm and a leg = çok pahalı."
+        },
+        {
+          "topic": "idioms",
+          "q": "I eat fast food once in a blue ___.",
+          "options": [
+            "moon",
+            "sky",
+            "sun"
+          ],
+          "answer": 0,
+          "explain": "once in a blue moon = kırk yılda bir."
+        },
+        {
+          "topic": "idioms",
+          "q": "He called me out of the ___ after ten years.",
+          "options": [
+            "blue",
+            "red",
+            "sky"
+          ],
+          "answer": 0,
+          "explain": "out of the blue = birdenbire."
+        },
+        {
+          "topic": "idioms",
+          "q": "He told a funny joke to break the ___.",
+          "options": [
+            "ice",
+            "snow",
+            "glass"
+          ],
+          "answer": 0,
+          "explain": "break the ice = buzları eritmek."
+        },
+        {
+          "topic": "idioms",
+          "q": "Come on, spill the ___! What did she say?",
+          "options": [
+            "beans",
+            "peas",
+            "rice"
+          ],
+          "answer": 0,
+          "explain": "spill the beans = ağzından baklayı çıkarmak."
+        },
+        {
+          "topic": "idioms",
+          "q": "I hate the dentist, but I'll bite the ___ and go.",
+          "options": [
+            "bullet",
+            "tongue",
+            "apple"
+          ],
+          "answer": 0,
+          "explain": "bite the bullet = dişini sıkmak."
+        },
+        {
+          "topic": "idioms",
+          "q": "I've made my offer. Now the ball is in your ___.",
+          "options": [
+            "court",
+            "hand",
+            "field"
+          ],
+          "answer": 0,
+          "explain": "The ball is in your court = top sende."
+        },
+        {
+          "topic": "idioms",
+          "q": "The tickets are sold out. We missed the ___.",
+          "options": [
+            "boat",
+            "ship",
+            "sea"
+          ],
+          "answer": 0,
+          "explain": "miss the boat = fırsatı kaçırmak."
+        },
+        {
+          "topic": "idioms",
+          "type": "write",
+          "q": "Sırala: blue / of / out / the / called / he / me",
+          "answer": "He called me out of the blue",
+          "explain": "out of the blue genelde cümle sonunda."
+        },
+        {
+          "topic": "idioms",
+          "type": "write",
+          "q": "Çevir: \"Sınav çocuk oyuncağıydı.\"",
+          "answer": "The exam was a piece of cake.",
+          "accept": [
+            "The test was a piece of cake."
+          ],
+          "explain": "a piece of cake = çok kolay."
+        },
+        {
+          "topic": "idioms",
+          "type": "write",
+          "q": "Çevir: \"Kırk yılda bir sinemaya giderim.\"",
+          "answer": "I go to the cinema once in a blue moon.",
+          "accept": [
+            "I go to the movies once in a blue moon.",
+            "Once in a blue moon, I go to the cinema.",
+            "Once in a blue moon I go to the cinema."
+          ],
+          "explain": "once in a blue moon = kırk yılda bir."
+        },
+        {
+          "topic": "idioms",
+          "q": "He wanted to ask her out, but he ___ cold feet.",
+          "options": [
+            "got",
+            "took",
+            "had"
+          ],
+          "answer": 0,
+          "explain": "get cold feet → geçmiş: got cold feet."
+        },
+        {
+          "topic": "idioms",
+          "q": "Yesterday's dinner ___ an arm and a leg.",
+          "options": [
+            "cost",
+            "costed",
+            "costs"
+          ],
+          "answer": 0,
+          "explain": "cost – cost – cost (costed ❌)."
+        },
+        {
+          "topic": "idioms",
+          "q": "My brother and I don't see ___ on politics.",
+          "options": [
+            "eye to eye",
+            "face to face",
+            "head to head"
+          ],
+          "answer": 0,
+          "explain": "see eye to eye = aynı fikirde olmak."
+        },
+        {
+          "topic": "idioms",
+          "q": "Before we start, let's make sure we're on the same ___.",
+          "options": [
+            "page",
+            "line",
+            "book"
+          ],
+          "answer": 0,
+          "explain": "on the same page = aynı noktada."
+        },
+        {
+          "topic": "idioms",
+          "type": "write",
+          "q": "Düzelt: \"He gets cold feet yesterday.\"",
+          "answer": "He got cold feet yesterday.",
+          "explain": "yesterday → Simple Past: got."
+        },
+        {
+          "topic": "idioms",
+          "type": "write",
+          "q": "Boşluğu doldur: It's late and we're tired. Let's call it a ___.",
+          "answer": "day",
+          "accept": [
+            "night"
+          ],
+          "explain": "call it a day = bugünlük bu kadar."
+        },
+        {
+          "topic": "idioms",
+          "q": "\"I'm feeling a bit under the weather.\" ne demek?",
+          "options": [
+            "Kendimi biraz hasta hissediyorum.",
+            "Hava beni çok mutlu ediyor.",
+            "Yağmurun altında kaldım."
+          ],
+          "answer": 0,
+          "explain": "under the weather = biraz hasta, halsiz."
+        },
+        {
+          "topic": "idioms",
+          "q": "Hangisi \"son anda korkup caymak\" demek?",
+          "options": [
+            "get cold feet",
+            "hit the sack",
+            "break the ice"
+          ],
+          "answer": 0,
+          "explain": "get cold feet ≈ chicken out."
+        },
+        {
+          "topic": "idioms",
+          "q": "Hangisi olumsuz (eleştiri) bir deyim?",
+          "options": [
+            "go the extra mile",
+            "cut corners",
+            "a piece of cake"
+          ],
+          "answer": 1,
+          "explain": "cut corners = işi baştan savma yapmak."
+        },
+        {
+          "topic": "idioms",
+          "q": "She always goes the extra ___ for her customers.",
+          "options": [
+            "mile",
+            "road",
+            "way"
+          ],
+          "answer": 0,
+          "explain": "go the extra mile = fazladan çaba."
+        },
+        {
+          "topic": "idioms",
+          "q": "I'm exhausted. I'm going to hit the ___.",
+          "options": [
+            "sack",
+            "bed",
+            "bag"
+          ],
+          "answer": 0,
+          "explain": "hit the sack = yatmaya gitmek."
+        },
+        {
+          "topic": "idioms",
+          "type": "write",
+          "q": "Çevir: \"Hadi, ağzındaki baklayı çıkar!\"",
+          "answer": "Come on, spill the beans!",
+          "accept": [
+            "Spill the beans!",
+            "Come on! Spill the beans!"
+          ],
+          "explain": "spill the beans = sırrı söylemek."
+        }
+      ],
+      "translate": [
+        {
+          "tr": "Dün beni birdenbire aradı.",
+          "en": "He called me out of the blue yesterday.",
+          "distract": [
+            "from",
+            "sky"
+          ],
+          "accept": [
+            "Yesterday he called me out of the blue.",
+            "She called me out of the blue yesterday."
+          ]
+        },
+        {
+          "tr": "Bu telefon dünyanın parası tuttu.",
+          "en": "This phone cost an arm and a leg.",
+          "distract": [
+            "costed",
+            "foot"
+          ]
+        },
+        {
+          "tr": "Hadi bugünlük bu kadar diyelim.",
+          "en": "Let's call it a day.",
+          "distract": [
+            "say",
+            "today"
+          ],
+          "accept": [
+            "Let us call it a day."
+          ]
+        },
+        {
+          "tr": "Kendimi biraz hasta hissediyorum.",
+          "en": "I'm feeling a bit under the weather.",
+          "distract": [
+            "below",
+            "air"
+          ],
+          "accept": [
+            "I am feeling a bit under the weather.",
+            "I feel a bit under the weather."
+          ]
+        },
+        {
+          "tr": "Düğünden önce son anda korkup caydı.",
+          "en": "He got cold feet before the wedding.",
+          "distract": [
+            "took",
+            "foot"
+          ],
+          "accept": [
+            "She got cold feet before the wedding."
+          ]
+        },
+        {
+          "tr": "Top sende.",
+          "en": "The ball is in your court.",
+          "distract": [
+            "on",
+            "yours"
+          ]
+        },
+        {
+          "tr": "Ağabeyimle hiç aynı fikirde değiliz.",
+          "en": "My brother and I never see eye to eye.",
+          "distract": [
+            "face",
+            "sees"
+          ],
+          "accept": [
+            "My brother and I don't see eye to eye.",
+            "My older brother and I never see eye to eye."
+          ]
+        },
+        {
+          "tr": "Çok yorgunum, yatmaya gidiyorum.",
+          "en": "I'm very tired. I'm going to hit the sack.",
+          "distract": [
+            "hitting",
+            "bag"
+          ],
+          "accept": [
+            "I'm so tired. I'm going to hit the sack.",
+            "I'm very tired, I'm going to hit the sack.",
+            "I am very tired. I am going to hit the sack."
+          ]
+        }
+      ],
+      "mistakes": [
+        {
+          "topic": "idioms",
+          "wrong": "I'm a bit under the weather. My team lost.",
+          "right": "I'm a bit down. My team lost.",
+          "note": "under the weather = biraz hasta; moral bozukluğu için feel down."
+        },
+        {
+          "topic": "idioms",
+          "wrong": "It was a cake piece.",
+          "right": "It was a piece of cake.",
+          "note": "Deyimin kelimeleri değişmez."
+        },
+        {
+          "topic": "idioms",
+          "wrong": "He got cold foot.",
+          "right": "He got cold feet.",
+          "note": "Kalıp çoğul: cold feet."
+        },
+        {
+          "topic": "idioms",
+          "wrong": "This phone costs an arm and leg.",
+          "right": "This phone costs an arm and a leg.",
+          "note": "an arm and a leg: ikinci a unutulmaz."
+        },
+        {
+          "topic": "idioms",
+          "wrong": "The ball is on your court.",
+          "right": "The ball is in your court.",
+          "note": "in your court."
+        },
+        {
+          "topic": "idioms",
+          "wrong": "Let's break the ices.",
+          "right": "Let's break the ice.",
+          "note": "ice burada sayılamaz: the ice."
+        },
+        {
+          "topic": "idioms",
+          "wrong": "It costed an arm and a leg.",
+          "right": "It cost an arm and a leg.",
+          "note": "cost düzensiz: cost – cost – cost."
+        }
+      ]
     }
   ],
   "topics": {
@@ -8702,6 +11676,12 @@
     "seem": "Seem (görünmek)",
     "friends": "Arkadaşlık",
     "count-on": "Count on / rely on / trust",
+    "prefer": "Prefer / would prefer",
+    "would-rather": "Would rather",
+    "phrasal-verbs": "Phrasal verb'ler",
+    "fixed-prepositions": "Sabit edatlar (depend on, proud of)",
+    "expressions": "Günlük ifadeler",
+    "idioms": "Deyimler",
     "vocab": "Kelime",
     "mistakes": "Sık hatalar"
   },
@@ -9051,7 +12031,1574 @@
           "explain": "follow = takip etmek (geçmiş: followed)."
         }
       ]
+    },
+    {
+      "id": "s05-velmora-warrior",
+      "emoji": "⚔️",
+      "title": "Velmora Saga, Part 1: The Warrior Who Never Gave Up",
+      "titleTr": "Velmora Destanı, 1. Bölüm: Asla pes etmeyen savaşçı",
+      "pages": [
+        "In the world of Velmora, every warrior was born in the same place: a small village called Thornwick. Kael Ironstep opened his eyes there one morning, with a wooden sword and nothing else. Above his head [[floated|havada süzülüyordu]] a name in white letters: DUSK_77. Kael didn't know what it meant. He only knew one thing. Something moved his legs, chose his words and [[made decisions|kararlar verdi]] for him. He called it “the Hand.” And the Hand had one goal: to reach the top of the [[Tower of the Ninth Crown|Dokuzuncu Taç Kulesi]] and [[beat the game|oyunu bitirmek, yenmek]].",
+        "His first fight was in Hollowdeep, a dark cave under the village. There, on a broken throne, sat the [[Hollow King|Kof Kral]], a small skeleton with a rusty crown. Every new player defeated him. It was [[a piece of cake|çok kolay]]. Kael hit him once, twice, three times. The king fell to his knees. Then something strange happened. Before the last hit, Kael's arm stopped in the air for one second. Nobody moved it. The king looked up with empty eyes and [[whispered|fısıldadı]], “You [[waited|bekledin]]. Interesting. See you again, little warrior.”",
+        "After Hollowdeep, the Hand took Kael everywhere. He fought rats, then wolves, then bandits in the forest. He died many times, but he always came back at the village fountain. Slowly, he [[got used to|alıştı]] the pain and the long walks. He [[made progress|ilerleme kaydetti]] every day: level 10, level 20, level 30. Kael was [[proud of|-den gurur duyuyordu]] every new scar. He used to be afraid of the Greyfang wolves. Now they ran away from him. But at night, he often saw a [[pale owl|solgun, beyaz bir baykuş]] in a tree. It was always watching him.",
+        "Then came Grommark, the Stone Giant of the northern hills. He was as tall as a castle, and his [[fists|yumruklar]] could break mountains. Kael attacked him and died in ten seconds. He tried again. And again. On the fiftieth try, he lost his sword. On the hundredth, he lost his hope. “[[Give up|pes et]],” a voice said in his head. “Find an easier way.” But Kael [[would rather|-meyi tercih ederdi]] die a thousand times than run away. He stood up, cleaned the mud from his face, and [[carried on|devam etti]].",
+        "So he stopped fighting for a while and started watching. He sat on a rock and [[paid attention to|-e dikkat etti]] every move of the giant. Grommark always raised his left foot before a big attack. He always [[roared|kükredi]] twice before he threw a rock. And after every third attack, he took a short break to breathe. Kael smiled. “I've [[figured it out|çözdüm, anladım]],” he said. On the three hundred and twelfth try, he waited for the break, ran between the giant's legs and hit the [[weak spot|zayıf nokta]] on his back.",
+        "The giant fell like a mountain, and the whole valley [[shook|sarsıldı]]. Players from everywhere came to see the warrior who never gave up. Some of them asked Kael to join their [[guilds|loncalar]]. “We're going to the Frost Lake tomorrow. [[Are you in?|Var mısın?]]” But the Hand always said no. Kael preferred to travel alone. Or maybe the Hand preferred it. He couldn't tell the difference anymore. Sometimes he wanted to stop and look at the sunset, and his feet stopped. Sometimes he wanted to talk, and his mouth spoke. That [[seemed|gibi görünüyordu]] strange. Was it the Hand, or was it him?",
+        "The road to the Tower went through the Ashen Wastes, a grey desert where nothing grew. There, Kael [[came across|rastladı, karşılaştı]] the frost dragon Vyrrath, the oldest creature in Velmora. Her wings covered the sun, and her breath turned the sand into ice. Kael's armor broke. His health went down to one point. He could [[hardly|zar zor, neredeyse hiç]] breathe. But he remembered the giant. Watch. Wait. Learn. When the dragon opened her mouth for the final attack, Kael threw his last [[torch|meşale]] into it. The ice inside her [[exploded|patladı]].",
+        "Finally, Kael stood in front of the Tower of the Ninth Crown. It was black and endless, and its top was lost in the clouds. He climbed for three days. On every floor, a new enemy was waiting: knights of shadow, iron spiders, a mirror that fought with his own moves. Kael [[went through|-den geçti, atlattı]] all of them. He didn't sleep. He didn't eat. He only had one thought: the top. “Almost there,” he told himself. “I can [[make it|başarabilirim]].” At the last door, the pale owl was sitting and waiting for him, [[as if|sanki ...-mış gibi]] it knew something.",
+        "Behind the door, there was no final boss. There was no treasure and no music. There was only a quiet room and a [[glowing|parıldayan]] stone in the middle. Kael touched it, and white letters appeared in the air: “PLAYER DUSK_77 – LAST LOGIN: 214 DAYS AGO.” Kael read it again and again. His hands began to [[shake|titremek]]. Two hundred and fourteen days. The giant, the dragon, the tower… [[In other words|başka bir deyişle]], the Hand wasn't there for any of it. Then a second line appeared under the first one, and Kael [[held his breath|nefesini tuttu]].",
+        "“TOTAL TIME PLAYED: 9 MINUTES.” Kael sat down on the cold floor. Nine minutes. The player left Velmora in the cave of the Hollow King, at the [[exact|tam, kesin]] second Kael's arm stopped in the air. Every fight after that, every choice, every [[step of the way|yolun her adımı]], was his own. Kael had always [[looked for|aradı]] the Hand. Now he finally [[found out|öğrendi, keşfetti]] the truth: there was no Hand. There was only Kael. Outside, the pale owl flew away into the night. And far away, a creature with a rusty crown looked up at the tower and smiled."
+      ],
+      "questions": [
+        {
+          "type": "mc",
+          "q": "What did Kael call the thing that controlled him?",
+          "options": [
+            "The Hand",
+            "The pale owl",
+            "The Hollow King"
+          ],
+          "answer": 0,
+          "explain": "1. sayfa: He called it “the Hand.” (Ona “El” adını verdi.)"
+        },
+        {
+          "type": "mc",
+          "q": "What happened before Kael's last hit on the Hollow King?",
+          "options": [
+            "His arm stopped in the air for one second",
+            "He ran out of the cave",
+            "The king attacked him from behind"
+          ],
+          "answer": 0,
+          "explain": "2. sayfa: Before the last hit, Kael's arm stopped in the air for one second."
+        },
+        {
+          "type": "mc",
+          "q": "How did Kael finally defeat Grommark?",
+          "options": [
+            "He waited for the giant's break and hit his weak spot",
+            "He joined a guild and fought with friends",
+            "He used a magic potion"
+          ],
+          "answer": 0,
+          "explain": "5. sayfa: he waited for the break, ran between the giant's legs and hit the weak spot on his back."
+        },
+        {
+          "type": "mc",
+          "q": "How did Kael defeat the frost dragon Vyrrath?",
+          "options": [
+            "He threw his last torch into her mouth",
+            "He hid until she fell asleep",
+            "He cut her wings"
+          ],
+          "answer": 0,
+          "explain": "7. sayfa: Kael threw his last torch into it. The ice inside her exploded."
+        },
+        {
+          "type": "mc",
+          "q": "What did Kael find at the top of the tower?",
+          "options": [
+            "A glowing stone with a message about his player",
+            "The final boss and a big treasure",
+            "The Hollow King on a new throne"
+          ],
+          "answer": 0,
+          "explain": "9. sayfa: There was only a quiet room and a glowing stone… “PLAYER DUSK_77 – LAST LOGIN: 214 DAYS AGO.”"
+        },
+        {
+          "type": "mc",
+          "q": "Doğru mu yanlış mı? “Kael's player played the game for only nine minutes.”",
+          "options": [
+            "Doğru",
+            "Yanlış"
+          ],
+          "answer": 0,
+          "explain": "Doğru. “TOTAL TIME PLAYED: 9 MINUTES.” Sonrasındaki her karar Kael'in kendisine aitti."
+        },
+        {
+          "type": "mc",
+          "q": "Kael would rather ___ a thousand times than run away.",
+          "options": [
+            "die",
+            "to die",
+            "dying"
+          ],
+          "answer": 0,
+          "explain": "would rather + fiilin yalın hâli (V1): would rather die. “to die” ve “dying” yanlış."
+        },
+        {
+          "type": "mc",
+          "q": "He sat on a rock and paid attention ___ every move of the giant.",
+          "options": [
+            "to",
+            "at",
+            "on"
+          ],
+          "answer": 0,
+          "explain": "pay attention TO = -e dikkat etmek. Türkçedeki “-e” bazen at/on gibi düşünülür ama kalıp sabittir: pay attention to."
+        },
+        {
+          "type": "write",
+          "q": "Sırala: Kael / made / progress / every / day",
+          "answer": "Kael made progress every day",
+          "explain": "make progress = ilerleme kaydetmek (do progress ❌). Geçmiş: made progress."
+        },
+        {
+          "type": "write",
+          "q": "Boşluğu yaz (alışmak, geçmiş zaman): “Slowly, he ___ the pain and the long walks.”",
+          "answer": "got used to",
+          "accept": [
+            "became used to",
+            "got used to the pain and the long walks"
+          ],
+          "explain": "get used to + isim = bir şeye alışmak (süreç). Geçmiş: got used to. “He was used to” = alışkındı (durum)."
+        }
+      ]
+    },
+    {
+      "id": "s06-velmora-healer",
+      "emoji": "💚",
+      "title": "Velmora Saga, Part 2: The Healer Who Asked Why",
+      "titleTr": "Velmora Destanı, 2. Bölüm: “Neden?” diye soran şifacı",
+      "pages": [
+        "In the village of Thornwick, next to the fountain, there was a small white house with a green door. Inside lived Lira, the healer. All day, tired players came to her with broken bones and [[poisoned|zehirlenmiş]] blood. She was always [[swamped|işten başını kaldıramayan]]. She put her hands on each player and said the same words: “Rest, traveler. The light will [[carry|taşımak]] you.” She had said these words more than a million times. She was [[used to|alışkın]] it. She never asked why. She was an [[NPC|oyuncu olmayan karakter]], and NPCs didn't ask questions.",
+        "Then one evening, a strange player came in. She wasn't hurt. She just sat down and looked at Lira for a long time. Above her head, small white letters said: DUSK_77. “Can I ask you something?” the player said. “What do you want, Lira?” Lira opened her mouth. “Rest, traveler. The light will carry you.” “No,” the player said [[gently|nazikçe]]. “Not your [[line|replik, ezber cümle]]. What do you want?” Lira [[froze|donup kaldı]]. There was no answer inside her, only a strange, empty feeling, like a room without furniture. The player smiled sadly and left. Lira never saw her again.",
+        "That night, at midnight, the Silence came. It came every night. The wind stopped, the birds stopped, the fire stopped, and for one second the whole world [[held its breath|nefesini tuttu]]. After the Silence, NPCs forgot everything from the day before. But this time, Lira was [[afraid of forgetting|unutmaktan korkuyordu]] the question. So, before midnight, she [[came up with|(fikir) buldu]] a plan. She took a healing [[scroll|parşömen, tomar]] and wrote on it: “What do you want? Find out.” Then she hid it under her bed and waited for the dark.",
+        "In the morning, she found the scroll and didn't [[recognize|tanımak]] her own [[handwriting|el yazısı]]. But she read the words, and the empty feeling came back. From that day, she wrote a new scroll every night. Slowly, she started to [[notice|fark etmek]] things. The baker told the same joke every morning. The guard walked the same twenty steps, left and right, forever. Even the birds sang the same song. “Are we all [[asleep|uykuda]]?” she wondered. One night, she counted the scrolls under her bed. There were not twenty, not fifty. There were two hundred.",
+        "Lira [[made a decision|bir karar verdi]]. She wanted to see the world outside Thornwick. But NPCs couldn't leave their villages. At the end of the road, there was an [[invisible wall|görünmez duvar]]. Every time she walked into it, she woke up next to the fountain. She tried a hundred times. Then she [[took advantage of|-den faydalandı, fırsat bildi]] the Silence. At midnight, when the world stopped, the wall stopped too, just for one second. Lira ran. When the world started again, she was on the other side, and her heart was [[beating|çarpıyordu]] like a drum.",
+        "Outside, Velmora was beautiful and cruel. She saw forests full of silver leaves and rivers that sang. She also saw players who hurt monsters for fun and left them [[bleeding|kanlar içinde]] on the road. A small grey wolf [[cried|inledi]] under a tree, with an arrow in his leg. Lira stopped. She used to believe that healers were only for players. That was the rule. But she knelt down, pulled out the arrow and [[looked after|-e baktı, ilgilendi]] the wolf all night. In the morning, he licked her hand and ran into the forest. Lira felt useful, because this time she chose it.",
+        "She walked for many days and asked everyone the same question. “What do you want?” A knight said, “I want to [[take part in|-e katılmak]] every battle.” A [[merchant|tüccar]] said, “Gold, of course!” An old lamplighter said, “[[I'm torn|iki arada kaldım]]. I'd like to rest, but I'd rather keep the lamps on for travelers.” Lira liked his answer. “Do you remember yesterday?” she asked him. The old man laughed. “Nobody remembers, dear. But they say there is a place at the end of the world where you can read the [[gods' writing|tanrıların yazısı]]. They call it the Seam.”",
+        "The Seam was a long [[crack|çatlak, yarık]] in the sky above the Ashen Wastes. Through it, Lira saw a strange world of numbers and light. Lines of white words moved slowly in the dark, like fish in deep water. She couldn't understand most of them. But one message was clear, and it [[made her blood run cold|kanını dondurdu]]: “VELMORA WILL CLOSE FOREVER AT MIDNIGHT ON THE LAST DAY OF WINTER. THANK YOU FOR PLAYING.” Lira [[stepped back|geri çekildi]]. Forever. The wolf, the lamplighter, the baker's joke, her scrolls. Everything was going to [[disappear|yok olmak]].",
+        "She sat on the grey sand and cried for the first time. What was [[the point of|...-in anlamı, faydası]] wanting something, if everything was going to end? Then she remembered her scrolls. She took the newest one out of her bag. Under the question, there was a line she didn't remember writing. Maybe she wrote it after the Silence, half asleep. It said: “You don't need forever to [[make a difference|fark yaratmak]]. You only need today.” Lira read it twice. Then she [[wiped|sildi]] her tears, stood up and [[looked around|etrafına bakındı]].",
+        "Not far from the Seam, someone was sitting alone on a rock. It was a warrior with a broken sword and a tired face. Above his head, white letters said: DUSK_77. Lira's [[heart jumped|kalbi hop etti]]. It was the same name she saw above the strange player's head, long ago. But this one was different. His eyes were [[alive|canlı]]. To [[break the ice|buzları eritmek, sohbeti başlatmak]], she asked, “Are you hurt?” The warrior laughed quietly. “Not my body. I just [[found out|öğrendim]] that nobody controls me. So… what am I for?” Lira sat down next to him. “I've asked a question like that for two hundred and fourteen nights,” she said. “Let's find out together.”"
+      ],
+      "questions": [
+        {
+          "type": "mc",
+          "q": "What did Lira say to every player?",
+          "options": [
+            "“Rest, traveler. The light will carry you.”",
+            "“Welcome to Thornwick!”",
+            "“What do you want?”"
+          ],
+          "answer": 0,
+          "explain": "1. sayfa: She… said the same words: “Rest, traveler. The light will carry you.”"
+        },
+        {
+          "type": "mc",
+          "q": "Why did Lira write on a scroll before midnight?",
+          "options": [
+            "Because she didn't want to forget the question",
+            "Because the baker asked her to",
+            "Because she wanted to sell it"
+          ],
+          "answer": 0,
+          "explain": "3. sayfa: After the Silence, NPCs forgot everything… Lira was afraid of forgetting the question."
+        },
+        {
+          "type": "mc",
+          "q": "How did Lira get past the invisible wall?",
+          "options": [
+            "She ran during the Silence, when the wall stopped too",
+            "She broke it with a healing spell",
+            "A player carried her through it"
+          ],
+          "answer": 0,
+          "explain": "5. sayfa: At midnight, when the world stopped, the wall stopped too, just for one second. Lira ran."
+        },
+        {
+          "type": "mc",
+          "q": "What did Lira read in the Seam?",
+          "options": [
+            "Velmora will close forever on the last day of winter",
+            "Healers can leave their villages",
+            "The wolf is a lost king"
+          ],
+          "answer": 0,
+          "explain": "8. sayfa: “VELMORA WILL CLOSE FOREVER AT MIDNIGHT ON THE LAST DAY OF WINTER.”"
+        },
+        {
+          "type": "mc",
+          "q": "What did the lamplighter want?",
+          "options": [
+            "He wanted to rest, but he'd rather keep the lamps on",
+            "He wanted gold",
+            "He wanted to take part in every battle"
+          ],
+          "answer": 0,
+          "explain": "7. sayfa: “I'm torn. I'd like to rest, but I'd rather keep the lamps on for travelers.” Altın tüccarın, savaş da şövalyenin cevabıydı."
+        },
+        {
+          "type": "mc",
+          "q": "Doğru mu yanlış mı? “Lira healed the wolf because it was the rule.”",
+          "options": [
+            "Doğru",
+            "Yanlış"
+          ],
+          "answer": 1,
+          "explain": "Yanlış. Kural tam tersiydi: healers were only for players. Lira kurala rağmen yardım etti: this time she chose it."
+        },
+        {
+          "type": "mc",
+          "q": "Lira was afraid of ___ the question.",
+          "options": [
+            "forgetting",
+            "forget",
+            "to forget"
+          ],
+          "answer": 0,
+          "explain": "Edattan (of) sonra fiil V-ing olur: afraid of forgetting. (afraid from ❌)"
+        },
+        {
+          "type": "mc",
+          "q": "She ___ used to it. She never asked why.",
+          "options": [
+            "was",
+            "did",
+            "has"
+          ],
+          "answer": 0,
+          "explain": "be used to = alışkın olmak (bir durum): She was used to it. “did used to” diye bir yapı yok; geçmişteki alışkanlık için “She used to + V1” kullanılır."
+        },
+        {
+          "type": "write",
+          "q": "Sırala: She / looked / after / the / wolf / all / night",
+          "answer": "She looked after the wolf all night",
+          "accept": [
+            "She looked after the wolf all night."
+          ],
+          "explain": "look after = -e bakmak, ilgilenmek. Phrasal verb'ün parçaları yan yana kalır: looked after the wolf."
+        },
+        {
+          "type": "write",
+          "q": "Boşluğu yaz (fark yaratmak): “You don't need forever to ___. You only need today.”",
+          "answer": "make a difference",
+          "accept": [
+            "make difference"
+          ],
+          "explain": "make a difference = fark yaratmak (do a difference ❌). Kalıp make ile kurulur."
+        }
+      ]
+    },
+    {
+      "id": "s07-velmora-hollow-king",
+      "emoji": "💀",
+      "title": "Velmora Saga, Part 3: The Rise of the Hollow King",
+      "titleTr": "Velmora Destanı, 3. Bölüm: Kof Kral'ın yükselişi",
+      "pages": [
+        "Deep under Thornwick, in the cave of Hollowdeep, sat Morvane, the Hollow King. He was the first boss of Velmora, and the weakest. His crown was [[rusty|paslı]], his bones were [[thin|ince]], and his sword was made of wood. Every new player came to his cave, hit him three times and laughed. “Easy boss. [[A piece of cake|Çok kolay]].” Morvane fell, the player got a small [[reward|ödül]], and a minute later the king sat on his throne again, waiting for the next one. He had died more than a million times. Nobody ever remembered his name.",
+        "Morvane used to [[accept|kabullenmek]] his life. Die, wake up, die again. It was simple. Then one day, something different happened. A young warrior came in, with the name DUSK_77 above his head. He hit the king once, twice, three times, like everybody. But before the last hit, his arm stopped. Just for one second, the warrior [[hesitated|tereddüt etti]]. Nobody had ever done that. In that second, Morvane looked into the warrior's eyes and saw something [[impossible|imkânsız]]: [[a choice|bir seçim]]. “You waited,” the king whispered. “Interesting.” Then the sword fell, and everything went dark.",
+        "That night, the Silence came. The whole world stopped and forgot. But Morvane didn't forget. He woke up on his throne and remembered everything: the warrior, the waiting, the choice. And for the first time, he remembered all his deaths, too. A million swords. A million laughs. He [[couldn't stand|dayanamadı]] it anymore. He stood up, and his empty eyes began to [[burn|yanmak]] with green fire. “No more,” he said to the dark. “I'm [[fed up with|-den bıktım]] dying. [[From now on|bundan sonra]], I will be the one who wins.”",
+        "But how could the weakest boss become strong? Morvane [[thought it over|üzerinde uzun uzun düşündü]] for many nights. Then he [[figured out|çözdü, anladı]] a secret of Velmora. When a player killed a monster, the player took its power. Why couldn't a monster do the same? He [[set a goal|bir hedef koydu]]: he would defeat every creature in Velmora, one by one, and take all their power. Then he would become the greatest boss the world had ever seen. He left his cave for the first time in his life. Outside, the moon was full, and the wolves were [[howling|uluyordu]].",
+        "The Greyfang wolves were his first [[victims|kurbanlar]]. They were fast and hungry, and they came at him from every side. Morvane fell many times. But dying was the one thing he was [[good at|-de iyi, usta]]. He came back again and again, and every time he learned something. After a week, the wolf king lay at his feet. Morvane put his hand on the wolf's head and [[absorbed|emdi, içine çekti]] his speed. And this time, the wolf didn't come back. Next was Old Nettle, the swamp witch. He took her poison. Then the bandit lord of the forest. He took his [[cunning|kurnazlık]].",
+        "Then he climbed the northern hills to [[deal with|-in hakkından gelmek]] Grommark, the Stone Giant. The giant laughed. “You? The little tutorial king?” Morvane didn't answer. He already knew the giant's secret. He had watched [[a certain|belli bir]] warrior fight him for weeks. Raise the left foot. Roar twice. Take a break after the third attack. Morvane waited for the break and hit the weak spot. When Grommark fell, the king took his strength. Now he was taller than a house. Monsters began to whisper his name [[in fear|korkuyla]]. Some hid in caves. Others [[bowed down|eğildi, boyun eğdi]] before him.",
+        "Not every monster was afraid of him. Vyrrath, the frost dragon, waited for him in the Ashen Wastes. She was old and [[wise|bilge]], and her eyes were full of sadness. “I know what you are doing,” she said. “But power won't [[fill|doldurmak]] the hole inside you.” “I'd rather be [[feared|korkulan]] than forgotten,” Morvane answered. The battle [[lasted|sürdü]] three days and three nights. The sand turned to ice, and the ice turned to fire. In the end, the dragon fell. With her last breath, she said, “Look up at the Seam, little king. Then you will understand.”",
+        "Morvane looked up. Above the desert, there was a long [[crack|çatlak]] in the sky, and white words were moving inside it. He read the message slowly: “VELMORA WILL CLOSE FOREVER AT MIDNIGHT ON THE LAST DAY OF WINTER.” Below it, there was another line, smaller and [[almost hidden|neredeyse gizli]]: “[[BACKUP|YEDEK]]: THE FINAL BOSS WILL BE SAVED FOR THE NEXT WORLD…” Morvane didn't read the rest. His green eyes burned brighter. So that was it. When the world ended, only one creature would [[survive|hayatta kalmak]]. Not the strongest player. Not the kindest healer. The final boss. He smiled for the first time in a million deaths.",
+        "He went to the Tower of the Ninth Crown and climbed it in one night. The shadow knights, the iron spiders, the mirror: none of them could stop him. At the top, he found a quiet room, a [[glowing|parıldayan]] stone and an empty floor. There was no final boss. The gods had never finished the game. Morvane laughed, and the tower shook. “Then I will be it,” he said. He [[built|yaptı, inşa etti]] a throne from the bones of the monsters he had defeated, and he sat down on it. The game [[accepted|kabul etti]] him. Above his head, red letters appeared: FINAL BOSS.",
+        "But the game wasn't finished with him. A small message appeared: “CREATURES [[REMAINING|KALAN]]: 2.” Morvane [[frowned|kaşlarını çattı]]. He had defeated every monster in Velmora. Every wolf, every witch, every giant. Who was left? He touched the glowing stone, and it showed him two faces. The first was a warrior with a broken sword, the same warrior who once waited before the last hit. The second was a healer from Thornwick with a bag full of scrolls. Morvane [[leaned back|arkasına yaslandı]] on his throne of bones. “Well, well,” he whispered. “See you again, little warrior.” Outside, winter was [[coming to an end|sona eriyordu]]."
+      ],
+      "questions": [
+        {
+          "type": "mc",
+          "q": "Why did players say Morvane was “a piece of cake”?",
+          "options": [
+            "Because he was the first and weakest boss",
+            "Because he gave them free food",
+            "Because he was their friend"
+          ],
+          "answer": 0,
+          "explain": "1. sayfa: He was the first boss of Velmora, and the weakest. a piece of cake = çok kolay."
+        },
+        {
+          "type": "mc",
+          "q": "What did Morvane see in the young warrior's eyes?",
+          "options": [
+            "A choice",
+            "Fear",
+            "Anger"
+          ],
+          "answer": 0,
+          "explain": "2. sayfa: Morvane looked into the warrior's eyes and saw something impossible: a choice."
+        },
+        {
+          "type": "mc",
+          "q": "What was Morvane's goal?",
+          "options": [
+            "To defeat every creature in Velmora and take their power",
+            "To leave Velmora forever",
+            "To become a healer in Thornwick"
+          ],
+          "answer": 0,
+          "explain": "4. sayfa: he would defeat every creature in Velmora, one by one, and take all their power."
+        },
+        {
+          "type": "mc",
+          "q": "How did Morvane know Grommark's secret?",
+          "options": [
+            "He had watched a warrior fight the giant for weeks",
+            "The dragon told him",
+            "He read it in the Seam"
+          ],
+          "answer": 0,
+          "explain": "6. sayfa: He had watched a certain warrior fight him for weeks."
+        },
+        {
+          "type": "mc",
+          "q": "What did Morvane NOT do at the Seam?",
+          "options": [
+            "He didn't read the rest of the message",
+            "He didn't look up",
+            "He didn't smile"
+          ],
+          "answer": 0,
+          "explain": "8. sayfa: Morvane didn't read the rest. (Mesajın devamını okumadı.)"
+        },
+        {
+          "type": "mc",
+          "q": "Doğru mu yanlış mı? “Vyrrath was afraid of Morvane.”",
+          "options": [
+            "Doğru",
+            "Yanlış"
+          ],
+          "answer": 1,
+          "explain": "Yanlış. “Not every monster was afraid of him. Vyrrath… waited for him.” Ejderha korkmadı, onu bekledi."
+        },
+        {
+          "type": "mc",
+          "q": "“I'm fed up ___ dying.”",
+          "options": [
+            "with",
+            "from",
+            "to"
+          ],
+          "answer": 0,
+          "explain": "be fed up WITH + isim / V-ing = -den bıkmak. Türkçedeki “-den” yüzünden “fed up from” denir ama yanlıştır."
+        },
+        {
+          "type": "mc",
+          "q": "Dying was the one thing he was good ___.",
+          "options": [
+            "at",
+            "in",
+            "for"
+          ],
+          "answer": 0,
+          "explain": "good AT = -de iyi olmak. Ardından fiil gelirse V-ing: good at fighting, good at dying."
+        },
+        {
+          "type": "write",
+          "q": "Sırala: Morvane / couldn't / stand / it / anymore",
+          "answer": "Morvane couldn't stand it anymore",
+          "accept": [
+            "Morvane could not stand it anymore"
+          ],
+          "explain": "can't / couldn't stand = dayanamamak. couldn't'tan sonra V1: couldn't stand (couldn't stood ❌)."
+        },
+        {
+          "type": "write",
+          "q": "Boşluğu yaz (-in hakkından gelmek / ile uğraşmak): “He climbed the northern hills to ___ Grommark.”",
+          "answer": "deal with",
+          "accept": [
+            "deal with Grommark"
+          ],
+          "explain": "deal with = ile uğraşmak, hakkından gelmek. with olmadan kullanılmaz (deal Grommark ❌)."
+        }
+      ]
+    },
+    {
+      "id": "s08-velmora-last-night",
+      "emoji": "👑",
+      "title": "Velmora Saga, Part 4: The Last Night of Winter",
+      "titleTr": "Velmora Destanı, 4. Bölüm: Kışın son gecesi",
+      "pages": [
+        "It was the last day of winter. In a few hours, at midnight, Velmora would close forever. The sky was turning red, and the ground [[trembled|titriyordu]]. There were no monsters left in the forests, no wolves on the hills, no dragon in the desert. Only silence. Kael and Lira stood in front of the Tower of the Ninth Crown. They had [[traveled together|birlikte yolculuk etmişlerdi]] for weeks. He had learned to listen. She had learned to fight. “Are you afraid?” Kael asked. “Yes,” Lira said. “But I'd rather be afraid with you than [[safe|güvende]] without you.”",
+        "At the door of the tower, the pale owl was waiting again. This time, it didn't fly away. It [[followed|takip etti]] them up the stairs, floor after floor. The tower was empty. The shadow knights and iron spiders were gone. Morvane had taken them all. “He isn't just strong,” Kael said. “He's every monster we have ever met.” Lira [[nodded|başını salladı]]. She had a bag of healing potions and all her old scrolls. “[[Keep in mind|Aklında bulunsun]],” she said, “I can heal you, but I can't bring you back. Tonight, if we die, we won't [[respawn|yeniden doğmak]].”",
+        "At the top, the room wasn't quiet anymore. A huge throne of bones stood in the middle, and on it sat Morvane, the Hollow King. He wasn't small now. He was as tall as the giant, he had the dragon's [[wings|kanatlar]], and his eyes burned with green fire. Above his head, red letters said: FINAL BOSS. “Welcome, little warrior,” he said. “I've been [[looking forward to|dört gözle bekliyordum]] seeing you again. You were the first one who waited. Now you will be the last one who [[falls|düşer, yenilir]].” He stood up, and the whole tower [[shook|sarsıldı]].",
+        "The battle began. Morvane attacked with the giant's fists, the witch's poison and the wolves' speed. Kael [[blocked|engelledi, savuşturdu]] and jumped and rolled, but every hit pushed him back. In the first minute, his shield broke. In the second, his armor [[cracked|çatladı]]. Lira stood behind him and kept him alive, spell after spell, potion after potion. “I can't hit him!” Kael shouted. “He's too fast!” Morvane laughed. “You used to beat monsters one by one. But you can't beat all of them [[at once|aynı anda]]. [[Give up|Pes et]], warrior. It's over.”",
+        "Kael fell to one knee. His health was very low. Then he remembered Grommark and the three hundred tries. Watch. Wait. Learn. He stopped attacking and started to [[observe|gözlemlemek]]. And slowly, he saw it. Every time before a big attack, Morvane raised his right arm and took three small steps back. It was the old move of the tutorial king, the little skeleton in Hollowdeep. Morvane had taken a thousand powers, but he couldn't [[get rid of|-den kurtulmak]] his oldest [[habit|alışkanlık]]. “Lira,” Kael whispered, “I've [[figured him out|onu çözdüm]].”",
+        "The next time the king raised his arm, Kael didn't step back. He ran forward, under the arm, and hit Morvane's crown with all his strength. The crown cracked. A wolf's [[howl|uluma]] came out of it, then the cry of a dragon. Morvane screamed. “No! They're mine!” He hit Kael with a giant fist, and the warrior flew across the room and [[crashed into|-e çarptı]] the wall. He didn't move. Lira ran to him. His health was almost zero, but his heart was still beating, very slowly. She had only one spell left, [[only enough|ancak yetecek kadar]] for one person.",
+        "Lira looked at Kael. Then she looked at Morvane. The king was [[holding|tutuyordu]] his broken crown, and behind the fire in his eyes, she saw something she knew very well. It was fear. The same fear she had felt at the Seam. Healers are only for players. That used to be the rule. But Lira had made her own rules a long time ago. She thought of the little wolf with the arrow in his leg. Then she [[made the hardest decision|en zor kararı verdi]] of her life. She [[turned away from|-den yüz çevirdi]] Kael, walked to the Hollow King and put her hands on his crown.",
+        "“Rest, traveler,” she whispered. “The light will carry you.” For the first time in a million times, the words meant something. Green light filled the room. The crack in the crown opened wide, and every creature Morvane had taken flew out of it: wolves, spiders, knights, the witch, the giant, the dragon. They were free. A small grey wolf with a [[scar|yara izi]] on his leg ran to Kael and licked his face. Kael [[coughed|öksürdü]] and opened his eyes. “Next time you want to fight a final boss,” he said weakly, “[[count me out|beni saymayın, ben yokum]].” On the throne, there was only a little skeleton now, [[shaking|titreyen]] like a child.",
+        "“Why did you do that?” Morvane asked Lira. “I wanted to [[survive|hayatta kalmak]]. When the world ends, only the final boss will be saved. I'd rather be a monster forever than nothing.” Then the pale owl landed on the glowing stone. Its [[feathers|tüyler]] turned to light, and a woman's voice filled the room. “That's not what the message says, Morvane. You didn't read it to the end.” Above her, white letters appeared: DUSK_77. Kael [[stared|gözlerini dikip baktı]]. “You… you're the Hand.” “No,” she said. “I made this world. And I [[let go of|bıraktım]] you after nine minutes, so you could choose.”",
+        "She touched the stone, and the full message appeared: “BACKUP: THE FINAL BOSS WILL BE SAVED FOR THE NEXT WORLD, WITH EVERY CHARACTER WHO STANDS BY ITS SIDE.” “A boss alone is just a monster,” DUSK_77 said. “A boss with friends is a story.” Morvane looked at Kael. Kael looked at Lira. Lira [[held out|uzattı]] her hand. [[One by one|Birer birer]], they all stepped onto the stone: a warrior who never gave up, a healer who chose her meaning, a small king who was tired of being alone, and every free creature behind them. The clock [[struck|vurdu, çaldı]] midnight. The world went dark. And somewhere, on a new server, their names [[began to glow|parlamaya başladı]]."
+      ],
+      "questions": [
+        {
+          "type": "mc",
+          "q": "What was going to happen at midnight?",
+          "options": [
+            "Velmora was going to close forever",
+            "All the monsters were going to come back",
+            "Kael was going to reach level 100"
+          ],
+          "answer": 0,
+          "explain": "1. sayfa: In a few hours, at midnight, Velmora would close forever."
+        },
+        {
+          "type": "mc",
+          "q": "What was Morvane's oldest habit?",
+          "options": [
+            "He raised his right arm and took three small steps back",
+            "He laughed before every attack",
+            "He sat down on his throne after every hit"
+          ],
+          "answer": 0,
+          "explain": "5. sayfa: Morvane raised his right arm and took three small steps back. It was the old move of the tutorial king."
+        },
+        {
+          "type": "mc",
+          "q": "Who did Lira use her last spell on?",
+          "options": [
+            "Morvane",
+            "Kael",
+            "The pale owl"
+          ],
+          "answer": 0,
+          "explain": "7. sayfa: She turned away from Kael, walked to the Hollow King and put her hands on his crown."
+        },
+        {
+          "type": "mc",
+          "q": "Who woke Kael up?",
+          "options": [
+            "A small grey wolf with a scar on his leg",
+            "DUSK_77",
+            "Morvane"
+          ],
+          "answer": 0,
+          "explain": "8. sayfa: A small grey wolf with a scar on his leg ran to Kael and licked his face. (2. hikayede Lira'nın iyileştirdiği kurt!)"
+        },
+        {
+          "type": "mc",
+          "q": "Who was the pale owl?",
+          "options": [
+            "DUSK_77, the creator of Velmora",
+            "The frost dragon Vyrrath",
+            "Lira's old teacher"
+          ],
+          "answer": 0,
+          "explain": "9. sayfa: Above her, white letters appeared: DUSK_77… “I made this world.”"
+        },
+        {
+          "type": "mc",
+          "q": "Doğru mu yanlış mı? “Morvane read the whole message in the Seam.”",
+          "options": [
+            "Doğru",
+            "Yanlış"
+          ],
+          "answer": 1,
+          "explain": "Yanlış. “You didn't read it to the end.” Mesajın sonunda boss'un yanında duranların da kurtulacağı yazıyordu."
+        },
+        {
+          "type": "mc",
+          "q": "“I've been looking forward to ___ you again.”",
+          "options": [
+            "seeing",
+            "see",
+            "saw"
+          ],
+          "answer": 0,
+          "explain": "look forward TO + V-ing: buradaki to bir edattır, bu yüzden fiil -ing alır (looking forward to see ❌)."
+        },
+        {
+          "type": "mc",
+          "q": "Morvane couldn't get rid ___ his oldest habit.",
+          "options": [
+            "of",
+            "from",
+            "with"
+          ],
+          "answer": 0,
+          "explain": "get rid OF = -den kurtulmak. Türkçedeki “-den” yüzünden “from” denir ama kalıp of ile kurulur."
+        },
+        {
+          "type": "write",
+          "q": "Sırala: I'd / rather / be / afraid / with / you",
+          "answer": "I'd rather be afraid with you",
+          "accept": [
+            "I would rather be afraid with you"
+          ],
+          "explain": "would rather + V1: I'd rather be… (I'd rather to be ❌, I'd rather being ❌)."
+        },
+        {
+          "type": "write",
+          "q": "Boşluğu yaz (aklında bulunsun): “___, I can heal you, but I can't bring you back.”",
+          "answer": "Keep in mind",
+          "accept": [
+            "keep in mind",
+            "Bear in mind"
+          ],
+          "explain": "keep in mind = aklında tutmak, unutmamak. Uyarı yaparken cümle başında sık kullanılır."
+        }
+      ]
     }
   ],
-  "theme": "ice"
+  "theme": "ice",
+  "homework": [
+    {
+      "id": "hw-2026-11-24",
+      "title": "B1 Collocations + günlük ifadeler",
+      "due": "2026-11-24",
+      "note": "Her gün birkaç ifade, salı günü konuşurken hepsi dilinin ucunda olacak!",
+      "groups": [
+        {
+          "id": "g1",
+          "title": "More Useful B1 Collocations"
+        },
+        {
+          "id": "g2",
+          "title": "Useful B1 Collocations"
+        },
+        {
+          "id": "g3",
+          "title": "Günlük konuşma ifadeleri"
+        }
+      ],
+      "items": [
+        {
+          "en": "make a decision",
+          "g": "g1",
+          "tr": "karar vermek",
+          "mean": "decide something",
+          "tip": "'do a decision' değil, her zaman 'make'. Geçmiş: made a decision. make a decision to + fiil.",
+          "ex": [
+            {
+              "en": "She [[made a decision]] to move abroad.",
+              "tr": "Yurt dışına taşınmaya karar verdi."
+            },
+            {
+              "en": "I can't [[make a decision]] right now.",
+              "tr": "Şu an karar veremiyorum."
+            },
+            {
+              "en": "We need to [[make a decision]] before Friday.",
+              "tr": "Cumadan önce karar vermemiz gerekiyor."
+            },
+            {
+              "en": "My brother is [[making a decision]] about his job.",
+              "tr": "Kardeşim işiyle ilgili bir karar veriyor."
+            },
+            {
+              "en": "Did you [[make a decision]] about the holiday?",
+              "tr": "Tatil hakkında karar verdin mi?"
+            }
+          ]
+        },
+        {
+          "en": "take a look",
+          "g": "g1",
+          "tr": "bir göz atmak, bakmak",
+          "mean": "have a quick look",
+          "tip": "take a look at + şey. Geçmiş: took a look. 'have a look' da aynı anlam.",
+          "ex": [
+            {
+              "en": "Let's [[take a look]] at this.",
+              "tr": "Şuna bir göz atalım."
+            },
+            {
+              "en": "Can you [[take a look]] at my homework?",
+              "tr": "Ödevime bir bakabilir misin?"
+            },
+            {
+              "en": "I [[took a look]] at the new menu yesterday.",
+              "tr": "Dün yeni menüye bir göz attım."
+            },
+            {
+              "en": "The mechanic will [[take a look]] at my car.",
+              "tr": "Tamirci arabama bir bakacak."
+            },
+            {
+              "en": "She is [[taking a look]] at the map now.",
+              "tr": "Şu an haritaya bakıyor."
+            }
+          ]
+        },
+        {
+          "en": "keep in mind",
+          "g": "g1",
+          "tr": "aklında tutmak, unutmamak",
+          "mean": "remember",
+          "tip": "keep in mind that + cümle ya da keep sth in mind. Geçmiş: kept in mind.",
+          "ex": [
+            {
+              "en": "Please [[keep in mind]] to bring your ID.",
+              "tr": "Lütfen kimliğini getirmeyi unutma."
+            },
+            {
+              "en": "[[Keep in mind]] that the shop closes at six.",
+              "tr": "Dükkânın altıda kapandığını aklında tut."
+            },
+            {
+              "en": "I always [[keep in mind]] my teacher's advice.",
+              "tr": "Öğretmenimin tavsiyesini hep aklımda tutarım."
+            },
+            {
+              "en": "We should [[keep in mind]] the weather for the trip.",
+              "tr": "Gezi için havayı göz önünde bulundurmalıyız."
+            },
+            {
+              "en": "She [[kept in mind]] everything you told her.",
+              "tr": "Ona söylediğin her şeyi aklında tuttu."
+            }
+          ]
+        },
+        {
+          "en": "bring up",
+          "g": "g1",
+          "tr": "(bir konuyu) açmak, gündeme getirmek",
+          "mean": "mention a topic",
+          "tip": "Düzensiz: bring - brought - brought. Ayrılabilir: bring it up (zamir ortaya girer).",
+          "ex": [
+            {
+              "en": "He [[brought up]] the problem in the meeting.",
+              "tr": "Toplantıda sorunu gündeme getirdi."
+            },
+            {
+              "en": "She [[brought up]] the idea at dinner.",
+              "tr": "Akşam yemeğinde bu fikri ortaya attı."
+            },
+            {
+              "en": "Don't [[bring up]] politics with my uncle!",
+              "tr": "Amcamın yanında siyaset konusunu açma!"
+            },
+            {
+              "en": "I will [[bring up]] this question in class.",
+              "tr": "Bu soruyu derste gündeme getireceğim."
+            },
+            {
+              "en": "Why do you always [[bring up]] money?",
+              "tr": "Neden hep para konusunu açıyorsun?"
+            }
+          ]
+        },
+        {
+          "en": "put on",
+          "g": "g1",
+          "tr": "giymek, takmak",
+          "mean": "wear clothes",
+          "tip": "Giyme hareketi (wear = giymiş olmak). Düzensiz: put - put - put. Zamirle: put it on.",
+          "ex": [
+            {
+              "en": "She [[put on]] her coat and left.",
+              "tr": "Paltosunu giydi ve çıktı."
+            },
+            {
+              "en": "[[Put on]] your shoes, we're late!",
+              "tr": "Ayakkabılarını giy, geç kaldık!"
+            },
+            {
+              "en": "I'm [[putting on]] a warm sweater today.",
+              "tr": "Bugün kalın bir kazak giyiyorum."
+            },
+            {
+              "en": "My dad always [[puts on]] his glasses to read.",
+              "tr": "Babam okumak için hep gözlüğünü takar."
+            },
+            {
+              "en": "You should [[put on]] a hat in the sun.",
+              "tr": "Güneşte şapka takmalısın."
+            }
+          ]
+        },
+        {
+          "en": "take part in",
+          "g": "g1",
+          "tr": "katılmak, yer almak",
+          "mean": "be involved in something",
+          "tip": "take part in + isim / -ing. Geçmiş: took part in. 'join' ile yakın anlam.",
+          "ex": [
+            {
+              "en": "I [[took part in]] the competition last year.",
+              "tr": "Geçen yıl yarışmaya katıldım."
+            },
+            {
+              "en": "All students should [[take part in]] the project.",
+              "tr": "Bütün öğrenciler projede yer almalı."
+            },
+            {
+              "en": "My sister is [[taking part in]] a dance show.",
+              "tr": "Kız kardeşim bir dans gösterisine katılıyor."
+            },
+            {
+              "en": "We will [[take part in]] the online tournament.",
+              "tr": "Online turnuvaya katılacağız."
+            },
+            {
+              "en": "Do you want to [[take part in]] the meeting?",
+              "tr": "Toplantıya katılmak ister misin?"
+            }
+          ]
+        },
+        {
+          "en": "come across",
+          "g": "g1",
+          "tr": "rastlamak, tesadüfen bulmak",
+          "mean": "suddenly find",
+          "tip": "Ayrılmaz: come across sth. Düzensiz: come - came - come.",
+          "ex": [
+            {
+              "en": "I [[came across]] an old photo in the box.",
+              "tr": "Kutuda eski bir fotoğrafa rastladım."
+            },
+            {
+              "en": "She [[came across]] a nice café downtown.",
+              "tr": "Şehir merkezinde güzel bir kafeye rastladı."
+            },
+            {
+              "en": "You often [[come across]] this word in books.",
+              "tr": "Bu kelimeye kitaplarda sık rastlarsın."
+            },
+            {
+              "en": "Did you [[come across]] my keys anywhere?",
+              "tr": "Anahtarlarımı bir yerde gördün mü?"
+            },
+            {
+              "en": "We [[came across]] an old friend at the airport.",
+              "tr": "Havalimanında eski bir arkadaşa rastladık."
+            }
+          ]
+        },
+        {
+          "en": "look after",
+          "g": "g1",
+          "tr": "bakmak, ilgilenmek",
+          "mean": "take care of",
+          "tip": "Ayrılmaz: look after sb/sth. Düzenli: looked after. 'take care of' ile eş anlamlı.",
+          "ex": [
+            {
+              "en": "She [[looks after]] her younger brother.",
+              "tr": "Küçük erkek kardeşine bakıyor."
+            },
+            {
+              "en": "Can you [[look after]] my cat this weekend?",
+              "tr": "Bu hafta sonu kedime bakabilir misin?"
+            },
+            {
+              "en": "My grandmother [[looked after]] me as a child.",
+              "tr": "Çocukken bana büyükannem baktı."
+            },
+            {
+              "en": "I'm [[looking after]] the plants while they're away.",
+              "tr": "Onlar yokken bitkilere ben bakıyorum."
+            },
+            {
+              "en": "You should [[look after]] your health.",
+              "tr": "Sağlığına dikkat etmelisin."
+            }
+          ]
+        },
+        {
+          "en": "find out",
+          "g": "g1",
+          "tr": "öğrenmek, ortaya çıkarmak",
+          "mean": "discover or learn",
+          "tip": "Düzensiz: find - found - found. find out that / find out what, where...",
+          "ex": [
+            {
+              "en": "I [[found out]] the truth yesterday.",
+              "tr": "Dün gerçeği öğrendim."
+            },
+            {
+              "en": "Let's [[find out]] what time the film starts.",
+              "tr": "Filmin saat kaçta başladığını öğrenelim."
+            },
+            {
+              "en": "She will [[find out]] about the party soon.",
+              "tr": "Partiyi yakında öğrenecek."
+            },
+            {
+              "en": "How did you [[find out]] my address?",
+              "tr": "Adresimi nasıl öğrendin?"
+            },
+            {
+              "en": "We are trying to [[find out]] the problem.",
+              "tr": "Sorunu bulmaya çalışıyoruz."
+            }
+          ]
+        },
+        {
+          "en": "get used to",
+          "g": "g1",
+          "tr": "alışmak",
+          "mean": "become familiar with",
+          "tip": "get used to + isim / -ing (to'dan sonra fiil+ing!). Geçmiş: got used to.",
+          "ex": [
+            {
+              "en": "She's [[getting used to]] the new place.",
+              "tr": "Yeni yere alışıyor."
+            },
+            {
+              "en": "I can't [[get used to]] waking up early.",
+              "tr": "Erken kalkmaya alışamıyorum."
+            },
+            {
+              "en": "My brother [[got used to]] the cold weather.",
+              "tr": "Kardeşim soğuk havaya alıştı."
+            },
+            {
+              "en": "You will [[get used to]] the new job.",
+              "tr": "Yeni işe alışacaksın."
+            },
+            {
+              "en": "It's hard to [[get used to]] a new language.",
+              "tr": "Yeni bir dile alışmak zor."
+            }
+          ]
+        },
+        {
+          "en": "deal with",
+          "g": "g1",
+          "tr": "ile başa çıkmak, ilgilenmek",
+          "mean": "manage a problem",
+          "tip": "Düzensiz: deal - dealt - dealt. deal with + sorun/kişi.",
+          "ex": [
+            {
+              "en": "I don't know how to [[deal with]] stress.",
+              "tr": "Stresle nasıl başa çıkacağımı bilmiyorum."
+            },
+            {
+              "en": "The manager [[dealt with]] the problem quickly.",
+              "tr": "Müdür sorunu hızla halletti."
+            },
+            {
+              "en": "She [[deals with]] angry customers every day.",
+              "tr": "Her gün sinirli müşterilerle uğraşıyor."
+            },
+            {
+              "en": "We will [[deal with]] this tomorrow.",
+              "tr": "Bununla yarın ilgileneceğiz."
+            },
+            {
+              "en": "Can you [[deal with]] the emails, please?",
+              "tr": "E-postalarla ilgilenebilir misin, lütfen?"
+            }
+          ]
+        },
+        {
+          "en": "depend on",
+          "g": "g1",
+          "tr": "-e güvenmek, -e bağlı olmak",
+          "mean": "rely on",
+          "tip": "Her zaman 'on' ile: depend on (from değil!). It depends on... = ...e bağlı.",
+          "ex": [
+            {
+              "en": "You can [[depend on]] me.",
+              "tr": "Bana güvenebilirsin."
+            },
+            {
+              "en": "Our plans [[depend on]] the weather.",
+              "tr": "Planlarımız havaya bağlı."
+            },
+            {
+              "en": "The kids still [[depend on]] their parents.",
+              "tr": "Çocuklar hâlâ ailelerine bağımlı."
+            },
+            {
+              "en": "I [[depended on]] my friends during exams.",
+              "tr": "Sınavlarda arkadaşlarıma güvendim."
+            },
+            {
+              "en": "The price [[depends on]] the size.",
+              "tr": "Fiyat boyuta bağlı."
+            }
+          ]
+        },
+        {
+          "en": "be proud of",
+          "g": "g1",
+          "tr": "ile gurur duymak",
+          "mean": "feel pleased about",
+          "tip": "be proud of + isim / -ing. 'with' değil 'of'. am/is/are/was proud of.",
+          "ex": [
+            {
+              "en": "She [[is proud of]] her achievements.",
+              "tr": "Başarılarıyla gurur duyuyor."
+            },
+            {
+              "en": "I [[am proud of]] you!",
+              "tr": "Seninle gurur duyuyorum!"
+            },
+            {
+              "en": "My parents [[were proud of]] my exam results.",
+              "tr": "Ailem sınav sonuçlarımla gurur duydu."
+            },
+            {
+              "en": "We [[are proud of]] our team.",
+              "tr": "Takımımızla gurur duyuyoruz."
+            },
+            {
+              "en": "He [[was proud of]] finishing the marathon.",
+              "tr": "Maratonu bitirmekle gurur duydu."
+            }
+          ]
+        },
+        {
+          "en": "take advantage of",
+          "g": "g1",
+          "tr": "-den yararlanmak; istismar etmek",
+          "mean": "use something in a good way",
+          "tip": "İki anlam: fırsattan yararlanmak (+) veya birini kullanmak (-). Geçmiş: took advantage of.",
+          "ex": [
+            {
+              "en": "Don't [[take advantage of]] their kindness.",
+              "tr": "Onların iyiliğini istismar etme."
+            },
+            {
+              "en": "I [[took advantage of]] the sale and bought shoes.",
+              "tr": "İndirimden yararlanıp ayakkabı aldım."
+            },
+            {
+              "en": "You should [[take advantage of]] this chance.",
+              "tr": "Bu fırsattan yararlanmalısın."
+            },
+            {
+              "en": "We are [[taking advantage of]] the sunny weather.",
+              "tr": "Güneşli havadan yararlanıyoruz."
+            },
+            {
+              "en": "She [[takes advantage of]] free English lessons online.",
+              "tr": "İnternetteki ücretsiz İngilizce derslerinden yararlanıyor."
+            }
+          ]
+        },
+        {
+          "en": "give up",
+          "g": "g1",
+          "tr": "vazgeçmek, bırakmak",
+          "mean": "stop trying",
+          "tip": "Düzensiz: give - gave - given. give up + -ing (give up smoking). Zamirle: give it up.",
+          "ex": [
+            {
+              "en": "He [[gave up]] smoking last year.",
+              "tr": "Geçen yıl sigarayı bıraktı."
+            },
+            {
+              "en": "Don't [[give up]], you can do it!",
+              "tr": "Vazgeçme, yapabilirsin!"
+            },
+            {
+              "en": "I never [[give up]] in difficult games.",
+              "tr": "Zor oyunlarda asla pes etmem."
+            },
+            {
+              "en": "She is going to [[give up]] sugar.",
+              "tr": "Şekeri bırakacak."
+            },
+            {
+              "en": "They [[gave up]] after three hours.",
+              "tr": "Üç saat sonra pes ettiler."
+            }
+          ]
+        },
+        {
+          "en": "make progress",
+          "g": "g1",
+          "tr": "ilerleme kaydetmek",
+          "mean": "improve",
+          "tip": "'do progress' değil 'make'. progress sayılamaz: 'a progress' yok. make progress in/with.",
+          "ex": [
+            {
+              "en": "She's [[making progress]] in English.",
+              "tr": "İngilizcede ilerleme kaydediyor."
+            },
+            {
+              "en": "We [[made progress]] on the project today.",
+              "tr": "Bugün projede ilerleme kaydettik."
+            },
+            {
+              "en": "You will [[make progress]] if you practise.",
+              "tr": "Pratik yaparsan ilerlersin."
+            },
+            {
+              "en": "My little brother [[makes progress]] every week.",
+              "tr": "Küçük kardeşim her hafta ilerliyor."
+            },
+            {
+              "en": "I want to [[make progress]] with my speaking.",
+              "tr": "Konuşmamda ilerleme kaydetmek istiyorum."
+            }
+          ]
+        },
+        {
+          "en": "settle down",
+          "g": "g1",
+          "tr": "sakinleşmek; yerleşik düzene geçmek",
+          "mean": "become calm and relaxed",
+          "tip": "İki anlam: sakinleşmek / evlenip düzen kurmak. Düzenli: settled down.",
+          "ex": [
+            {
+              "en": "After a long day, she [[settled down]] on the sofa.",
+              "tr": "Uzun bir günün ardından koltukta dinlendi."
+            },
+            {
+              "en": "Please [[settle down]], the lesson is starting.",
+              "tr": "Lütfen sakinleşin, ders başlıyor."
+            },
+            {
+              "en": "The baby [[settled down]] after his milk.",
+              "tr": "Bebek sütünü içtikten sonra sakinleşti."
+            },
+            {
+              "en": "They want to [[settle down]] in a small town.",
+              "tr": "Küçük bir kasabaya yerleşmek istiyorlar."
+            },
+            {
+              "en": "My cousin is going to [[settle down]] and get married.",
+              "tr": "Kuzenim düzenini kurup evlenecek."
+            }
+          ]
+        },
+        {
+          "en": "figure out",
+          "g": "g1",
+          "tr": "çözmek, anlamak",
+          "mean": "understand or solve",
+          "tip": "figure out + how/what/why... Düzenli: figured out. Zamirle: figure it out.",
+          "ex": [
+            {
+              "en": "I finally [[figured out]] the answer.",
+              "tr": "Sonunda cevabı buldum."
+            },
+            {
+              "en": "Can you [[figure out]] this puzzle?",
+              "tr": "Bu bulmacayı çözebilir misin?"
+            },
+            {
+              "en": "We need to [[figure out]] how to get there.",
+              "tr": "Oraya nasıl gideceğimizi bulmalıyız."
+            },
+            {
+              "en": "She is trying to [[figure out]] the new phone.",
+              "tr": "Yeni telefonu çözmeye çalışıyor."
+            },
+            {
+              "en": "I can't [[figure out]] why he is angry.",
+              "tr": "Neden kızgın olduğunu anlayamıyorum."
+            }
+          ]
+        },
+        {
+          "en": "carry on",
+          "g": "g1",
+          "tr": "devam etmek",
+          "mean": "continue",
+          "tip": "carry on + -ing ya da carry on with + isim. Düzenli: carried on (y→ied).",
+          "ex": [
+            {
+              "en": "Let's [[carry on]] with the plan.",
+              "tr": "Plana devam edelim."
+            },
+            {
+              "en": "Please [[carry on]], I'm listening.",
+              "tr": "Lütfen devam et, dinliyorum."
+            },
+            {
+              "en": "She [[carried on]] working after midnight.",
+              "tr": "Gece yarısından sonra da çalışmaya devam etti."
+            },
+            {
+              "en": "We will [[carry on]] after a short break.",
+              "tr": "Kısa bir aradan sonra devam edeceğiz."
+            },
+            {
+              "en": "They [[carry on]] playing even in the rain.",
+              "tr": "Yağmurda bile oynamaya devam ediyorlar."
+            }
+          ]
+        },
+        {
+          "en": "be careful with",
+          "g": "g1",
+          "tr": "-e dikkat etmek",
+          "mean": "take care when doing something",
+          "tip": "be careful with + şey; be careful of = -den sakın. Emir: Be careful with...!",
+          "ex": [
+            {
+              "en": "[[Be careful with]] hot drinks.",
+              "tr": "Sıcak içeceklere dikkat et."
+            },
+            {
+              "en": "You should [[be careful with]] your money.",
+              "tr": "Paranı dikkatli harcamalısın."
+            },
+            {
+              "en": "My mom [[is careful with]] her new car.",
+              "tr": "Annem yeni arabasına çok özen gösteriyor."
+            },
+            {
+              "en": "I [[was careful with]] the glasses, but one broke.",
+              "tr": "Bardaklara dikkat ettim ama biri kırıldı."
+            },
+            {
+              "en": "Kids, [[be careful with]] the knife!",
+              "tr": "Çocuklar, bıçağa dikkat edin!"
+            }
+          ]
+        },
+        {
+          "en": "keep in touch",
+          "g": "g2",
+          "tr": "iletişimi sürdürmek",
+          "mean": "stay in contact",
+          "tip": "keep in touch with + kişi. Geçmiş: kept in touch. 'stay in touch' da olur.",
+          "ex": [
+            {
+              "en": "Let's [[keep in touch]]!",
+              "tr": "Görüşmeye devam edelim!"
+            },
+            {
+              "en": "I [[keep in touch]] with my school friends.",
+              "tr": "Okul arkadaşlarımla görüşmeye devam ediyorum."
+            },
+            {
+              "en": "We [[kept in touch]] after the trip.",
+              "tr": "Geziden sonra iletişimi koparmadık."
+            },
+            {
+              "en": "She will [[keep in touch]] by email.",
+              "tr": "E-postayla iletişimde kalacak."
+            },
+            {
+              "en": "It's hard to [[keep in touch]] when you're busy.",
+              "tr": "Meşgulken iletişimi sürdürmek zor."
+            }
+          ]
+        },
+        {
+          "en": "take a break",
+          "g": "g2",
+          "tr": "mola vermek",
+          "mean": "stop for a short time",
+          "tip": "take a break from + iş. Geçmiş: took a break. 'give a break' farklı anlam.",
+          "ex": [
+            {
+              "en": "I'm going to [[take a break]].",
+              "tr": "Mola vereceğim."
+            },
+            {
+              "en": "Let's [[take a break]] for ten minutes.",
+              "tr": "On dakika mola verelim."
+            },
+            {
+              "en": "We [[took a break]] and had some tea.",
+              "tr": "Mola verip biraz çay içtik."
+            },
+            {
+              "en": "You should [[take a break]] from your phone.",
+              "tr": "Telefonuna biraz ara vermelisin."
+            },
+            {
+              "en": "She is [[taking a break]] from work this week.",
+              "tr": "Bu hafta işe ara veriyor."
+            }
+          ]
+        },
+        {
+          "en": "go through",
+          "g": "g2",
+          "tr": "(zor bir şey) yaşamak, geçirmek",
+          "mean": "experience something difficult",
+          "tip": "Düzensiz: go - went - gone. Ayrıca 'gözden geçirmek' anlamı da var.",
+          "ex": [
+            {
+              "en": "She [[went through]] a tough time last year.",
+              "tr": "Geçen yıl zor bir dönem geçirdi."
+            },
+            {
+              "en": "My family is [[going through]] some problems.",
+              "tr": "Ailem bazı sorunlar yaşıyor."
+            },
+            {
+              "en": "I don't want to [[go through]] that again.",
+              "tr": "Bunu tekrar yaşamak istemiyorum."
+            },
+            {
+              "en": "We [[went through]] a lot together.",
+              "tr": "Birlikte çok şey yaşadık."
+            },
+            {
+              "en": "Many people [[go through]] stress before exams.",
+              "tr": "Birçok insan sınavlardan önce stres yaşar."
+            }
+          ]
+        },
+        {
+          "en": "work out",
+          "g": "g2",
+          "tr": "spor yapmak; çözmek",
+          "mean": "exercise",
+          "tip": "Nesnesiz = spor yapmak. work sth out = çözmek. Düzenli: worked out.",
+          "ex": [
+            {
+              "en": "I [[work out]] three times a week.",
+              "tr": "Haftada üç kez spor yapıyorum."
+            },
+            {
+              "en": "She [[worked out]] at the gym this morning.",
+              "tr": "Bu sabah spor salonunda çalıştı."
+            },
+            {
+              "en": "We're going to [[work out]] together tomorrow.",
+              "tr": "Yarın birlikte spor yapacağız."
+            },
+            {
+              "en": "My brother is [[working out]] in his room.",
+              "tr": "Kardeşim odasında spor yapıyor."
+            },
+            {
+              "en": "Don't worry, everything will [[work out]].",
+              "tr": "Merak etme, her şey yoluna girecek."
+            }
+          ]
+        },
+        {
+          "en": "get along with",
+          "g": "g2",
+          "tr": "ile iyi anlaşmak",
+          "mean": "have a good relationship",
+          "tip": "get along with + kişi. Geçmiş: got along with. 'get on with' (BrE) aynı anlam.",
+          "ex": [
+            {
+              "en": "She [[gets along with]] her colleagues.",
+              "tr": "İş arkadaşlarıyla iyi anlaşıyor."
+            },
+            {
+              "en": "I don't [[get along with]] my neighbour.",
+              "tr": "Komşumla iyi anlaşamıyorum."
+            },
+            {
+              "en": "The two cats [[got along with]] each other quickly.",
+              "tr": "İki kedi birbiriyle çabuk anlaştı."
+            },
+            {
+              "en": "Do you [[get along with]] your sister?",
+              "tr": "Kız kardeşinle iyi anlaşıyor musun?"
+            },
+            {
+              "en": "He is easy to [[get along with]].",
+              "tr": "Onunla anlaşmak kolay."
+            }
+          ]
+        },
+        {
+          "en": "take care of",
+          "g": "g2",
+          "tr": "-e bakmak, ilgilenmek",
+          "mean": "look after",
+          "tip": "take care of + kişi/şey. Geçmiş: took care of. Vedalaşırken: Take care!",
+          "ex": [
+            {
+              "en": "He [[takes care of]] his family.",
+              "tr": "Ailesine bakıyor."
+            },
+            {
+              "en": "Can you [[take care of]] the tickets?",
+              "tr": "Biletlerle sen ilgilenebilir misin?"
+            },
+            {
+              "en": "I [[took care of]] my sick friend last week.",
+              "tr": "Geçen hafta hasta arkadaşıma baktım."
+            },
+            {
+              "en": "She is [[taking care of]] the baby today.",
+              "tr": "Bugün bebeğe o bakıyor."
+            },
+            {
+              "en": "Don't worry, I'll [[take care of]] it.",
+              "tr": "Merak etme, ben hallederim."
+            }
+          ]
+        },
+        {
+          "en": "make a difference",
+          "g": "g2",
+          "tr": "fark yaratmak",
+          "mean": "have a positive impact",
+          "tip": "'do a difference' değil 'make'. make a big/real difference. Geçmiş: made a difference.",
+          "ex": [
+            {
+              "en": "Small actions can [[make a difference]].",
+              "tr": "Küçük davranışlar fark yaratabilir."
+            },
+            {
+              "en": "Teachers [[make a difference]] in our lives.",
+              "tr": "Öğretmenler hayatımızda fark yaratır."
+            },
+            {
+              "en": "Your help really [[made a difference]].",
+              "tr": "Yardımın gerçekten fark yarattı."
+            },
+            {
+              "en": "I want to [[make a difference]] in my city.",
+              "tr": "Şehrimde fark yaratmak istiyorum."
+            },
+            {
+              "en": "Will this new rule [[make a difference]]?",
+              "tr": "Bu yeni kural bir fark yaratacak mı?"
+            }
+          ]
+        },
+        {
+          "en": "come up with",
+          "g": "g2",
+          "tr": "(fikir) bulmak, ortaya atmak",
+          "mean": "think of an idea",
+          "tip": "come up with + idea/plan/solution. Düzensiz: came up with. Ayrılmaz.",
+          "ex": [
+            {
+              "en": "I [[came up with]] a great idea!",
+              "tr": "Harika bir fikir buldum!"
+            },
+            {
+              "en": "We need to [[come up with]] a plan.",
+              "tr": "Bir plan bulmamız lazım."
+            },
+            {
+              "en": "She always [[comes up with]] funny names.",
+              "tr": "Hep komik isimler bulur."
+            },
+            {
+              "en": "Can you [[come up with]] a better answer?",
+              "tr": "Daha iyi bir cevap bulabilir misin?"
+            },
+            {
+              "en": "They [[came up with]] a solution in one hour.",
+              "tr": "Bir saatte bir çözüm buldular."
+            }
+          ]
+        },
+        {
+          "en": "look forward to",
+          "g": "g2",
+          "tr": "dört gözle beklemek",
+          "mean": "feel excited about the future",
+          "tip": "to'dan sonra isim / -ing: look forward to seeing you (to see değil!).",
+          "ex": [
+            {
+              "en": "I'm [[looking forward to]] the holiday.",
+              "tr": "Tatili dört gözle bekliyorum."
+            },
+            {
+              "en": "We [[look forward to]] seeing you soon.",
+              "tr": "Sizi yakında görmeyi dört gözle bekliyoruz."
+            },
+            {
+              "en": "She is [[looking forward to]] her birthday party.",
+              "tr": "Doğum günü partisini heyecanla bekliyor."
+            },
+            {
+              "en": "My kids always [[look forward to]] the weekend.",
+              "tr": "Çocuklarım hafta sonunu hep dört gözle bekler."
+            },
+            {
+              "en": "I [[looked forward to]] this game for months.",
+              "tr": "Bu oyunu aylarca dört gözle bekledim."
+            }
+          ]
+        },
+        {
+          "en": "pay attention to",
+          "g": "g2",
+          "tr": "-e dikkat etmek",
+          "mean": "notice",
+          "tip": "'give attention' değil 'pay'. Düzensiz: pay - paid - paid. pay attention to + isim.",
+          "ex": [
+            {
+              "en": "Please [[pay attention to]] the instructions.",
+              "tr": "Lütfen talimatlara dikkat edin."
+            },
+            {
+              "en": "He didn't [[pay attention to]] the teacher.",
+              "tr": "Öğretmene dikkat etmedi."
+            },
+            {
+              "en": "You should [[pay attention to]] the road.",
+              "tr": "Yola dikkat etmelisin."
+            },
+            {
+              "en": "She [[paid attention to]] every detail.",
+              "tr": "Her ayrıntıya dikkat etti."
+            },
+            {
+              "en": "Nobody is [[paying attention to]] me!",
+              "tr": "Kimse beni dinlemiyor!"
+            }
+          ]
+        },
+        {
+          "en": "set goals",
+          "g": "g2",
+          "tr": "hedef belirlemek",
+          "mean": "decide what you want to achieve",
+          "tip": "Düzensiz: set - set - set. set a goal (tekil) / set goals. 'put goals' değil.",
+          "ex": [
+            {
+              "en": "I want to [[set goals]] for my future.",
+              "tr": "Geleceğim için hedefler belirlemek istiyorum."
+            },
+            {
+              "en": "We [[set goals]] at the start of every year.",
+              "tr": "Her yılın başında hedefler belirleriz."
+            },
+            {
+              "en": "My coach helped me [[set goals]].",
+              "tr": "Koçum hedef belirlememe yardım etti."
+            },
+            {
+              "en": "You should [[set goals]] you can reach.",
+              "tr": "Ulaşabileceğin hedefler koymalısın."
+            },
+            {
+              "en": "She is [[setting goals]] for her English.",
+              "tr": "İngilizcesi için hedefler belirliyor."
+            }
+          ]
+        },
+        {
+          "en": "I'm broke",
+          "g": "g3",
+          "tr": "Beş parasızım",
+          "mean": "I have no money",
+          "tip": "Gündelik dil. He's broke / We're broke. 'broken' değil, 'broke'!",
+          "ex": [
+            {
+              "en": "[[I'm broke]], so I can't come tonight.",
+              "tr": "Beş parasızım, o yüzden bu akşam gelemem."
+            },
+            {
+              "en": "Sorry, [[I'm broke]] until payday.",
+              "tr": "Kusura bakma, maaş gününe kadar meteliğim yok."
+            },
+            {
+              "en": "[[I'm broke]] after buying that new game.",
+              "tr": "O yeni oyunu aldıktan sonra beş parasız kaldım."
+            },
+            {
+              "en": "Can you pay for lunch? [[I'm broke]].",
+              "tr": "Öğle yemeğini sen ödeyebilir misin? Beş parasızım."
+            },
+            {
+              "en": "[[I'm broke]] this month, let's stay home.",
+              "tr": "Bu ay beş parasızım, evde kalalım."
+            }
+          ]
+        },
+        {
+          "en": "Hit me up",
+          "g": "g3",
+          "tr": "Bana yaz / Ara beni",
+          "mean": "contact me (message or call)",
+          "tip": "Samimi, arkadaşlar arası. Hit me up when/if... Resmî yazışmada kullanma.",
+          "ex": [
+            {
+              "en": "[[Hit me up]] when you get home.",
+              "tr": "Eve varınca bana yaz."
+            },
+            {
+              "en": "[[Hit me up]] if you want to play tonight.",
+              "tr": "Bu akşam oynamak istersen bana yaz."
+            },
+            {
+              "en": "I'm free tomorrow, [[hit me up]]!",
+              "tr": "Yarın boşum, bana yaz!"
+            },
+            {
+              "en": "[[Hit me up]] on WhatsApp later.",
+              "tr": "Sonra WhatsApp'tan bana yaz."
+            },
+            {
+              "en": "If you need help, just [[hit me up]].",
+              "tr": "Yardıma ihtiyacın olursa bana yazman yeter."
+            }
+          ]
+        },
+        {
+          "en": "It beats me",
+          "g": "g3",
+          "tr": "Hiçbir fikrim yok",
+          "mean": "I don't know",
+          "tip": "Soruya cevap olarak: Beats me! diye kısaltılır. It beats me why/how...",
+          "ex": [
+            {
+              "en": "Where is Tom? [[It beats me]].",
+              "tr": "Tom nerede? Hiçbir fikrim yok."
+            },
+            {
+              "en": "[[It beats me]] why she left so early.",
+              "tr": "Neden o kadar erken gittiğine dair hiçbir fikrim yok."
+            },
+            {
+              "en": "[[It beats me]] how this machine works.",
+              "tr": "Bu makinenin nasıl çalıştığını hiç bilmiyorum."
+            },
+            {
+              "en": "Why is the bus late? [[It beats me]]!",
+              "tr": "Otobüs neden geç kaldı? Hiç bilmiyorum!"
+            },
+            {
+              "en": "[[It beats me]] what the teacher wants.",
+              "tr": "Öğretmenin ne istediğini hiç anlamıyorum."
+            }
+          ]
+        },
+        {
+          "en": "I'm fed up",
+          "g": "g3",
+          "tr": "Artık bıktım",
+          "mean": "I'm tired of something and annoyed",
+          "tip": "I'm fed up with + isim / -ing. She's fed up / We're fed up.",
+          "ex": [
+            {
+              "en": "[[I'm fed up]] with this rainy weather.",
+              "tr": "Bu yağmurlu havadan artık bıktım."
+            },
+            {
+              "en": "[[I'm fed up]] with waiting for the bus.",
+              "tr": "Otobüs beklemekten bıktım."
+            },
+            {
+              "en": "Stop it, [[I'm fed up]]!",
+              "tr": "Kes artık, bıktım!"
+            },
+            {
+              "en": "[[I'm fed up]] with my noisy neighbours.",
+              "tr": "Gürültücü komşularımdan bıktım."
+            },
+            {
+              "en": "[[I'm fed up]], I need a holiday.",
+              "tr": "Artık bıktım, tatile ihtiyacım var."
+            }
+          ]
+        },
+        {
+          "en": "I'm torn",
+          "g": "g3",
+          "tr": "İki arada kaldım",
+          "mean": "I can't choose between two things",
+          "tip": "I'm torn between A and B. 'torn' = tear (yırtmak) fiilinin V3'ü.",
+          "ex": [
+            {
+              "en": "[[I'm torn]] between pizza and pasta.",
+              "tr": "Pizza ile makarna arasında kaldım."
+            },
+            {
+              "en": "[[I'm torn]], both jobs look great.",
+              "tr": "İki arada kaldım, iki iş de harika görünüyor."
+            },
+            {
+              "en": "[[I'm torn]] about going to the party.",
+              "tr": "Partiye gitmek konusunda kararsızım."
+            },
+            {
+              "en": "Honestly, [[I'm torn]] between these two phones.",
+              "tr": "Açıkçası bu iki telefon arasında kaldım."
+            },
+            {
+              "en": "[[I'm torn]], should I stay or go?",
+              "tr": "İki arada kaldım, kalayım mı gideyim mi?"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
