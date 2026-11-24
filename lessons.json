@@ -1,7 +1,7 @@
 {
-  "version": 17,
-  "latestApk": 11,
-  "latestApkNote": "Yeni ses efektleri: çan tınıları, ejderha vuruşu, sandık ve zafer sesleri",
+  "version": 19,
+  "latestApk": 12,
+  "latestApkNote": "Yeni Ödevler bölümü",
   "lessons": [
     {
       "id": "u01-present-simple",
@@ -11642,6 +11642,630 @@
           "note": "cost düzensiz: cost – cost – cost."
         }
       ]
+    },
+    {
+      "id": "u25-verb-to",
+      "stage": 25,
+      "date": "2026-11-24",
+      "title": "Aşama 25 · Fiil + to + fiil (want to, decide to, manage to...)",
+      "goal": "want, need, decide, try, forget, manage gibi 20 fiilden sonra to + V1 kullanmak; to'dan sonra -ing, -s veya V2 kullanmamak; help (to), would like to ve can't afford to gibi zor kalıpları doğru kurmak.",
+      "grammar": [
+        {
+          "topic": "verb-to",
+          "title": "Kural: fiil + to + V1 (to'dan sonra fiil hep yalın)",
+          "summary": "Bu fiillerden sonra ikinci fiil to + V1 olur: want to, need to, decide to, plan to, hope to, try to, learn to, forget to, remember to, promise to, agree to, refuse to, manage to, offer to, expect to, prefer to, choose to, would like to, can't afford to. Çekim ekini (-s, -ed) sadece ilk fiil alır, to'dan sonraki fiil hiç değişmez: She wants to buy ✅ (wants to buys ❌), He tried to speak ✅ (tried to spoke ❌), She learned to swim ✅ (learned to swimming ❌). to'yu da atlama: She wants buy ❌. Türkçedeki '-meyi / -mek / -meye' ekinin karşılığı çoğu zaman bu to + V1. Dikkat: can, will, must gibi modal'lardan sonra to yok (can to ❌), ama want / need / have'den sonra to var.",
+          "examples": [
+            "I want to buy a new phone.",
+            "She wants to spend more time with her family.",
+            "He tries to understand my feelings.",
+            "She learned to swim last summer."
+          ]
+        },
+        {
+          "topic": "verb-to",
+          "title": "Anlama göre gruplar",
+          "summary": "İstek ve plan: want to, would like to, need to, plan to, hope to, expect to (bir şeyin olacağını düşünmek / beklemek). Karar ve seçim: decide to, choose to, prefer to. Çaba ve sonuç: try to (-meye çalışmak), learn to (-meyi öğrenmek), manage to (zor bir şeyi başarmak; tek seferlik başarı için could yerine: I managed to catch the bus). Söz ve tepki: promise to (-eceğine söz vermek), agree to (-meyi kabul etmek), refuse to (-meyi reddetmek), offer to (-meyi teklif etmek). Hafıza: forget to, remember to. Para: can / can't afford to. İpucu: Türkçede 'söz verdi, kabul etti, teklif etti' gibi fiiller -eceğine / -meyi ile kurulur; İngilizcede hepsi aynı: + to + V1 (He promised to call me = Beni arayacağına söz verdi).",
+          "examples": [
+            "We plan to visit our grandparents.",
+            "I managed to catch the bus.",
+            "He promised to call me.",
+            "She refused to accept the offer."
+          ]
+        },
+        {
+          "topic": "verb-to",
+          "title": "Zor olanlar: help (to), would like to, can't afford to, forget / remember",
+          "summary": "help: to olabilir de olmayabilir de; ikisi de doğru: She helps me to understand = She helps me understand. Ama -ing olmaz (helps me studying ❌). would like to = want to'nun kibar hali (I would like to order a coffee; konuşmada I'd like to). 'I would like visit' ❌, to şart. afford genelde can / can't ile kullanılır: I can't afford to rent this apartment (Bu daireyi kiralamaya gücüm yetmiyor). I don't afford ❌. forget to / remember to = yapılacak bir işi unutmak / unutmamak. Türkçede ikisi de çoğu zaman 'unutma' diye çevrilir: Remember to turn off the lights = Don't forget to turn off the lights = Işıkları kapatmayı unutma. (forget / remember + V-ing farklı anlamdadır, 'geçmişte yaptığını hatırlamak'; bu aşamada sadece to'lu halini kullan.) try to = -meye çalışmak: I try to eat healthy food. prefer to + V1 (15. aşama): She prefers to work alone.",
+          "examples": [
+            "Can you help me prepare dinner?",
+            "I would like to order a coffee.",
+            "I can't afford to rent this apartment.",
+            "Don't forget to take your medicine."
+          ]
+        },
+        {
+          "topic": "verb-to",
+          "title": "Senin cümlen: bir cümlede üç tane to",
+          "summary": "Derste yazdığın cümle çok iyi: 'I decided to visit my parents because I wanted to help them to clean the house.' decided to visit, wanted to help, help them to clean: üç fiil, üçü de to + V1. help'ten sonra to atılabilir: ... I wanted to help them clean the house da doğru, hatta konuşmada daha yaygın. Tek düzeltme yazımda: cümleyi 'i decided' diye başlatmışsın; İngilizcede 'ben' her zaman büyük ve noktasız I (cümle ortasında bile: because I wanted). Kendi cümleni kurarken şunu sor: 'İlk fiil çekimlendi mi? (decided, wanted) to'dan sonraki fiil yalın mı? (visit, help, clean)'.",
+          "examples": [
+            "I decided to visit my parents because I wanted to help them to clean the house.",
+            "I decided to visit my parents because I wanted to help them clean the house.",
+            "We decided to stay at home.",
+            "I hope to see you soon."
+          ]
+        }
+      ],
+      "vocab": [
+        {
+          "en": "want to",
+          "tr": "-mek istemek",
+          "ex": "They want to move to another city."
+        },
+        {
+          "en": "need to",
+          "tr": "-mesi gerekmek",
+          "ex": "I need to wake up early tomorrow."
+        },
+        {
+          "en": "help (to)",
+          "tr": "-mesine yardım etmek (to olsa da olmasa da doğru)",
+          "ex": "Reading helps me (to) improve my vocabulary."
+        },
+        {
+          "en": "decide to",
+          "tr": "-meye karar vermek",
+          "ex": "I decided to take a break."
+        },
+        {
+          "en": "plan to",
+          "tr": "-meyi planlamak",
+          "ex": "They plan to get married next year."
+        },
+        {
+          "en": "hope to",
+          "tr": "-meyi ummak",
+          "ex": "She hopes to find a better job."
+        },
+        {
+          "en": "try to",
+          "tr": "-meye çalışmak",
+          "ex": "We try to save money every month."
+        },
+        {
+          "en": "learn to",
+          "tr": "-meyi öğrenmek",
+          "ex": "I want to learn to cook."
+        },
+        {
+          "en": "forget to",
+          "tr": "-meyi unutmak",
+          "ex": "I forgot to bring my keys."
+        },
+        {
+          "en": "remember to",
+          "tr": "-meyi unutmamak, hatırlamak",
+          "ex": "Remember to send me the pictures."
+        },
+        {
+          "en": "promise to",
+          "tr": "-eceğine söz vermek",
+          "ex": "She promised to keep my secret."
+        },
+        {
+          "en": "agree to",
+          "tr": "-meyi kabul etmek",
+          "ex": "We agreed to meet after work."
+        },
+        {
+          "en": "refuse to",
+          "tr": "-meyi reddetmek",
+          "ex": "He refused to apologize."
+        },
+        {
+          "en": "manage to",
+          "tr": "-meyi başarmak",
+          "ex": "We managed to finish the project on time."
+        },
+        {
+          "en": "offer to",
+          "tr": "-meyi teklif etmek",
+          "ex": "He offered to drive me home."
+        },
+        {
+          "en": "expect to",
+          "tr": "-meyi beklemek, -eceğini düşünmek",
+          "ex": "We expect to receive an answer soon."
+        },
+        {
+          "en": "prefer to",
+          "tr": "-meyi tercih etmek",
+          "ex": "We prefer to travel by train."
+        },
+        {
+          "en": "choose to",
+          "tr": "-meyi seçmek",
+          "ex": "She chose to focus on her career."
+        },
+        {
+          "en": "would like to",
+          "tr": "-mek isterim (want to'nun kibar hali)",
+          "ex": "I would like to spend more time with you."
+        },
+        {
+          "en": "can't afford to",
+          "tr": "-meye (maddi) gücü yetmemek",
+          "ex": "We can't afford to travel abroad this year."
+        }
+      ],
+      "questions": [
+        {
+          "topic": "verb-to",
+          "q": "She wants ___ a car.",
+          "options": [
+            "to buy",
+            "buy",
+            "buying"
+          ],
+          "answer": 0,
+          "explain": "want + to + V1 (wants buy ❌)."
+        },
+        {
+          "topic": "verb-to",
+          "q": "He tries to ___ English every day.",
+          "options": [
+            "speak",
+            "speaks",
+            "speaking"
+          ],
+          "answer": 0,
+          "explain": "to'dan sonra fiil yalın: tries to speak (to speaks ❌). -s sadece ilk fiilde."
+        },
+        {
+          "topic": "verb-to",
+          "q": "She learned to ___ last summer.",
+          "options": [
+            "swim",
+            "swimming",
+            "swam"
+          ],
+          "answer": 0,
+          "explain": "learn to + V1 (to swimming ❌, to swam ❌)."
+        },
+        {
+          "topic": "verb-to",
+          "q": "They decided ___ home.",
+          "options": [
+            "to go",
+            "going",
+            "go"
+          ],
+          "answer": 0,
+          "explain": "decide to + V1 (decided going ❌)."
+        },
+        {
+          "topic": "verb-to",
+          "q": "He promised to ___ me.",
+          "options": [
+            "call",
+            "called",
+            "calling"
+          ],
+          "answer": 0,
+          "explain": "Geçmiş zaman eki sadece promise'ta: promised to call (to called ❌)."
+        },
+        {
+          "topic": "verb-to",
+          "q": "I hope ___ the exam.",
+          "options": [
+            "to pass",
+            "passing",
+            "pass"
+          ],
+          "answer": 0,
+          "explain": "hope to + V1 (hope passing ❌)."
+        },
+        {
+          "topic": "verb-to",
+          "q": "Hangisi doğru?",
+          "options": [
+            "She helps me studying.",
+            "She helps me to study.",
+            "She helps me to studying."
+          ],
+          "answer": 1,
+          "explain": "help + (to) + V1: helps me to study / helps me study. -ing olmaz."
+        },
+        {
+          "topic": "verb-to",
+          "q": "Hangisi YANLIŞ?",
+          "options": [
+            "Can you help me prepare dinner?",
+            "Can you help me to prepare dinner?",
+            "Can you help me preparing dinner?"
+          ],
+          "answer": 2,
+          "explain": "help'ten sonra to olsa da olmasa da doğru; ama -ing yanlış."
+        },
+        {
+          "topic": "verb-to",
+          "q": "I would like ___ you this weekend.",
+          "options": [
+            "to visit",
+            "visit",
+            "visiting"
+          ],
+          "answer": 0,
+          "explain": "would like + to + V1 (would like visit ❌)."
+        },
+        {
+          "topic": "verb-to",
+          "q": "I can't ___ to rent this apartment. It's too expensive.",
+          "options": [
+            "afford",
+            "manage",
+            "offer"
+          ],
+          "answer": 0,
+          "explain": "can't afford to = (maddi) gücü yetmemek."
+        },
+        {
+          "topic": "verb-to",
+          "q": "The test was hard, but I ___ to finish it on time.",
+          "options": [
+            "managed",
+            "refused",
+            "expected"
+          ],
+          "answer": 0,
+          "explain": "manage to = zor bir şeyi başarmak."
+        },
+        {
+          "topic": "verb-to",
+          "q": "\"He refused to apologize.\" ne demek?",
+          "options": [
+            "Özür dilemeyi reddetti.",
+            "Özür dilemeye çalıştı.",
+            "Özür dilemeyi unuttu."
+          ],
+          "answer": 0,
+          "explain": "refuse to = -meyi reddetmek."
+        },
+        {
+          "topic": "verb-to",
+          "q": "\"Beni arabayla eve bırakmayı teklif etti.\" Hangisi?",
+          "options": [
+            "He offered to drive me home.",
+            "He agreed to drive me home.",
+            "He promised driving me home."
+          ],
+          "answer": 0,
+          "explain": "offer to = -meyi teklif etmek. agree to = kabul etmek."
+        },
+        {
+          "topic": "verb-to",
+          "q": "Don't ___ to take your medicine!",
+          "options": [
+            "forget",
+            "remember",
+            "refuse"
+          ],
+          "answer": 0,
+          "explain": "Don't forget to ... = ... -meyi unutma. (Remember to take your medicine de aynı anlam.)"
+        },
+        {
+          "topic": "verb-to",
+          "q": "\"Remember to turn off the lights.\" ne demek?",
+          "options": [
+            "Işıkları kapatmayı unutma.",
+            "Işıkları kapattığını hatırla.",
+            "Işıkları kapatmaya çalış."
+          ],
+          "answer": 0,
+          "explain": "remember to = (yapılacak işi) unutmamak."
+        },
+        {
+          "topic": "verb-to",
+          "q": "My friend ___ to teach me Turkish. Isn't that nice?",
+          "options": [
+            "offered",
+            "refused",
+            "forgot"
+          ],
+          "answer": 0,
+          "explain": "offer to = teklif etmek; 'Isn't that nice?' olumlu bir şey olduğunu gösteriyor."
+        },
+        {
+          "topic": "verb-to",
+          "type": "write",
+          "q": "Boşluğu doldur: I need ___ drink more water.",
+          "answer": "to",
+          "explain": "need to + V1 = -mesi gerekmek."
+        },
+        {
+          "topic": "verb-to",
+          "type": "write",
+          "q": "Boşluğu doldur (refuse): She ___ to answer the question.",
+          "answer": "refused",
+          "explain": "Geçmiş eki ilk fiile gelir: refused to answer."
+        },
+        {
+          "topic": "verb-to",
+          "type": "write",
+          "q": "Sırala: to / decided / take / I / a / break",
+          "answer": "I decided to take a break",
+          "explain": "özne + decided + to + V1."
+        },
+        {
+          "topic": "verb-to",
+          "type": "write",
+          "q": "Sırala: afford / can't / to / we / travel / abroad",
+          "answer": "We can't afford to travel abroad",
+          "accept": [
+            "We cannot afford to travel abroad"
+          ],
+          "explain": "can't afford to + V1."
+        },
+        {
+          "topic": "verb-to",
+          "type": "write",
+          "q": "Sırala: wanted / I / help / to / them / clean / the / house",
+          "answer": "I wanted to help them clean the house",
+          "explain": "want to + help + kişi + V1 (help'ten sonra to şart değil)."
+        },
+        {
+          "topic": "verb-to",
+          "type": "write",
+          "q": "Düzelt: \"He needs study more.\"",
+          "answer": "He needs to study more.",
+          "explain": "need + to + V1."
+        },
+        {
+          "topic": "verb-to",
+          "type": "write",
+          "q": "Düzelt: \"She offered to helping me.\"",
+          "answer": "She offered to help me.",
+          "explain": "to'dan sonra V1 (to helping ❌)."
+        },
+        {
+          "topic": "verb-to",
+          "type": "write",
+          "q": "Düzelt: \"They chose to stayed home.\"",
+          "answer": "They chose to stay home.",
+          "accept": [
+            "They chose to stay at home."
+          ],
+          "explain": "Geçmiş eki sadece choose'da (chose); to'dan sonra stay."
+        },
+        {
+          "topic": "verb-to",
+          "type": "write",
+          "q": "Düzelt: \"i decided to visit my parents.\"",
+          "answer": "I decided to visit my parents.",
+          "explain": "'Ben' her zaman büyük I. (Kontrol büyük harfe bakmadığı için burada cevabın kabul edilir; ama yazarken I kullan.)"
+        },
+        {
+          "topic": "verb-to",
+          "type": "write",
+          "q": "Çevir: \"Araba kullanmayı öğrendim.\"",
+          "answer": "I learned to drive.",
+          "accept": [
+            "I learnt to drive.",
+            "I learned how to drive.",
+            "I learned to drive a car.",
+            "I learnt to drive a car."
+          ],
+          "explain": "learn to + V1. 'Araba kullanmak' = drive."
+        },
+        {
+          "topic": "verb-to",
+          "type": "write",
+          "q": "Çevir: \"Erken varacağımı düşünüyorum.\"",
+          "answer": "I expect to arrive early.",
+          "accept": [
+            "I expect to get there early.",
+            "I expect to arrive early"
+          ],
+          "explain": "expect to + V1 = -eceğini düşünmek / beklemek."
+        },
+        {
+          "topic": "verb-patterns",
+          "q": "Hangisi to + V1 ALMAZ?",
+          "options": [
+            "decide",
+            "give up",
+            "manage"
+          ],
+          "answer": 1,
+          "explain": "give up + V-ing (22. aşama: gave up smoking). decide to / manage to + V1."
+        },
+        {
+          "topic": "verb-patterns",
+          "q": "I'm looking forward ___ you.",
+          "options": [
+            "to seeing",
+            "to see",
+            "seeing"
+          ],
+          "answer": 0,
+          "explain": "Tuzak: look forward to'daki to bir edat, arkasından V-ing gelir. want to / decide to'daki to ise fiilin parçası, arkasından V1 gelir."
+        }
+      ],
+      "translate": [
+        {
+          "tr": "İngilizce öğrenmek istiyorum.",
+          "en": "I want to learn English.",
+          "distract": [
+            "learning",
+            "wants"
+          ],
+          "accept": [
+            "I would like to learn English.",
+            "I'd like to learn English."
+          ]
+        },
+        {
+          "tr": "Erken kalkmaya karar verdim.",
+          "en": "I decided to get up early.",
+          "distract": [
+            "getting",
+            "got"
+          ],
+          "accept": [
+            "I decided to wake up early."
+          ]
+        },
+        {
+          "tr": "Her gün erken kalkmaya çalışıyorum.",
+          "en": "I try to get up early every day.",
+          "distract": [
+            "tries",
+            "getting"
+          ],
+          "accept": [
+            "I try to wake up early every day.",
+            "Every day I try to get up early."
+          ]
+        },
+        {
+          "tr": "Seni aramayı unuttum.",
+          "en": "I forgot to call you.",
+          "distract": [
+            "called",
+            "calling"
+          ]
+        },
+        {
+          "tr": "Kapıyı kilitlemeyi unutma.",
+          "en": "Don't forget to lock the door.",
+          "distract": [
+            "locking",
+            "locked"
+          ],
+          "accept": [
+            "Do not forget to lock the door.",
+            "Remember to lock the door."
+          ]
+        },
+        {
+          "tr": "Sana yardım edeceğime söz veriyorum.",
+          "en": "I promise to help you.",
+          "distract": [
+            "helping",
+            "helped"
+          ],
+          "accept": [
+            "I promise I will help you.",
+            "I promise I'll help you."
+          ]
+        },
+        {
+          "tr": "Ödevimi bitirmeyi başardım.",
+          "en": "I managed to finish my homework.",
+          "distract": [
+            "finished",
+            "finishing"
+          ]
+        },
+        {
+          "tr": "Yeni bir araba almaya maddi gücüm yetmiyor.",
+          "en": "I can't afford to buy a new car.",
+          "distract": [
+            "don't",
+            "buying"
+          ],
+          "accept": [
+            "I cannot afford to buy a new car.",
+            "I can't afford a new car.",
+            "I cannot afford a new car."
+          ]
+        }
+      ],
+      "mistakes": [
+        {
+          "topic": "verb-to",
+          "wrong": "She wants buy a car.",
+          "right": "She wants to buy a car.",
+          "note": "want + to + V1; to atlanmaz."
+        },
+        {
+          "topic": "verb-to",
+          "wrong": "He needs study more.",
+          "right": "He needs to study more.",
+          "note": "need + to + V1 (modal değil, to şart)."
+        },
+        {
+          "topic": "verb-to",
+          "wrong": "She helps me to studying.",
+          "right": "She helps me (to) study.",
+          "note": "help + (to) + V1; -ing olmaz."
+        },
+        {
+          "topic": "verb-to",
+          "wrong": "They decided going home.",
+          "right": "They decided to go home.",
+          "note": "decide to + V1 (V-ing ❌)."
+        },
+        {
+          "topic": "verb-to",
+          "wrong": "I hope passing the exam.",
+          "right": "I hope to pass the exam.",
+          "note": "hope to + V1."
+        },
+        {
+          "topic": "verb-to",
+          "wrong": "He tries to speaks English.",
+          "right": "He tries to speak English.",
+          "note": "-s sadece ilk fiile gelir; to'dan sonra V1."
+        },
+        {
+          "topic": "verb-to",
+          "wrong": "She learned to swimming.",
+          "right": "She learned to swim.",
+          "note": "to + V1 (to + V-ing ❌)."
+        },
+        {
+          "topic": "verb-to",
+          "wrong": "He forgot lock the door.",
+          "right": "He forgot to lock the door.",
+          "note": "forget to + V1."
+        },
+        {
+          "topic": "verb-to",
+          "wrong": "He promised to called me.",
+          "right": "He promised to call me.",
+          "note": "Geçmiş eki sadece promise'ta (promised); to'dan sonra V1."
+        },
+        {
+          "topic": "verb-to",
+          "wrong": "She refused to answering.",
+          "right": "She refused to answer.",
+          "note": "refuse to + V1."
+        },
+        {
+          "topic": "verb-to",
+          "wrong": "He managed finish the work.",
+          "right": "He managed to finish the work.",
+          "note": "manage to + V1."
+        },
+        {
+          "topic": "verb-to",
+          "wrong": "I would like visit you.",
+          "right": "I would like to visit you.",
+          "note": "would like + to + V1 (want to'nun kibar hali)."
+        },
+        {
+          "topic": "verb-to",
+          "wrong": "I can't afford buy a house.",
+          "right": "I can't afford to buy a house.",
+          "note": "can't afford to + V1 (I don't afford ❌)."
+        },
+        {
+          "topic": "verb-to",
+          "wrong": "i decided to visit my parents because i wanted to help them.",
+          "right": "I decided to visit my parents because I wanted to help them.",
+          "note": "'Ben' her zaman büyük ve noktasız I; cümle ortasında da (because I wanted)."
+        }
+      ]
     }
   ],
   "topics": {
@@ -11683,7 +12307,8 @@
     "expressions": "Günlük ifadeler",
     "idioms": "Deyimler",
     "vocab": "Kelime",
-    "mistakes": "Sık hatalar"
+    "mistakes": "Sık hatalar",
+    "verb-to": "Fiil + to + fiil"
   },
   "stories": [
     {
@@ -12536,7 +13161,7 @@
   "homework": [
     {
       "id": "hw-2026-11-24",
-      "title": "B1 Collocations + günlük ifadeler",
+      "title": "B1 Collocations + günlük ifadeler 1",
       "due": "2026-11-24",
       "note": "Her gün birkaç ifade, salı günü konuşurken hepsi dilinin ucunda olacak!",
       "groups": [
@@ -13595,6 +14220,635 @@
             {
               "en": "[[I'm torn]], should I stay or go?",
               "tr": "İki arada kaldım, kalayım mı gideyim mi?"
+            }
+          ]
+        }
+      ],
+      "date": "2026-11-21"
+    },
+    {
+      "id": "hw2-2026-11-24",
+      "title": "Ability & Talent + günlük ifadeler 2",
+      "date": "2026-11-24",
+      "note": "Herkesin bir yeteneği var; bu hafta seninki İngilizce konuşmak olsun!",
+      "groups": [
+        {
+          "id": "g1",
+          "title": "Ability Collocations"
+        },
+        {
+          "id": "g2",
+          "title": "Talent Collocations"
+        },
+        {
+          "id": "g3",
+          "title": "Günlük konuşma ifadeleri 2"
+        }
+      ],
+      "items": [
+        {
+          "en": "have the ability to",
+          "g": "g1",
+          "tr": "-ebilme yetisine sahip olmak",
+          "mean": "be able to do something",
+          "tip": "have the ability to + fiil (yalın). 'can' anlamında ama daha resmi. Geçmiş: had the ability to.",
+          "syn": [
+            "the ability to learn",
+            "the ability to adapt"
+          ],
+          "ex": [
+            {
+              "en": "She [[has the ability to]] speak four languages.",
+              "tr": "Dört dil konuşabilme yetisine sahip."
+            },
+            {
+              "en": "Some birds [[have the ability to]] copy human voices.",
+              "tr": "Bazı kuşlar insan sesini taklit edebilir."
+            },
+            {
+              "en": "I don't [[have the ability to]] sing well.",
+              "tr": "İyi şarkı söyleme yetim yok."
+            },
+            {
+              "en": "He [[had the ability to]] make everyone laugh.",
+              "tr": "Herkesi güldürme yetisine sahipti."
+            },
+            {
+              "en": "Do you [[have the ability to]] fix this computer?",
+              "tr": "Bu bilgisayarı tamir edebilir misin?"
+            }
+          ]
+        },
+        {
+          "en": "show ability",
+          "g": "g1",
+          "tr": "beceri göstermek",
+          "mean": "let people see that you can do something well",
+          "tip": "show ability in + isim/-ing. Genelde sıfatla: show great ability. Geçmiş: showed ability.",
+          "syn": [
+            "show talent"
+          ],
+          "ex": [
+            {
+              "en": "He [[showed ability]] in maths at a young age.",
+              "tr": "Küçük yaşta matematikte beceri gösterdi."
+            },
+            {
+              "en": "The new player [[shows ability]] on the field.",
+              "tr": "Yeni oyuncu sahada beceri gösteriyor."
+            },
+            {
+              "en": "Students can [[show ability]] in many different ways.",
+              "tr": "Öğrenciler beceriyi birçok farklı yolla gösterebilir."
+            },
+            {
+              "en": "She didn't [[show ability]] in sports at school.",
+              "tr": "Okulda sporda beceri göstermedi."
+            },
+            {
+              "en": "My son is starting to [[show ability]] in music.",
+              "tr": "Oğlum müzikte beceri göstermeye başlıyor."
+            }
+          ]
+        },
+        {
+          "en": "improve your ability",
+          "g": "g1",
+          "tr": "becerini geliştirmek, iyileştirmek",
+          "mean": "make your skill better",
+          "tip": "improve your ability to + fiil. 'your' kişiye göre değişir: my, his, her. Geçmiş: improved.",
+          "syn": [
+            "develop an ability"
+          ],
+          "ex": [
+            {
+              "en": "Reading every day can [[improve your ability]] to write.",
+              "tr": "Her gün okumak yazma becerini geliştirebilir."
+            },
+            {
+              "en": "Games help children [[improve their ability]] to think.",
+              "tr": "Oyunlar çocukların düşünme becerisini geliştirmesine yardım eder."
+            },
+            {
+              "en": "I want to [[improve my ability]] to speak English.",
+              "tr": "İngilizce konuşma becerimi geliştirmek istiyorum."
+            },
+            {
+              "en": "She [[improved her ability]] to focus with yoga.",
+              "tr": "Yogayla odaklanma becerisini geliştirdi."
+            },
+            {
+              "en": "How can I [[improve my ability]] to remember words?",
+              "tr": "Kelimeleri hatırlama becerimi nasıl geliştirebilirim?"
+            }
+          ]
+        },
+        {
+          "en": "develop an ability",
+          "g": "g1",
+          "tr": "bir beceri kazanmak, edinmek",
+          "mean": "slowly get a new skill",
+          "tip": "develop an ability to + fiil. improve = var olanı iyileştir, develop = zamanla kazan/büyüt.",
+          "syn": [
+            "improve your ability",
+            "develop a talent"
+          ],
+          "ex": [
+            {
+              "en": "Babies [[develop an ability]] to walk after a year.",
+              "tr": "Bebekler bir yıl sonra yürüme becerisi kazanır."
+            },
+            {
+              "en": "He [[developed an ability]] to stay calm under pressure.",
+              "tr": "Baskı altında sakin kalma becerisi edindi."
+            },
+            {
+              "en": "You can [[develop an ability]] with practice.",
+              "tr": "Pratikle bir beceri kazanabilirsin."
+            },
+            {
+              "en": "She is [[developing an ability]] to read people.",
+              "tr": "İnsanları okuma becerisi kazanıyor."
+            },
+            {
+              "en": "Working abroad helped me [[develop an ability]] to listen.",
+              "tr": "Yurt dışında çalışmak dinleme becerisi kazanmama yardım etti."
+            }
+          ]
+        },
+        {
+          "en": "a natural ability",
+          "g": "g1",
+          "tr": "doğal bir yeti",
+          "mean": "a skill you have without learning it",
+          "tip": "have a natural ability to + fiil / for + isim. Öğrenilmemiş, kendiliğinden olan beceri.",
+          "syn": [
+            "a natural talent",
+            "a real talent",
+            "a great talent"
+          ],
+          "ex": [
+            {
+              "en": "She has [[a natural ability]] to make friends.",
+              "tr": "Arkadaş edinme konusunda doğal bir yetisi var."
+            },
+            {
+              "en": "Cats have [[a natural ability]] to land on their feet.",
+              "tr": "Kedilerin ayak üstü düşme gibi doğal bir yetisi vardır."
+            },
+            {
+              "en": "He showed [[a natural ability]] for languages.",
+              "tr": "Dillere karşı doğal bir yeti gösterdi."
+            },
+            {
+              "en": "I don't have [[a natural ability]] for cooking.",
+              "tr": "Yemek yapmaya doğal bir yetim yok."
+            },
+            {
+              "en": "Is leadership [[a natural ability]] or a skill?",
+              "tr": "Liderlik doğal bir yeti mi, yoksa öğrenilen bir beceri mi?"
+            }
+          ]
+        },
+        {
+          "en": "the ability to learn",
+          "g": "g1",
+          "tr": "öğrenme yetisi",
+          "mean": "being able to learn new things",
+          "tip": "the ability to learn + isim/fiil. Sık kalıp: have the ability to learn quickly.",
+          "syn": [
+            "have the ability to",
+            "the ability to adapt"
+          ],
+          "ex": [
+            {
+              "en": "Children have [[the ability to learn]] very quickly.",
+              "tr": "Çocukların çok hızlı öğrenme yetisi vardır."
+            },
+            {
+              "en": "Age doesn't stop [[the ability to learn]].",
+              "tr": "Yaş öğrenme yetisini durdurmaz."
+            },
+            {
+              "en": "Good sleep improves [[the ability to learn]].",
+              "tr": "İyi uyku öğrenme yetisini artırır."
+            },
+            {
+              "en": "Everyone has [[the ability to learn]] a new language.",
+              "tr": "Herkesin yeni bir dil öğrenme yetisi vardır."
+            },
+            {
+              "en": "Too much stress can hurt [[the ability to learn]].",
+              "tr": "Fazla stres öğrenme yetisine zarar verebilir."
+            }
+          ]
+        },
+        {
+          "en": "the ability to adapt",
+          "g": "g1",
+          "tr": "uyum sağlama yetisi",
+          "mean": "being able to change for a new situation",
+          "tip": "the ability to adapt to + isim (yeni duruma). İş görüşmelerinde çok kullanılır.",
+          "syn": [
+            "have the ability to",
+            "the ability to learn"
+          ],
+          "ex": [
+            {
+              "en": "Animals need [[the ability to adapt]] to cold weather.",
+              "tr": "Hayvanların soğuk havaya uyum sağlama yetisine ihtiyacı var."
+            },
+            {
+              "en": "She has [[the ability to adapt]] to any team.",
+              "tr": "Her takıma uyum sağlama yetisi var."
+            },
+            {
+              "en": "[[The ability to adapt]] is important in a new job.",
+              "tr": "Yeni bir işte uyum sağlama yetisi önemlidir."
+            },
+            {
+              "en": "Living in a new country tests [[the ability to adapt]].",
+              "tr": "Yeni bir ülkede yaşamak uyum sağlama yetisini sınar."
+            },
+            {
+              "en": "Kids usually have [[the ability to adapt]] fast.",
+              "tr": "Çocukların genelde hızlı uyum sağlama yetisi vardır."
+            }
+          ]
+        },
+        {
+          "en": "have a talent for",
+          "g": "g2",
+          "tr": "-e yeteneği olmak",
+          "mean": "be naturally good at something",
+          "tip": "have a talent for + isim/-ing (for drawing). 'to' değil 'for'! talent doğuştan, ability öğrenilebilir.",
+          "syn": [],
+          "ex": [
+            {
+              "en": "She [[has a talent for]] drawing.",
+              "tr": "Resim çizmeye yeteneği var."
+            },
+            {
+              "en": "My dad [[has a talent for]] telling stories.",
+              "tr": "Babamın hikaye anlatmaya yeteneği var."
+            },
+            {
+              "en": "I don't [[have a talent for]] music.",
+              "tr": "Müziğe yeteneğim yok."
+            },
+            {
+              "en": "He [[had a talent for]] football as a child.",
+              "tr": "Çocukken futbola yeteneği vardı."
+            },
+            {
+              "en": "Do you [[have a talent for]] languages?",
+              "tr": "Dillere yeteneğin var mı?"
+            }
+          ]
+        },
+        {
+          "en": "a natural talent",
+          "g": "g2",
+          "tr": "doğuştan yetenek",
+          "mean": "a talent you were born with",
+          "tip": "a natural talent for + isim/-ing. 'natural' = doğuştan gelen, çalışmadan var olan.",
+          "syn": [
+            "a real talent",
+            "a great talent",
+            "a natural ability"
+          ],
+          "ex": [
+            {
+              "en": "He has [[a natural talent]] for singing.",
+              "tr": "Şarkı söylemeye doğuştan yeteneği var."
+            },
+            {
+              "en": "Her dancing comes from [[a natural talent]].",
+              "tr": "Dansı doğuştan bir yetenekten geliyor."
+            },
+            {
+              "en": "You don't need [[a natural talent]] to learn guitar.",
+              "tr": "Gitar öğrenmek için doğuştan yeteneğe ihtiyacın yok."
+            },
+            {
+              "en": "My sister showed [[a natural talent]] for painting.",
+              "tr": "Kız kardeşim resme doğuştan yetenek gösterdi."
+            },
+            {
+              "en": "Is it hard work or [[a natural talent]]?",
+              "tr": "Bu sıkı çalışma mı, doğuştan yetenek mi?"
+            }
+          ]
+        },
+        {
+          "en": "a real talent",
+          "g": "g2",
+          "tr": "gerçek bir yetenek",
+          "mean": "a true and clear talent",
+          "tip": "Övgü için: You have a real talent! a real talent for + isim/-ing.",
+          "syn": [
+            "a natural talent",
+            "a great talent",
+            "a natural ability"
+          ],
+          "ex": [
+            {
+              "en": "You have [[a real talent]] for cooking!",
+              "tr": "Yemek yapmada gerçek bir yeteneğin var!"
+            },
+            {
+              "en": "That young actor is [[a real talent]].",
+              "tr": "O genç oyuncu gerçek bir yetenek."
+            },
+            {
+              "en": "She has [[a real talent]] for making people relax.",
+              "tr": "İnsanları rahatlatmada gerçek bir yeteneği var."
+            },
+            {
+              "en": "I think he has [[a real talent]] for writing.",
+              "tr": "Bence yazmaya gerçek bir yeteneği var."
+            },
+            {
+              "en": "Our teacher said I had [[a real talent]].",
+              "tr": "Öğretmenimiz bende gerçek bir yetenek olduğunu söyledi."
+            }
+          ]
+        },
+        {
+          "en": "show talent",
+          "g": "g2",
+          "tr": "yetenek göstermek",
+          "mean": "let people see your natural skill",
+          "tip": "show talent for/in + isim. Sıfatla da olur: show real talent. Geçmiş: showed talent.",
+          "syn": [
+            "show ability"
+          ],
+          "ex": [
+            {
+              "en": "He [[showed talent]] for music at age five.",
+              "tr": "Beş yaşında müziğe yetenek gösterdi."
+            },
+            {
+              "en": "Many kids [[show talent]] in art at school.",
+              "tr": "Birçok çocuk okulda sanatta yetenek gösterir."
+            },
+            {
+              "en": "She is starting to [[show talent]] as a singer.",
+              "tr": "Şarkıcı olarak yetenek göstermeye başlıyor."
+            },
+            {
+              "en": "The team's new player [[shows talent]].",
+              "tr": "Takımın yeni oyuncusu yetenek gösteriyor."
+            },
+            {
+              "en": "Did your son [[show talent]] for drawing early?",
+              "tr": "Oğlun resme erken yaşta yetenek gösterdi mi?"
+            }
+          ]
+        },
+        {
+          "en": "discover a talent",
+          "g": "g2",
+          "tr": "bir yeteneğini keşfetmek",
+          "mean": "find out that you are good at something",
+          "tip": "discover a talent for + isim/-ing. Geçmiş: discovered a talent. Sık: discover a hidden talent.",
+          "syn": [],
+          "ex": [
+            {
+              "en": "I [[discovered a talent]] for cooking last year.",
+              "tr": "Geçen yıl yemek yapma yeteneğimi keşfettim."
+            },
+            {
+              "en": "She [[discovered a talent]] she never knew about.",
+              "tr": "Hiç bilmediği bir yeteneğini keşfetti."
+            },
+            {
+              "en": "You might [[discover a talent]] in this class.",
+              "tr": "Bu derste bir yeteneğini keşfedebilirsin."
+            },
+            {
+              "en": "He [[discovered a talent]] for acting at university.",
+              "tr": "Üniversitede oyunculuk yeteneğini keşfetti."
+            },
+            {
+              "en": "Travelling helps people [[discover a talent]].",
+              "tr": "Seyahat etmek insanların bir yeteneğini keşfetmesine yardım eder."
+            }
+          ]
+        },
+        {
+          "en": "develop a talent",
+          "g": "g2",
+          "tr": "yeteneğini geliştirmek",
+          "mean": "make your natural skill stronger",
+          "tip": "Yetenek doğuştan gelir ama çalışarak develop edilir. Geçmiş: developed a talent.",
+          "syn": [
+            "develop an ability"
+          ],
+          "ex": [
+            {
+              "en": "Good teachers help students [[develop a talent]].",
+              "tr": "İyi öğretmenler öğrencilerin yeteneğini geliştirmesine yardım eder."
+            },
+            {
+              "en": "She [[developed a talent]] for photography.",
+              "tr": "Fotoğrafçılık yeteneğini geliştirdi."
+            },
+            {
+              "en": "It takes years to [[develop a talent]].",
+              "tr": "Bir yeteneği geliştirmek yıllar alır."
+            },
+            {
+              "en": "He is [[developing a talent]] for public speaking.",
+              "tr": "Topluluk önünde konuşma yeteneğini geliştiriyor."
+            },
+            {
+              "en": "You can't [[develop a talent]] without practice.",
+              "tr": "Pratik yapmadan bir yeteneği geliştiremezsin."
+            }
+          ]
+        },
+        {
+          "en": "a great talent",
+          "g": "g2",
+          "tr": "büyük bir yetenek",
+          "mean": "a very strong talent",
+          "tip": "Kişi için de kullanılır: She is a great talent. a great talent for + isim/-ing.",
+          "syn": [
+            "a natural talent",
+            "a real talent",
+            "a natural ability"
+          ],
+          "ex": [
+            {
+              "en": "He has [[a great talent]] for football.",
+              "tr": "Futbola büyük bir yeteneği var."
+            },
+            {
+              "en": "Everyone says she is [[a great talent]].",
+              "tr": "Herkes onun büyük bir yetenek olduğunu söylüyor."
+            },
+            {
+              "en": "My grandmother had [[a great talent]] for sewing.",
+              "tr": "Büyükannemin dikişe büyük bir yeteneği vardı."
+            },
+            {
+              "en": "This band has [[a great talent]] on drums.",
+              "tr": "Bu grubun davulda büyük bir yeteneği var."
+            },
+            {
+              "en": "You have [[a great talent]], so don't give up!",
+              "tr": "Büyük bir yeteneğin var, o yüzden pes etme!"
+            }
+          ]
+        },
+        {
+          "en": "I'm cooked",
+          "g": "g3",
+          "tr": "İşim bitti",
+          "mean": "I'm in big trouble or very tired (slang)",
+          "tip": "Gençlerin argosu. Başın dertteyken ya da çok yorgunken: I'm cooked. Resmi ortamda kullanma.",
+          "syn": [],
+          "ex": [
+            {
+              "en": "I didn't study for the exam. [[I'm cooked]].",
+              "tr": "Sınava çalışmadım. İşim bitti."
+            },
+            {
+              "en": "My boss saw me sleeping. [[I'm cooked]]!",
+              "tr": "Patronum beni uyurken gördü. İşim bitti!"
+            },
+            {
+              "en": "Ten hours of work today, [[I'm cooked]].",
+              "tr": "Bugün on saat çalıştım, bittim."
+            },
+            {
+              "en": "I lost my mom's keys. [[I'm cooked]]!",
+              "tr": "Annemin anahtarlarını kaybettim. İşim bitti!"
+            },
+            {
+              "en": "The deadline is tomorrow and [[I'm cooked]].",
+              "tr": "Son gün yarın ve işim bitti."
+            }
+          ]
+        },
+        {
+          "en": "I'm all ears",
+          "g": "g3",
+          "tr": "Can kulağıyla dinliyorum",
+          "mean": "I'm ready to listen carefully",
+          "tip": "Biri 'Sana bir şey anlatacağım' dediğinde: I'm all ears! Merakla dinlediğini gösterir.",
+          "syn": [],
+          "ex": [
+            {
+              "en": "Tell me about your trip. [[I'm all ears]].",
+              "tr": "Bana geziyi anlat. Can kulağıyla dinliyorum."
+            },
+            {
+              "en": "You have news? [[I'm all ears]]!",
+              "tr": "Haberin mi var? Can kulağıyla dinliyorum!"
+            },
+            {
+              "en": "If you have a better idea, [[I'm all ears]].",
+              "tr": "Daha iyi bir fikrin varsa, dinliyorum."
+            },
+            {
+              "en": "Okay, [[I'm all ears]], what happened?",
+              "tr": "Tamam, can kulağıyla dinliyorum, ne oldu?"
+            },
+            {
+              "en": "Go on, [[I'm all ears]].",
+              "tr": "Devam et, can kulağıyla dinliyorum."
+            }
+          ]
+        },
+        {
+          "en": "No big deal",
+          "g": "g3",
+          "tr": "Önemli değil",
+          "mean": "it's not important, don't worry",
+          "tip": "Özür ya da teşekküre cevap: No big deal. Bir şeyi küçümsemek için: It's no big deal.",
+          "syn": [],
+          "ex": [
+            {
+              "en": "You forgot my pen? [[No big deal]].",
+              "tr": "Kalemimi mi unuttun? Önemli değil."
+            },
+            {
+              "en": "Thanks for the help! - [[No big deal]].",
+              "tr": "Yardımın için teşekkürler! - Önemli değil."
+            },
+            {
+              "en": "We missed the bus, but it's [[no big deal]].",
+              "tr": "Otobüsü kaçırdık ama önemli değil."
+            },
+            {
+              "en": "Don't worry about the cup, [[no big deal]].",
+              "tr": "Bardağı dert etme, önemli değil."
+            },
+            {
+              "en": "Being a bit late is [[no big deal]] here.",
+              "tr": "Burada biraz geç kalmak önemli değil."
+            }
+          ]
+        },
+        {
+          "en": "My bad",
+          "g": "g3",
+          "tr": "Benim hatam",
+          "mean": "sorry, it was my mistake (informal)",
+          "tip": "Küçük hatalar için kısa, samimi özür. Ciddi durumda 'I'm sorry, it was my fault' de.",
+          "syn": [],
+          "ex": [
+            {
+              "en": "Oh, that was your seat? [[My bad]]!",
+              "tr": "Ah, orası senin yerin miydi? Benim hatam!"
+            },
+            {
+              "en": "[[My bad]], I sent the wrong file.",
+              "tr": "Benim hatam, yanlış dosyayı gönderdim."
+            },
+            {
+              "en": "Sorry I'm late, [[my bad]].",
+              "tr": "Geç kaldığım için üzgünüm, benim hatam."
+            },
+            {
+              "en": "I took your coffee by mistake. [[My bad]].",
+              "tr": "Yanlışlıkla senin kahveni aldım. Benim hatam."
+            },
+            {
+              "en": "[[My bad]], I forgot to call you back.",
+              "tr": "Benim hatam, seni geri aramayı unuttum."
+            }
+          ]
+        },
+        {
+          "en": "Fair enough",
+          "g": "g3",
+          "tr": "Tamam, mantıklı",
+          "mean": "that's reasonable, I accept it",
+          "tip": "Karşındakinin açıklamasını kabul ederken: Fair enough. Tam katılmasan da makul bulduğunu gösterir.",
+          "syn": [],
+          "ex": [
+            {
+              "en": "I'm too tired to go out. - [[Fair enough]].",
+              "tr": "Dışarı çıkamayacak kadar yorgunum. - Tamam, mantıklı."
+            },
+            {
+              "en": "[[Fair enough]], we can meet tomorrow then.",
+              "tr": "Tamam, mantıklı, o zaman yarın buluşuruz."
+            },
+            {
+              "en": "He wants more money, and that's [[fair enough]].",
+              "tr": "Daha fazla para istiyor ve bu mantıklı."
+            },
+            {
+              "en": "You paid last time? [[Fair enough]], I'll pay.",
+              "tr": "Geçen sefer sen mi ödedin? Tamam, ben öderim."
+            },
+            {
+              "en": "[[Fair enough]], but I still don't like it.",
+              "tr": "Tamam, mantıklı, ama yine de hoşuma gitmiyor."
             }
           ]
         }

@@ -143,6 +143,8 @@ nav button.on{color:var(--accent);background:var(--accent-soft)}
 .hwi summary{cursor:pointer;font-weight:700}
 mark{background:var(--sun-soft);color:inherit;font-weight:800;border-radius:4px;padding:0 3px}
 .btn.sm{padding:8px 12px;font-size:.9rem;align-self:flex-start}
+.hwsec{margin:6px 0 -4px}
+.hwcard.cur{border:2px solid var(--accent)}
 .hwcard,.hwban{text-align:left;font:inherit;color:inherit;width:100%}
 .hwban{flex-direction:row;align-items:center;gap:12px;border:2px solid var(--accent)}
 .hwban .track{display:block;margin-top:6px}
@@ -836,7 +838,7 @@ const hwDone = (h, it) => HWK.filter(k => (S.cards[hwQid(h,it,k)]?.box||0) >= 1)
 const hwPct = (h, items=h.items) => items.length ? Math.round(100*items.reduce((a,it)=>a+hwDone(h,it),0)/(items.length*HWK.length)) : 0;
 const hwStars = n => { const s = Math.floor(n/2); return "★".repeat(s)+"☆".repeat(3-s); };
 const HW_SYN = new Set(["look after|take care of","figure out|find out"]);
-const hwSyn = (a, b) => HW_SYN.has([a.en,b.en].sort().join("|"));
+const hwSyn = (a, b) => HW_SYN.has([a.en,b.en].sort().join("|")) || (a.syn||[]).includes(b.en) || (b.syn||[]).includes(a.en);
 let curHw = null;
 function hwDays(h){
   const d = new Date(h.due+"T12:00:00"), t = new Date(); t.setHours(12,0,0,0);
@@ -884,25 +886,35 @@ function hwMatch(h){
   hidePop(); tab="hw"; nav(); scrollTo(0,0); curHw = h.id;
   match(pool(), { ordered:true, back:"hwv", again:pool });
 }
+const hwKey = h => String(h.date||h.due||"");
+const hwSorted = () => [...HW()].sort((a,b)=>hwKey(b).localeCompare(hwKey(a)));
+const AYLAR = ["Ocak","Şubat","Mart","Nisan","Mayıs","Haziran","Temmuz","Ağustos","Eylül","Ekim","Kasım","Aralık"], GUNLER = ["Pazar","Pazartesi","Salı","Çarşamba","Perşembe","Cuma","Cumartesi"];
+function hwDate(h){ const d = new Date(hwKey(h)+"T12:00:00"); return isNaN(d) ? "" : d.getDate()+" "+AYLAR[d.getMonth()]+" "+d.getFullYear()+", "+GUNLER[d.getDay()]; }
 function homework(){
-  const L = [...HW()].sort((a,b)=>String(b.due).localeCompare(String(a.due)));
-  if (L.length===1) return hwView(L[0].id);
-  $app.innerHTML = `<div class="hero"><div class="owlwrap">${owl("teach")}</div><div class="bubble"><b>Ödevlerim</b><br>Öğretmeninin verdiği ödevleri burada birlikte çalışıyoruz.</div></div>` +
-    (L.length ? L.map(h => { const p = hwPct(h), d = hwDays(h);
-      return `<button class="card hwcard" data-hw="${esc(h.id)}"><div class="eyebrow">📝 ${esc(d.label)}</div><h2>${esc(h.title)}</h2><div class="topic"><span>${h.items.length} kalıp</span><div class="track"><i style="width:${p}%;background:var(--accent)"></i></div><b>%${p}</b></div></button>`; }).join("")
-    : `<div class="card muted">Şu an ödevin yok. Öğretmenin ödev verince burada görünecek.</div>`);
-  $app.querySelectorAll("[data-hw]").forEach(b => b.onclick = () => { sfx("tap"); hwView(b.dataset.hw); });
+  hidePop(); tab="hw"; nav();
+  const [cur, ...past] = hwSorted();
+  const cardHTML = (h, big) => { const p = hwPct(h), d = hwDays(h);
+    return `<button class="card hwcard ${big?"cur":""}" data-hw="${esc(h.id)}">
+      <div style="display:flex;justify-content:space-between;gap:8px;align-items:center"><span class="eyebrow">📅 ${esc(hwDate(h))}</span>${p>=100?`<span class="pill" style="background:var(--good-soft);color:var(--good)">✓ Bitti</span>`:big&&d.label&&d.n>=0?`<span class="pill ${d.n<=1?"bad":""}">⏰ ${esc(d.label)}</span>`:""}</div>
+      <h2>${esc(h.title)}</h2>
+      <div class="tags">${(h.groups||[]).map(g=>`<span class="pill">${esc(g.title)}</span>`).join("")}</div>
+      <div class="topic"><span>${h.items.length} kalıp</span><div class="track"><i style="width:${p}%;background:var(--accent)"></i></div><b>%${p}</b></div>
+      ${big?`<span class="btn wide" style="justify-content:center;text-align:center">${p>0?"▶ Devam et":"▶ Başla"}</span>`:""}</button>`; };
+  $app.innerHTML = `<div class="hero"><div class="owlwrap">${owl("teach")}</div><div class="bubble"><b>Ödevlerim</b><br>${cur?"Güncel ödevin en üstte. Geçmiş ödevlerine dönüp istediğin zaman tekrar yapabilirsin.":"Öğretmenin ödev verince burada görünecek."}</div></div>` +
+    (cur ? `<h2 class="hwsec">📌 Güncel ödev</h2>${cardHTML(cur, true)}` : `<div class="card muted">Şu an ödevin yok.</div>`) +
+    (past.length ? `<h2 class="hwsec">🗂️ Geçmiş ödevler</h2>${past.map(h=>cardHTML(h,false)).join("")}` : "");
+  $app.querySelectorAll("[data-hw]").forEach(b => b.onclick = () => { sfx("tap"); scrollTo(0,0); hwView(b.dataset.hw); });
 }
 function hwView(id){
-  const h = HW().find(z=>z.id===id) || [...HW()].sort((a,b)=>String(b.due).localeCompare(String(a.due)))[0];
+  const h = HW().find(z=>z.id===id) || hwSorted()[0];
   hidePop(); tab="hw"; nav();
   if (!h){ homework(); return; }
   curHw = h.id;
   const p = hwPct(h), d = hwDays(h), full = h.items.filter(it=>hwDone(h,it)===HWK.length).length;
   const exHTML = e => `<div class="hwex"><div>${hwMark(e.en)}</div><small class="muted">${esc(e.tr)}</small></div>`;
-  $app.innerHTML = `${HW().length>1?`<div class="qtop"><button class="iconbtn" id="back" aria-label="Geri">${SVG('<path d="M15 18l-6-6 6-6"/>')}</button><div class="eyebrow" style="flex:1">Ödevlerim</div></div>`:""}
+  $app.innerHTML = `<div class="qtop"><button class="iconbtn" id="back" aria-label="Geri">${SVG('<path d="M15 18l-6-6 6-6"/>')}</button><div style="flex:1;min-width:0"><div class="eyebrow">Ödevlerim</div><b>📅 ${esc(hwDate(h))}</b></div></div>
     <div class="hero"><div class="owlwrap">${owl(p>=100?"happy":"teach")}</div><div class="bubble"><b>${esc(h.title)}</b><br>${p>=100?"Hepsini bitirdin! Derse hazırsın 🏆":esc(h.note||"Hadi bu ödevi birlikte bitirelim!")}</div></div>
-    <div class="card"><div style="display:flex;justify-content:space-between;align-items:center;gap:8px"><span class="pill ${d.n<=1&&p<100?"bad":""}">⏰ ${esc(d.label)}</span><span class="pill">⭐ ${full}/${h.items.length} kalıp tamam</span></div>
+    <div class="card"><div style="display:flex;justify-content:space-between;align-items:center;gap:8px">${d.label?`<span class="pill ${d.n<=1&&p<100?"bad":""}">⏰ ${esc(d.label)}</span>`:`<span class="pill">📝 ${h.items.length} kalıp</span>`}<span class="pill">⭐ ${full}/${h.items.length} kalıp tamam</span></div>
       <div class="topic"><span>İlerleme</span><div class="track"><i style="width:${p}%;background:var(--accent)"></i></div><b>%${p}</b></div>
       <button class="btn wide" id="hwSmart">🎯 Akıllı tur (10 soru)</button>
       <div class="row"><button class="btn soft" id="hwMatch">🧩 Eşleştir</button><button class="btn soft" id="hwOrder">🔀 Cümle kur</button><button class="btn soft" id="hwWrite">✍️ Yaz</button></div>
@@ -917,7 +929,7 @@ function hwView(id){
             ${ex.slice(0,2).map(exHTML).join("")}
             ${ex.length>2?`<details><summary class="muted">+${ex.length-2} örnek daha</summary>${ex.slice(2).map(exHTML).join("")}</details>`:""}
             <button class="btn soft sm" data-it="${esc(it.en)}">⚡ Bunu çalış (${n}/${HWK.length})</button></div>`; }).join("")}</div>`; }).join("")}`;
-  const bk = document.getElementById("back"); if (bk) bk.onclick = () => homework();
+  document.getElementById("back").onclick = () => { sfx("tap"); scrollTo(0,0); homework(); };
   document.getElementById("hwSmart").onclick = () => hwGo(h,"smart");
   document.getElementById("hwMatch").onclick = () => hwMatch(h);
   document.getElementById("hwOrder").onclick = () => hwGo(h,"order");
@@ -935,10 +947,10 @@ function hwAfter(arg){
 }
 /* ana sayfada bitmemiş ödev hatırlatması */
 function hwBanner(){
-  const h = [...HW()].sort((a,b)=>String(b.due).localeCompare(String(a.due)))[0]; if (!h) return;
+  const h = hwSorted()[0]; if (!h) return;
   const p = hwPct(h), d = hwDays(h); if (p>=100 || d.n < -1) return;
-  $app.insertAdjacentHTML("afterbegin", `<button class="card hwban" id="hwBan"><span style="font-size:2rem;line-height:1">📝</span><span style="flex:1;min-width:0;text-align:left"><b>Ödev: ${esc(h.title)}</b><small class="muted" style="display:block">⏰ ${esc(d.label)} · %${p} bitti</small><span class="track"><i style="width:${p}%;background:var(--accent)"></i></span></span><span style="font-size:1.4rem">›</span></button>`);
-  document.getElementById("hwBan").onclick = () => { sfx("tap"); go("hw"); };
+  $app.insertAdjacentHTML("afterbegin", `<button class="card hwban" id="hwBan"><span style="font-size:2rem;line-height:1">📝</span><span style="flex:1;min-width:0;text-align:left"><b>Ödev: ${esc(h.title)}</b><small class="muted" style="display:block">${d.label?"⏰ "+esc(d.label):"📅 "+esc(hwDate(h))} · %${p} bitti</small><span class="track"><i style="width:${p}%;background:var(--accent)"></i></span></span><span style="font-size:1.4rem">›</span></button>`);
+  document.getElementById("hwBan").onclick = () => { sfx("tap"); go("hwv", h.id); };
 }
 
 /* ---------- hatalar ---------- */
