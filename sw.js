@@ -1,5 +1,5 @@
 // Barely English web sürümü: önce internetten yükler (her açılışta güncel kalır), internet yoksa son kaydı kullanır.
-const CACHE = "barely-english-v5";
+const CACHE = "barely-english-v6";
 const CORE = ["./", "index.html", "winter.html", "lessons.json", "manifest.webmanifest",
   "img/zohre-hosgeldin.png", "img/zohre-ders.png", "img/zohre-sikicalis.png", "img/zohre-tebrik.png",
   "icons/icon-180.png", "icons/icon-192.png"];

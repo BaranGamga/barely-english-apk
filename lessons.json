@@ -1,7 +1,7 @@
 {
-  "version": 19,
-  "latestApk": 12,
-  "latestApkNote": "Yeni Ödevler bölümü",
+  "version": 20,
+  "latestApk": 13,
+  "latestApkNote": "Ödev listesi: güncel ve geçmiş ödevler",
   "lessons": [
     {
       "id": "u01-present-simple",

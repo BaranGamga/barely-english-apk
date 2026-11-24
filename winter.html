@@ -151,6 +151,19 @@ mark{background:var(--sun-soft);color:inherit;font-weight:800;border-radius:4px;
 .qhint{margin-top:-4px}
 nav button{font-size:.62rem;padding:6px 0;min-width:0;white-space:nowrap}
 nav button svg{width:24px;height:24px}
+/* okunur konu anlatımı */
+.gsum{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+.gsum li{position:relative;padding-left:20px;line-height:1.65}
+.gsum li::before{content:"";position:absolute;left:5px;top:.7em;width:7px;height:7px;border-radius:50%;background:var(--accent)}
+.gsum li.warn{background:var(--sun-soft);border-radius:12px;padding:10px 12px}
+.gsum li.warn::before{display:none}
+.gex{display:flex;flex-direction:column;gap:8px;margin-top:4px;padding-top:12px;border-top:1px dashed var(--line)}
+.gex .ex{line-height:1.55;padding:2px 0 2px 12px}
+.vlist{display:flex;flex-direction:column}
+.vrow{display:flex;flex-direction:column;gap:3px;padding:12px 0;border-top:1px solid var(--line);line-height:1.5}
+.vrow:first-child{border-top:0;padding-top:4px}
+.vrow b{font-size:1.05rem}
+.vrow .vex{font-size:.92rem;font-style:italic}
 #fx{position:fixed;inset:0;pointer-events:none;z-index:50}
 /* Zohre moods */
 .owl{display:block;width:100%;height:auto;transform-origin:50% 100%;filter:drop-shadow(0 6px 10px rgba(40,10,70,.25))}
@@ -274,9 +287,11 @@ img.bi{width:26px;height:26px;object-fit:contain;vertical-align:middle}
 .endart{display:flex;align-items:flex-end;justify-content:center;gap:6px}
 .foedown{width:120px;height:90px;object-fit:contain;opacity:.9}
 .foeend{width:150px;height:130px;object-fit:contain}
-#snow{position:fixed;inset:0;pointer-events:none;z-index:4;overflow:hidden}
-#snow i{position:absolute;top:-10px;border-radius:50%;background:#fff;box-shadow:0 0 6px #fff;animation:fall linear infinite}
-@keyframes fall{to{transform:translate(30px,105vh)}}
+/* buz teması: içeriğin arkasında, kart kenarlarındaki boşluklarda yanıp sönen küçük parıltılar */
+#snow{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+body.th-ice main{position:relative;z-index:1}
+#snow i{position:absolute;opacity:0;background:#fff;clip-path:polygon(50% 0,60% 40%,100% 50%,60% 60%,50% 100%,40% 60%,0 50%,40% 40%);filter:drop-shadow(0 0 3px #cfe4ff);animation:twinkle ease-in-out infinite}
+@keyframes twinkle{0%,100%{opacity:0;transform:scale(.2) rotate(0)}50%{opacity:.85;transform:scale(1) rotate(45deg)}}
 /* görevler */
 .quest{display:flex;align-items:center;gap:10px}
 .quest .qi{font-size:1.5rem;width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:var(--accent-soft);flex:none}
@@ -651,9 +666,9 @@ function stageView(sid){
     <div class="hero"><div class="owlwrap">${owl("teach")}</div><div class="bubble"><b>${esc(s.title)}</b>${s.goal?`<br>${esc(s.goal)}`:""}</div></div>
     <div class="card"><div class="topic"><span>İlerleme</span><div class="track"><i style="width:${m}%;background:var(--accent)"></i></div><b>%${m}</b></div>
       <button class="btn wide" id="study">⚡ Bu aşamayı çalış (${stageItems(s.id).length} soru)</button></div>
-    ${(L.grammar||[]).map(g=>`<div class="card"><div class="eyebrow">Konu anlatımı</div><h2>${esc(g.title)}</h2><p style="margin:0">${esc(g.summary)}</p>${(g.examples||[]).map(e=>`<div class="ex">${esc(e)}</div>`).join("")}</div>`).join("")}
-    ${(L.vocab||[]).length?`<div class="card"><h3>Kelimeler ve kalıplar</h3>${L.vocab.map(v=>`<div><b>${esc(v.en)}</b> ${(S.cards["vq:"+v.en]?.box||0)>=3?"✅":""} — ${esc(v.tr)}<div class="muted" style="font-size:.9rem">${esc(v.ex)}</div></div>`).join("")}</div>`:""}
-    ${(L.mistakes||[]).length?`<div class="card"><h3>Dikkat: sık yapılan hatalar</h3>${L.mistakes.map(x=>`<div><div class="wrong">${esc(x.wrong)}</div><div class="right">✓ ${esc(x.right)}</div><div class="muted" style="font-size:.9rem">${esc(x.note)}</div></div>`).join("")}</div>`:""}
+    ${(L.grammar||[]).map(g=>`<div class="card"><div class="eyebrow">Konu anlatımı</div><h2>${esc(g.title)}</h2>${gsum(g.summary)}${gex(g.examples)}</div>`).join("")}
+    ${(L.vocab||[]).length?`<div class="card"><h3>Kelimeler ve kalıplar</h3><div class="vlist">${L.vocab.map(v=>`<div class="vrow"><div><b>${esc(v.en)}</b> ${(S.cards["vq:"+v.en]?.box||0)>=3?"✅":""}</div><div>${esc(v.tr)}</div>${v.ex?`<div class="muted vex">${esc(v.ex)}</div>`:""}</div>`).join("")}</div></div>`:""}
+    ${(L.mistakes||[]).length?`<div class="card"><h3>Dikkat: sık yapılan hatalar</h3><div class="vlist">${L.mistakes.map(x=>`<div class="vrow"><div class="wrong">${esc(x.wrong)}</div><div class="right">✓ ${esc(x.right)}</div><div class="muted" style="font-size:.9rem">${esc(x.note)}</div></div>`).join("")}</div></div>`:""}
     <button class="btn wide" id="study2">⚡ Bu aşamayı çalış</button>`;
   document.getElementById("back").onclick = () => go("home");
   document.getElementById("study").onclick = document.getElementById("study2").onclick = () => go("play","stage",s.id);
@@ -840,13 +855,22 @@ const themeKey = () => { const s = S.settings.theme; return s && s!=="auto" && T
 const themeOf = () => { const k = themeKey(), t = THEMES[k]; return t.weekly ? { ...t, weekly:{ ...t.weekly, id:k+"-"+weekStart() } } : t; };
 function applyTheme(){ document.body.className = "th-"+themeKey(); snowfall(isIce()); }
 const coinIcon = () => isIce() ? `<img class="ci" src="${ART}coin.webp" alt="">` : "🪙";
-/* kar yağışı: sadece Buz teması, hareket azaltma açıksa yok */
+/* parıltılar: sadece Buz teması, hareket azaltma açıksa yok. İçeriğin arkasında durur, okuma alanının üstüne çıkmaz;
+   çoğu kartların sağ/sol kenarındaki boşlukta, bir kısmı kartlar arasındaki aralıklarda yanıp söner ve her seferinde yer değiştirir. */
+function sparkPos(i, move){
+  const W = innerWidth, mw = Math.min(560, W), left = (W-mw)/2, gut = 16;
+  const r = Math.random(), x = r < .4 ? left + 2 + Math.random()*(gut-6) : r < .8 ? left + mw - gut + 2 + Math.random()*(gut-6) : left + Math.random()*mw;
+  const sz = 6 + Math.random()*7;
+  if (move){ i.style.left = (x-sz/2)+"px"; i.style.top = (60 + Math.random()*(innerHeight-150))+"px"; return; }
+  i.style.cssText = `left:${x-sz/2}px;top:${60 + Math.random()*(innerHeight-150)}px;width:${sz}px;height:${sz}px;animation-duration:${2.6+Math.random()*2.4}s;animation-delay:${Math.random()*4}s`;
+}
 function snowfall(on){
   let el = document.getElementById("snow");
   if (!on || matchMedia("(prefers-reduced-motion: reduce)").matches){ el?.remove(); return; }
   if (el) return;
   el = document.createElement("div"); el.id = "snow";
-  el.innerHTML = Array.from({length:22}, (_,i) => `<i style="left:${Math.random()*100}%;animation-duration:${7+Math.random()*8}s;animation-delay:-${Math.random()*12}s;width:${3+Math.random()*4}px;height:${3+Math.random()*4}px;opacity:${.4+Math.random()*.5}"></i>`).join("");
+  el.innerHTML = Array.from({length:14}, () => "<i></i>").join("");
+  el.querySelectorAll("i").forEach(i => { sparkPos(i); i.addEventListener("animationiteration", () => sparkPos(i, true)); });
   document.body.appendChild(el);
 }
 /* ---- Buz teması ana sayfa: afiş + görevler & Buz Mücadelesi + hızlı pratik + haftalık ödül yolu ---- */
@@ -1195,8 +1219,8 @@ function endBattle(){
 
 /* ---------- gramer ---------- */
 function grammar(){
-  $app.innerHTML = `<div class="hero"><div class="owlwrap">${owl("teach")}</div><div class="bubble"><b>Gramer özetleri</b><br>Bugün ne tekrar edelim? Bir konu seç, sonra birlikte çalışalım.</div></div>` + (ALL_G.length ? ALL_G.map((g,i)=>`${i===0||ALL_G[i-1].sid!==g.sid?`<h2 style="margin-top:6px">${esc(g.lesson)}</h2>`:""}<div class="card"><h2>${esc(g.title)}</h2><p style="margin:0">${esc(g.summary)}</p>
-    ${(g.examples||[]).map(e=>`<div class="ex">${esc(e)}</div>`).join("")}<button class="btn soft" data-t="${esc(g.topic)}">⚡ Bu konuyu çalış</button></div>`).join("") : `<div class="card muted">Henüz gramer notu yok.</div>`);
+  $app.innerHTML = `<div class="hero"><div class="owlwrap">${owl("teach")}</div><div class="bubble"><b>Gramer özetleri</b><br>Bugün ne tekrar edelim? Bir konu seç, sonra birlikte çalışalım.</div></div>` + (ALL_G.length ? ALL_G.map((g,i)=>`${i===0||ALL_G[i-1].sid!==g.sid?`<h2 style="margin-top:6px">${esc(g.lesson)}</h2>`:""}<div class="card"><h2>${esc(g.title)}</h2>${gsum(g.summary)}
+    ${gex(g.examples)}<button class="btn soft" data-t="${esc(g.topic)}">⚡ Bu konuyu çalış</button></div>`).join("") : `<div class="card muted">Henüz gramer notu yok.</div>`);
   $app.querySelectorAll("[data-t]").forEach(b => b.onclick = () => go("play","topic",b.dataset.t));
 }
 
@@ -1416,6 +1440,21 @@ function mistakeDrill(){
     : { id:"m:"+m.wrong, topic:m.topic||"mistakes", type:"write", q:"Cümleyi düzelt: “"+m.wrong+"”", answer:m.right, explain:m.note, sid:m.sid }
   ).filter(Boolean);
 }
+
+/* konu anlatımı: uzun özeti cümle cümle maddelere böler, "Dikkat:" gibi uyarıları kutuya alır */
+function gsum(s){
+  // parantez içindeki ; ve noktalarda bölme
+  const parts = [], t = String(s||""); let cur = "", dep = 0;
+  for (let i=0;i<t.length;i++){
+    const c = t[i]; if (c==="(") dep++; else if (c===")") dep = Math.max(0, dep-1);
+    const end = !dep && (c==="•" || c===";" || (/[.!?]/.test(c) && /\s/.test(t[i+1]||"") && !/[\s)]/.test(t[i+2]||" ")));
+    if (end){ if (c!=="•" && c!==";") cur += c; if (cur.trim()) parts.push(cur.trim()); cur = ""; } else cur += c;
+  }
+  if (cur.trim()) parts.push(cur.trim());
+  return `<ul class="gsum">${parts.map(p => { const m = /^([^:]{2,24}):\s+(.+)$/.exec(p), warn = /^(dikkat|not|ipucu|İpucu|uyarı|Uyarı|önemli|Önemli)/i.test(p);
+    return `<li class="${warn?"warn":""}">${m ? `<b>${esc(m[1])}:</b> ${esc(m[2])}` : esc(p)}</li>`; }).join("")}</ul>`;
+}
+const gex = ex => (ex||[]).length ? `<div class="gex"><div class="eyebrow">Örnekler</div>${ex.map(e=>`<div class="ex">${esc(e)}</div>`).join("")}</div>` : "";
 
 /* ---------- ödevler ---------- */
 // lessons.json "homework": [{id,title,due,note,groups:[{id,title}],items:[{en,g,tr,mean,tip,ex:[{en,tr}]}]}]
